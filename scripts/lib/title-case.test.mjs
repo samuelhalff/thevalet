@@ -12,7 +12,7 @@ import {
 
 describe("capitalizeFirst", () => {
   it("capitalises the first letter of a plain string", () => {
-    expect(capitalizeFirst("pension fund buy-in in Switzerland")).toBe("Pension fund buy-in in Switzerland");
+    expect(capitalizeFirst("private chauffeur in Geneva")).toBe("Private chauffeur in Geneva");
   });
 
   it("leaves leading Markdown markers untouched", () => {
@@ -20,7 +20,7 @@ describe("capitalizeFirst", () => {
   });
 
   it("never lowercases an already-uppercase first letter", () => {
-    expect(capitalizeFirst("LPP buy-in explained")).toBe("LPP buy-in explained");
+    expect(capitalizeFirst("VIP arrivals explained")).toBe("VIP arrivals explained");
   });
 
   it("is a no-op on empty/non-string input", () => {
@@ -41,62 +41,48 @@ describe("applyAcronyms", () => {
   });
 
   it("handles multiple acronyms in one string (EN)", () => {
-    expect(applyAcronyms("lpp and bvg buy-ins for avs/ahv coordination")).toBe("LPP and BVG buy-ins for AVS/AHV coordination");
+    expect(applyAcronyms("vip and vtc transfers from gva")).toBe("VIP and VTC transfers from GVA");
   });
 
   it("handles acronyms in French text", () => {
-    expect(applyAcronyms("le rachat lpp et l'afc genevoise")).toBe("le rachat LPP et l'AFC genevoise");
-  });
-
-  it("handles acronyms in German text, only touching the acronym itself", () => {
-    expect(applyAcronyms("die bvg-einkauf und die estv Voranfrage")).toBe("die BVG-einkauf und die ESTV Voranfrage");
+    expect(applyAcronyms("un transfert vtc depuis l'aéroport gva")).toBe("un transfert VTC depuis l'aéroport GVA");
   });
 });
 
 describe("applyCountryNames", () => {
-  it("capitalises Switzerland in all three locale spellings", () => {
-    expect(applyCountryNames("moving to switzerland")).toBe("moving to Switzerland");
-    expect(applyCountryNames("s'installer en suisse")).toBe("s'installer en Suisse");
-    expect(applyCountryNames("auswandern in die schweiz")).toBe("auswandern in die Schweiz");
+  it("capitalises places in both locales", () => {
+    expect(applyCountryNames("a weekend in geneva")).toBe("a weekend in Geneva");
+    expect(applyCountryNames("un séjour en suisse")).toBe("un séjour en Suisse");
+    expect(applyCountryNames("arriving in courchevel")).toBe("arriving in Courchevel");
   });
 
   it("capitalises United Kingdom / Royaume-Uni", () => {
-    expect(applyCountryNames("leaving the united kingdom")).toBe("leaving the United Kingdom");
-    expect(applyCountryNames("quitter le royaume-uni")).toBe("quitter le Royaume-Uni");
+    expect(applyCountryNames("flying from the united kingdom")).toBe("flying from the United Kingdom");
+    expect(applyCountryNames("depuis le royaume-uni")).toBe("depuis le Royaume-Uni");
   });
 
-  it("capitalises other known country names (US/Germany/France)", () => {
-    expect(applyCountryNames("moving from the united states")).toBe("moving from the United States");
-    expect(applyCountryNames("depuis l'allemagne")).toBe("depuis l'Allemagne");
-    expect(applyCountryNames("quitter la france")).toBe("quitter la France");
+  it("capitalises other known country names (US/France)", () => {
+    expect(applyCountryNames("flying from the united states")).toBe("flying from the United States");
+    expect(applyCountryNames("les alpes en france")).toBe("les alpes en France");
   });
 });
 
 describe("normalizeTitleCasing", () => {
   it("capitalises an autocomplete-style lowercase EN title and its acronym", () => {
-    expect(normalizeTitleCasing("lpp buy-in switzerland: what it costs")).toBe("LPP buy-in Switzerland: what it costs");
+    expect(normalizeTitleCasing("vip arrival at geneva airport: what to expect")).toBe("VIP arrival at Geneva airport: what to expect");
   });
 
   it("capitalises an autocomplete-style lowercase FR title", () => {
-    expect(normalizeTitleCasing("rachat lpp en suisse : ce qu'il faut savoir")).toBe("Rachat LPP en Suisse : ce qu'il faut savoir");
-  });
-
-  it("capitalises an autocomplete-style lowercase DE title without lowercasing German nouns", () => {
-    expect(normalizeTitleCasing("lpp einkauf in der schweiz: was er kostet")).toBe("LPP einkauf in der Schweiz: was er kostet");
-  });
-
-  it("never lowercases German capitalised common nouns", () => {
-    const input = "Pensionskasse und Vorsorgeausweis in der Schweiz";
-    expect(normalizeTitleCasing(input)).toBe(input);
+    expect(normalizeTitleCasing("chauffeur vtc à zermatt : ce qu'il faut savoir")).toBe("Chauffeur VTC à Zermatt : ce qu'il faut savoir");
   });
 
   it("is idempotent", () => {
-    const once = normalizeTitleCasing("avs contributions for us expats in switzerland");
+    const once = normalizeTitleCasing("vip weekends for us visitors in verbier");
     expect(normalizeTitleCasing(once)).toBe(once);
   });
 
   it("only ever raises case, never lowers it", () => {
-    const input = "CHF 435,000 minimum tax base and the AHV/AVS threshold";
+    const input = "Chalet Opening, Ski Passes and the VIP Lounge";
     expect(normalizeTitleCasing(input)).toBe(input);
   });
 
@@ -108,12 +94,10 @@ describe("normalizeTitleCasing", () => {
 
 describe("normalizeH2Headings", () => {
   it("capitalises the first letter of every H2 heading, leaving other lines untouched", () => {
-    const body = ["intro paragraph.", "", "## what counts as domicile?", "some text.", "### not touched (h3)", "## avs contributions explained"].join(
-      "\n",
-    );
+    const body = ["intro paragraph.", "", "## when should you book?", "some text.", "### not touched (h3)", "## vip arrivals explained"].join("\n");
     const out = normalizeH2Headings(body);
-    expect(out).toContain("## What counts as domicile?");
-    expect(out).toContain("## AVS contributions explained");
+    expect(out).toContain("## When should you book?");
+    expect(out).toContain("## VIP arrivals explained");
     expect(out).toContain("### not touched (h3)");
     expect(out).toContain("intro paragraph.");
   });
@@ -130,21 +114,21 @@ describe("normalizeArticleCasing", () => {
   it("normalises title, description, faq questions and H2 headings on a {data, body} article", () => {
     const article = {
       data: {
-        title: "lpp buy-in in switzerland: a practical guide",
-        description: "avs and lpp coordination for new residents moving from the united kingdom.",
+        title: "vip arrival in geneva: a practical note",
+        description: "vtc transfers and chalet openings for guests arriving from the united kingdom.",
         faq: [
-          { q: "what is the lpp buy-in?", a: "an explanation." },
-          { q: "How does AVS work?", a: "an explanation." },
+          { q: "what is a vip arrival?", a: "an explanation." },
+          { q: "How does a VTC transfer work?", a: "an explanation." },
         ],
       },
-      body: "Intro.\n\n## avs contributions explained\n\nMore text.\n\n## how we help\n\nLink.",
+      body: "Intro.\n\n## vtc transfers explained\n\nMore text.\n\n## how we help\n\nLink.",
     };
     normalizeArticleCasing(article);
-    expect(article.data.title).toBe("LPP buy-in in Switzerland: a practical guide");
-    expect(article.data.description).toBe("AVS and LPP coordination for new residents moving from the United Kingdom.");
-    expect(article.data.faq[0].q).toBe("What is the LPP buy-in?");
-    expect(article.data.faq[1].q).toBe("How does AVS work?");
-    expect(article.body).toContain("## AVS contributions explained");
+    expect(article.data.title).toBe("VIP arrival in Geneva: a practical note");
+    expect(article.data.description).toBe("VTC transfers and chalet openings for guests arriving from the United Kingdom.");
+    expect(article.data.faq[0].q).toBe("What is a VIP arrival?");
+    expect(article.data.faq[1].q).toBe("How does a VTC transfer work?");
+    expect(article.body).toContain("## VTC transfers explained");
     expect(article.body).toContain("## How we help");
   });
 
@@ -155,17 +139,17 @@ describe("normalizeArticleCasing", () => {
 
 describe("startsWithLowercase", () => {
   it("flags a lowercase leading letter", () => {
-    expect(startsWithLowercase("pension fund buy-in")).toBe(true);
+    expect(startsWithLowercase("private chauffeur")).toBe(true);
   });
 
   it("does not flag an uppercase leading letter", () => {
-    expect(startsWithLowercase("Pension fund buy-in")).toBe(false);
+    expect(startsWithLowercase("Private chauffeur")).toBe(false);
   });
 
   it("skips leading digits/punctuation to find the first letter", () => {
     // Leading non-letters are skipped entirely; the check is on the first *letter*.
-    expect(startsWithLowercase("7× Rent rule explained")).toBe(false);
-    expect(startsWithLowercase("7× rent rule explained")).toBe(true);
+    expect(startsWithLowercase("3 Chalets ready")).toBe(false);
+    expect(startsWithLowercase("3 chalets ready")).toBe(true);
     expect(startsWithLowercase('"Quoted" title')).toBe(false);
   });
 

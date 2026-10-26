@@ -24,7 +24,7 @@ export const BOT_BLOCKING_DOMAINS = [
   "gov.il",
 ];
 
-const UA = "Mozilla/5.0 (compatible; switzerlandresidency-link-check/1.0; +https://switzerlandresidency.ch)";
+const UA = "Mozilla/5.0 (compatible; thevalet-link-check/1.0; +https://thevalet.ch)";
 const okStatus = (s) => s >= 200 && s < 400;
 
 function errorKind(err) {

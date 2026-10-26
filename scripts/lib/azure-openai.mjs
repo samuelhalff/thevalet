@@ -1,7 +1,10 @@
 /**
- * Minimal Azure OpenAI chat-completions client (fetch only, no SDK), ported from ark-fid.ch's
- * ai-ressources-update.js: URL normalisation, JSON mode, retry with Retry-After, and the
- * gpt-5 / o-series token-parameter difference.
+ * LEGACY — will be replaced. Azure Foundry is being retired and the model for The Valet's
+ * journal pipeline is still to be decided; this client is kept only so the pipeline code still
+ * parses and its unit tests run. Do not rely on it (the ai-articles workflow is disabled).
+ *
+ * Minimal Azure OpenAI chat-completions client (fetch only, no SDK): URL normalisation, JSON
+ * mode, retry with Retry-After, and the gpt-5 / o-series token-parameter difference.
  */
 
 export function ensureHttpsUrl(input) {

@@ -1,13 +1,11 @@
 name: Build and deploy
 
+# DISABLED (2026-10-26): hosting for thevalet.ch is not decided yet (awaiting the SSH host).
+# Only manual runs are possible; push and schedule triggers are removed on purpose. When the host
+# is known, replace the FTPS step with the SSH deploy and re-add `push: branches: [main]`.
+# No secrets live in this repository: they are GitHub secrets / variables.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
-  # Daily rebuild publishes pages whose `publishAt` date has come (see src/lib/content.ts).
-  # The incremental deploy uploads nothing when nothing changed.
-  schedule:
-    - cron: "15 5 * * *"
 
 concurrency:
   group: deploy-production
@@ -21,12 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://switzerlandresidency.ch' }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://thevalet.ch' }}
       # Keep "true" until HTTPS is live (noindex + robots Disallow).
       NEXT_PUBLIC_NOINDEX: ${{ vars.NEXT_PUBLIC_NOINDEX || 'true' }}
       NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
       NEXT_PUBLIC_FORMSPARK_ID: ${{ vars.NEXT_PUBLIC_FORMSPARK_ID || secrets.NEXT_PUBLIC_FORMSPARK_ID }}
       NEXT_PUBLIC_WHATSAPP: ${{ vars.NEXT_PUBLIC_WHATSAPP || secrets.NEXT_PUBLIC_WHATSAPP }}
+      NEXT_PUBLIC_CONTACT_PHONE: ${{ vars.NEXT_PUBLIC_CONTACT_PHONE }}
+      NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.NEXT_PUBLIC_CONTACT_EMAIL }}
+      NEXT_PUBLIC_COMPANY_NAME: ${{ vars.NEXT_PUBLIC_COMPANY_NAME }}
+      NEXT_PUBLIC_COMPANY_UID: ${{ vars.NEXT_PUBLIC_COMPANY_UID }}
+      NEXT_PUBLIC_COMPANY_STREET: ${{ vars.NEXT_PUBLIC_COMPANY_STREET }}
+      NEXT_PUBLIC_COMPANY_POSTCODE: ${{ vars.NEXT_PUBLIC_COMPANY_POSTCODE }}
+      NEXT_PUBLIC_COMPANY_CITY: ${{ vars.NEXT_PUBLIC_COMPANY_CITY }}
+      NEXT_PUBLIC_COMPANY_RESPONSIBLE: ${{ vars.NEXT_PUBLIC_COMPANY_RESPONSIBLE }}
+      NEXT_PUBLIC_HOSTING_PROVIDER: ${{ vars.NEXT_PUBLIC_HOSTING_PROVIDER }}
+      NEXT_PUBLIC_SAME_AS: ${{ vars.NEXT_PUBLIC_SAME_AS }}
       NEXT_TELEMETRY_DISABLED: "1"
     steps:
       - uses: actions/checkout@v6
@@ -46,6 +54,7 @@ jobs:
 
       - name: Check export
         run: |
+          test -f out/fr/index.html
           test -f out/en/index.html
           test -f out/404.html
           test -f out/.htaccess
@@ -68,27 +77,17 @@ jobs:
           # 2) Real deploy.
           python3 scripts/deploy-ftp.py
 
-      - name: Smoke test (HTTPS, redirects, protected paths)
+      - name: Smoke test (HTTPS, redirects)
         run: |
           set -u
-          base="https://switzerlandresidency.ch"
+          base="${NEXT_PUBLIC_SITE_URL}"
           fail=0
           check() {
             code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$1")
             if [ "$code" = "$2" ]; then echo "OK   $1 → $code"; else echo "FAIL $1 → $code (expected $2)"; fail=1; fi
           }
-          redirect() {
-            got=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' --max-time 20 "$1")
-            if [ "$got" = "301 $2" ]; then echo "OK   $1 → 301 $2"; else echo "FAIL $1 → $got (expected 301 $2)"; fail=1; fi
-          }
           sleep 5
-          check "$base/en/" 200
           check "$base/fr/" 200
-          check "$base/de/" 200
-          # Old hacked WordPress was deleted on 2026-10-01: neither it nor its archive may be served.
-          check "$base/_archive-2026-09-30/index.php" 404
-          check "$base/wp-login.php" 404
+          check "$base/en/" 200
           check "$base/.deploy-manifest.json" 403
-          redirect "http://switzerlandresidency.ch/en/" "https://switzerlandresidency.ch/en/"
-          redirect "https://www.switzerlandresidency.ch/en/" "https://switzerlandresidency.ch/en/"
           exit $fail

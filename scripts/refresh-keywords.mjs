@@ -17,7 +17,7 @@
  */
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { existingGuideSlugs, loadBacklog, saveBacklog } from "./lib/article-pipeline.mjs";
+import { existingArticleSlugs, loadBacklog, saveBacklog } from "./lib/article-pipeline.mjs";
 import { researchKeywords } from "./lib/keyword-research.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -46,7 +46,7 @@ export function applyResearch(item, research, date) {
 
 async function main() {
   const backlog = loadBacklog(ROOT);
-  const existing = existingGuideSlugs(ROOT);
+  const existing = existingArticleSlugs(ROOT);
   const todo = backlog.items
     .filter((i) => i.status === "todo" && !existing.has(i.slug))
     .filter((i) => !onlySlug || i.slug === onlySlug)

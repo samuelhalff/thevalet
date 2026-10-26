@@ -4,7 +4,7 @@
  * A fact is kept only if the model supplied a verbatim evidence quote that is found on the page
  * (after whitespace/typography normalisation), the quote contains the fact's key terms, and every
  * number in the claim appears in the quote with the same unit. Anything else is discarded — it
- * never reaches the prompt or the grounding corpus. Nothing here writes to research/legal-facts.md:
+ * never reaches the prompt or the grounding corpus. Nothing here writes to the fact base:
  * verified research only lives for one run (and in the run state file).
  */
 import { buildFactIndex, extractNumbers, numberMentions, tokens } from "./article-pipeline.mjs";
@@ -72,10 +72,10 @@ function looksEnglish(text) {
   return en >= foreign;
 }
 
-/** Numbers of a text, read with every locale's separators (pages are EN, FR or DE). */
+/** Numbers of a text, read with every locale's separators (pages may use EN or FR/DE separators; "fr" covers both comma-decimal styles). */
 function numbersAnyLocale(text) {
   const out = new Set();
-  for (const l of ["en", "fr", "de"]) for (const n of extractNumbers(text, l)) out.add(n);
+  for (const l of ["en", "fr"]) for (const n of extractNumbers(text, l)) out.add(n);
   return out;
 }
 
@@ -138,7 +138,7 @@ export async function fetchPageText(url, { fetchImpl = fetch, timeoutMs = 15000 
     const res = await fetchImpl(url, {
       redirect: "follow",
       signal: controller.signal,
-      headers: { "User-Agent": "Mozilla/5.0 (compatible; switzerlandresidency-research-check/1.0)" },
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; thevalet-research-check/1.0)" },
     });
     if (!res.ok || !/html|text\/plain/i.test(res.headers.get("content-type") ?? "")) return null;
     return htmlToText((await res.text()).slice(0, 3_000_000));

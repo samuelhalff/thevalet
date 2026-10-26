@@ -1,6 +1,6 @@
 /**
- * Deterministic casing normaliser for generated/translated guide frontmatter and body
- * headings (ESM port of ridger.ch's scripts/lib/titleCase.js).
+ * Deterministic casing normaliser for generated/translated journal frontmatter and body
+ * headings.
  *
  * The AI pipeline occasionally copies a lowercase autocomplete keyword straight into
  * `title`/`description`, or lowercases an acronym mid-sentence when translating. This
@@ -8,12 +8,9 @@
  * before the guardrails:
  *
  *   - capitalise the first letter of the string;
- *   - uppercase a whitelist of Swiss/legal acronyms, matched as whole words
- *     ("lpp" → "LPP", "avs" → "AVS");
- *   - capitalise known country names (Switzerland/Suisse/Schweiz, United Kingdom/
- *     Royaume-Uni, …);
- *   - never lowercase anything — German capitalises common nouns
- *     ("PK-Einkauf", "Pensionskasse") and this module must not undo that.
+ *   - uppercase a whitelist of acronyms, matched as whole words ("vtc" → "VTC");
+ *   - capitalise known place and country names (Genève/Geneva, Courchevel, Royaume-Uni, …);
+ *   - never lowercase anything.
  *
  * It is intentionally dumb: it never rewords, reorders or removes text — only the casing
  * of existing characters can change. That keeps every replacement length-preserving and
@@ -21,69 +18,29 @@
  * verify.
  */
 
-// Swiss/legal acronyms that must render in upper case as whole words.
+// Acronyms that must render in upper case as whole words.
 // Matched case-insensitively, word-bounded; canonical display form given here.
-export const ACRONYMS = [
-  "LPP",
-  "BVG",
-  "AVS",
-  "AHV",
-  "LAMal",
-  "KVG",
-  "IFD",
-  "DBG",
-  "LIFD",
-  "LHID",
-  "StHG",
-  "AIG",
-  "LEI",
-  "AFC",
-  "ESTV",
-  "SEM",
-  "CHF",
-  "EU",
-  "UE",
-  "EFTA",
-  "AELE",
-  "FZA",
-  "ALCP",
-  "UK",
-  "US",
-  "FIG",
-  "TRF",
-  "IHT",
-  "FATCA",
-];
+export const ACRONYMS = ["UK", "US", "EU", "UE", "VIP", "VTC", "GVA", "FBO"];
 
-// Proper nouns (country names) that must be capitalised whenever they occur.
+// Proper nouns (places, countries) that must be capitalised whenever they occur.
 export const COUNTRY_NAMES = [
-  "Switzerland",
   "Suisse",
-  "Schweiz",
-  "United Kingdom",
-  "Royaume-Uni",
-  "Grossbritannien",
-  "Großbritannien",
-  "United States",
-  "États-Unis",
-  "Vereinigte Staaten",
-  "Germany",
-  "Allemagne",
-  "Deutschland",
   "France",
-  "Frankreich",
   "Italy",
   "Italie",
-  "Italien",
-  "Canada",
-  "Kanada",
-  "Portugal",
-  "Spain",
-  "Espagne",
-  "Spanien",
-  "Austria",
-  "Autriche",
-  "Österreich",
+  "United Kingdom",
+  "Royaume-Uni",
+  "United States",
+  "Geneva",
+  "Genève",
+  "Lausanne",
+  "Montreux",
+  "Gstaad",
+  "Verbier",
+  "Zermatt",
+  "Courchevel",
+  "Megève",
+  "Chamonix",
   "Dubai",
 ];
 
@@ -103,7 +60,7 @@ export function capitalizeFirst(str) {
   return lead + first.toUpperCase() + rest;
 }
 
-/** Uppercase every whole-word occurrence of a known Swiss/legal acronym. */
+/** Uppercase every whole-word occurrence of a known acronym. */
 export function applyAcronyms(str) {
   if (typeof str !== "string" || !str) return str;
   let out = str;
@@ -114,7 +71,7 @@ export function applyAcronyms(str) {
   return out;
 }
 
-/** Capitalise every whole-word occurrence of a known country name. */
+/** Capitalise every whole-word occurrence of a known place or country name. */
 export function applyCountryNames(str) {
   if (typeof str !== "string" || !str) return str;
   let out = str;
@@ -129,8 +86,7 @@ export function applyCountryNames(str) {
  * Normalise a single title-like field (title, description, a FAQ question, an H2
  * heading, …) for any locale.
  *
- * Locale-agnostic by design: it only ever raises case, never lowers it, which already
- * satisfies "for DE don't lowercase anything" (German capitalises common nouns).
+ * Locale-agnostic by design: it only ever raises case, never lowers it.
  */
 export function normalizeTitleCasing(str) {
   if (typeof str !== "string" || !str) return str;
@@ -145,7 +101,7 @@ export function normalizeTitleCasing(str) {
 const H2_LINE_RE = /^(##)(?!#)(\s+)(.*)$/;
 
 /**
- * Apply normalizeTitleCasing to the text of every "## …" H2 heading in a guide's
+ * Apply normalizeTitleCasing to the text of every "## …" H2 heading in an article's
  * Markdown body. Non-heading lines (and H3+/H1 lines) are left untouched.
  */
 export function normalizeH2Headings(body) {
@@ -161,7 +117,7 @@ export function normalizeH2Headings(body) {
 }
 
 /**
- * Normalise the casing-sensitive fields of a freshly generated/translated guide in
+ * Normalise the casing-sensitive fields of a freshly generated/translated article in
  * place: frontmatter `title`, `description`, every FAQ question (`faq[].q`), and every
  * H2 heading in `body`. Accepts either the `{ data, body }` shape used by this pipeline
  * (scripts/lib/article-pipeline.mjs) or a flat `{ title, description, faq, body, ... }`

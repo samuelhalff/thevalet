@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Ping search engines with the sitemap URL (port of ark-fid.ch's scripts/ping-sitemaps.js).
+ * Ping search engines with the sitemap URL.
  * Best effort, never fails: Google retired its ping endpoint in 2023 and Bing prefers IndexNow
  * (scripts/indexnow.mjs), so a 404/410 here is expected and only logged.
  *
- *   node scripts/ping-sitemaps.mjs [--url https://switzerlandresidency.ch] [--path /sitemap.xml]
+ *   node scripts/ping-sitemaps.mjs [--url https://thevalet.ch] [--path /sitemap.xml]
  */
 const args = process.argv.slice(2);
 const arg = (name, def) => {
@@ -12,7 +12,7 @@ const arg = (name, def) => {
   return i >= 0 && args[i + 1] ? args[i + 1] : def;
 };
 
-const site = arg("--url", process.env.NEXT_PUBLIC_SITE_URL || "https://switzerlandresidency.ch").replace(/\/$/, "");
+const site = arg("--url", process.env.NEXT_PUBLIC_SITE_URL || "https://thevalet.ch").replace(/\/$/, "");
 const sitemap = `${site}${arg("--path", "/sitemap.xml")}`;
 const endpoints = [
   `https://www.google.com/ping?sitemap=${encodeURIComponent(sitemap)}`,

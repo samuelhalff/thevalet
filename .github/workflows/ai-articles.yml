@@ -1,12 +1,14 @@
-name: AI guides (every 3 days)
-
-# Generates one new guide (EN + FR + DE) from content/backlog.json, runs the guardrails and the
-# build, commits to main (which triggers "Build and deploy") and, once the site is indexable,
-# pings the sitemap and IndexNow. See README → "Automated guides". Pause: disable this workflow.
+# DISABLED (2026-10-26). When re-enabled: cadence max 2 articles per month (2nd and 16th,
+# cron `0 5 2,16 * *`), FR + EN only, model to be decided (Azure Foundry is being retired).
+# The editorial brief and fact base for The Valet are still stubs (see scripts/lib/article-pipeline.mjs),
+# so this workflow must not be relied on. Do not add a `schedule` trigger until both are written.
+#
+# Generates one new journal article (FR + EN) from content/backlog.json, runs the guardrails and
+# the build, commits to main (which triggers "Build and deploy") and, once the site is indexable,
+# pings the sitemap and IndexNow.
+name: Journal articles (disabled)
 
 on:
-  schedule:
-    - cron: "0 5 2,16 * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -23,7 +25,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write # commit the new guide
+  contents: write # commit the new article
   actions: write # dispatch deploy.yml when pushing with GITHUB_TOKEN
 
 jobs:
@@ -32,7 +34,7 @@ jobs:
     timeout-minutes: 60
     env:
       HAS_PAT: ${{ secrets.PAT_TOKEN != '' }}
-      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://switzerlandresidency.ch' }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://thevalet.ch' }}
       NEXT_PUBLIC_NOINDEX: ${{ vars.NEXT_PUBLIC_NOINDEX || 'true' }}
       NEXT_TELEMETRY_DISABLED: "1"
       AI_ARTICLE_STATE: ${{ github.workspace }}/../ai-article-state.json
@@ -50,7 +52,7 @@ jobs:
 
       - run: npm ci --no-audit --no-fund
 
-      - name: Generate guide (Azure OpenAI)
+      - name: Generate article (legacy Azure OpenAI client, model to be decided)
         id: gen
         timeout-minutes: 32
         env:
@@ -92,8 +94,8 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "content/en/guides/$SLUG.md" "content/fr/guides/$SLUG.md" "content/de/guides/$SLUG.md" content/backlog.json
-          git commit -m "content(guides): $TITLE (EN/FR/DE)"
+          git add "content/fr/journal/$SLUG.md" "content/en/journal/$SLUG.md" content/backlog.json
+          git commit -m "content(journal): $TITLE (FR/EN)"
           for i in 1 2 3; do
             git fetch origin main
             before=$(git rev-parse HEAD)
@@ -118,14 +120,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main
 
-      - name: Wait for the new guide to go live
+      - name: Wait for the new article to go live
         id: live
         if: ${{ steps.push.outputs.pushed == 'true' && env.NEXT_PUBLIC_NOINDEX != 'true' }}
         continue-on-error: true
         env:
           SLUG: ${{ steps.gen.outputs.slug }}
         run: |
-          url="$NEXT_PUBLIC_SITE_URL/en/guides/$SLUG/"
+          url="$NEXT_PUBLIC_SITE_URL/fr/journal/$SLUG/"
           for i in $(seq 1 30); do
             code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$url" || true)
             if [ "$code" = "200" ]; then echo "live after $i checks"; exit 0; fi

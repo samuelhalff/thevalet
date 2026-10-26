@@ -1,10 +1,14 @@
 /**
- * Reference-source policy for published guides (port of ark-fid.ch's referenceValidator idea).
+ * Reference-source policy for published journal articles.
  *
  * Public `sources` must point to official authorities. A small second tier ("institutional":
- * tourism boards, schools) is tolerated for lifestyle facts but never counts towards the
- * minimum number of official sources. Anything else — law firms, fiduciaries, Big 4, relocation
- * agencies, press, competitors, our own group sites — is rejected.
+ * tourism boards, airports, resorts) is tolerated for practical facts but never counts towards
+ * the minimum number of official sources. Anything else — press, competitors, partners, our own
+ * site — is rejected.
+ *
+ * STUB (The Valet): the domain lists below are a neutral starting point (public portals of the
+ * places The Valet operates in: Geneva, Vaud, Valais, the French Alps). Review them together with
+ * the editorial brief before re-enabling the pipeline.
  *
  * Runtime additions: REFERENCE_ALLOWED_DOMAINS="example.gov,other.gov" (comma-separated).
  * The blocklist always wins over runtime additions.
@@ -15,84 +19,37 @@ export const OFFICIAL_DOMAINS = [
   // Swiss federal government and portal
   "admin.ch",
   "ch.ch",
-  // All 26 cantons
-  "ag.ch", "ai.ch", "ar.ch", "be.ch", "bl.ch", "bs.ch", "fr.ch", "ge.ch", "gl.ch", "gr.ch", "ju.ch",
-  "lu.ch", "ne.ch", "nw.ch", "ow.ch", "sg.ch", "sh.ch", "so.ch", "sz.ch", "tg.ch", "ti.ch", "ur.ch",
-  "vd.ch", "vs.ch", "zg.ch", "zh.ch",
-  // Swiss official bodies
-  "ahv-iv.ch",
-  "finma.ch",
-  "snb.ch",
-  "zefix.ch",
-  // Origin-country and international authorities
-  "gov.uk",
-  "legislation.gov.uk",
-  "irs.gov",
-  "treasury.gov",
-  "state.gov",
-  "legifrance.gouv.fr",
-  "impots.gouv.fr",
+  // Geneva, Vaud, Valais (official portals)
+  "ge.ch",
+  "vd.ch",
+  "vs.ch",
+  // France (French Alps side)
   "service-public.fr",
-  "economie.gouv.fr",
-  "gesetze-im-internet.de",
-  "bundesfinanzministerium.de",
-  "bzst.de",
-  "bmf.gv.at",
-  "ris.bka.gv.at",
-  "agenziaentrate.gov.it",
-  "fiscooggi.it",
-  "finances.belgium.be",
-  "belastingdienst.nl",
-  "portaldasfinancas.gov.pt",
-  "agenciatributaria.gob.es",
-  "skatteetaten.no",
-  "skatteverket.se",
-  "canada.ca",
-  "incometaxindia.gov.in",
-  "iras.gov.sg",
-  "ird.gov.hk",
-  "tax.gov.ae",
-  "u.ae",
-  "monservicepublic.gouv.mc",
-  "gov.mc",
-  "sars.gov.za",
-  "ato.gov.au",
-  "gov.il",
-  "oecd.org",
+  "legifrance.gouv.fr",
+  "gouv.fr",
+  // International
   "europa.eu",
 ];
 
-/** Tolerated for lifestyle facts (tourism boards, schools); never counted as official. */
+/** Tolerated for practical facts (tourism boards, airports); never counted as official. */
 export const INSTITUTIONAL_DOMAINS = [
-  "myswitzerland.com",
   "geneve.com",
+  "gva.ch",
   "region-du-leman.ch",
   "valais.ch",
-  "ticino.ch",
-  "graubuenden.ch",
-  "luzern.com",
   "gstaad.ch",
-  "fribourgregion.ch",
-  "ecolint.ch",
-  "isl.ch",
-  "rosey.ch",
-  "aiglon.ch",
-  "zis.ch",
-  "icsz.ch",
-  "iszl.ch",
-  "isbasel.ch",
-  "tasis.ch",
-  "stgeorges.ch",
+  "verbier.ch",
+  "zermatt.ch",
+  "chamonix.com",
+  "courchevel.com",
+  "megeve.com",
 ];
 
-/** Never allowed, even via REFERENCE_ALLOWED_DOMAINS: our group sites, firms, competitors, aggregators. */
+/** Never allowed, even via REFERENCE_ALLOWED_DOMAINS: our own site, aggregators, social networks. */
 export const BLOCKED_DOMAINS = [
-  "switzerlandresidency.ch",
-  "ark-fid.ch",
-  "ridger.ch",
-  "pwc.ch", "pwc.com", "kpmg.ch", "kpmg.com", "deloitte.com", "ey.com", "bdo.ch", "grantthornton.ch",
-  "henleyglobal.com", "richmondchambers.com", "goldblum.ch", "pcd.ch", "lenzstaehelin.com",
+  "thevalet.ch",
   "wikipedia.org", "reddit.com", "quora.com", "medium.com", "linkedin.com", "facebook.com",
+  "instagram.com", "tripadvisor.com",
 ];
 
 export function parseDomainList(raw) {

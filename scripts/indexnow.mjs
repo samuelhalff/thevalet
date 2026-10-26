@@ -3,42 +3,38 @@
  * Submit URLs to IndexNow (Bing, Yandex, Seznam, Naver…). Best effort: never exits non-zero
  * unless --strict is passed.
  *
- *   node scripts/indexnow.mjs --slug <guide-slug>        # EN/FR/DE guide + guides index pages
- *   node scripts/indexnow.mjs https://…/en/ https://…/fr/ # explicit URLs
+ *   node scripts/indexnow.mjs --slug <journal-slug>      # FR/EN journal article + journal index pages
+ *   node scripts/indexnow.mjs https://…/fr/ https://…/en/ # explicit URLs
  *
- * Key: INDEXNOW_KEY env, else the committed key file public/<32-hex>.txt (IndexNow keys are
- * public by design; the file must be deployed at the site root for the key to verify).
- * Site: NEXT_PUBLIC_SITE_URL (default https://switzerlandresidency.ch).
+ * Key: INDEXNOW_KEY env only. If unset, the script logs a message and exits 0 (no key file is
+ * committed; when a key is adopted, deploy public/<key>.txt at the site root so it verifies).
+ * Site: NEXT_PUBLIC_SITE_URL (default https://thevalet.ch).
  */
-import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-
-export function findKey(root = ROOT, env = process.env) {
-  if (env.INDEXNOW_KEY) return env.INDEXNOW_KEY.trim();
-  const dir = path.join(root, "public");
-  for (const f of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
-    const m = /^([a-f0-9]{8,128})\.txt$/i.exec(f);
-    if (m && fs.readFileSync(path.join(dir, f), "utf8").trim() === m[1]) return m[1];
-  }
-  return null;
+export function findKey(env = process.env) {
+  const key = (env.INDEXNOW_KEY || "").trim();
+  return key || null;
 }
 
-export function guideUrls(site, slug) {
-  return ["en", "fr", "de"].flatMap((l) => [`${site}/${l}/guides/${slug}/`, `${site}/${l}/guides/`]);
+export function journalUrls(site, slug) {
+  return ["fr", "en"].flatMap((l) => [`${site}/${l}/journal/${slug}/`, `${site}/${l}/journal/`]);
 }
 
 async function main() {
   const args = process.argv.slice(2);
-  const site = (process.env.NEXT_PUBLIC_SITE_URL || "https://switzerlandresidency.ch").replace(/\/$/, "");
+  const site = (process.env.NEXT_PUBLIC_SITE_URL || "https://thevalet.ch").replace(/\/$/, "");
   const i = args.indexOf("--slug");
-  const urls = i >= 0 ? guideUrls(site, args[i + 1]) : args.filter((a) => /^https?:\/\//.test(a));
+  const urls = i >= 0 ? journalUrls(site, args[i + 1]) : args.filter((a) => /^https?:\/\//.test(a));
   const strict = args.includes("--strict");
   const key = findKey();
-  if (!key || !urls.length) {
-    console.log(`IndexNow skipped (${!key ? "no key" : "no URLs"}).`);
+  if (!key) {
+    console.log("IndexNow skipped: INDEXNOW_KEY is not set.");
+    process.exit(0);
+  }
+  if (!urls.length) {
+    console.log(`IndexNow skipped (no URLs).`);
     process.exit(strict ? 1 : 0);
   }
   const host = new URL(site).host;

@@ -1,6 +1,5 @@
 /**
- * Targeted, rule-preserving repairs for the guide pipeline (scripts/ai-article.mjs), ported from
- * ridger.ch's scripts/lib/translationRepair.js. None of these helpers relaxes a guardrail: they
+ * Targeted, rule-preserving repairs for the journal pipeline (scripts/ai-article.mjs). None of these helpers relaxes a guardrail: they
  * either drop something deterministically (sources that can never pass) or ask the model for a
  * narrow correction and accept the answer only when it passes the SAME checks as checkArticle.
  *
@@ -8,18 +7,20 @@
  *     policy or absent from the fact base. Never invents a replacement; if too few remain,
  *     checkArticle still reports it.
  *   - fitMetaFields(): title > 60, description outside 140–155, or either pasting the raw primary
- *     keyword query ("Self employed permit Switzerland non EU") → up to 3 small "rewrite to
+ *     keyword query ("private chauffeur geneva airport") → up to 3 small "rewrite to
  *     ≤ N characters, keep the keyword" calls with the rejected candidates fed back.
- *   - expectedLinks() / linkParity() / repairLinks(): every EN body link must survive translation
- *     (internal paths mapped to the locale); one targeted call puts dropped links back.
- *   - alignSourcesToEn(): translations keep the EN source URLs in the EN order.
+ *   - expectedLinks() / linkParity() / repairLinks(): every source-locale (FR) body link must
+ *     survive translation (internal paths mapped to the locale); one targeted call puts dropped
+ *     links back. STUB (The Valet): service pages have locale-specific slugs, so a plain
+ *     /fr/ → /en/ prefix swap is only right for same-slug pages; a FR→EN slug map is still to do.
+ *   - alignSourcesToSource(): translations keep the source-locale URLs in the same order.
  *   - requirementsBlock() / repairFeedback(): exact limits and errors for every retry prompt.
  *   - generateWithRepair(): the attempt loop; the final attempt escalates to the strong
  *     deployment when one is configured.
  *
  * The model is injected as `call(prompt, label) → Promise<object>` so tests can mock it.
  */
-import { checkContentRules, countWords, extractFigures, keywordCoverage, rawKeywordIssues, searchMetaIssues } from "./article-pipeline.mjs";
+import { SOURCE_LOCALE, checkContentRules, countWords, extractFigures, keywordCoverage, rawKeywordIssues, searchMetaIssues } from "./article-pipeline.mjs";
 import { classifySource } from "./source-policy.mjs";
 import { startsWithLowercase } from "./title-case.mjs";
 
@@ -35,7 +36,7 @@ export const MIN_SOURCES = 3;
 export const MIN_OFFICIAL_SOURCES = 2;
 export const MAX_SOURCES = 6;
 
-const LANGUAGE = { en: "British English", fr: "Swiss French", de: "Swiss High German" };
+const LANGUAGE = { en: "British English", fr: "French (as written in Geneva)" };
 
 // ---------------------------------------------------------------------------
 // Sources
@@ -102,19 +103,19 @@ export function cleanSources(sources, { sourceText = "" } = {}) {
 }
 
 /**
- * Translations must cite exactly the EN URLs in the EN order: keep the translated label of each
- * EN URL when the model returned it, else fall back to the EN label.
+ * Translations must cite exactly the source-locale URLs in the same order: keep the translated
+ * label of each URL when the model returned it, else fall back to the source label.
  */
-export function alignSourcesToEn(localeSources, enSources) {
+export function alignSourcesToSource(localeSources, srcSources) {
   const list = Array.isArray(localeSources) ? localeSources : [];
   const labelOf = (s) => String(s?.label ?? "").trim();
   const urlOf = (s) => String(s?.url ?? "").trim();
-  const enUrls = new Set(enSources.map((s) => s.url));
-  // locale sources whose URL was mangled: their labels are reused, in order, for unmatched EN URLs
-  const orphans = list.filter((s) => !enUrls.has(urlOf(s)) && labelOf(s));
-  return enSources.map((en) => {
-    const sameUrl = list.find((s) => urlOf(s) === en.url);
-    return { label: labelOf(sameUrl) || labelOf(orphans.shift()) || en.label, url: en.url };
+  const srcUrls = new Set(srcSources.map((s) => s.url));
+  // locale sources whose URL was mangled: their labels are reused, in order, for unmatched URLs
+  const orphans = list.filter((s) => !srcUrls.has(urlOf(s)) && labelOf(s));
+  return srcSources.map((src) => {
+    const sameUrl = list.find((s) => urlOf(s) === src.url);
+    return { label: labelOf(sameUrl) || labelOf(orphans.shift()) || src.label, url: src.url };
   });
 }
 
@@ -124,8 +125,8 @@ export function alignSourcesToEn(localeSources, enSources) {
 
 /**
  * Title/description outside the limits, or (with `primary`) pasting the primary keyword as a raw
- * search query — normalizeArticleCasing() only capitalises such a query ("Self employed permit
- * Switzerland non EU"), so it has to be rewritten as a natural phrase instead.
+ * search query — normalizeArticleCasing() only capitalises such a query ("Private chauffeur
+ * geneva airport"), so it has to be rewritten as a natural phrase instead.
  */
 export function metaProblems(data, { primary = "", locale = "en" } = {}) {
   const out = [];
@@ -167,7 +168,7 @@ export function buildShortenPrompt({ locale, fields, primary, context = "" }) {
   const lines = fields.map((f) => {
     const verb =
       f.reason === "raw-query"
-        ? `rewrite as a natural, grammatical phrase — it pastes the raw search query "${primary}"; use correct capitalisation and hyphenation (e.g. "Self-employed permit in Switzerland for non-EU founders", not "Self employed permit Switzerland non EU")`
+        ? `rewrite as a natural, grammatical phrase — it pastes the raw search query "${primary}"; use correct capitalisation and hyphenation (e.g. "A private chauffeur to Geneva Airport", not "Private chauffeur geneva airport")`
         : f.length > f.max
           ? `shorten to AT MOST ${f.max} characters`
           : `lengthen to AT LEAST ${f.min} characters`;
@@ -176,7 +177,7 @@ export function buildShortenPrompt({ locale, fields, primary, context = "" }) {
     return `- ${f.field} (currently ${f.length} characters): ${verb} — ${range}; ${primary.length > f.max - 15 ? `the primary keyword "${primary}" is too long to fit whole — keep its main words (at least half of them, reordered or inflected as natural)` : `keep the primary keyword "${primary}" (its words may be reordered or inflected, not dropped)`}.\n  Current: ${JSON.stringify(f.value)}${rejected}`;
   });
   return [
-    `Rewrite the following ${LANGUAGE[locale] ?? locale} metadata fields of a Swiss residence guide so that each fits its character limit.`,
+    `Rewrite the following ${LANGUAGE[locale] ?? locale} metadata fields of a journal article for The Valet (a concierge service) so that each fits its character limit.`,
     "Keep the meaning, the language and the calm, factual tone. Keep every number exactly; do not add facts or figures. No prices, no promises, no guarantees. Start with a capital letter.",
     "Write natural, grammatical wording: work the keyword in as a real phrase (correct capitals and hyphens, prepositions where needed); never paste a search query verbatim and never mention searches or keywords.",
     "Count characters including spaces; aim a few characters inside the limit (title ≤ 57, description 145–152).",
@@ -251,14 +252,15 @@ function sentenceAround(body, index) {
   return s.slice(start, end).trim().slice(0, 400);
 }
 
-/** Every Markdown link of the EN body with its expected target in `locale` (/en/ → /<locale>/). */
-export function expectedLinks(enBody, locale) {
-  return [...String(enBody ?? "").matchAll(LINK_RE)].map((m) => {
+/** Every Markdown link of the source body with its expected target in `locale` (/fr/ → /<locale>/). */
+export function expectedLinks(srcBody, locale, srcLocale = SOURCE_LOCALE) {
+  const prefix = new RegExp(`^/${srcLocale}/`);
+  return [...String(srcBody ?? "").matchAll(LINK_RE)].map((m) => {
     const href = m[2].trim();
     return {
-      url: href.startsWith("/") ? normUrl(href.replace(/^\/en\//, `/${locale}/`)) : href,
-      enAnchor: m[1].trim(),
-      enSentence: sentenceAround(enBody, m.index),
+      url: href.startsWith("/") ? normUrl(href.replace(prefix, `/${locale}/`)) : href,
+      srcAnchor: m[1].trim(),
+      srcSentence: sentenceAround(srcBody, m.index),
     };
   });
 }
@@ -288,7 +290,7 @@ export function buildLinkRepairPrompt({ locale, body, expected, parity }) {
   const places = expected.filter((e) => missing.has(normUrl(e.url)));
   const urls = [...new Set(expected.map((e) => normUrl(e.url)))];
   return [
-    `The ${LANGUAGE[locale] ?? locale} translation below of an English guide lost or changed some Markdown links. Put them back.`,
+    `The ${LANGUAGE[locale] ?? locale} translation below of a ${LANGUAGE[SOURCE_LOCALE] ?? SOURCE_LOCALE} article lost or changed some Markdown links. Put them back.`,
     "",
     "RULES:",
     "- Return the SAME translated body; change nothing except the links (turn the matching words of the corresponding sentence into a Markdown link [anchor](url)). Do not add or remove headings, table rows, bullets, numbers or facts.",
@@ -296,8 +298,8 @@ export function buildLinkRepairPrompt({ locale, body, expected, parity }) {
     `- Required link counts per URL in the final body (exactly): ${urls.map((u) => `${u} ×${expected.filter((e) => normUrl(e.url) === u).length}`).join(" ; ")}.`,
     parity.extra.length ? `- Remove these surplus links (keep the anchor text as plain text): ${parity.extra.map((x) => `${x.url} (has ${x.actual}, expected ${x.expected})`).join(" ; ")}.` : "",
     "",
-    "MISSING LINKS — where they sit in the English original:",
-    ...places.map((p, i) => `${i + 1}. url: ${p.url}\n   English anchor: "${p.enAnchor}"\n   English sentence: "${p.enSentence}"`),
+    "MISSING LINKS — where they sit in the original:",
+    ...places.map((p, i) => `${i + 1}. url: ${p.url}\n   Original anchor: "${p.srcAnchor}"\n   Original sentence: "${p.srcSentence}"`),
     "",
     "TRANSLATED BODY:",
     body,
@@ -349,12 +351,12 @@ export function requirementsBlock({ locale, primary = "", words, sourceUrls = []
     `- title: at most ${META_LIMITS.title.max} characters, spaces included (aim ≤ ${META_LIMITS.title.max - 3})${primary ? `; contains "${primary}"` : ""}.`,
     `- description: ${META_LIMITS.description.min}–${META_LIMITS.description.max} characters, spaces included (aim 145–152)${primary ? `; contains "${primary}"` : ""}.`,
     `- body: ${words[0]}–${words[1]} words.`,
-    "- guarantees: never promise one (no \"we guarantee\", \"guaranteed approval\"). A question or a clear negation is fine (\"Does company formation guarantee a permit?\", \"it does not guarantee a permit\").",
+    "- guarantees: never promise one (no \"we guarantee\", \"guaranteed approval\"). A question or a clear negation is fine (\"Does booking early guarantee a table?\", \"it does not guarantee availability\").",
   ];
   if (parity) {
     lines.push(
-      `- same structure as EN: ${parity.h2} H2 sections, ${parity.faq} FAQ items, ${parity.sources.length} sources with exactly these URLs in this order: ${parity.sources.join(" , ")}.`,
-      `- body links (same count per URL as EN): ${parity.links.join(" , ") || "none"}.`,
+      `- same structure as the ${SOURCE_LOCALE.toUpperCase()} original: ${parity.h2} H2 sections, ${parity.faq} FAQ items, ${parity.sources.length} sources with exactly these URLs in this order: ${parity.sources.join(" , ")}.`,
+      `- body links (same count per URL as the original): ${parity.links.join(" , ") || "none"}.`,
     );
   } else {
     lines.push(

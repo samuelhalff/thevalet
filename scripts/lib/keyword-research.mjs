@@ -1,47 +1,39 @@
 /**
  * Keyword and trend research for one topic (best effort — never throws, never fails a run).
  *
- * - Autocomplete per market: EN (GB, US, AE, SG), FR (CH, FR, BE), DE (CH, DE, AT), seeded with
+ * - Autocomplete per market: FR (CH, FR, BE), EN (GB, US, AE), seeded with
  *   the backlog keywords plus question prefixes. Providers in fallback order: Google, Bing,
  *   DuckDuckGo (Google blocks datacenter IPs such as GitHub Actions runners).
  * - Pre-researched keywords (item.researchedKeywords, written by scripts/refresh-keywords.mjs from
  *   a normal machine) are used when live research yields no candidates; then the seeds.
- * - Trend signal: Google "trending now" RSS for CH/GB/FR/DE/AE, filtered to relocation/tax terms,
+ * - Trend signal: Google "trending now" RSS for CH/FR/GB, filtered to concierge-related terms,
  *   plus a demand proxy (how many markets return suggestions for the seeds).
  * - deriveKeywords() turns raw suggestions into a primary + secondary set per locale
  *   (deterministic fallback; the writer model may refine the choice from the same candidates).
  */
-import { tokens } from "./article-pipeline.mjs";
+import { LOCALES, SOURCE_LOCALE, tokens } from "./article-pipeline.mjs";
 
 export const MARKETS = {
-  en: [
-    { hl: "en", gl: "gb" },
-    { hl: "en", gl: "us" },
-    { hl: "en", gl: "ae" },
-    { hl: "en", gl: "sg" },
-  ],
   fr: [
     { hl: "fr", gl: "ch" },
     { hl: "fr", gl: "fr" },
     { hl: "fr", gl: "be" },
   ],
-  de: [
-    { hl: "de", gl: "ch" },
-    { hl: "de", gl: "de" },
-    { hl: "de", gl: "at" },
+  en: [
+    { hl: "en", gl: "gb" },
+    { hl: "en", gl: "us" },
+    { hl: "en", gl: "ae" },
   ],
 };
 
 const QUESTION_PREFIXES = {
-  en: ["how", "can", "what"],
   fr: ["comment", "combien", "quel"],
-  de: ["wie", "was", "kann"],
+  en: ["how", "can", "what"],
 };
 
 export const QUESTION_WORDS = {
-  en: /^(how|what|can|is|are|do|does|why|which|when|who|should|will)\b/i,
   fr: /^(comment|combien|quel|quelle|quels|quelles|pourquoi|est-ce|peut-on|faut-il|qui|quand|où)\b/i,
-  de: /^(wie|was|kann|welche|welcher|welches|wann|warum|wo|lohnt|muss|darf|wer|ist)\b/i,
+  en: /^(how|what|can|is|are|do|does|why|which|when|who|should|will)\b/i,
 };
 
 const IRRELEVANT =
@@ -56,10 +48,13 @@ export function isJunkKeyword(k) {
   return IRRELEVANT.test(k) || FORBIDDEN.test(k) || hasStaleYear(k);
 }
 /** Phrases the guardrails forbid (see CONTENT_RULES) are never proposed as keywords. */
-const FORBIDDEN = /by investment|par investissement|durch investition|183|guarantee|garanti/i;
-/** A suggestion must be about Switzerland (or contain every distinctive term of the main seed). */
-const SWISS = /suisse|swiss|switzerland|schweiz|svizzer|helvet|genève|geneva|genf|vaud|waadt|zurich|zürich|zug|zoug|ticino|tessin|valais|wallis|lugano|lausanne|lucerne|luzern|bern|graub|grisons|schwyz|thurgau|gstaad|verbier|st moritz|lex koller|forfait|pauschalbesteuerung|aufwandbesteuerung|ahv|avs/i;
-const GENERIC = new Set(["switzerland", "swiss", "suisse", "schweiz", "how", "long", "get", "combien", "temps", "wie", "lange"]);
+const FORBIDDEN = /guarantee|garanti|cheap|pas cher|discount|promo/i;
+/**
+ * A suggestion must name a place The Valet serves (or contain every distinctive term of the main
+ * seed). STUB (The Valet): confirm the list of places with the editorial brief.
+ */
+const LOCAL = /genève|geneve|geneva|léman|leman|lausanne|montreux|vaud|valais|gstaad|verbier|zermatt|crans|courchevel|megève|megeve|chamonix|méribel|meribel|val d'isère|alpes|alps|suisse|swiss/i;
+const GENERIC = new Set(["suisse", "swiss", "how", "long", "get", "combien", "temps"]);
 
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
@@ -181,7 +176,7 @@ export function deriveKeywords(rows, seeds, locale, { maxSecondary = 8 } = {}) {
       const k = s.toLowerCase().replace(/\s+/g, " ").trim();
       if (!k || k.length > 90 || isJunkKeyword(k)) return;
       const kTokens = new Set(tokens(k));
-      if (!SWISS.test(k) && !(distinctive.length && distinctive.every((t) => kTokens.has(t)))) return;
+      if (!LOCAL.test(k) && !(distinctive.length && distinctive.every((t) => kTokens.has(t)))) return;
       const overlap = tokens(k).filter((t) => seedTokens.has(t)).length;
       if (seedTokens.size && overlap === 0) return;
       const prev = score.get(k) ?? { keyword: k, score: 0, markets: new Set() };
@@ -207,10 +202,11 @@ export function deriveKeywords(rows, seeds, locale, { maxSecondary = 8 } = {}) {
   return { primary, secondary, questions, candidates: ranked.slice(0, 30) };
 }
 
+/** STUB (The Valet): trend filter terms to confirm with the editorial brief. */
 const TREND_RELEVANT =
-  /switzerland|swiss|suisse|schweiz|forfait|pauschal|lump[- ]sum|non[- ]dom|wealth tax|impôt|steuer|tax|permis|bewilligung|residen|lex koller|auswander|expat|inheritance|succession|erbschaft/i;
+  /genève|geneva|concierge|conciergerie|chauffeur|chalet|ski|yacht|jet privé|private jet|palace|salon|watches and wonders|auto show|salon de l'auto/i;
 
-export async function fetchTrendSignal(geos = ["CH", "GB", "FR", "DE", "AE"], opts = {}) {
+export async function fetchTrendSignal(geos = ["CH", "FR", "GB"], opts = {}) {
   const out = [];
   const errors = [];
   for (const geo of geos) {
@@ -303,9 +299,9 @@ export async function researchKeywords(
   const result = { locales: {}, trends: [], demand: {}, sources: {} };
   const state = { blocked: new Set() };
   const wait = rateLimiter(minIntervalMs);
-  for (const locale of ["en", "fr", "de"]) {
+  for (const locale of LOCALES) {
     const seeds = (item.keywords?.[locale] ?? []).filter(Boolean);
-    const effectiveSeeds = seeds.length ? seeds : locale === "en" ? [item.title] : [];
+    const effectiveSeeds = seeds.length ? seeds : locale === SOURCE_LOCALE ? [item.title] : [];
     let rows = [];
     let provider = null;
     if (!offline && effectiveSeeds.length) {

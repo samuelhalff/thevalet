@@ -1,4 +1,4 @@
-"""Serve the static export for the private preview (thevalet.houle.ai), never indexable.
+"""Serve the static export for the private preview (thevalet.ark-fid.ch), never indexable.
 
 Every response carries X-Robots-Tag: noindex; /robots.txt always disallows everything.
 Usage: python3 serve.py <out_dir> [port]

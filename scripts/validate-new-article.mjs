@@ -1,17 +1,21 @@
 #!/usr/bin/env node
 /**
- * Guardrails for a newly generated guide (EN + FR + DE). Run after scripts/ai-article.mjs.
+ * Guardrails for a newly generated journal article (FR source + EN translation). Run after
+ * scripts/ai-article.mjs.
  *
  *   node scripts/validate-new-article.mjs --slug <slug> [--discard-on-fail] [--skip-site-validator] [--skip-url-check]
  *
  * Without --slug it reads the slug from the run state file (AI_ARTICLE_STATE, written by the
  * generator). Checks: frontmatter, meta lengths, word count, structure, internal links, source
- * policy, wording rules (pricing, emails, guarantees, UNVERIFIED, legal-audit phrases), keyword
- * placement, EN/FR/DE number parity, every number grounded in the fact base, the full
+ * policy, wording rules (pricing, social proof, emails, guarantees, UNVERIFIED), keyword
+ * placement, FR/EN number parity, every number grounded in the fact base, the full
  * `node scripts/validate-content.mjs`, and finally a reachability re-check of every cited source
  * and external body link (skip with --skip-url-check, e.g. offline). Exit 1 with the reasons if
- * anything fails; with --discard-on-fail the three article files are deleted so nothing can be
+ * anything fails; with --discard-on-fail the article files are deleted so nothing can be
  * committed.
+ *
+ * STUB (The Valet): the fact base, categories and CTA target are stubs in
+ * scripts/lib/article-pipeline.mjs, so a real article will not pass until they are written.
  */
 import fs from "node:fs";
 import os from "node:os";
@@ -20,14 +24,15 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import {
   LOCALES,
+  SOURCE_LOCALE,
+  articlePath,
   buildAllowedLinks,
   checkArticle,
   checkArticleSet,
   buildFactIndex,
   extractLinks,
-  loadCategories,
   loadFactSources,
-  readGuide,
+  readArticle,
   stripUnverified,
   unverifiedOnlyNumbers,
 } from "./lib/article-pipeline.mjs";
@@ -55,25 +60,23 @@ export function runSiteValidator(root = ROOT) {
 export function validateNewArticle(slug, { root = ROOT, researchFacts = [], siteValidator = true } = {}) {
   const errors = [];
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug ?? "")) return { ok: false, errors: [`invalid slug "${slug}"`] };
-  const categories = loadCategories(root);
   const articles = {};
   for (const locale of LOCALES) {
-    const a = readGuide(root, locale, slug);
+    const a = readArticle(root, locale, slug);
     if (!a) {
-      errors.push(`${locale}: content/${locale}/guides/${slug}.md is missing`);
+      errors.push(`${locale}: ${path.relative(root, articlePath(root, locale, slug))} is missing`);
       continue;
     }
     articles[locale] = a;
   }
-  if (!articles.en) return { ok: false, errors };
-  const category = articles.en.data.category;
-  const legalFacts = loadFactSources(root); // legal-facts.md + verified audit sections
-  const factIndex = buildFactIndex(researchCorpus(stripUnverified(legalFacts), researchFacts));
+  if (!articles[SOURCE_LOCALE]) return { ok: false, errors };
+  const facts = loadFactSources(root); // STUB: empty until the fact base exists
+  const factIndex = buildFactIndex(researchCorpus(stripUnverified(facts), researchFacts));
   for (const locale of Object.keys(articles)) {
     const allowedLinks = new Set(buildAllowedLinks(root, locale).map((l) => l.url));
-    errors.push(...checkArticle(articles[locale], { locale, slug, category, categories, allowedLinks, factIndex }));
+    errors.push(...checkArticle(articles[locale], { locale, slug, allowedLinks, factIndex }));
   }
-  errors.push(...checkArticleSet(articles, { factIndex, unverifiedNumbers: unverifiedOnlyNumbers(legalFacts) }));
+  errors.push(...checkArticleSet(articles, { factIndex, unverifiedNumbers: unverifiedOnlyNumbers(facts) }));
 
   if (siteValidator) {
     const site = runSiteValidator(root);
@@ -95,7 +98,7 @@ export function researchCorpus(factBaseText, researchFacts = []) {
 export function articleUrls(root, slug) {
   const urls = [];
   for (const locale of LOCALES) {
-    const a = readGuide(root, locale, slug);
+    const a = readArticle(root, locale, slug);
     if (!a) continue;
     for (const s of Array.isArray(a.data.sources) ? a.data.sources : []) if (s?.url) urls.push(String(s.url));
     urls.push(...extractLinks(a.body).external);
@@ -105,7 +108,7 @@ export function articleUrls(root, slug) {
 
 export function discardArticle(slug, root = ROOT) {
   for (const locale of LOCALES) {
-    const file = path.join(root, "content", locale, "guides", `${slug}.md`);
+    const file = articlePath(root, locale, slug);
     if (fs.existsSync(file)) fs.rmSync(file);
   }
 }
@@ -130,14 +133,14 @@ async function main() {
     errors.push(...r.errors.map((e) => `source/link: ${e}`));
   }
   if (!errors.length) {
-    console.log(`✅ ${slug}: all guardrails passed (EN/FR/DE)`);
+    console.log(`✅ ${slug}: all guardrails passed (FR/EN)`);
     return;
   }
   console.error(`❌ ${slug}: ${errors.length} guardrail failure(s):`);
   for (const e of errors) console.error(`  - ${e}`);
   if (args.includes("--discard-on-fail")) {
     discardArticle(slug);
-    console.error(`🗑️  Discarded content/{en,fr,de}/guides/${slug}.md`);
+    console.error(`🗑️  Discarded content/{fr,en}/journal/${slug}.md`);
   }
   process.exit(1);
 }
