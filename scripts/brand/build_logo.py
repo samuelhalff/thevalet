@@ -1,8 +1,8 @@
-"""Build The Valet logo SVGs: outlined wordmark glyphs plus a drawn, fluid check-mark V.
+"""Build The Valet logo SVGs from outlined glyphs (no font needed to display them).
 
-The V keeps the original idea (a V that is also a check mark, in bordeaux) but is drawn
-as one calligraphic stroke: a full, rounded left arm and a fine right arm that sweeps
-up past the cap line, like a pen tick.
+Each variant is a list of lines; each line is a list of segments (text, face, size, role,
+tracking). Lines are centred. Role "accent" is bordeaux (light) / dusty rose (dark).
+A segment may use the drawn check-mark V ("tick") instead of a font glyph.
 
 Usage: python3 build_logo.py <fonts_dir> <out_dir> [variant ...]
 """
@@ -22,99 +22,127 @@ COLORS = {
     "dark": {"ink": "#F5EFEB", "accent": "#D5959E", "bg": "#171314"},
 }
 
-# name: (font file, axis location, tracking in em, V height in cap heights, V width factor)
-VARIANTS = {
-    "sans": ("Jost.ttf", {"wght": 430}, 0.0, 1.38, 0.92),
-    "serif": ("Cormorant.ttf", {"wght": 560}, 0.005, 1.42, 0.92),
-    "didone": ("Bodoni.ttf", {"wght": 430, "opsz": 28}, 0.0, 1.38, 0.9),
+FACES = {
+    "fraunces": ("Fraunces.ttf", {"SOFT": 100, "WONK": 1, "opsz": 144, "wght": 380}),
+    "fraunces-italic": ("FrauncesItalic.ttf", {"SOFT": 100, "WONK": 1, "opsz": 144, "wght": 380}),
+    "instrument": ("Instrument.ttf", None),
+    "instrument-italic": ("InstrumentItalic.ttf", None),
+    "gloock": ("Gloock.ttf", None),
+    "playfair": ("Playfair.ttf", {"wght": 420}),
+    "playfair-italic": ("PlayfairItalic.ttf", {"wght": 420}),
+    "belleza": ("Belleza.ttf", None),
+    "marcellus": ("Marcellus.ttf", None),
+    "tenor": ("Tenor.ttf", None),
+    "josefin": ("Josefin.ttf", {"wght": 300}),
+    "italiana": ("Italiana.ttf", None),
+    "serif": ("Cormorant.ttf", {"wght": 500}),
+    "serif-italic": ("CormorantItalic.ttf", {"wght": 500}),
+    "sans": ("Jost.ttf", {"wght": 380}),
 }
 
+# Segment: (text, face, size in px-per-em, role, tracking in em)
+VARIANTS = {
+    # Soft, ink-trapped display serif; the V borrows the italic's flowing stroke.
+    "fraunces": [[("The ", "fraunces", 100, "ink", -0.01), ("V", "fraunces-italic", 104, "accent", -0.02),
+                  ("alet", "fraunces", 100, "ink", -0.01)]],
+    # Condensed editorial serif (Instrument), italic bordeaux V.
+    "instrument": [[("The ", "instrument", 110, "ink", -0.005), ("V", "instrument-italic", 114, "accent", 0.0),
+                    ("alet", "instrument", 110, "ink", -0.005)]],
+    # Gloock: high-contrast, sculpted; V in Fraunces italic for fluidity.
+    "gloock": [[("The ", "gloock", 100, "ink", -0.01), ("V", "playfair-italic", 106, "accent", -0.01),
+                ("alet", "gloock", 100, "ink", -0.01)]],
+    # All-italic signature, one colour accent.
+    "playfair-italic": [[("The ", "playfair-italic", 100, "ink", 0.0), ("V", "playfair-italic", 100, "accent", 0.0),
+                         ("alet", "playfair-italic", 100, "ink", 0.0)]],
+}
 
-class Face:
-    def __init__(self, file, loc):
-        self.font = instantiateVariableFont(TTFont(FONTS / file), loc)
-        self.gs = self.font.getGlyphSet()
-        self.cmap = self.font.getBestCmap()
-        self.hmtx = self.font["hmtx"]
-        self.upm = self.font["head"].unitsPerEm
-        self.cap = self.font["OS/2"].sCapHeight
-
-    def name(self, ch):
-        return self.cmap[ord(ch)]
-
-    def bounds(self, ch):
-        bp = BoundsPen(self.gs)
-        self.gs[self.name(ch)].draw(bp)
-        return bp.bounds
-
-    def run(self, text, x, track):
-        """Outline `text` on baseline y=0 (SVG y-down). Returns (d, ink_right)."""
-        parts = []
-        for ch in text:
-            n = self.name(ch)
-            pen = SVGPathPen(self.gs)
-            self.gs[n].draw(TransformPen(pen, (1, 0, 0, -1, x, 0)))
-            parts.append(pen.getCommands())
-            right = x + self.bounds(ch)[2]
-            x += self.hmtx[n][0] + track
-        return " ".join(parts), right
+_faces = {}
 
 
-def fluid_v(x, top, H, wf):
-    """Calligraphic check-mark V in a box of height H (top at y=top), width wf*H.
+def face(key):
+    if key not in _faces:
+        file, loc = FACES[key]
+        f = TTFont(FONTS / file)
+        if loc:
+            f = instantiateVariableFont(f, loc)
+        _faces[key] = (f, f.getGlyphSet(), f.getBestCmap(), f["hmtx"], f["head"].unitsPerEm,
+                       f["OS/2"].sCapHeight)
+    return _faces[key]
 
-    Left arm: full, rounded head, tapering into a soft vertex.
-    Right arm: fine stroke sweeping up with a gentle concave curve to a tapered tip
-    that rises slightly above the left arm, so the V also reads as a tick.
+
+def ticked_v(glyph, gs, bounds, length, taper):
+    """Return the V's outline with its right arm drawn on past the cap line (the check).
+
+    The arm's top points are slid up along the arm's own slant by `length` cap heights,
+    and the arm narrows by `taper` at the new top, so the stroke ends like a pen tick.
     """
-    W = wf * H
+    from fontTools.pens.recordingPen import RecordingPen
 
-    def p(u, v):
-        return f"{x + u * W:.1f},{top + v * H:.1f}"
+    rec = RecordingPen()
+    glyph.draw(rec)
+    xmin, _, xmax, top = bounds
+    mid = (xmin + xmax) / 2
+    tops = sorted({pt for _, pts in rec.value for pt in pts if pt[1] >= top - 1 and pt[0] > mid})
+    slope = (xmax - mid) / top
+    L = length * top
+    inner_x = tops[0][0] if tops else xmax
 
-    d = (
-        f"M{p(0.02, 0.06)} "
-        f"C{p(0.06, 0.0)} {p(0.22, -0.01)} {p(0.27, 0.05)} "  # rounded head
-        f"C{p(0.33, 0.30)} {p(0.42, 0.58)} {p(0.50, 0.80)} "  # left arm, inner edge
-        f"C{p(0.62, 0.45)} {p(0.80, 0.12)} {p(1.0, -0.10)} "  # right arm, inner edge to tip
-        f"C{p(0.84, 0.16)} {p(0.68, 0.55)} {p(0.57, 0.96)} "  # right arm, outer edge
-        f"C{p(0.54, 1.03)} {p(0.43, 1.03)} {p(0.40, 0.96)} "  # soft vertex
-        f"C{p(0.27, 0.64)} {p(0.12, 0.30)} {p(0.02, 0.06)} Z"  # left arm, outer edge
-    )
-    return d, x + W
+    def move(pt):
+        if pt in tops:
+            dx = slope * L
+            # pull the outer edge in toward the inner edge so the stroke tapers
+            if pt[0] > inner_x:
+                dx -= (pt[0] - inner_x) * taper
+            return (pt[0] + dx, pt[1] + L)
+        return pt
+
+    rec.value = [(op, tuple(move(pt) for pt in pts)) for op, pts in rec.value]
+    return rec
+
+
+def layout_line(segments):
+    """Return [(role, d)] and (ink_left, ink_right, cap_px) for a line on baseline 0."""
+    out, x, left, right, cap_px = [], 0.0, None, 0.0, 0.0
+    for seg_i, (text, fkey, size, role, track, *opt) in enumerate(segments):
+        tick = opt[0] if opt else None
+        f, gs, cmap, hmtx, upm, cap = face(fkey)
+        k = size / upm
+        cap_px = max(cap_px, cap * k)
+        parts = []
+        for i, ch in enumerate(text):
+            name = cmap[ord(ch)]
+            pen = SVGPathPen(gs)
+            bp = BoundsPen(gs)
+            gs[name].draw(bp)
+            if tick and ch == "V":
+                ticked_v(gs[name], gs, bp.bounds, *tick).replay(TransformPen(pen, (k, 0, 0, -k, x, 0)))
+            else:
+                gs[name].draw(TransformPen(pen, (k, 0, 0, -k, x, 0)))
+            parts.append(pen.getCommands())
+            if bp.bounds:
+                left = x + bp.bounds[0] * k if left is None else left
+                right = x + bp.bounds[2] * k
+            last = seg_i == len(segments) - 1 and i == len(text) - 1
+            x += hmtx[name][0] * k + (0 if last else track * size)
+        out.append((role, " ".join(parts)))
+    return out, (left, right, cap_px)
 
 
 def build(variant, theme):
-    file, loc, track_em, vscale, wf = VARIANTS[variant]
-    f, c = Face(file, loc), COLORS[theme]
-    track = track_em * f.upm
-    H = f.cap * vscale
-    top = -H + f.cap * 0.02  # V rests a hair below the baseline (overshoot)
-    the_d, the_r = f.run("The", 0, track)
-    v_d, v_r = fluid_v(the_r + f.cap * 0.26, top, H, wf)
-    alet_x = v_r + f.cap * 0.11 - f.bounds("a")[0]
-    alet_d, right = f.run("alet.", alet_x, track)
-    pad = f.cap * 0.12
-    y0 = top - H * 0.12 - pad
-    vb = f"{-pad:.0f} {y0:.0f} {right + 2 * pad:.0f} {-y0 + pad + f.cap * 0.05:.0f}"
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb}" role="img" aria-label="The Valet">\n'
-        f"  <title>The Valet</title>\n"
-        f'  <path fill="{c["ink"]}" d="{the_d} {alet_d}"/>\n'
-        f'  <path fill="{c["accent"]}" d="{v_d}"/>\n'
-        f"</svg>\n"
-    )
-
-
-def monogram(theme, transparent=False):
     c = COLORS[theme]
-    size, H, wf = 1000, 600, 0.92
-    d, _ = fluid_v(0, 0, H, wf)
-    ox, oy = (size - wf * H) / 2 + size * 0.012, (size - H) / 2 + H * 0.04
-    bg = "" if transparent else f'<rect width="{size}" height="{size}" rx="180" fill="{c["bg"]}"/>'
+    lines = [layout_line(segs) for segs in VARIANTS[variant]]
+    width = max(r - l for _, (l, r, _) in lines)
+    paths, y = [], 0.0
+    for i, (segs, (l, r, cap_px)) in enumerate(lines):
+        y += cap_px if i == 0 else cap_px + lines[i - 1][1][2] * 0.55
+        dx = (width - (r - l)) / 2 - l
+        for role, d in segs:
+            paths.append(f'<path fill="{c[role]}" transform="translate({dx:.1f} {y:.1f})" d="{d}"/>')
+    pad, head = 12, lines[0][1][2] * 0.5
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {size} {size}" role="img" aria-label="The Valet">'
-        f'{bg}<g transform="translate({ox:.1f} {oy:.1f})"><path fill="{c["accent"]}" d="{d}"/></g></svg>\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-pad} {-pad - head:.0f} {width + 2 * pad:.0f} '
+        f'{y + 2 * pad + head + 4:.0f}" role="img" aria-label="The Valet">\n  <title>The Valet</title>\n  '
+        + "\n  ".join(paths) + "\n</svg>\n"
     )
 
 
@@ -122,7 +150,4 @@ OUT.mkdir(parents=True, exist_ok=True)
 for v in sys.argv[3:] or VARIANTS:
     for theme in COLORS:
         (OUT / f"thevalet-logo-{v}-{theme}.svg").write_text(build(v, theme))
-for theme in COLORS:
-    (OUT / f"thevalet-monogram-{theme}.svg").write_text(monogram(theme))
-    (OUT / f"thevalet-monogram-{theme}-transparent.svg").write_text(monogram(theme, True))
 print("ok")
