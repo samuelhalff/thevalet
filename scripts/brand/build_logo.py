@@ -23,6 +23,7 @@ COLORS = {
 }
 
 FACES = {
+    "didone": ("Bodoni.ttf", {"wght": 500, "opsz": 96}),
     "fraunces": ("Fraunces.ttf", {"SOFT": 100, "WONK": 1, "opsz": 144, "wght": 380}),
     "fraunces-italic": ("FrauncesItalic.ttf", {"SOFT": 100, "WONK": 1, "opsz": 144, "wght": 380}),
     "instrument": ("Instrument.ttf", None),
@@ -42,18 +43,16 @@ FACES = {
 
 # Segment: (text, face, size in px-per-em, role, tracking in em)
 VARIANTS = {
-    # Soft, ink-trapped display serif; the V borrows the italic's flowing stroke.
-    "fraunces": [[("The ", "fraunces", 100, "ink", -0.01), ("V", "fraunces-italic", 104, "accent", -0.02),
-                  ("alet", "fraunces", 100, "ink", -0.01)]],
-    # Condensed editorial serif (Instrument), italic bordeaux V.
-    "instrument": [[("The ", "instrument", 110, "ink", -0.005), ("V", "instrument-italic", 114, "accent", 0.0),
-                    ("alet", "instrument", 110, "ink", -0.005)]],
-    # Gloock: high-contrast, sculpted; V in Fraunces italic for fluidity.
-    "gloock": [[("The ", "gloock", 100, "ink", -0.01), ("V", "playfair-italic", 106, "accent", -0.01),
-                ("alet", "gloock", 100, "ink", -0.01)]],
-    # All-italic signature, one colour accent.
-    "playfair-italic": [[("The ", "playfair-italic", 100, "ink", 0.0), ("V", "playfair-italic", 100, "accent", 0.0),
-                         ("alet", "playfair-italic", 100, "ink", 0.0)]],
+    # Same layout (small spaced THE over Valet); only the V changes.
+    "v-classic": [[("THE", "sans", 20, "ink", 0.8)],
+                  [("V", "playfair", 100, "accent", -0.005), ("alet", "playfair", 100, "ink", -0.005)]],
+    "v-flourish": [[("THE", "sans", 20, "ink", 0.8)],
+                   [("V", "playfair", 100, "accent", -0.005, (0.30, 0.10, 0.10)),
+                    ("alet", "playfair", 100, "ink", -0.005)]],
+    "v-italic": [[("THE", "sans", 20, "ink", 0.8)],
+                 [("V", "playfair-italic", 102, "accent", 0.0), ("alet", "playfair", 100, "ink", -0.005)]],
+    "v-didone": [[("THE", "sans", 20, "ink", 0.8)],
+                 [("V", "didone", 104, "accent", 0.0), ("alet", "playfair", 100, "ink", -0.005)]],
 }
 
 _faces = {}
@@ -70,33 +69,93 @@ def face(key):
     return _faces[key]
 
 
-def ticked_v(glyph, gs, bounds, length, taper):
-    """Return the V's outline with its right arm drawn on past the cap line (the check).
+def ticked_v(glyph, gs, bounds, length, taper, curve=0.0):
+    """Return the V's outline with its right arm continued past the cap line as a pen tick.
 
-    The arm's top points are slid up along the arm's own slant by `length` cap heights,
-    and the arm narrows by `taper` at the new top, so the stroke ends like a pen tick.
+    The arm's top (and its serif, if any) is cut away along the arm's own edges, then a
+    new stroke continues the arm on the same slant, tapering to a hairline point
+    `length` cap heights above the cap line. `taper` is the tip width as a share of the
+    arm's width. Needs skia-pathops.
     """
+    import pathops
     from fontTools.pens.recordingPen import RecordingPen
 
-    rec = RecordingPen()
-    glyph.draw(rec)
     xmin, _, xmax, top = bounds
-    mid = (xmin + xmax) / 2
-    tops = sorted({pt for _, pts in rec.value for pt in pts if pt[1] >= top - 1 and pt[0] > mid})
-    slope = (xmax - mid) / top
-    L = length * top
-    inner_x = tops[0][0] if tops else xmax
+    v = pathops.Path()
+    glyph.draw(v.getPen())
 
-    def move(pt):
-        if pt in tops:
-            dx = slope * L
-            # pull the outer edge in toward the inner edge so the stroke tapers
-            if pt[0] > inner_x:
-                dx -= (pt[0] - inner_x) * taper
-            return (pt[0] + dx, pt[1] + L)
-        return pt
+    def rect(x0, y0, x1, y1):
+        r = pathops.Path()
+        pen = r.getPen()
+        pen.moveTo((x0, y0)); pen.lineTo((x1, y0)); pen.lineTo((x1, y1)); pen.lineTo((x0, y1))
+        pen.closePath()
+        return r
 
-    rec.value = [(op, tuple(move(pt) for pt in pts)) for op, pts in rec.value]
+    def right_arm_at(y):
+        """x-interval of the right arm at height y (bounds of a thin slice)."""
+        mid = (xmin + xmax) / 2
+        sl = pathops.op(v, rect(mid, y, xmax + 10, y + 1), pathops.PathOp.INTERSECTION)
+        x0, _, x1, _ = sl.bounds
+        return x0, x1
+
+    ya, yb = top * 0.40, top * 0.68
+    a0, a1 = right_arm_at(ya)
+    b0, b1 = right_arm_at(yb)
+    s_in = (b0 - a0) / (yb - ya)  # slant of the inner edge
+    s_out = (b1 - a1) / (yb - ya)  # slant of the outer edge
+    w = b1 - b0
+
+    def inner(y):
+        return b0 + s_in * (y - yb)
+
+    def outer(y):
+        return b1 + s_out * (y - yb)
+
+    big = top * 3
+    # Cut everything right of the arm's inner edge above yb (arm top + serif).
+    cut = pathops.Path()
+    pen = cut.getPen()
+    pen.moveTo((inner(yb) - 0.5, yb))
+    pen.lineTo((inner(yb + big) - 0.5, yb + big))
+    pen.lineTo((xmax + big, yb + big))
+    pen.lineTo((xmax + big, yb))
+    pen.closePath()
+    v = pathops.op(v, cut, pathops.PathOp.DIFFERENCE)
+    # Remove the right arm's top serif entirely: cut from the start of the rightmost
+    # ink run along the cap line, above the serif's bracket.
+    sl = pathops.op(v, rect(xmin - 10, top * 0.95, xmax + 10, top * 0.95 + 1), pathops.PathOp.INTERSECTION)
+    runs = []
+    rp = RecordingPen()
+    sl.draw(rp)
+    for op, pts in rp.value:
+        if op == "moveTo":
+            runs.append([pts[0][0], pts[0][0]])
+        elif pts and runs:
+            for pt in pts:
+                runs[-1][0] = min(runs[-1][0], pt[0])
+                runs[-1][1] = max(runs[-1][1], pt[0])
+    if runs:
+        # Keep only the left arm's top (the leftmost ink run); cut everything to its right.
+        x_cut = min(runs, key=lambda r: r[0])[1] + 1
+        v = pathops.op(v, rect(x_cut, top * 0.86, xmax + big, top + big), pathops.PathOp.DIFFERENCE)
+
+    # New stroke: from the cut, along the arm's slant, tapering to the tip.
+    ytip = top * (1 + length)
+    tip_c = (inner(ytip) + outer(ytip)) / 2 + curve * top  # curve > 0 flicks the tip outward
+    tw = w * taper
+    stroke = pathops.Path()
+    pen = stroke.getPen()
+    y0 = top * 0.45
+    pen.moveTo((inner(y0), y0))
+    pen.lineTo((outer(y0), y0))
+    pen.qCurveTo((outer(top), top), (tip_c + tw / 2, ytip))
+    pen.lineTo((tip_c - tw / 2, ytip))
+    pen.qCurveTo((inner(top * 0.95), top * 0.95), (inner(y0), y0))
+    pen.closePath()
+    v = pathops.op(v, stroke, pathops.PathOp.UNION)
+
+    rec = RecordingPen()
+    v.draw(rec)
     return rec
 
 
@@ -104,7 +163,10 @@ def layout_line(segments):
     """Return [(role, d)] and (ink_left, ink_right, cap_px) for a line on baseline 0."""
     out, x, left, right, cap_px = [], 0.0, None, 0.0, 0.0
     for seg_i, (text, fkey, size, role, track, *opt) in enumerate(segments):
-        tick = opt[0] if opt else None
+        extra = opt[0] if opt and isinstance(opt[0], dict) else {}
+        tick = opt[0] if opt and not isinstance(opt[0], dict) else extra.get("tick")
+        dy = extra.get("dy", 0) * size  # baseline shift in em (negative = up)
+        x += extra.get("dx", 0) * size
         f, gs, cmap, hmtx, upm, cap = face(fkey)
         k = size / upm
         cap_px = max(cap_px, cap * k)
@@ -117,7 +179,7 @@ def layout_line(segments):
             if tick and ch == "V":
                 ticked_v(gs[name], gs, bp.bounds, *tick).replay(TransformPen(pen, (k, 0, 0, -k, x, 0)))
             else:
-                gs[name].draw(TransformPen(pen, (k, 0, 0, -k, x, 0)))
+                gs[name].draw(TransformPen(pen, (k, 0, 0, -k, x, dy)))
             parts.append(pen.getCommands())
             if bp.bounds:
                 left = x + bp.bounds[0] * k if left is None else left
@@ -134,7 +196,7 @@ def build(variant, theme):
     width = max(r - l for _, (l, r, _) in lines)
     paths, y = [], 0.0
     for i, (segs, (l, r, cap_px)) in enumerate(lines):
-        y += cap_px if i == 0 else cap_px + lines[i - 1][1][2] * 0.55
+        y += cap_px if i == 0 else cap_px * 1.45 + lines[i - 1][1][2] * 0.9
         dx = (width - (r - l)) / 2 - l
         for role, d in segs:
             paths.append(f'<path fill="{c[role]}" transform="translate({dx:.1f} {y:.1f})" d="{d}"/>')
