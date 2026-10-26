@@ -1,0 +1,94 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Daily rebuild publishes pages whose `publishAt` date has come (see src/lib/content.ts).
+  # The incremental deploy uploads nothing when nothing changed.
+  schedule:
+    - cron: "15 5 * * *"
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://switzerlandresidency.ch' }}
+      # Keep "true" until HTTPS is live (noindex + robots Disallow).
+      NEXT_PUBLIC_NOINDEX: ${{ vars.NEXT_PUBLIC_NOINDEX || 'true' }}
+      NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
+      NEXT_PUBLIC_FORMSPARK_ID: ${{ vars.NEXT_PUBLIC_FORMSPARK_ID || secrets.NEXT_PUBLIC_FORMSPARK_ID }}
+      NEXT_PUBLIC_WHATSAPP: ${{ vars.NEXT_PUBLIC_WHATSAPP || secrets.NEXT_PUBLIC_WHATSAPP }}
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - name: Deploy script tests
+        run: for f in scripts/tests/test_*.py; do python3 "$f"; done
+      - run: npm run build # prebuild runs scripts/validate-content.mjs
+
+      - name: Check export
+        run: |
+          test -f out/en/index.html
+          test -f out/404.html
+          test -f out/.htaccess
+
+      - name: Deploy over FTPS (explicit TLS, incremental, per-file atomic swap)
+        env:
+          DEPLOY_HOST: ${{ secrets.FTP_HOST }}
+          DEPLOY_PORT: ${{ secrets.FTP_PORT }}
+          DEPLOY_USER: ${{ secrets.FTP_USER }}
+          DEPLOY_PASS: ${{ secrets.FTP_PASS }}
+          # Web root relative to the FTP login directory (repo variable; default: the login directory).
+          DEPLOY_DIR: ${{ vars.FTP_DIR || '.' }}
+        run: |
+          # scripts/deploy-ftp.py uploads only files whose sha256 changed since the manifest on the
+          # server, swaps pages in via tmp + rename (never a missing page), and deletes only files
+          # listed in its previous manifest. Protected paths (_archive-*, .ftpquota, .well-known,
+          # cgi-bin) are asserted before every write and abort the run if ever hit.
+          # 1) Plan only (read-only: fetches the manifest), logged for the run record.
+          python3 scripts/deploy-ftp.py --dry-run
+          # 2) Real deploy.
+          python3 scripts/deploy-ftp.py
+
+      - name: Smoke test (HTTPS, redirects, protected paths)
+        run: |
+          set -u
+          base="https://switzerlandresidency.ch"
+          fail=0
+          check() {
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$1")
+            if [ "$code" = "$2" ]; then echo "OK   $1 → $code"; else echo "FAIL $1 → $code (expected $2)"; fail=1; fi
+          }
+          redirect() {
+            got=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' --max-time 20 "$1")
+            if [ "$got" = "301 $2" ]; then echo "OK   $1 → 301 $2"; else echo "FAIL $1 → $got (expected 301 $2)"; fail=1; fi
+          }
+          sleep 5
+          check "$base/en/" 200
+          check "$base/fr/" 200
+          check "$base/de/" 200
+          # Old hacked WordPress was deleted on 2026-10-01: neither it nor its archive may be served.
+          check "$base/_archive-2026-09-30/index.php" 404
+          check "$base/wp-login.php" 404
+          check "$base/.deploy-manifest.json" 403
+          redirect "http://switzerlandresidency.ch/en/" "https://switzerlandresidency.ch/en/"
+          redirect "https://www.switzerlandresidency.ch/en/" "https://switzerlandresidency.ch/en/"
+          exit $fail

@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+coverage/
+__pycache__/
+.pytest_cache/
+
+# client brief (private)
+brief/
+__pycache__/

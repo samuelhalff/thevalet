@@ -1,0 +1,893 @@
+{
+  "meta": {
+    "siteName": "Switzerland Residency",
+    "homeTitle": "Relocation Service Schweiz: Wohnsitz & Pauschalsteuer | Switzerland Residency",
+    "homeDescription": "Relocation Service in der Schweiz für Privatpersonen und Familien: Bewilligung, Pauschalbesteuerung, Wohnungssuche und Ankommen – diskret begleitet.",
+    "ogLocale": "de_CH",
+    "tagline": "Ruhige, persönliche Begleitung für Familien, die in der Schweiz ankommen möchten."
+  },
+  "common": {
+    "skipToContent": "Zum Inhalt springen",
+    "ctaCheck": "Ihre Möglichkeiten prüfen",
+    "ctaTalk": "Sprechen Sie mit uns",
+    "readMore": "Weiterlesen",
+    "learnMore": "Mehr erfahren",
+    "updated": "Aktualisiert",
+    "sources": "Quellen",
+    "faqTitle": "Häufige Fragen",
+    "home": "Startseite",
+    "draftNotice": "Diese Seite entsteht gerade noch. Wenn Sie in der Zwischenzeit eine Frage haben, melden Sie sich gerne bei uns.",
+    "draftBadge": "In Vorbereitung",
+    "comingSoon": "Diese Seiten sind gerade in Arbeit. Bis dahin beantworten wir Ihre Fragen gerne direkt.",
+    "language": "Sprache",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schliessen",
+    "mainNav": "Hauptnavigation",
+    "breadcrumb": "Brotkrümelnavigation",
+    "whatsapp": "Per WhatsApp schreiben",
+    "contactForm": "Über das Formular schreiben",
+    "allTopics": "Alle Themen",
+    "indicative": "Unverbindliche Einschätzung, keine Rechts- oder Steuerberatung.",
+    "ctaConversation": "Ein persönliches Gespräch vereinbaren",
+    "ctaRoute": "Oder sehen Sie Ihren möglichen Weg in zwei Minuten",
+    "ctaRouteShort": "Oder Ihren Weg in 2 Minuten prüfen"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "home": "Startseite",
+    "howItWorks": "So funktioniert es",
+    "services": "Leistungen",
+    "cantons": "Kantone",
+    "movingFrom": "Umzug aus",
+    "guides": "Ratgeber",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "eligibility": "Möglichkeiten prüfen",
+    "privacy": "Datenschutz",
+    "legalNotice": "Impressum",
+    "advisers": "Für Berater"
+  },
+  "footer": {
+    "blurb": "Wir begleiten internationale Familien und Privatpersonen auf ihrem Weg in die Schweiz – von der ersten Frage zur Bewilligung bis zu dem Tag, an dem der Umzugswagen vorfährt, und weit darüber hinaus.",
+    "explore": "Entdecken",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "partner": "In Zusammenarbeit mit einer Partnerkanzlei mit rund 40 Anwältinnen und Anwälten in Genf",
+    "operatedBy": "Betrieben von",
+    "operatorCity": "Genf",
+    "cookieSettings": "Cookie-Einstellungen",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Aufenthalt · Steuern · Zuhause · Familie",
+      "title": "Machen Sie die Schweiz zu Ihrem Zuhause – in Ruhe und mit Sorgfalt.",
+      "subtitle": "Bewilligungen, Pauschalbesteuerung, der passende Kanton, ein Haus am See oder in den Bergen. Wir begleiten Sie und Ihre Familie bei jedem Schritt – diskret und in Ihrer Sprache.",
+      "primary": "Ihre Möglichkeiten prüfen",
+      "secondary": "Sprechen Sie mit uns",
+      "headline": "Machen Sie die Schweiz zu Ihrem Zuhause.",
+      "headlineAccent": "Zuhause",
+      "lead": "Aufenthalt, Steuern, ein Zuhause und Schulen – diskret organisiert und in Ihrer Sprache.",
+      "credibility": "Genf, mit einer Partnerkanzlei von 40 Anwälten",
+      "h1": "Relocation Service in der Schweiz für Privatpersonen und ihre Familien"
+    },
+    "steps": {
+      "title": "So funktioniert es",
+      "intro": "Drei einfache Etappen, ein Team an Ihrer Seite.",
+      "items": [
+        {
+          "title": "Ihren Weg verstehen",
+          "text": "Sie beginnen mit unserem kurzen Check. Danach klären wir in einem vertraulichen Gespräch, welche Bewilligung und welche steuerlichen Optionen zu Ihrer Situation passen."
+        },
+        {
+          "title": "Vorbereiten und einreichen",
+          "text": "Wir wählen mit Ihnen den Kanton, bereiten das Dossier vor und sprechen mit den Behörden – damit es unterwegs keine Überraschungen gibt."
+        },
+        {
+          "title": "Ankommen und sich einleben",
+          "text": "Zuhause, Schulen, Versicherungen, Bank und Ihre erste Steuererklärung: Wir bleiben an Ihrer Seite, bis Ihre Familie angekommen ist."
+        }
+      ],
+      "cta": "Den ganzen Ablauf ansehen",
+      "accent": "funktioniert"
+    },
+    "services": {
+      "title": "Worum wir uns kümmern",
+      "intro": "Ein abgestimmtes Team für den ganzen Umzug – Sie müssen Ihre Geschichte nie zweimal erzählen.",
+      "accent": "kümmern"
+    },
+    "origins": {
+      "title": "Umzug aus …",
+      "intro": "Jeder Wegzug hat seine eigenen Regeln. Wir kennen die Fragen, auf die es für Ihr heutiges Wohnsitzland ankommt."
+    },
+    "cantons": {
+      "title": "Den richtigen Kanton finden",
+      "intro": "In der Schweiz prägt der Kanton fast alles: Ihre Steuern, die Bewilligungspraxis, die Schulen und die Sprache. Ob Genferseeregion, Alpen, Zug oder Tessin – jede Region steht für eine andere Lebensart.",
+      "cta": "Die Kantone entdecken",
+      "accent": "Kanton"
+    },
+    "approach": {
+      "title": "Unsere Haltung",
+      "intro": "Wir arbeiten persönlich und unkompliziert.",
+      "items": [
+        {
+          "title": "Diskret aus Prinzip",
+          "text": "Ihre Situation bleibt zwischen Ihnen und den Personen, die davon wissen müssen. Keine Newsletter, kein Druck."
+        },
+        {
+          "title": "Ehrlich von Anfang an",
+          "text": "Wenn ein Weg nicht zu Ihnen passt, sagen wir es früh. Über Bewilligungen und Steuerregelungen entscheiden die Behörden – und wir tun nie so, als wäre es anders."
+        },
+        {
+          "title": "Verwurzelt in der Schweizer Praxis",
+          "text": "Unsere Arbeit stützt sich auf erfahrene Schweizer Treuhand- und Steuerfachleute, und hinter jeder Aussage stehen offizielle Quellen."
+        },
+        {
+          "title": "In Ihrer Sprache",
+          "text": "Wir arbeiten auf Deutsch, Englisch und Französisch und erklären Ihnen das Schweizer System gerne so oft wie nötig."
+        }
+      ],
+      "accent": "Haltung"
+    },
+    "guides": {
+      "title": "Neueste Ratgeber",
+      "intro": "Klare, belegte Antworten auf die Fragen, die uns Familien am häufigsten stellen.",
+      "cta": "Alle Ratgeber",
+      "accent": "Ratgeber"
+    },
+    "faq": {
+      "title": "Fragen, die wir oft hören",
+      "items": [
+        {
+          "q": "Gibt es in der Schweiz ein Golden Visa?",
+          "a": "Nicht in dem Sinn, dass man sich den Aufenthalt über eine Investition erkaufen kann. Die Schweiz kennt aber Wege für Menschen, die hier nicht erwerbstätig sein wollen, etwa als finanziell unabhängige Person oder im Ruhestand. Der Kanton prüft diese jeweils im Einzelfall."
+        },
+        {
+          "q": "Muss ich in der Schweiz arbeiten, um hier zu leben?",
+          "a": "Nein. Viele der Familien, die wir begleiten, nehmen in der Schweiz keine Erwerbstätigkeit auf. Welcher Weg der richtige ist, hängt vor allem von Ihrer Staatsangehörigkeit, Ihren Plänen und Ihrer persönlichen Situation ab."
+        },
+        {
+          "q": "Wie lange dauert das Verfahren?",
+          "a": "Das hängt vom Weg und vom Kanton ab. Nach einem ersten Gespräch nennen wir Ihnen einen realistischen Zeitplan – auch dazu, was sich schon vor dem Umzug vorbereiten lässt."
+        },
+        {
+          "q": "Was kostet Ihre Begleitung?",
+          "a": "Jede Familie hat eine andere Ausgangslage, deshalb veröffentlichen wir keine Preise. Nach einem ersten Gespräch erhalten Sie von uns ein klares, unverbindliches schriftliches Angebot."
+        },
+        {
+          "q": "Ist der Check vertraulich?",
+          "a": "Ja. Ihre Antworten bleiben in Ihrem Browser. Wir erhalten nichts, ausser Sie entscheiden sich, Ihr Ergebnis über das Kontaktformular mit uns zu teilen."
+        }
+      ],
+      "accent": "oft"
+    },
+    "finalCta": {
+      "title": "Möchten Sie über Ihren Umzug sprechen?",
+      "text": "Erzählen Sie uns kurz von Ihren Plänen. Wir melden uns persönlich bei Ihnen, in der Regel innerhalb eines Arbeitstags.",
+      "primary": "Ihre Möglichkeiten prüfen",
+      "secondary": "Kontakt aufnehmen",
+      "accent": "sprechen"
+    },
+    "heroAltFallback": "See und Berge in der Schweiz",
+    "evening": {
+      "title": "Ihr erstes Gespräch führen Sie mit einem Menschen, nicht mit einem Formular.",
+      "accent": "Menschen",
+      "text": "Erzählen Sie uns kurz, wo Sie heute leben und was Sie vorhaben. Eine Beraterin oder ein Berater antwortet Ihnen persönlich – auf Deutsch, Englisch oder Französisch."
+    }
+  },
+  "howItWorks": {
+    "title": "So funktioniert es",
+    "description": "Von der ersten Frage bis zum ersten Jahr in der Schweiz: wie wir Familien bei Bewilligung, Steuern, Kantonswahl und Ankommen begleiten.",
+    "intro": "Ein Umzug in ein anderes Land ist eine grosse Entscheidung. Wir teilen ihn in klare Schritte auf und bleiben die ganze Zeit an Ihrer Seite, damit Sie immer wissen, was als Nächstes kommt.",
+    "steps": [
+      {
+        "title": "Ein erstes Gespräch",
+        "text": "Wir hören zu: Ihre Pläne, Ihre familiäre Situation, Ihr Zeitrahmen. Nach dem Gespräch haben Sie ein klares Bild davon, welche Wege möglich sind und was jeder davon mit sich bringt."
+      },
+      {
+        "title": "Ihr Weg und Ihr Kanton",
+        "text": "Gemeinsam vergleichen wir die Bewilligungsmöglichkeiten, die Besteuerung (ordentlich oder, wo möglich, pauschal) und die Kantone, die zu Ihrer Lebensweise, zu den Schulen und zur Sprache passen."
+      },
+      {
+        "title": "Das Dossier vorbereiten",
+        "text": "Wir stellen die Unterlagen zusammen, bereiten das Gesuch vor und besprechen Ihre Situation, wo sinnvoll, schon vor der Einreichung mit den kantonalen Behörden."
+      },
+      {
+        "title": "Ihr neues Zuhause finden",
+        "text": "Wir helfen Ihnen, das passende Haus oder die passende Wohnung zur Miete oder zum Kauf zu finden – einschliesslich der besonderen Regeln für ausländische Käufer."
+      },
+      {
+        "title": "Ankommen und sich einleben",
+        "text": "Anmeldung, Krankenversicherung, Schulen, Bank, Auto und alles Weitere im Alltag. Danach kümmern wir uns Jahr für Jahr um Ihre Steuer- und Vermögensfragen."
+      }
+    ],
+    "note": "Jede Situation ist anders. Über Bewilligungen und Steuerregelungen entscheiden immer die Schweizer Behörden – und wir sagen Ihnen ehrlich, was realistisch ist."
+  },
+  "services": {
+    "title": "Relocation Service in der Schweiz",
+    "description": "Relocation Service Schweiz für Privatpersonen: Aufenthaltsbewilligung, Pauschalbesteuerung, Steuerruling, Immobiliensuche, Ankommen und Steuerbetreuung.",
+    "intro": "Ein abgestimmtes Team für jeden Teil Ihres Umzugs. Wählen Sie, was Sie brauchen – oder überlassen Sie uns den ganzen Weg.",
+    "items": {
+      "residence-permit": {
+        "title": "Aufenthaltsbewilligung",
+        "summary": "Die richtige Bewilligung für Sie und Ihre Familie – ob Sie aus der EU oder von anderswo kommen und ob Sie hier arbeiten möchten oder nicht.",
+        "serviceType": "Begleitung bei der Aufenthaltsbewilligung"
+      },
+      "lump-sum-taxation": {
+        "title": "Pauschalbesteuerung",
+        "summary": "Ob die Besteuerung nach dem Aufwand für Sie in Frage kommt, wie sie im Vergleich zur ordentlichen Besteuerung abschneidet und welche Kantone sie anbieten.",
+        "serviceType": "Beratung zur Pauschalbesteuerung"
+      },
+      "tax-ruling": {
+        "title": "Steuerruling",
+        "summary": "Klarheit von den Steuerbehörden schon vor dem Umzug, damit Sie mit gutem Gefühl entscheiden können.",
+        "serviceType": "Steuerruling"
+      },
+      "property-search-purchase": {
+        "title": "Immobiliensuche & Kauf",
+        "summary": "Das passende Zuhause zur Miete oder zum Kauf – mit sauberer Abwicklung der Regeln für ausländische Käufer.",
+        "serviceType": "Immobiliensuche und Lex-Koller-Begleitung"
+      },
+      "settling-in": {
+        "title": "Relocation und Ankommen",
+        "summary": "Schulen, Krankenversicherung, Bank, Auto, Hauspersonal und all die kleinen Dinge, die ein neues Land zum Zuhause machen.",
+        "serviceType": "Relocation Service und Destination Services"
+      },
+      "ongoing-tax-wealth": {
+        "title": "Laufende Steuer- & Vermögensbetreuung",
+        "summary": "Steuererklärungen, Fragen zur Vermögensstruktur und eine vertraute Ansprechperson vor Ort, Jahr für Jahr.",
+        "serviceType": "Steuerberatung für Privatkunden"
+      }
+    },
+    "detailCta": "Mit uns besprechen"
+  },
+  "cantons": {
+    "title": "Kantone",
+    "description": "Wie sich die Schweizer Kantone für Zuzüger unterscheiden: Steuern, Bewilligungen, Schulen, Sprache und Lebensart – vom Genfersee über die Alpen bis ins Tessin.",
+    "intro": "Die Schweiz hat 26 Kantone, und jeder bestimmt einen grossen Teil seiner Steuer- und Bewilligungspraxis selbst. Die richtige Wahl gehört zu den wichtigsten Entscheidungen Ihres Umzugs.",
+    "guidesTitle": "Kantonsporträts",
+    "allTitle": "Alle 26 Kantone",
+    "allIntro": "Wir ergänzen laufend ausführliche Seiten. Ist Ihr Kanton noch nicht dabei, fragen Sie uns einfach.",
+    "detailCta": "Ihren Weg für diesen Kanton prüfen"
+  },
+  "cantonNames": {
+    "AG": "Aargau",
+    "AI": "Appenzell Innerrhoden",
+    "AR": "Appenzell Ausserrhoden",
+    "BE": "Bern",
+    "BL": "Basel-Landschaft",
+    "BS": "Basel-Stadt",
+    "FR": "Freiburg",
+    "GE": "Genf",
+    "GL": "Glarus",
+    "GR": "Graubünden",
+    "JU": "Jura",
+    "LU": "Luzern",
+    "NE": "Neuenburg",
+    "NW": "Nidwalden",
+    "OW": "Obwalden",
+    "SG": "St. Gallen",
+    "SH": "Schaffhausen",
+    "SO": "Solothurn",
+    "SZ": "Schwyz",
+    "TG": "Thurgau",
+    "TI": "Tessin",
+    "UR": "Uri",
+    "VD": "Waadt",
+    "VS": "Wallis",
+    "ZG": "Zug",
+    "ZH": "Zürich"
+  },
+  "origins": {
+    "title": "Umzug aus …",
+    "description": "Umzug in die Schweiz aus Grossbritannien, der EU, den Golfstaaten, Amerika, Asien oder Afrika: die Wegzugsregeln und Schweizer Optionen, die für Sie zählen.",
+    "intro": "Woher Sie kommen, ist ebenso wichtig wie wohin Sie gehen. Hier finden Sie die Punkte, die wir uns für jede Weltregion genau ansehen.",
+    "items": {
+      "united-kingdom": {
+        "title": "Grossbritannien",
+        "summary": "Wegzug aus Grossbritannien nach dem Ende des Non-Dom-Regimes: Residence-Tests, Timing und Schweizer Optionen."
+      },
+      "european-union": {
+        "title": "Europäische Union",
+        "summary": "Die Personenfreizügigkeit vereinfacht die Bewilligung, doch Wegzugssteuern und Abkommensregeln verlangen weiterhin Sorgfalt."
+      },
+      "gulf": {
+        "title": "VAE & Golfstaaten",
+        "summary": "Umzug aus einem Tiefsteuerland: Aufenthaltswege für Nicht-EU-Staatsangehörige und eine frühzeitige Planung des Wechsels."
+      },
+      "americas": {
+        "title": "USA & Amerika",
+        "summary": "Besteuerung nach US-Staatsbürgerschaft, kanadische Wegzugsregeln und Schweizer Bewilligungen für Nicht-EU-Staatsangehörige."
+      },
+      "asia": {
+        "title": "Asien",
+        "summary": "Aus Singapur, Hongkong oder Indien: Bewilligungswege, Bankunterlagen und Timing."
+      },
+      "africa": {
+        "title": "Afrika",
+        "summary": "Aus Südafrika, Nigeria, Marokko oder Ägypten: Visa, Wege für Drittstaatsangehörige und Nachweise zur Herkunft der Mittel."
+      }
+    },
+    "detailCta": "Ihren Weg prüfen"
+  },
+  "guides": {
+    "title": "Ratgeber",
+    "description": "Klare, belegte Ratgeber zu Schweizer Aufenthaltsbewilligungen, Pauschalbesteuerung, Immobilien, Kantonen und zum Ankommen – regelmässig aktualisiert.",
+    "intro": "Praktische Antworten von Menschen, die das täglich tun – mit offiziellen Quellen zu jeder wichtigen Aussage.",
+    "empty": "Die ersten Ratgeber werden gerade geschrieben und geprüft. Fragen Sie uns in der Zwischenzeit gerne alles, was Sie wissen möchten.",
+    "filterLabel": "Nach Thema filtern",
+    "categories": {
+      "lump-sum-taxation": "Pauschalbesteuerung",
+      "residence-permits": "Aufenthaltsbewilligungen",
+      "moving-from": "Zuzug aus dem Ausland",
+      "property": "Immobilien",
+      "where-to-live": "Wo wohnen",
+      "settling-in": "Ankommen",
+      "tax-and-wealth": "Steuern & Vermögen"
+    },
+    "categoryIntro": "Ratgeber zu diesem Thema, die zuletzt aktualisierten zuerst."
+  },
+  "article": {
+    "updated": "Aktualisiert",
+    "reviewed": "Zuletzt geprüft am",
+    "sources": "Offizielle Quellen",
+    "ctaTitle": "Möchten Sie wissen, was das für Sie bedeutet?",
+    "ctaText": "Unser kurzer Check zeigt Ihnen in rund zwei Minuten einen möglichen Weg. Oder schreiben Sie uns einfach.",
+    "related": "Weitere Ratgeber",
+    "contactTitle": "Möchten Sie es besprechen?",
+    "contactText": "Jede Situation ist anders. Erzählen Sie uns von Ihrer: Wir antworten persönlich und vertraulich.",
+    "ctaWrite": "Oder schreiben Sie uns direkt"
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Wer wir sind: ein kleines, erfahrenes Team, das internationale Familien beim Ankommen in der Schweiz begleitet, mit Sitz in Genf.",
+    "intro": "Wir sind ein kleines Team von Beraterinnen und Beratern, die Familien mit Freude dabei helfen, in der Schweiz ein Zuhause zu finden.",
+    "paragraphs": [
+      "Ein Umzug in die Schweiz wirft viele Fragen auf einmal auf: welche Bewilligung, welcher Kanton, wie die Steuern funktionieren, wo die Kinder zur Schule gehen. Wir führen diese Fäden zusammen und kümmern uns mit Sorgfalt darum.",
+      "Unsere Arbeit beruht auf langjähriger Erfahrung in der Schweizer Treuhand- und Steuerpraxis. Wir erklären lieber klar als in Fachjargon und geben lieber ehrliche Antworten als leichte Versprechen.",
+      "Wir begleiten Familien aus Grossbritannien, dem übrigen Europa, den Golfstaaten, Amerika, Asien und Afrika – auf Deutsch, Englisch und Französisch."
+    ],
+    "valuesTitle": "Worauf Sie zählen können",
+    "values": [
+      "Eine feste Ansprechperson, die Ihr Dossier kennt.",
+      "Klare Antworten, auch wenn die Antwort Nein lautet.",
+      "Offizielle Quellen hinter jeder wichtigen Aussage.",
+      "Absolute Diskretion."
+    ],
+    "partner": "Switzerland Residency arbeitet von Genf aus mit einer Partnerkanzlei mit rund 40 Anwältinnen und Anwälten in Rechts- und Bewilligungsfragen zusammen sowie mit Treuhandpartnern für Steuererklärungen und Buchhaltung."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Sprechen Sie mit uns über Ihren Umzug in die Schweiz. Vertraulich und persönlich, auf Deutsch, Englisch oder Französisch.",
+    "intro": "Erzählen Sie uns kurz von Ihren Plänen. Wir antworten persönlich, in der Regel innerhalb eines Arbeitstags.",
+    "channelsTitle": "Lieber auf anderem Weg?",
+    "form": {
+      "name": "Ihr Name",
+      "email": "E-Mail",
+      "phone": "Telefon oder WhatsApp",
+      "optional": "optional",
+      "language": "Bevorzugte Sprache",
+      "message": "Ihre Nachricht",
+      "messagePlaceholder": "Wo leben Sie heute, und was haben Sie vor?",
+      "consentBefore": "Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden, wie in der",
+      "consentLink": "Datenschutzerklärung",
+      "consentAfter": " beschrieben.",
+      "attributionNote": "Mit Ihrer Nachricht erhalten wir auch die hier besuchten Seiten und wie Sie die Website gefunden haben (siehe Datenschutzerklärung).",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet …",
+      "successTitle": "Vielen Dank, Ihre Nachricht ist unterwegs.",
+      "successText": "Wir melden uns persönlich bei Ihnen, in der Regel innerhalb eines Arbeitstags.",
+      "errorTitle": "Ihre Nachricht wurde nicht gesendet.",
+      "error": "Beim Senden ist etwas schiefgelaufen. Ihre Angaben stehen noch im Formular: Bitte versuchen Sie es in einem Moment noch einmal.",
+      "retry": "Erneut versuchen",
+      "errorWhatsappBefore": "Sie können uns auch",
+      "whatsappLink": "per WhatsApp schreiben",
+      "errorWhatsappAfter": ".",
+      "requiredNote": "Pflichtfeld",
+      "errorSummaryOne": "1 Feld fehlt noch. Der Hinweis steht direkt beim Feld.",
+      "errorSummaryMany": "{count} Felder fehlen noch. Der Hinweis steht jeweils unter dem Feld.",
+      "errors": {
+        "name": "Bitte geben Sie Ihren Namen an.",
+        "email": "Bitte geben Sie Ihre E-Mail-Adresse an.",
+        "emailFormat": "Diese E-Mail-Adresse scheint unvollständig. Bitte prüfen Sie sie.",
+        "message": "Bitte schreiben Sie uns eine kurze Nachricht.",
+        "consent": "Bitte setzen Sie hier ein Häkchen, damit wir Ihnen antworten dürfen.",
+        "firm": "Bitte geben Sie den Namen Ihrer Firma an.",
+        "role": "Bitte wählen Sie Ihre Funktion.",
+        "clientOrigin": "Bitte geben Sie den heutigen Wohnsitzstaat Ihrer Mandanten an."
+      },
+      "checkAttached": "Das Ergebnis Ihres Checks wird mit dieser Nachricht gesendet:",
+      "checkRemove": "Nicht mitsenden",
+      "fallbackText": "Unser Online-Formular ist im Moment nicht verfügbar. Bitte versuchen Sie es in einem Moment noch einmal.",
+      "honeypot": "Dieses Feld bitte leer lassen"
+    }
+  },
+  "check": {
+    "title": "Möglichkeiten prüfen",
+    "description": "Sechs kurze Fragen zeigen Ihren möglichen Weg zum Wohnsitz in der Schweiz und ob die Pauschalbesteuerung relevant sein kann. Alles bleibt im Browser.",
+    "intro": "Sechs kurze Fragen, etwa zwei Minuten. Ihre Antworten bleiben in Ihrem Browser, und nichts wird gesendet, ausser Sie möchten es.",
+    "start": "Check starten",
+    "next": "Weiter",
+    "back": "Zurück",
+    "seeResult": "Mein Ergebnis anzeigen",
+    "restart": "Neu beginnen",
+    "stepOf": "Schritt {current} von {total}",
+    "required": "Bitte wählen Sie eine Option, um fortzufahren.",
+    "yes": "Ja",
+    "no": "Nein",
+    "q1": {
+      "title": "Welche Staatsangehörigkeit(en) haben Sie?",
+      "hint": "Mehrfachauswahl möglich.",
+      "options": {
+        "CH": "Schweiz",
+        "EU": "EU / EFTA",
+        "UK": "Grossbritannien",
+        "US": "USA",
+        "OTHER": "Andere"
+      },
+      "otherLabel": "Welche Region?",
+      "otherOptions": {
+        "GULF": "Golfstaaten",
+        "ASIA": "Asien",
+        "AFRICA": "Afrika",
+        "AMERICAS": "Amerika",
+        "OTHER": "Andere"
+      }
+    },
+    "q2": {
+      "title": "Wo sind Sie heute steuerlich ansässig?",
+      "options": {
+        "UK": "Grossbritannien",
+        "FR": "Frankreich",
+        "DE": "Deutschland",
+        "IT": "Italien",
+        "BE": "Belgien",
+        "AT": "Österreich",
+        "NO": "Norwegen",
+        "EU_OTHER": "Anderes EU-/EFTA-Land",
+        "GULF": "VAE / Golfstaaten",
+        "US": "USA",
+        "CA": "Kanada",
+        "SG_HK": "Singapur / Hongkong",
+        "IN": "Indien",
+        "AFRICA": "Afrika",
+        "OTHER": "Anderes Land",
+        "CH": "Bereits in der Schweiz"
+      }
+    },
+    "q3": {
+      "title": "Was werden Sie in der Schweiz tun?",
+      "options": {
+        "NONE": "Keine Erwerbstätigkeit in der Schweiz, nur Verwaltung des eigenen Vermögens",
+        "ACTIVE": "Angestellt oder selbständig in der Schweiz tätig",
+        "UNSURE": "Noch unklar"
+      }
+    },
+    "q4": {
+      "title": "Ihr Haushalt",
+      "householdLabel": "Wer zieht um?",
+      "household": {
+        "SINGLE": "Nur ich",
+        "COUPLE": "Ein Paar"
+      },
+      "childrenLabel": "Haben Sie Kinder im Schulalter?",
+      "ageLabel": "Alter der gesuchstellenden Person",
+      "age": {
+        "UNDER_55": "Unter 55",
+        "55_PLUS": "55 oder älter"
+      },
+      "chTaxLabel": "Waren Sie (oder Ihr Ehepartner) in den letzten 10 Jahren in der Schweiz steuerlich ansässig?",
+      "chTax": {
+        "NO": "Nein",
+        "ORDINARY": "Ja, ordentlich besteuert",
+        "LUMP_SUM": "Ja, nach dem Aufwand besteuert"
+      }
+    },
+    "q5": {
+      "title": "Wie viel gibt Ihr Haushalt ungefähr pro Jahr aus, weltweit?",
+      "hint": "Dient nur als Hinweis, ob die Pauschalbesteuerung relevant sein könnte.",
+      "options": {
+        "LT_300K": "Unter CHF 300'000",
+        "300_600K": "CHF 300'000 – 600'000",
+        "600K_1M": "CHF 600'000 – 1 Million",
+        "GT_1M": "Über CHF 1 Million",
+        "NA": "Keine Angabe"
+      }
+    },
+    "q6": {
+      "title": "Wo möchten Sie leben, und ab wann?",
+      "regionLabel": "Region",
+      "regions": {
+        "LAKE_GENEVA": "Genferseeregion (französischsprachig)",
+        "ALPS": "Alpen und Berge",
+        "CENTRAL": "Zug und Zentralschweiz",
+        "TICINO": "Tessin (italienischsprachig)",
+        "ZURICH_BASEL": "Zürich oder Basel",
+        "OPEN": "Offen für Empfehlungen"
+      },
+      "timelineLabel": "Zeitpunkt",
+      "timelines": {
+        "LT_6M": "Innerhalb von 6 Monaten",
+        "6_12M": "In 6 bis 12 Monaten",
+        "GT_12M": "In mehr als 12 Monaten",
+        "EXPLORING": "Ich informiere mich erst"
+      }
+    },
+    "result": {
+      "title": "Ihr unverbindliches Ergebnis",
+      "route": "Ihr möglicher Weg",
+      "alsoPossible": "Ebenfalls prüfenswert",
+      "lumpSum": "Pauschalbesteuerung",
+      "cantons": "Kantone, die passen könnten",
+      "cantonNote": "Die kantonalen Mindestbemessungsgrundlagen und die Praxis unterscheiden sich und ändern sich. Wir klären dies vor jedem Gesuch mit dem Kanton ab.",
+      "flags": "Was Sie vor dem Umzug beachten sollten",
+      "noFlags": "Mit Blick auf Ihr heutiges Wohnsitzland fällt nichts Besonderes auf. Wir sehen uns Ihre Situation trotzdem im Detail an.",
+      "needs": "Was wir wissen müssten",
+      "nextTitle": "Nächster Schritt",
+      "nextText": "Ein vertrauliches Gespräch mit einer Beraterin oder einem Berater, um Ihren Weg zu bestätigen. Unverbindlich.",
+      "send": "Ergebnis senden / mit uns sprechen",
+      "disclaimer": "Dies ist eine allgemeine Einschätzung auf Grundlage Ihrer Antworten und keine Rechts- oder Steuerberatung. Über Bewilligungen und die Pauschalbesteuerung entscheiden die kantonalen Behörden im Einzelfall."
+    },
+    "routes": {
+      "R0": {
+        "label": "Schweizer Staatsangehörigkeit",
+        "text": "Sie brauchen keine Bewilligung. Die Pauschalbesteuerung steht Schweizer Staatsangehörigen nicht offen, es gilt daher die ordentliche Besteuerung."
+      },
+      "R1_NONE": {
+        "label": "EU/EFTA-Freizügigkeit, ohne Erwerbstätigkeit",
+        "text": "Eine B-Bewilligung ohne Erwerbstätigkeit, sofern Sie über ausreichende finanzielle Mittel und eine Schweizer Krankenversicherung verfügen."
+      },
+      "R1_ACTIVE": {
+        "label": "EU/EFTA-Freizügigkeit, mit Erwerbstätigkeit",
+        "text": "Eine B-Bewilligung auf Grundlage einer unselbständigen oder selbständigen Erwerbstätigkeit in der Schweiz."
+      },
+      "R1_UNSURE": {
+        "label": "EU/EFTA-Freizügigkeit",
+        "text": "Eine B-Bewilligung, entweder ohne Erwerbstätigkeit (mit ausreichenden Mitteln und Schweizer Krankenversicherung) oder auf Grundlage einer Tätigkeit in der Schweiz. Wir schauen gemeinsam, was zu Ihren Plänen passt."
+      },
+      "R2": {
+        "label": "Nicht-EU, mit Erwerbstätigkeit in der Schweiz",
+        "text": "Eine kontingentierte Arbeitsbewilligung. Für Grossbritannien gibt es ein eigenes Kontingent; andere Länder fallen unter die Drittstaatenkontingente, die restriktiv sind. Dieser Weg setzt einen Arbeitgeber oder einen Businessplan voraus."
+      },
+      "R3": {
+        "label": "Nicht-EU, im Ruhestand",
+        "text": "Aufenthalt für Personen ab 55 Jahren, die weder in der Schweiz noch im Ausland erwerbstätig sind (Art. 28 AIG); die Verwaltung des eigenen Vermögens ist erlaubt. Voraussetzung sind besondere persönliche Beziehungen zur Schweiz (Grundeigentum allein genügt nicht) und dauerhaft ausreichende finanzielle Mittel. Der Kanton entscheidet nach Ermessen, und das SEM muss zustimmen. Oft wird dieser Weg mit dem Weg über das erhebliche fiskalische Interesse kombiniert."
+      },
+      "R4": {
+        "label": "Nicht-EU, erhebliches fiskalisches Interesse",
+        "text": "Eine Ermessensbewilligung wegen eines erheblichen fiskalischen Interesses (Art. 30 Abs. 1 Bst. b AIG): Der Kanton beantragt sie, und das SEM muss zustimmen. In der Regel ist sie mit einer Pauschalbesteuerung in einer vom Kanton festgelegten Höhe verbunden (Genf zum Beispiel publiziert für diesen Weg eine Aufwandbemessung von CHF 750'000). Eine Steuervereinbarung allein ist noch keine Aufenthaltsbewilligung."
+      }
+    },
+    "lumpSum": {
+      "MAY_BE_ELIGIBLE": {
+        "label": "Könnte in Frage kommen",
+        "text": "Nach Ihren Antworten könnte die Pauschalbesteuerung (Besteuerung nach dem Aufwand) eine Option sein. Ob sie sich lohnt, hängt von Ihrem Einkommen, Ihrem Vermögen und dem Kanton ab."
+      },
+      "UNLIKELY": {
+        "label": "Voraussichtlich nicht vorteilhaft",
+        "text": "Ihre Lebenshaltungskosten scheinen unter der Mindestbemessungsgrundlage des Bundes zu liegen, daher passt die ordentliche Besteuerung wahrscheinlich besser."
+      },
+      "NOT_AVAILABLE": {
+        "label": "Nicht möglich",
+        "text": "Die Pauschalbesteuerung steht weder Schweizer Staatsangehörigen noch Personen offen, die in der Schweiz erwerbstätig sind oder in den letzten zehn Jahren in der Schweiz steuerlich ansässig waren (ausser sie wurden damals nach dem Aufwand besteuert). Es gilt die ordentliche Besteuerung."
+      },
+      "TO_ASSESS": {
+        "label": "Noch zu klären",
+        "text": "Wir brauchen noch ein paar Angaben, um beurteilen zu können, ob die Pauschalbesteuerung für Sie relevant ist. Wenn Sie in der Schweiz bereits nach dem Aufwand besteuert wurden, kann sie Ihnen unter Umständen erneut offenstehen."
+      },
+      "coupleNote": "Bei Ehepaaren müssen nach geltendem Recht beide Ehegatten die Voraussetzungen erfüllen. Wir klären die Situation Ihres Haushalts mit dem Kanton.",
+      "r4Flag": "Bei Nicht-EU-Staatsangehörigen, die in der Schweiz nicht erwerbstätig sind, ist der Aufenthalt in der Regel an die Pauschalbesteuerung geknüpft. Das sollten wir gemeinsam besprechen."
+    },
+    "flags": {
+      "UK": "Grossbritannien: Die Remittance Basis ist seit dem 6. April 2025 abgeschafft (vierjähriges FIG-Regime und Temporary Repatriation Facility für frühere ausländische Einkünfte und Gewinne); langjährig Ansässige (10 der letzten 20 Steuerjahre) können nach dem Wegzug noch 3 bis 10 Jahre der britischen Erbschaftssteuer auf das weltweite Vermögen unterliegen; für britische Staatsangehörige, die arbeiten möchten, das britische Kontingent.",
+      "FR": "Frankreich: Das Doppelbesteuerungsabkommen Schweiz–Frankreich enthält besondere Regeln für nach dem Aufwand besteuerte Personen; lassen Sie Ihre Situation vor dem Umzug mit einem Steuerruling bestätigen. Französische Wegzugssteuer auf nicht realisierte Gewinne (Art. 167 bis CGI).",
+      "DE": "Deutschland: Wegzugsbesteuerung (§ 6 AStG) auf Beteiligungen ab 1 %, wenn Sie mindestens 7 der letzten 12 Jahre in Deutschland unbeschränkt steuerpflichtig waren; eine modifizierte Pauschalbesteuerung für Einkünfte aus deutschen Quellen.",
+      "MODIFIED": "Um Abkommensvorteile für Einkünfte aus Ihrem heutigen Land geltend zu machen, ist eine modifizierte Pauschalbesteuerung nötig.",
+      "US_CITIZEN": "US-Staatsangehörige bleiben in den USA steuerpflichtig, der Vorteil einer Pauschalbesteuerung kann daher begrenzt sein. Schweizer Banken wenden zudem bei der Kontoeröffnung die FATCA-Regeln an.",
+      "PLAN_EARLY": "Planen Sie den Wechsel des steuerlichen Wohnsitzes sowie Ihre Bank- und KYC-Unterlagen frühzeitig. Auch Ihr heutiges Land kann eigene Wegzugs- oder Steuerregeln haben.",
+      "PLAN_EARLY_NON_EU": "Planen Sie den Wechsel des steuerlichen Wohnsitzes sowie Ihre Bank- und KYC-Unterlagen frühzeitig. Auch Ihr heutiges Land kann eigene Wegzugs- oder Steuerregeln haben. Ohne Schweizer oder EU-/EFTA-Staatsangehörigkeit gelten die Bewilligungswege für Nicht-EU-Staatsangehörige."
+    },
+    "needs": [
+      "Staatsangehörigkeiten und Pässe aller Familienmitglieder",
+      "Heutige und frühere steuerliche Wohnsitze (letzte 10 Jahre)",
+      "Vermögen und Einkünfte nach Art und Herkunftsland",
+      "Geplante Tätigkeiten oder Verwaltungsratsmandate in der Schweiz",
+      "Wohnpläne (mieten oder kaufen)",
+      "Schulbedarf",
+      "Ihr gewünschter Zeitpunkt"
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "description": "Wie Switzerland Residency mit Ihren Personendaten umgeht: Kontaktformular, Check, Webanalyse und Ihre Rechte.",
+    "updatedLabel": "Zuletzt aktualisiert",
+    "sections": [
+      {
+        "h": "Wer wir sind",
+        "p": [
+          "Diese Website wird von der Ark Fiduciaire SA, Genf, Schweiz, unter dem Namen Switzerland Residency betrieben. Wir sind verantwortlich für die hier beschriebene Bearbeitung von Personendaten nach dem Schweizer Bundesgesetz über den Datenschutz (DSG) und, soweit anwendbar, der EU-Datenschutz-Grundverordnung (DSGVO).",
+          "Bei Fragen zu Ihren Daten schreiben Sie uns über das [Kontaktformular](/de/contact/) dieser Website."
+        ]
+      },
+      {
+        "h": "Kontaktformular und Nachrichten",
+        "p": [
+          "Wenn Sie uns eine Nachricht senden, erhalten wir Ihren Namen, Ihre E-Mail-Adresse, optional Ihre Telefonnummer, Ihre bevorzugte Sprache, Ihre Nachricht und, falls Sie es beifügen möchten, das Ergebnis Ihres Checks. Wir verwenden diese Angaben nur, um Ihre Anfrage zu beantworten und, wenn Sie es wünschen, ein Angebot vorzubereiten.",
+          "Formulareingaben werden über Formspark, einen Dienst zur Formularverarbeitung, übermittelt. Wenn Sie uns per WhatsApp kontaktieren, bearbeitet auch WhatsApp Ihre Nachricht.",
+          "Mit einem Formular, das Sie senden, erhalten wir auch, wie Sie diese Website gefunden und welche Seiten Sie darauf besucht haben: die erste besuchte Seite, die Website, von der Sie kamen (nur deren Domain), die Kampagnenparameter des verwendeten Links (utm_source, utm_medium, utm_campaign, utm_term, utm_content und die Google-Ads-Klick-ID gclid, falls vorhanden) und bis zu 20 besuchte Seiten. Diese Angaben werden im Speicher der geöffneten Seite gehalten, während Sie surfen. Haben Sie Analyse-Cookies akzeptiert, werden sie zudem im Sitzungsspeicher (Session Storage) Ihres Browsers abgelegt, bis Sie den Tab schliessen. Sie werden nur mit einem Formular übermittelt, das Sie senden möchten, und wir nutzen sie, um zu verstehen, welche Inhalte und Kanäle nützlich sind."
+        ]
+      },
+      {
+        "h": "Check",
+        "p": [
+          "Der Check läuft vollständig in Ihrem Browser. Ihre Antworten werden weder an uns noch an Dritte gesendet. Wenn Sie Ihr Ergebnis an das Kontaktformular übergeben, wird es vorübergehend im Sitzungsspeicher (Session Storage) Ihres Browsers abgelegt und beim Schliessen des Tabs gelöscht."
+        ]
+      },
+      {
+        "h": "Webanalyse und Cookies",
+        "p": [
+          "Wir verwenden Google Analytics 4, einen Dienst von Google, um zu verstehen, wie die Website genutzt wird – zum Beispiel, welche Seiten gelesen werden und ob der Check abgeschlossen wird. Google Analytics wird auf jeder Seite im Einwilligungsmodus von Google (Consent Mode) geladen. Was es auf Ihrem Gerät speichern darf, hängt davon ab, wo Sie sich befinden – Google bestimmt dies anhand Ihrer IP-Adresse – und von Ihrer Wahl:",
+          "In der EU, im EWR und im Vereinigten Königreich werden ohne Ihre Zustimmung keine Analyse- oder Werbe-Cookies gesetzt. Bis dahin, und wenn Sie ablehnen, erhält Google Analytics nur cookielose Signale, zum Beispiel dass eine Seite aufgerufen wurde, ohne dass eine Kennung auf Ihrem Gerät gespeichert wird.",
+          "In der Schweiz werden Analyse-Cookies standardmässig verwendet, und Sie können sie jederzeit ablehnen. Werbebezogene Signale bleiben deaktiviert, sofern Sie nicht zustimmen.",
+          "In anderen Ländern werden Analyse-Cookies und werbebezogene Signale standardmässig verwendet, sofern Sie nicht ablehnen. Werbebezogene Signale sind Werbe-Cookies von Google, die Übermittlung von Nutzungsdaten an Google zu Werbezwecken und die Personalisierung von Werbung.",
+          "Wenn Sie ablehnen, wechselt Google Analytics zu cookielosen Signalen, und wir löschen seine Cookies auf dieser Website. Wenn Sie zustimmen, werden Analyse-Cookies und werbebezogene Signale aktiviert. Google kann diese Daten in den USA bearbeiten; siehe die [Datenschutzerklärung von Google](https://policies.google.com/privacy). Den Inhalt Ihrer Antworten oder Nachrichten senden wir nie an Google Analytics. Sie können Ihre Wahl jederzeit über den Link zu den Cookie-Einstellungen unten auf jeder Seite ändern."
+        ]
+      },
+      {
+        "h": "Aufbewahrung",
+        "p": [
+          "Wir bewahren Ihre Nachrichten so lange auf, wie es für die Beantwortung nötig ist, und – falls wir zusammenarbeiten – während der vom Schweizer Recht vorgeschriebenen Fristen. Analysedaten werden während eines in Google Analytics festgelegten, begrenzten Zeitraums gespeichert."
+        ]
+      },
+      {
+        "h": "Ihre Rechte",
+        "p": [
+          "Sie können Auskunft über Ihre Personendaten verlangen, sie berichtigen oder löschen lassen und der Bearbeitung widersprechen, indem Sie uns über das [Kontaktformular](/de/contact/) dieser Website schreiben. Sie können sich auch an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) oder an Ihre lokale Aufsichtsbehörde wenden."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "title": "Impressum",
+    "description": "Impressum von switzerlandresidency.ch: Betreiberin, Kontakt und Haftung.",
+    "sections": [
+      {
+        "h": "Betreiberin",
+        "p": [
+          "Switzerland Residency wird von der Ark Fiduciaire SA, Genf, Schweiz, betrieben.",
+          "Adresse: Ark Fiduciaire SA, Boulevard Georges-Favon 26, 1204 Genf, Schweiz",
+          "Kontakt: über das [Kontaktformular](/de/contact/) dieser Website"
+        ]
+      },
+      {
+        "h": "Keine Beratung",
+        "p": [
+          "Die Informationen auf dieser Website sind allgemeiner Natur und stellen keine Rechts-, Steuer- oder Finanzberatung dar. Über Aufenthaltsbewilligungen und Steuerregelungen entscheiden die zuständigen Schweizer Behörden im Einzelfall. Für eine Beratung zu Ihrer persönlichen Situation kontaktieren Sie uns bitte."
+        ]
+      },
+      {
+        "h": "Haftung",
+        "p": [
+          "Wir achten mit grosser Sorgfalt darauf, dass die Inhalte dieser Website korrekt und aktuell sind, können aber nicht garantieren, dass sie jederzeit vollständig, richtig und aktuell sind. Für die Inhalte externer Websites, auf die wir verlinken, sind wir nicht verantwortlich."
+        ]
+      },
+      {
+        "h": "Urheberrecht",
+        "p": [
+          "Texte, Grafiken und Gestaltung dieser Website sind urheberrechtlich geschützt. Bitte fragen Sie uns, bevor Sie sie weiterverwenden."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "text": "Wir verwenden Google Analytics, um zu sehen, wie die Website genutzt wird. In der EU/im EWR und im Vereinigten Königreich setzt es ohne Ihre Zustimmung keine Cookies, anderswo schon, sofern Sie nicht ablehnen. Mit Ihrer Zustimmung erlauben Sie zudem Werbe-Cookies von Google und personalisierte Werbung.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "more": "Datenschutzerklärung",
+    "label": "Cookie-Einwilligung"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "home": "Zur Startseite"
+  },
+  "imageAlt": {
+    "hero": "Ein ruhiger Schweizer See bei Sonnenuntergang, dahinter die Berge",
+    "lakeGeneva": "Der Genfersee mit Weinbergen und den Alpen in der Ferne",
+    "lakeLucerne": "Der Vierwaldstättersee, umgeben von grünen Hügeln",
+    "mountainAlps": "Schneebedeckte Alpengipfel über einem stillen Tal",
+    "mountainVillage": "Ein Bergdorf mit Holzchalets",
+    "cityGeneva": "Die Altstadt von Genf am See",
+    "cityZurich": "Die Zürcher Altstadt am Fluss",
+    "lakeLugano": "Lugano spiegelt sich im See zur goldenen Stunde",
+    "mountainMatterhorn": "Das Matterhorn im Morgenlicht über Zermatt",
+    "mountainEngadin": "Ein Hang am See im Engadin in warmem Herbstlicht",
+    "cityZug": "Das Seeufer von Zug bei Sonnenuntergang",
+    "cityLausanne": "Lausanne zur goldenen Stunde",
+    "familyLife": "Spaziergänger an einer Schweizer Seepromenade bei Sonnenuntergang",
+    "homeChalet": "Ein traditionelles Schweizer Chalet auf einer Alpwiese",
+    "homeLakeside": "Ein Haus am Hang mit Blick auf den Luganersee",
+    "school": "Ein modernes Schulgebäude in Zürich",
+    "vineyards": "Die Weinbergterrassen des Lavaux über dem Genfersee",
+    "terraceLake": "Ein gedeckter Balkontisch für zwei mit Blick auf den Genfersee und die Berge",
+    "lakesideWalk": "Zwei Menschen spazieren bei Sonnenuntergang an der Zuger Seepromenade",
+    "villageLane": "Ein Mensch geht durch eine Pflastergasse in der Zürcher Altstadt",
+    "chaletInterior": "Gemütliches Chalet-Wohnzimmer mit brennendem Holzofen und Lampenlicht",
+    "homeArrival": "Eine Hand hält Hausschlüssel vor einer Haustür",
+    "heroPeople": "Ein Paar im Gegenlicht Hand in Hand an einem Bergsee im Engadin",
+    "eveningWindows": "Ein Chalet mit warm erleuchteten Fenstern unter einem Sternenhimmel"
+  },
+  "theme": {
+    "label": "Farbschema",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "imageCaption": {
+    "hero": "Vierwaldstättersee, Zentralschweiz",
+    "lakeGeneva": "Seeufer in Genf",
+    "lakeLucerne": "Vierwaldstättersee",
+    "lakeLugano": "Lugano, Tessin",
+    "mountainAlps": "Matterhorn, Zermatt",
+    "mountainMatterhorn": "Matterhorn, Zermatt",
+    "mountainEngadin": "St. Moritz, Engadin",
+    "mountainVillage": "Verbier, Wallis",
+    "cityGeneva": "Jet d'Eau, Genf",
+    "cityZurich": "Zürcher Altstadt",
+    "cityZug": "Zug, am See",
+    "cityLausanne": "Lausanne, Waadt",
+    "familyLife": "Seepromenade, Zug",
+    "homeChalet": "Iseltwald, Berner Oberland",
+    "homeLakeside": "Über dem Luganersee, Tessin",
+    "school": "Zürich",
+    "vineyards": "Lavaux, Waadt",
+    "terraceLake": "Genfersee",
+    "lakesideWalk": "Zuger Seepromenade",
+    "villageLane": "Zürcher Altstadt",
+    "chaletInterior": "Ein Chalet-Wohnzimmer",
+    "homeArrival": "Der Einzug",
+    "heroPeople": "Engadin, Graubünden",
+    "eveningWindows": "Bergün, Graubünden"
+  },
+  "advisers": {
+    "title": "Für Berater: Mandanten beim Umzug in die Schweiz begleiten",
+    "accent": "Berater",
+    "metaTitle": "Für Berater: Mandanten beim Umzug in die Schweiz",
+    "description": "Für Private Banker, Vermögensverwalter, Anwälte und Steuerberater: Wir übernehmen die Schweizer Seite des Umzugs, die Mandantenbeziehung bleibt bei Ihnen.",
+    "intro": "Wenn Ihre Mandantin oder Ihr Mandant in die Schweiz zieht, bleiben Sie die Beraterin oder der Berater. Wir kümmern uns um die Schweizer Seite, von der Bewilligung und dem Steuerruling bis zum ersten Jahr im neuen Zuhause, und halten Sie dabei auf dem Laufenden.",
+    "ctaIntroduce": "Mandanten vorstellen",
+    "steps": {
+      "title": "So läuft eine Vorstellung ab",
+      "accent": "Vorstellung",
+      "items": [
+        {
+          "title": "Ein erstes, anonymes Gespräch",
+          "text": "Beschreiben Sie uns das Profil: heutiger Wohnsitz, Zeitplan, Kantone in der engeren Wahl. Für eine erste Einschätzung braucht es keinen Namen."
+        },
+        {
+          "title": "Ein schriftlicher Auftragsumfang",
+          "text": "Bevor die Arbeit beginnt, halten wir fest, was wir übernehmen und was bei Ihnen und den übrigen Beratern bleibt."
+        },
+        {
+          "title": "Das Treffen mit dem Mandanten, auf Wunsch mit Ihnen",
+          "text": "Wir kontaktieren Ihre Mandanten erst mit Ihrem Einverständnis und so, wie Sie es wünschen."
+        },
+        {
+          "title": "Updates für Sie unterwegs",
+          "text": "Sie hören von uns bei den wichtigen Schritten: Gesuch eingereicht, Ruling erhalten, Ankunft."
+        }
+      ]
+    },
+    "scope": {
+      "title": "Wer macht was",
+      "oursTitle": "Was wir in der Schweiz übernehmen",
+      "ours": [
+        "Das Bewilligungsgesuch und den Kontakt mit den kantonalen Behörden",
+        "Pauschal- oder ordentliche Besteuerung und das Gesuch um ein Steuerruling",
+        "Die Wahl von Kanton und Gemeinde",
+        "Die Wohnungs- oder Haussuche und bei einem Kauf die Lex-Koller-Prüfung",
+        "Die Ankunft: Anmeldung, Krankenversicherung, Schulen, Kontakte zu Banken",
+        "Schweizer Steuererklärungen nach dem Umzug, wenn gewünscht"
+      ],
+      "yoursTitle": "Was bei Ihnen bleibt",
+      "yours": [
+        "Die Mandantenbeziehung",
+        "Bank-, Anlage- und Vermögensverwaltungsmandate",
+        "Steuer- und Rechtsberatung im bisherigen Wohnsitzstaat, einschliesslich Wegzug",
+        "Strukturen, Trusts und Nachlassplanung ausserhalb der Schweiz"
+      ]
+    },
+    "discretion": {
+      "title": "Diskretion, konkret",
+      "items": [
+        {
+          "title": "Ihre Mandanten, Ihre Beziehung",
+          "text": "Wir kontaktieren Ihre Mandanten nie ohne Ihr Einverständnis und betreiben keine Werbung bei ihnen."
+        },
+        {
+          "title": "Zuerst anonym",
+          "text": "Für eine erste Einschätzung genügt ein Profil. Namen folgen später, wenn Sie und Ihre Mandanten so weit sind."
+        },
+        {
+          "title": "Eine Ansprechperson in der Schweiz",
+          "text": "Eine Person koordiniert die Schweizer Seite und hält Sie auf dem Laufenden."
+        }
+      ]
+    },
+    "briefings": {
+      "title": "Briefings für Berater",
+      "lead": "Kurze, belegte Notizen zu den Fragen, die Mandanten am häufigsten stellen. Zum Weiterleiten gedacht."
+    },
+    "form": {
+      "title": "Mandanten vorstellen",
+      "accent": "vorstellen",
+      "lead": "Den Namen Ihrer Mandanten brauchen wir noch nicht. Wir antworten persönlich, in der Regel innerhalb eines Arbeitstags.",
+      "adviserName": "Ihr Name",
+      "firm": "Firma",
+      "role": "Ihre Funktion",
+      "rolePlaceholder": "Bitte wählen",
+      "roles": {
+        "private-banker": "Private Banker",
+        "wealth-manager": "Vermögensverwalter",
+        "lawyer": "Anwalt",
+        "tax-adviser": "Steuerberater",
+        "family-office": "Family Office",
+        "relocation-estate-agent": "Relocation- oder Immobilienagentur",
+        "other": "Andere"
+      },
+      "email": "Geschäftliche E-Mail",
+      "phone": "Telefon",
+      "clientOrigin": "Heutiger Wohnsitzstaat der Mandanten",
+      "clientOriginPlaceholder": "z. B. Deutschland",
+      "timing": "Zeitplan der Mandanten",
+      "cantons": "Kantone in der engeren Wahl",
+      "cantonsPlaceholder": "z. B. Zug, Schwyz oder offen",
+      "scope": "Was könnten Ihre Mandanten brauchen?",
+      "scopes": {
+        "permit": "Aufenthaltsbewilligung",
+        "lump-sum-ruling": "Pauschalbesteuerung oder Steuerruling",
+        "property": "Immobilien",
+        "settling-in": "Relocation und Ankommen",
+        "ongoing-tax-wealth": "Laufende Steuer- und Vermögensbetreuung"
+      },
+      "anonymous": "Dies ist eine anonyme Vorabklärung: Den Namen meiner Mandanten nenne ich noch nicht",
+      "message": "Was sollten wir sonst noch wissen?",
+      "messagePlaceholder": "Familiensituation, berufliche Pläne, Fragen der Mandanten. Ohne Namen.",
+      "submit": "Vorstellung senden",
+      "successTitle": "Vielen Dank, Ihre Nachricht ist bei uns.",
+      "successText": "Wir melden uns persönlich, in der Regel innerhalb eines Arbeitstags. Ihre Mandanten kontaktieren wir nicht ohne Ihr Einverständnis."
+    },
+    "cta": {
+      "title": "Möchten Sie Mandanten vorstellen?",
+      "text": "Beschreiben Sie uns das Profil, gerne anonym. Wir übernehmen die Schweizer Seite und halten Sie auf dem Laufenden.",
+      "secondary": "Oder den möglichen Weg für Mandanten in zwei Minuten prüfen",
+      "accent": "Mandanten"
+    },
+    "contactNote": "Sie sind Berater und möchten Mandanten vorstellen?",
+    "contactNoteLink": "Zum Formular für Berater"
+  },
+  "contactExtra": {
+    "details": "Ein paar Angaben (freiwillig)",
+    "timing": "Wann möchten Sie umziehen?",
+    "timingPlaceholder": "Bitte wählen",
+    "timingOptions": {
+      "within-6-months": "Innerhalb von 6 Monaten",
+      "6-12-months": "In 6 bis 12 Monaten",
+      "over-12-months": "In mehr als 12 Monaten",
+      "exploring": "Wir informieren uns erst"
+    },
+    "cantons": "Kantone in der engeren Wahl",
+    "cantonsPlaceholder": "z. B. Waadt, Zug oder offen",
+    "introducedBy": "Von einem Berater empfohlen? Name der Firma",
+    "introducedByPlaceholder": "z. B. Ihre Bank oder Kanzlei"
+  },
+  "checkBand": {
+    "title": "Welcher Weg passt zu Ihnen?",
+    "accent": "Weg",
+    "text": "Beantworten Sie ein paar Fragen und sehen Sie in rund zwei Minuten einen möglichen Weg. Es wird nichts gesendet, ausser Sie schreiben uns."
+  }
+}
