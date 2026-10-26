@@ -1,6 +1,10 @@
-"""Build The Valet logo SVGs from outlined Archivo glyphs and a drawn check-mark V.
+"""Build The Valet logo SVGs: outlined wordmark glyphs plus a drawn, fluid check-mark V.
 
-Usage: python3 build_logo.py <Archivo[wdth,wght].ttf> <out_dir>
+The V keeps the original idea (a V that is also a check mark, in bordeaux) but is drawn
+as one calligraphic stroke: a full, rounded left arm and a fine right arm that sweeps
+up past the cap line, like a pen tick.
+
+Usage: python3 build_logo.py <fonts_dir> <out_dir> [variant ...]
 """
 import sys
 from pathlib import Path
@@ -11,120 +15,114 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
-FONT, OUT = sys.argv[1], Path(sys.argv[2])
-WDTH, WGHT = 125, 560
+FONTS, OUT = Path(sys.argv[1]), Path(sys.argv[2])
 
 COLORS = {
-    "light": {"ink": "#1F1A1B", "accent": "#6B1D2A"},
-    "dark": {"ink": "#F4EEE9", "accent": "#C98A93"},
+    "light": {"ink": "#201A1B", "accent": "#6A1F2B", "bg": "#F7F2ED"},
+    "dark": {"ink": "#F5EFEB", "accent": "#D5959E", "bg": "#171314"},
 }
 
-font = instantiateVariableFont(TTFont(FONT), {"wdth": WDTH, "wght": WGHT})
-gs, cmap, hmtx = font.getGlyphSet(), font.getBestCmap(), font["hmtx"]
-CAP = font["OS/2"].sCapHeight
+# name: (font file, axis location, tracking in em, V height in cap heights, V width factor)
+VARIANTS = {
+    "sans": ("Jost.ttf", {"wght": 430}, 0.0, 1.38, 0.92),
+    "serif": ("Cormorant.ttf", {"wght": 560}, 0.005, 1.42, 0.92),
+    "didone": ("Bodoni.ttf", {"wght": 430, "opsz": 28}, 0.0, 1.38, 0.9),
+}
 
 
-def kern(a, b):
-    try:
-        for sub in font["GPOS"].table.LookupList.Lookup:
-            pass
-    except KeyError:
-        pass
-    return 0
+class Face:
+    def __init__(self, file, loc):
+        self.font = instantiateVariableFont(TTFont(FONTS / file), loc)
+        self.gs = self.font.getGlyphSet()
+        self.cmap = self.font.getBestCmap()
+        self.hmtx = self.font["hmtx"]
+        self.upm = self.font["head"].unitsPerEm
+        self.cap = self.font["OS/2"].sCapHeight
+
+    def name(self, ch):
+        return self.cmap[ord(ch)]
+
+    def bounds(self, ch):
+        bp = BoundsPen(self.gs)
+        self.gs[self.name(ch)].draw(bp)
+        return bp.bounds
+
+    def run(self, text, x, track):
+        """Outline `text` on baseline y=0 (SVG y-down). Returns (d, ink_right)."""
+        parts = []
+        for ch in text:
+            n = self.name(ch)
+            pen = SVGPathPen(self.gs)
+            self.gs[n].draw(TransformPen(pen, (1, 0, 0, -1, x, 0)))
+            parts.append(pen.getCommands())
+            right = x + self.bounds(ch)[2]
+            x += self.hmtx[n][0] + track
+        return " ".join(parts), right
 
 
-def text_path(text, x0, tracking):
-    """Outline `text` with baseline y=0 (SVG y-down), return (d, advance_end)."""
-    parts, x = [], x0
-    for ch in text:
-        name = cmap[ord(ch)]
-        pen = SVGPathPen(gs)
-        gs[name].draw(TransformPen(pen, (1, 0, 0, -1, x, 0)))
-        parts.append(pen.getCommands())
-        x += hmtx[name][0] + tracking
-    return " ".join(parts), x - tracking
+def fluid_v(x, top, H, wf):
+    """Calligraphic check-mark V in a box of height H (top at y=top), width wf*H.
 
-
-def ink_right(text, x0, tracking):
-    """Right edge of the last glyph's ink, so spacing is optical, not metric."""
-    x, last = x0, None
-    for ch in text:
-        name = cmap[ord(ch)]
-        last = (name, x)
-        x += hmtx[name][0] + tracking
-    bp = BoundsPen(gs)
-    gs[last[0]].draw(bp)
-    return last[1] + bp.bounds[2]
-
-
-def ink_left(ch):
-    bp = BoundsPen(gs)
-    gs[cmap[ord(ch)]].draw(bp)
-    return bp.bounds[0]
-
-
-def check_v(x, H, top):
-    """The signature V: thick descending arm, a short tick, a fine rising arm.
-
-    Coordinates are in a box of height H whose top is at y=top (y-down).
-    Ratios keep the original's thick/thin contrast but give it a calmer slant.
+    Left arm: full, rounded head, tapering into a soft vertex.
+    Right arm: fine stroke sweeping up with a gentle concave curve to a tapered tip
+    that rises slightly above the left arm, so the V also reads as a tick.
     """
-    def P(u, v):
-        return f"{x + u * H:.1f},{top + v * H:.1f}"
+    W = wf * H
 
-    thick, thin = 0.205, 0.085
-    # Thick arm: from the top-left down to the tick.
-    arm = f"M{P(0, 0)} L{P(thick, 0)} L{P(0.42, 0.66)} L{P(0.42 - thick, 0.66)} Z"
-    # Fine arm with foot: from the bottom vertex up to the top-right, and a
-    # short horizontal foot to the left that echoes the original check mark.
-    vx = 0.47  # bottom vertex (left edge)
-    fine = (
-        f"M{P(vx, 1)} L{P(0.72 - thin * 0.2, 0)} L{P(0.72 + thin, 0)} "
-        f"L{P(vx + thin * 1.15, 1)} L{P(vx - 0.13, 1)} L{P(vx - 0.13, 1 - 0.075)} "
-        f"L{P(vx + 0.035, 1 - 0.075)} Z"
+    def p(u, v):
+        return f"{x + u * W:.1f},{top + v * H:.1f}"
+
+    d = (
+        f"M{p(0.02, 0.06)} "
+        f"C{p(0.06, 0.0)} {p(0.22, -0.01)} {p(0.27, 0.05)} "  # rounded head
+        f"C{p(0.33, 0.30)} {p(0.42, 0.58)} {p(0.50, 0.80)} "  # left arm, inner edge
+        f"C{p(0.62, 0.45)} {p(0.80, 0.12)} {p(1.0, -0.10)} "  # right arm, inner edge to tip
+        f"C{p(0.84, 0.16)} {p(0.68, 0.55)} {p(0.57, 0.96)} "  # right arm, outer edge
+        f"C{p(0.54, 1.03)} {p(0.43, 1.03)} {p(0.40, 0.96)} "  # soft vertex
+        f"C{p(0.27, 0.64)} {p(0.12, 0.30)} {p(0.02, 0.06)} Z"  # left arm, outer edge
     )
-    return arm + " " + fine, x + (0.72 + thin) * H
+    return d, x + W
 
 
-def build(theme, with_v_scale=1.30):
+def build(variant, theme):
+    file, loc, track_em, vscale, wf = VARIANTS[variant]
+    f, c = Face(file, loc), COLORS[theme]
+    track = track_em * f.upm
+    H = f.cap * vscale
+    top = -H + f.cap * 0.02  # V rests a hair below the baseline (overshoot)
+    the_d, the_r = f.run("The", 0, track)
+    v_d, v_r = fluid_v(the_r + f.cap * 0.26, top, H, wf)
+    alet_x = v_r + f.cap * 0.11 - f.bounds("a")[0]
+    alet_d, right = f.run("alet.", alet_x, track)
+    pad = f.cap * 0.12
+    y0 = top - H * 0.12 - pad
+    vb = f"{-pad:.0f} {y0:.0f} {right + 2 * pad:.0f} {-y0 + pad + f.cap * 0.05:.0f}"
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb}" role="img" aria-label="The Valet">\n'
+        f"  <title>The Valet</title>\n"
+        f'  <path fill="{c["ink"]}" d="{the_d} {alet_d}"/>\n'
+        f'  <path fill="{c["accent"]}" d="{v_d}"/>\n'
+        f"</svg>\n"
+    )
+
+
+def monogram(theme, transparent=False):
     c = COLORS[theme]
-    track = -6
-    H = CAP * with_v_scale
-    top = -CAP * with_v_scale  # V sits on the baseline, rising above caps
-    the_d, _ = text_path("The", 0, track)
-    gap = CAP * 0.30
-    vx = ink_right("The", 0, track) + gap
-    v_d, v_end = check_v(vx, H, top)
-    alet_x = v_end + gap * 0.62 - ink_left("a")
-    alet_d, end = text_path("alet.", alet_x, track)
-    width = ink_right("alet.", alet_x, track)
-    pad = 40
-    vb = f"{-pad} {top - pad:.0f} {width + 2 * pad:.0f} {-top + 2 * pad + 20:.0f}"
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb}" role="img" aria-label="The Valet">
-  <title>The Valet</title>
-  <path fill="{c['ink']}" d="{the_d} {alet_d}"/>
-  <path fill="{c['accent']}" d="{v_d}"/>
-</svg>
-"""
-
-
-def monogram(theme):
-    c = COLORS[theme]
-    H = 640
-    v_d, v_end = check_v(0, H, 0)
-    w = v_end
-    size = 1000
-    ox, oy = (size - w) / 2, (size - H) / 2
-    bg = "#F7F1EC" if theme == "light" else "#1F1A1B"
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {size} {size}" role="img" aria-label="The Valet">
-  <rect width="{size}" height="{size}" rx="180" fill="{bg}"/>
-  <g transform="translate({ox:.1f} {oy:.1f})"><path fill="{c['accent']}" d="{v_d}"/></g>
-</svg>
-"""
+    size, H, wf = 1000, 600, 0.92
+    d, _ = fluid_v(0, 0, H, wf)
+    ox, oy = (size - wf * H) / 2 + size * 0.012, (size - H) / 2 + H * 0.04
+    bg = "" if transparent else f'<rect width="{size}" height="{size}" rx="180" fill="{c["bg"]}"/>'
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {size} {size}" role="img" aria-label="The Valet">'
+        f'{bg}<g transform="translate({ox:.1f} {oy:.1f})"><path fill="{c["accent"]}" d="{d}"/></g></svg>\n'
+    )
 
 
 OUT.mkdir(parents=True, exist_ok=True)
+for v in sys.argv[3:] or VARIANTS:
+    for theme in COLORS:
+        (OUT / f"thevalet-logo-{v}-{theme}.svg").write_text(build(v, theme))
 for theme in COLORS:
-    (OUT / f"thevalet-logo-{theme}.svg").write_text(build(theme))
     (OUT / f"thevalet-monogram-{theme}.svg").write_text(monogram(theme))
+    (OUT / f"thevalet-monogram-{theme}-transparent.svg").write_text(monogram(theme, True))
 print("ok")
