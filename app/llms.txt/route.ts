@@ -21,7 +21,7 @@ export function GET() {
     `The Valet is a premium concierge service based in Geneva, Switzerland ("${t("fr", "meta.tagline")}" / "${t("en", "meta.tagline")}"). One point of contact for private chauffeur and airport transfers, Geneva–Alps transfers, private child transport, private concierge, residence management, chalets and residences, weddings and private events, the Glam Team (hair, makeup, styling), medical concierge, security and legal or real estate introductions.`,
     `Areas: ${AREAS_SERVED.map((a) => a.en).join(", ")}; other destinations on request.`,
     `Availability: ${t("en", "common.availability")}`,
-    "Regulated services (chauffeur/VTC, child transport, security, medical, legal, real estate, private jets, yachts) are coordinated through independent, appropriately licensed partners; The Valet does not itself give medical or legal advice. No prices are published: each request receives a proposal.",
+    "Regulated services (chauffeur/VTC, child transport, security, medical, legal, real estate, private jets, yachts) are provided by independent partners, chosen for their authorised activity; The Valet introduces and coordinates, and does not itself give medical or legal advice. No prices are published: each request receives a proposal.",
     `How to request: the request form (${absoluteUrl(pagePath("en", "request"))}, French: ${absoluteUrl(pagePath("fr", "request"))}) or the contact page. Languages: French (default, /fr/) and English (/en/).`,
     "",
     "## Main pages (English)",

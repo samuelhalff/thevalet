@@ -60,14 +60,14 @@
     "languagesLabel": "Languages",
     "languagesText": "French, English",
     "deliveryLabel": "Delivery",
-    "deliveryPartner": "Provided by independent, appropriately licensed partners, coordinated by The Valet",
+    "deliveryPartner": "Provided by independent partners, chosen for their authorised activity; coordinated by The Valet",
     "deliveryCoordinated": "Arranged and coordinated by The Valet, with selected providers",
     "cta": "Request this service",
     "asideTitle": "One request, one contact",
     "asideText": "Tell us the date, the place and what you have in mind: we come back to you with a clear proposal.",
     "relatedTitle": "Related services",
     "areasNote": "Depending on the request, we also coordinate services elsewhere in Switzerland and abroad.",
-    "deliveryPartnerShort": "Through licensed partners, coordinated by The Valet",
+    "deliveryPartnerShort": "Through independent partners, coordinated by The Valet",
     "deliveryCoordinatedShort": "Arranged by The Valet"
   },
   "journalPage": {
@@ -233,5 +233,10 @@
     "residence": "Residences",
     "car": "Transport",
     "alps": "Swiss and French Alps"
+  },
+  "routeIndex": {
+    "access": "Access from Geneva",
+    "stay": "Stay",
+    "title": "Route index"
   }
 }

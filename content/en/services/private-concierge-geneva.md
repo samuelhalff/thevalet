@@ -1,102 +1,78 @@
 ---
 title: "Private and luxury concierge in Geneva"
-description: "Private concierge in Geneva: personal assistance, reservations, gift sourcing, bespoke research and hotels worldwide, all through a single contact."
+description: "Private concierge in Geneva: personal assistance, reservations, gift sourcing, bespoke research, household organisation and hotels worldwide."
 translationKey: "concierge"
 updated: "2026-10-26"
 order: 1
-summary: "Personal assistance, reservations, gift sourcing, bespoke research and hotels worldwide, through a single contact."
+summary: "Personal assistance, reservations, gifts, bespoke research, your household and hotels worldwide."
 serviceType: "Private concierge service"
 delivery: "coordinated"
-answer: "The Valet is a private concierge based in Geneva: we handle your reservations, gift sourcing, unexpected requests, household coordination and hotel bookings worldwide. You have a single contact; we coordinate every request and, where needed, entrust it to the right provider or partner."
+answer: "The Valet is a private concierge based in Geneva. We handle your reservations, gift sourcing, practical errands, unexpected requests, the organisation of your household and hotel bookings worldwide. We do the organising ourselves and entrust the rest to providers or independent partners, confirming in writing who will act and on what terms."
 faq:
-  - q: "What can a private concierge take care of?"
-    a: "Reservations, gift sourcing and purchasing, bespoke research, coordination of your household, drivers and stays, and unexpected requests. If a request falls outside our scope, we tell you."
-  - q: "Can I contact you in the evening or at the weekend?"
-    a: "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request."
+  - q: "What can I ask a private concierge in Geneva to do?"
+    a: "Reservations, sourcing and buying gifts, bespoke research, practical errands, household organisation, coordinating chauffeurs and booking hotels or residences. If a request falls outside our scope, we tell you."
   - q: "Do I need a membership?"
-    a: "No. You can give us a single request or ongoing support. Terms are set out in the proposal, before anything is agreed."
-  - q: "Where do you operate?"
-    a: "Mainly in Geneva and the canton of Vaud, and in the Swiss and French Alpine resorts. For hotel and stay bookings, we work on destinations worldwide."
-  - q: "How is my information handled?"
-    a: "Discreetly: a provider receives only the information needed for their task, and anything touching your private life is shared only with your agreement."
-  - q: "How is the price of a request set?"
-    a: "It depends on the nature of the request, the time it takes and the providers involved. You receive a proposal before anything is agreed; purchases made on your behalf are approved with you."
-  - q: "Which languages can I write to you in?"
-    a: "French or English. For other languages, tell us when you make the request and we will let you know what is possible."
+    a: "No. You can make a one-off request. For ongoing support, we agree the scope and terms together, and they are set out in the proposal."
+  - q: "How are services charged?"
+    a: "Each request receives a proposal before any commitment: our own work and, separately, the cost of services booked with third parties. Expenses incurred on your behalf are listed in a statement."
+  - q: "Can I reach you at night or at weekends?"
+    a: "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. What can be arranged late at night depends mostly on the providers involved."
+  - q: "Do you book hotels outside Switzerland?"
+    a: "Yes. We book hotels, private residences and holiday rentals worldwide, according to your dates, budget and preferences. The property's cancellation terms are given to you before booking."
+  - q: "What do you do with the personal information I share?"
+    a: "We use it to handle your requests and pass a provider only what they need to do their part. Health or security information should not be sent through the website form."
 ---
 
-## What we arrange for you
+## What you can hand over to us
 
-A private concierge gives you time back. You hand us what weighs on you, what needs research or what must be done quickly; we deal with it and keep you clearly informed, without burying you in detail.
+A private concierge exists to make happen what you do not have time to organise yourself. In Geneva, our requests range from the very simple (a table, a ticket, a gift delivered to the right address) to the ongoing (running a household, a multi-stop journey).
 
 ### Personal assistance
 
-- Managing your diary, appointments and reservations
-- Sourcing and buying gifts for special occasions: birthdays, thank-yous, births, the end of the year
-- Bespoke research: a rare experience, a specialist, a craftsperson, a hard-to-find item
-- Tracking expenses for the requests you entrust to us, with a simple summary
-- Handling unexpected requests as your needs change along the way
+- Sourcing and buying gifts for a specific occasion, with a budget and delivery date set in advance.
+- Bespoke research: a particular experience, a craftsman, an expert in a given field.
+- Everyday practical and administrative errands, using the documents you send us.
+- Keeping a statement of expenses incurred on your behalf, request by request.
+- Handling unexpected requests and reorganising what needs to change when your plans move.
 
-### Your home and your travel
+### Daily life and the household
 
-- Overseeing the running of the household, cleaning and gardening
-- Welcoming visitors, managing keys and access
-- Following up repairs and maintenance work
-- Coordinating your drivers and journeys
-- Coordinating personal security services, entrusted to specialist partners
+We oversee the running of your home (cleaning, laundry, gardening), welcoming visitors, keys and the follow-up of repairs. When that becomes regular, it falls under our [residence management in Geneva and Vaud](/en/services/residence-management/). We also coordinate getting around, with a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) for an evening or a day of meetings.
 
-For journeys in town and to the airport, we call on a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/); for protection needs, we coordinate specialist partners in [security and protection](/en/services/security-protection/).
+### Reservations, travel and hotels
 
-### Reservations and travel
+Restaurants, performances, tickets, hotels and residences: we book according to your dates and preferences, in Switzerland and abroad. For a mountain stay, our page on [chalets and residences in the Alps](/en/services/alpine-chalets-residences/) sets out what we arrange resort by resort.
 
-- Restaurant tables, shows, concerts, exhibitions and treatments
-- High-end hotels in Switzerland and worldwide, to your criteria
-- Private residences and seasonal rentals, in the mountains and elsewhere
-- Complete organisation of a trip: transfers, accommodation, appointments on site
+## Hotels and residences worldwide
 
-## How a request works
+Booking a hotel is often the simplest part of a trip, yet the one where details matter: a connecting room for the children, a quiet floor, a late arrival announced, a transfer timed to the flight. We look for the property that fits your plans and budget, a city hotel or somewhere more secluded, then pass on your preferences before you arrive.
 
-1. **You write to us.** By email, phone or message, with as much detail as you have. A sentence is enough to start, for example by [sending a request to your private concierge](/en/request/?service=concierge); we then ask the useful questions.
-2. **We clarify.** Timing, budget, preferences, the people involved: we check exactly what you expect, and what must not happen.
-3. **We propose.** We research the options, check availability and send you a short proposal with each provider's terms.
-4. **We deliver.** Once you agree, we book, buy or coordinate, then confirm every element in writing.
-5. **We follow through.** Until the request is complete, you keep a single contact. If anything changes, you write to us, not to five providers.
+For longer or family stays, we also look for private residences and holiday rentals: a villa, a city apartment or a chalet. Each proposal states what is included, the cancellation terms and the services we can add on site, such as a private chef or housekeeping during the stay.
 
-## Typical situations
+## What helps us to know
 
-The requests we receive often look like these:
+A clear request is handled faster. Depending on the case, tell us:
 
-- **An important dinner to arrange the same evening**, with a quiet table and a car planned for the end of the night.
-- **A gift to find and deliver** at short notice, for someone whose tastes you know but whose favourite shops you may not.
-- **A busy week** in Geneva, with back-to-back appointments, guests to welcome and a house to prepare.
-- **A stay to organise from start to finish**: hotel, transfers, bookings on site and special requests passed on in advance.
-- **An unusual search**: a specialist to identify, an item no longer sold, an experience found in no catalogue.
-- **An unexpected request** while travelling, when a plan changes and everything has to be reorganised.
+- the aim and the deadline: by when, for whom, for what occasion;
+- the budget, or at least a range, and what matters most (timing, price, the character of the place);
+- your known preferences: dietary needs, tastes, brands or styles to avoid;
+- who to contact, and who not to copy in;
+- how you want to be kept informed: a message at each step or a single report.
 
-Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. When a request cannot be met on the terms you want, we tell you early and suggest an alternative.
+If you do not yet know what you want, just say so: part of our work is to offer two or three reasoned options.
 
-## Where we work
+## Lead times and availability
 
-**Geneva** is our base. It is where we know the addresses, the rhythm of the city and the busy periods most closely, such as major trade fairs and international conferences, when bookings need to be made earlier.
+Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. What affects timing is rarely our own hours and mostly other people's: a fully booked restaurant, a shop closed on Sundays, a craftsman who works to order, a busy period in Geneva. When a request cannot be met in the time you want, we tell you and offer an alternative rather than wait.
 
-**The canton of Vaud** and the Lake Geneva region are part of our usual area, for homes, appointments and guests.
+## What we do ourselves, and what we entrust
 
-**The Alpine resorts**, in Valais (Verbier, Zermatt), the Bernese Oberland (Gstaad), Graubünden (St-Moritz) and the French Alps (Chamonix, Megève, Courchevel): we coordinate stays, transfers and chalet preparation there. See our [Alpine chalets and residences](/en/services/alpine-chalets-residences/).
+We do the research, comparison, booking and follow-up ourselves. The services themselves are delivered by third parties: restaurants, hotels, craftsmen, couriers, housekeeping companies. For regulated services (passenger transport, security, health, legal or property advice) we work with independent partners, chosen for their authorised activity; The Valet introduces and coordinates, but does not provide these services itself. That is the case for our [medical concierge](/en/services/medical-concierge/) and for [planning a wedding or private event](/en/services/weddings-private-events/), where we coordinate several providers around a single date.
 
-**Elsewhere in the world**, we book hotels, residences and services remotely, working with local establishments and partners.
+Before any booking, we confirm in writing the provider, what is included and on what terms.
 
-## Who does what
+## The questions we will ask you
 
-The Valet is your contact and the coordinator of every request. We handle the listening, research, comparison of options, bookings, follow-up and communication with you ourselves.
+For a first request, we will ask how and when to reach you, whether anyone else may instruct us on your behalf (an assistant, a family member), and how you prefer to settle expenses incurred for you. For ongoing support, we will also agree what we may decide on our own and what must be put to you first.
 
-The services themselves are delivered by the people whose job it is: hotels, restaurants, shops, craftspeople, household providers. For regulated services such as passenger transport, security, healthcare, law or real estate, we work with independent, appropriately licensed partners, who confirm their own terms. The Valet does not provide legal or medical advice.
-
-For you, the split is simple: one person to talk to, and providers chosen for each task.
-
-## Exceptional hotels worldwide
-
-For a business trip, a family holiday or a private escape, we search for high-end hotels to your criteria: neighbourhood, quiet, room category, dining, wellness, ease of transfers. A contemporary hotel in the heart of a city or a secluded address far from the bustle: we present a short, reasoned selection, then coordinate the booking and special requests, such as a late arrival, a cot or a table booked for the first evening.
-
-## An ongoing relationship
-
-Some clients write to us for a single request; others prefer regular support. In that case, your contact learns your habits and preferences, anticipates what can be anticipated and spares you from repeating the same instructions. For regular care of a house or apartment, see our [residence management](/en/services/residence-management/).
+You can [send a request to our concierge](/en/request/?service=concierge) in a few lines: we come back with precise questions or a first proposal.

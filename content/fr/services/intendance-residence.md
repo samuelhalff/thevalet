@@ -7,82 +7,63 @@ order: 5
 summary: "Housekeeping, linge, clés et accès, suivi de la maintenance et préparation de la maison avant votre arrivée."
 serviceType: "Intendance de résidence"
 delivery: "coordinated"
-answer: "The Valet coordonne l'intendance de votre résidence à Genève et dans le canton de Vaud : entretien de la maison, linge, approvisionnement, gestion des clés et des accès, accueil des visiteurs, suivi des réparations et du jardin. Nous sélectionnons et coordonnons les intervenants, de façon régulière ou saisonnière, et restons votre seul interlocuteur."
+answer: "The Valet coordonne l'intendance de votre résidence à Genève et dans le canton de Vaud : entretien de la maison, linge, approvisionnement, gestion des clés et des accès, accueil des visiteurs, suivi des réparations et du jardin. Nous établissons avec vous un cahier des charges, sélectionnons les intervenants et suivons leur travail, de façon régulière ou saisonnière."
 faq:
-  - q: "Intervenez-vous de façon régulière ou ponctuelle ?"
-    a: "Les deux. Nous pouvons organiser un entretien régulier, une intervention ponctuelle ou une préparation saisonnière avant votre arrivée."
-  - q: "Qui réalise le ménage et l'entretien ?"
-    a: "Des intervenants indépendants que nous sélectionnons selon la tâche. The Valet planifie leurs passages, transmet vos consignes et vous rend compte."
-  - q: "Pouvez-vous gérer les clés en notre absence ?"
-    a: "Oui. Nous organisons la remise des clés et les accès pour les intervenants et les visiteurs que vous autorisez, selon des règles convenues avec vous."
-  - q: "Pouvez-vous préparer une résidence secondaire avant notre arrivée ?"
-    a: "Oui : ouverture de la maison, ménage, linge, approvisionnement et vérification des équipements, selon une liste que nous établissons ensemble."
-  - q: "Comment signaler un problème dans la maison ?"
-    a: "Vous nous écrivez ; nous faisons intervenir l'artisan adapté et suivons la réparation. Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande."
-  - q: "Intervenez-vous aussi pour un chalet à la montagne ?"
-    a: "Oui, dans les stations où nous coordonnons des séjours, en Suisse et dans les Alpes françaises. Les intervenants sont alors choisis sur place."
-  - q: "Comment êtes-vous informé de l'état de la maison ?"
-    a: "Par les comptes rendus des intervenants et nos propres vérifications lors des passages convenus. Vous recevez un résumé selon la fréquence de votre choix."
+  - q: "Quelle est la différence entre intendance et ménage ?"
+    a: "Le ménage est une partie de l'intendance. L'intendance couvre aussi le linge, l'approvisionnement, les clés, l'accueil des visiteurs, le suivi des réparations, le jardin et la préparation de la maison avant votre arrivée."
+  - q: "Est-ce que les mêmes intervenants viennent à chaque passage ?"
+    a: "Pour un suivi régulier, nous cherchons à faire intervenir les mêmes personnes, selon leur disponibilité. Tout changement d'intervenant vous est signalé."
+  - q: "Peut-on confier les clés de la maison ?"
+    a: "Oui. Nous convenons avec vous de qui détient les clés ou les codes, de qui y a accès et de la manière dont chaque remise est consignée."
+  - q: "Gérez-vous aussi une résidence secondaire ou un chalet ?"
+    a: "Oui, en Suisse romande et dans les stations où nous intervenons. Pour un chalet loué pendant un séjour, voir notre page chalets et résidences dans les Alpes."
+  - q: "Les produits et fournitures sont-ils compris ?"
+    a: "Cela dépend de ce qui est convenu. Les fournitures peuvent être achetées pour vous et refacturées sur relevé, ou fournies par vous ; c'est précisé dans la proposition."
+  - q: "Que se passe-t-il si un intervenant constate un dégât ?"
+    a: "Il le signale, et nous vous en informons avec, si possible, une photo. Nous proposons ensuite un artisan et un devis ; rien n'est engagé sans votre accord, sauf consigne contraire convenue pour les urgences."
 ---
 
-## Ce que nous organisons
+## L'entretien courant de la maison
 
-L'intendance d'une villa à Genève ou d'un appartement au bord du lac repose sur des gestes réguliers et sur quelqu'un qui en garde la vue d'ensemble. Nous tenons ce rôle : nous organisons les tâches, choisissons les intervenants et vous rendons compte.
+Le housekeeping est le cœur de l'intendance : ce qui fait qu'une maison reste propre, rangée et prête à vivre sans que vous ayez à y penser. Selon le cahier des charges convenu, il comprend :
 
-### Entretien de la maison (housekeeping)
+1. **Les espaces communs** : sols aspirés et lavés, surfaces dépoussiérées, pièces de vie remises en ordre.
+2. **Les chambres et salles de bains** : draps changés, salles de bains nettoyées, effets personnels rangés, fournitures renouvelées.
+3. **Les déchets et le recyclage** : collecte, tri et sacs remplacés selon le rythme de la commune.
+4. **Le mobilier et les équipements** : meubles, électroménager et équipements entretenus selon leurs besoins.
+5. **L'approvisionnement** : produits d'accueil, serviettes, papier, fournitures de maison disponibles.
+6. **La blanchisserie** : linge de maison et vêtements lavés, repassés et rangés.
+7. **L'inspection et le signalement** : dommages, réparations nécessaires ou objets manquants repérés et signalés.
+8. **La coordination** avec les autres intervenants de la maison.
 
-- Entretien des pièces de vie : aspirer, laver les sols, dépoussiérer les surfaces
-- Préparation des chambres : changement des draps, rangement des effets personnels
-- Nettoyage des salles de bains et renouvellement des produits d'accueil
-- Entretien du mobilier, des appareils électroménagers et des équipements
-- Gestion des déchets, du tri et du recyclage
-- Blanchisserie : lavage, repassage et rangement du linge de maison et des vêtements
-- Approvisionnement : produits d'entretien, serviettes, papier, fournitures du quotidien
-- Inspection et signalement des dommages, des réparations nécessaires ou des articles manquants
+## Clés, accès, visiteurs et maintenance
 
-### Au-delà du ménage
+Au-delà du ménage, l'intendance porte sur ce qui se passe autour de la maison. Nous gérons les clés et les accès selon des règles convenues avec vous, accueillons les visiteurs, artisans et livreurs, et suivons les réparations et les opérations de maintenance jusqu'à leur clôture. Le jardin est confié à des jardiniers que nous coordonnons, avec un calendrier adapté aux saisons. Pour une alarme, une surveillance ou un contrôle d'accès, nous faisons appel à nos partenaires en [sécurité et protection](/fr/services/securite-protection/) : ces prestations ne relèvent pas de l'intendance elle-même.
 
-- Gestion des clés et des accès pour les intervenants et les visiteurs
-- Accueil de vos invités, des livraisons et des artisans
-- Suivi des réparations et des opérations de maintenance
-- Entretien du jardin, des terrasses et des extérieurs
-- Coordination de l'ensemble des personnes qui interviennent dans la maison
+## Avant votre arrivée, pendant votre absence
 
-## Comment cela se met en place
+Beaucoup de résidences de la région ne sont occupées qu'une partie de l'année. Pendant votre absence, nous pouvons organiser des passages réguliers : aération, relevé du courrier, contrôle visuel, arrosage. Avant votre retour, la maison est préparée selon vos consignes : chauffage remis en route, lits faits, réfrigérateur rempli, fleurs. Nous pouvons aussi faire coïncider cette préparation avec votre arrivée, en lien avec notre [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) pour l'accueil à l'aéroport. Pour un dîner ou une réception à la maison, l'intendance se coordonne avec notre service d'[événements privés](/fr/services/mariages-evenements/).
 
-1. **Une visite ou un échange.** Nous apprenons le fonctionnement de la maison : pièces, équipements, habitudes, ce qui doit être fait et ce qui ne doit pas être touché.
-2. **Une proposition.** Tâches, fréquence, intervenants et conditions sont précisés avant tout engagement. Vous pouvez [demander une intendance pour votre résidence](/fr/demande/?service=residence-management) pour commencer.
-3. **Un cahier de la maison.** Nous rédigeons avec vous les consignes : produits à utiliser, pièces privées, règles d'accès, contacts utiles.
-4. **Les passages.** Les intervenants suivent ce cahier ; nous planifions et vérifions leur travail.
-5. **Le compte rendu.** Vous recevez un résumé régulier et nous vous signalons tout ce qui demande une décision.
+## Comment nous établissons le cahier des charges
 
-## Situations courantes
+Tout part d'une visite ou d'un échange détaillé sur la maison. Nous vous demanderons :
 
-- **Une résidence secondaire inoccupée plusieurs mois**, à ouvrir, aérer, nettoyer et approvisionner avant votre arrivée, puis à refermer après votre départ.
-- **Une maison de famille avec des invités** qui se succèdent : chambres à préparer, linge à renouveler, accueil à prévoir.
-- **Une fuite ou une panne pendant votre absence**, qui demande un artisan, une remise de clés et un suivi jusqu'à la réparation.
-- **Un emménagement** : premier grand ménage, mise en place du linge et des fournitures, coordination des livraisons.
-- **Un jardin à entretenir au fil des saisons**, avec des passages adaptés au printemps et à l'automne.
-- **Un dîner ou une réception à la maison**, avec une remise en ordre le lendemain.
+- la surface, le nombre de pièces et les espaces particuliers (cave, piscine, dépendances) ;
+- le rythme souhaité : quotidien, quelques passages par semaine, saisonnier ;
+- les règles de la maison : pièces où l'on n'entre pas, produits à éviter, objets fragiles, animaux ;
+- les personnes qui donnent des consignes et celles à informer ;
+- la manière dont les clés, les codes et les accès sont gérés aujourd'hui.
 
-## Où nous intervenons
+Le cahier des charges est écrit, transmis aux intervenants et revu avec vous lorsque vos besoins changent. Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande.
 
-**Genève** : villas, maisons et appartements de la ville et du canton, où nous coordonnons des passages réguliers ou ponctuels.
+## Ce qui est compris et ce qui se commande à part
 
-**Le canton de Vaud** : résidences au bord du lac et dans l'arrière-pays, souvent occupées une partie de l'année, ce qui donne plus de place à la préparation avant arrivée et à la surveillance en l'absence des propriétaires.
+Le périmètre est fixé dans la proposition. En général, le housekeeping, le linge, l'approvisionnement courant, la gestion des clés et le suivi des intervenants en font partie. Les réparations, l'entretien technique (chauffage, piscine, installations), le gros jardinage et les achats importants sont commandés à part, sur devis et avec votre accord. Les fournitures achetées pour vous figurent sur un relevé. Pour tout ce qui dépasse la maison, comme les réservations, les cadeaux ou les voyages, notre [conciergerie à Genève](/fr/services/conciergerie-privee-geneve/) prend le relais.
 
-**Les stations des Alpes** : chalets en Valais, à Gstaad, à St-Moritz et dans les Alpes françaises. En montagne, l'intendance suit le rythme des saisons : ouverture avant l'hiver, entretien pendant les séjours, fermeture au printemps. Voir l'intendance d'un [chalet à Verbier](/fr/services/chalets-residences-alpes/#verbier) ou à [Gstaad](/fr/services/chalets-residences-alpes/#gstaad).
+## Les intervenants et leur encadrement
 
-Ce qui change d'un lieu à l'autre : les intervenants disponibles sur place, l'accès en hiver et le rythme d'occupation de la maison.
+The Valet sélectionne les intervenants (personnel de maison, entreprises d'entretien, jardiniers, artisans), leur transmet le cahier des charges et suit leur travail. Les prestations techniques sont réalisées par des entreprises indépendantes, qui établissent leurs propres devis. Nous vous confirmons par écrit qui intervient chez vous, à quel rythme et à quelles conditions, et nous vous signalons tout changement.
 
-## Qui fait quoi
+Le suivi se fait au rythme qui vous convient : un court compte rendu après chaque passage, un point hebdomadaire ou un simple message lorsqu'un élément demande votre décision. Les remarques des personnes qui vivent dans la maison, résidents, invités ou personnel, sont recueillies et transmises aux intervenants concernés. Pour une maison à la montagne, la même organisation s'applique à votre chalet ; nos pages sur les [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/) précisent ce que nous organisons pendant un séjour en station.
 
-**The Valet coordonne.** Nous sélectionnons les intervenants, planifions leurs passages, transmettons vos consignes, gardons les clés selon les règles convenues, vérifions le travail et vous rendons compte. Nous sommes votre interlocuteur unique pour la maison.
-
-**Les intervenants réalisent.** Le ménage, la blanchisserie, le jardinage et les réparations sont réalisés par des intervenants et des artisans indépendants, choisis selon la tâche. Ils confirment leurs conditions avant d'intervenir.
-
-**Les services spécialisés restent séparés.** Les besoins de surveillance, d'alarme ou de protection de la maison relèvent de partenaires spécialisés en [sécurité et protection](/fr/services/securite-protection/), que nous pouvons coordonner à part.
-
-## Préparer la maison avant votre arrivée
-
-Pour une résidence secondaire, nous établissons avec vous une liste d'arrivée : ouverture et aération, chauffage, ménage complet, lits faits, linge et serviettes en place, réfrigérateur approvisionné selon vos préférences, fleurs si vous le souhaitez, vérification des équipements. Si vous arrivez par l'aéroport de Genève, nous coordonnons aussi votre trajet avec un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/). Après votre départ, nous refermons la maison selon vos consignes et vous signalons ce qui doit être prévu pour le séjour suivant.
+Pour commencer, vous pouvez [décrire votre résidence et vos besoins d'intendance](/fr/demande/?service=residence-management) : nous revenons vers vous pour organiser une visite ou un premier échange.

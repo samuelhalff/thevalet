@@ -167,15 +167,8 @@ export default function RequestBuilder({ labels, r, services, channels, locale, 
     details: r.detailsQuestion,
   };
   return (
-    <div className="note-card">
+    <div className="max-w-2xl">
       <p className="phrase t-3 text-brand">{r.summaryTitle}</p>
-      <ol className="mb-8 mt-4 flex flex-wrap gap-x-5 gap-y-1 text-[0.85rem] text-muted" aria-label={r.stepOf.replace("{current}", String(step + 1)).replace("{total}", String(STEPS.length))}>
-        {STEPS.map((s, i) => (
-          <li key={s} className={i === step ? "text-accent" : i < step ? "text-ink" : ""} aria-current={i === step ? "step" : undefined}>
-            {i + 1}. {r.steps[s]}
-          </li>
-        ))}
-      </ol>
       <form
         ref={formRef}
         onSubmit={(ev) => {
@@ -190,7 +183,7 @@ export default function RequestBuilder({ labels, r, services, channels, locale, 
         onChange={onChange}
         noValidate
       >
-        <p className="text-sm text-muted">{r.stepOf.replace("{current}", String(step + 1)).replace("{total}", String(STEPS.length))}</p>
+        <p className="t-small mt-6 text-muted">{r.stepOf.replace("{current}", String(step + 1)).replace("{total}", String(STEPS.length))}</p>
         <h2 ref={headingRef} tabIndex={-1} className="t-2 mt-2 focus:outline-none">
           {stepTitle[current]}
         </h2>

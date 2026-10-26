@@ -25,8 +25,8 @@ export function organizationLd(locale: Locale) {
     slogan: locale === "fr" ? "Chaque souhait devient une réalité." : "Every wish, made real.",
     description:
       locale === "fr"
-        ? "Conciergerie haut de gamme à Genève et dans les Alpes : chauffeur privé, transferts, conciergerie privée, intendance de résidence, chalets, événements, Glam Team ; services réglementés coordonnés par l'intermédiaire de partenaires indépendants dûment autorisés."
-        : "Premium concierge in Geneva and the Alps: private chauffeur, transfers, private concierge, residence management, chalets, events and Glam Team; regulated services coordinated through independent, appropriately licensed partners.",
+        ? "Conciergerie haut de gamme à Genève et dans les Alpes : chauffeur privé, transferts, conciergerie privée, intendance de résidence, chalets, événements, Glam Team ; services réglementés coordonnés avec des partenaires indépendants, choisis pour leur activité autorisée."
+        : "Premium concierge in Geneva and the Alps: private chauffeur, transfers, private concierge, residence management, chalets, events and Glam Team; regulated services coordinated with independent partners, chosen for their authorised activity.",
     areaServed: areaServedLd(locale),
     knowsLanguage: ["fr", "en"],
     ...(business.phone ? { telephone: business.phone } : {}),

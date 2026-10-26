@@ -1,81 +1,77 @@
 ---
-title: "Wedding planning and private events in Geneva"
-description: "Wedding planning and private events in Geneva and across Switzerland: concept, venues, design, food and drink, guest logistics and on-the-day coordination."
+title: "Wedding planner and private events in Geneva"
+description: "Wedding and private event planning in Geneva and Switzerland: concept, venue, styling, food, entertainment, guests and coordination on the day."
 translationKey: "events"
 updated: "2026-10-26"
 order: 7
-summary: "Weddings, private dinners, parties and launches: concept, venues, suppliers and coordination on the day."
+summary: "Weddings, dinners, private parties and launches: concept, venue, suppliers and coordination on the day."
 serviceType: "Wedding and private event planning"
 delivery: "coordinated"
-answer: "The Valet plans weddings and private events in Geneva, across Switzerland and in the Alps: concept, venue sourcing, design, food and drink, entertainment, guest logistics and coordination on the day. We select and coordinate the suppliers suited to your project and remain your single point of contact, from the first meeting to the follow-up after the event."
+answer: "The Valet plans weddings and private events in Geneva, across Switzerland and in the Alps: concept, venue search, styling, catering, entertainment, guest logistics and coordination on the day. We select the suppliers, coordinate them and confirm in writing who is involved, when and on what terms."
 faq:
   - q: "What kinds of events do you organise?"
-    a: "Weddings and private celebrations, dinners and parties, corporate evenings, product launches and destination events, in Switzerland and in the French Alps."
-  - q: "Can you find the venue?"
-    a: "Yes. Depending on your project, we look at private residences, hotels, historic properties or more unusual settings, then check capacity, access and terms before presenting them to you."
-  - q: "Do you plan weddings in the mountains?"
-    a: "Yes. A wedding in Verbier, Gstaad, Zermatt, Megève or elsewhere in the Alps needs its own logistics: guest accommodation, transfers, weather and access. We build these into the plan from the start."
-  - q: "Who is there on the day of the event?"
-    a: "On-site coordination is provided: running order, timings and suppliers are followed and contingencies handled, so that you can be with your guests."
-  - q: "Can hair and makeup, transport or security be added?"
-    a: "Yes. The Glam Team, private transport for guests and, where the situation calls for it, security arrangements entrusted to licensed partners can be built into the plan."
+    a: "Weddings and family celebrations, private dinners and parties, corporate events and product launches, in Geneva, elsewhere in Switzerland or in the French Alps."
   - q: "How far ahead should I contact you?"
-    a: "As early as possible for a wedding or a large event, as venues and some suppliers are booked well in advance. Lead times and availability are confirmed for each request."
+    a: "As early as possible for a wedding, because venues and some suppliers are booked well in advance, especially on the most sought-after dates. A private dinner may need less notice. Feasibility is confirmed for each project."
+  - q: "Can you find the venue?"
+    a: "Yes. We look for venues suited to the number of guests, the style and the budget, then check capacity, access, permitted hours and the venue's own conditions before proposing them."
+  - q: "Do you work with suppliers we have already chosen?"
+    a: "Yes. If you have already chosen a photographer, caterer or band, we build them into the schedule and the coordination on the day."
+  - q: "Who is on site on the day?"
+    a: "On-site coordination follows the running order, the timings and the suppliers, and deals with the unexpected. The set-up is agreed with you during preparation."
   - q: "How is the budget set?"
-    a: "It depends on the number of guests, the venue, the date, the suppliers and the level of personalisation. You receive a detailed proposal before anything is committed."
+    a: "From the number of guests, the venue, the season and the services chosen. You receive itemised proposals before any commitment."
+  - q: "Can you arrange guest transport and accommodation?"
+    a: "Yes, as part of the project: shuttles or chauffeurs through partners, and accommodation for guests travelling from afar."
 ---
 
-## What we arrange
+A successful private event depends less on the number of services than on how well they fit together: a venue that suits the guest list, a menu that suits the hour and the season, music that suits the mood, a timetable everyone keeps to. Our role is to build that coherence with you, then make it hold on the day.
 
-A successful event depends on many elements working together. We can take on the whole project or only the parts you want to hand over.
+## It starts with a conversation
 
-- **Bespoke concept.** An in-depth consultation to understand your wishes, your style and the atmosphere you are after, then a coherent concept from the invitation to the last dance.
-- **Venue sourcing and management.** Historic properties, private villas, hotels, distinctive settings: we check capacity, accessibility, facilities and rental terms.
-- **Design and atmosphere.** Flowers, lighting, furniture, props, staging and the layout of each space.
-- **Technical production.** Sound, lighting and video, equipment set-up, stage and stands where the format calls for them.
-- **Food and drink.** Tailored menus, chefs, caterers, service teams, wines and cocktails, with attention to your guests' diets and allergies.
-- **Entertainment.** Artists, DJs, musicians and live performances chosen to suit the theme and tone of the event.
-- **Guest services.** Invitations, concierge support, private transport, accommodation and gifts.
-- **On-the-day coordination.** Timeline, suppliers and contingencies followed from set-up to take-down.
+The first meeting is about understanding what you have in mind, even if the idea is still vague. We talk about the kind of event, the atmosphere you want, the people you wish to bring together, family or professional constraints and the budget you have in mind. For a wedding we also discuss the ceremony (civil, religious or secular), since it often shapes the choice of venue and the flow of the day.
 
-## How the planning works
+From there we propose a concept: a direction for styling, table, entertainment and pace. It is not a catalogue; it exists to help you decide quickly and rule out what does not fit.
 
-1. **Meeting and needs analysis.** Together we define the objectives, the number and profile of guests, the budget, the date and your priorities. This is also the moment to say what you do not want.
-2. **Concept and proposal.** We present a direction (venue, atmosphere, running order) and a detailed proposal. Nothing is booked without your agreement.
-3. **Preparation.** We book the venue and suppliers, set the planning schedule, centralise communication and arrange the necessary trials: menu, decoration, hair and makeup.
-4. **The day itself.** On-site coordination follows the running order closely, directs suppliers and deals with the unexpected without passing it on to you.
-5. **After the event.** We close out the remaining details with suppliers and review the whole occasion with you.
+## What we organise for you
 
-## Typical situations
+- **The venue.** Private residence, hotel, historic house, a more unusual space or an outdoor setting: we look for places with the right capacity, access and facilities, then check each one's rules (hours, noise limits, mandatory suppliers, set-up and take-down).
+- **Styling and atmosphere.** Flowers, lighting, furniture, tableware and signage, designed as one with the florists and decorators chosen.
+- **The table.** Cocktails, seated dinner, buffet or next-day brunch: menus by chefs and caterers, wine and cocktail pairings, guests' dietary requirements.
+- **Entertainment.** Musicians, DJs, performers and activities chosen for the theme and the moment of the evening.
+- **Technical production.** Sound, lighting, video, stage and stands for a corporate evening or a product launch.
+- **Guests.** Guest list, invitations, replies, seating plan, gifts, welcome, accommodation for those travelling from afar, and transport.
 
-- A wedding in Geneva with some guests travelling from abroad: airport arrivals spread over two days, hotels to allocate, a programme to share in several languages.
-- A private birthday dinner in a residence, with a private chef and discreet table service.
-- A corporate evening organised within a few weeks, needing an available venue, a caterer and simple but dependable technical set-up.
-- A product launch that has to reflect a brand's image, with staging, lighting and guest reception.
-- A winter wedding in the mountains, where access to the venue, the weather and getting guests home at the end of the evening are part of the plan from day one.
+For transport, we can arrange a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) for the couple and their family, or shuttles between hotel and venue, through partner operators. Hair and makeup for the bride, her family or the hosts of an evening can be entrusted to our [Glam Team at home](/en/services/glam-team-at-home/), built into the same schedule.
 
-## Where we plan events
+## What to tell us at the first contact
 
-**Geneva and the Lake Geneva region.** Venues range from lakeside properties to hotel salons. Dates close to major international gatherings, such as Watches and Wonders Genève in spring, mean booking accommodation and transport well ahead.
+- the preferred date, or a period, and how flexible it is;
+- the approximate number of guests and where they are coming from;
+- the region you have in mind: Geneva, the Lake Geneva area, the mountains, or a destination to be decided;
+- the style you want, and what you definitely do not want;
+- any suppliers already chosen;
+- the budget, even a rough one;
+- particular constraints: children, elderly guests, accessibility, privacy from the press or social media.
 
-**Vaud and Valais.** Estates, vineyards and resorts such as [Verbier](/en/services/alpine-chalets-residences/#verbier) or [Zermatt](/en/services/alpine-chalets-residences/#zermatt) suit weddings and weekends with family and friends. In car-free Zermatt, guest arrivals and equipment are handled differently: vehicles stop at Täsch and the journey continues by shuttle train; see the [Geneva to Zermatt transfer](/en/services/geneva-alps-transfers/#zermatt).
+A few lines are enough to [describe your event project](/en/request/?service=events); we come back to you to set a first meeting.
 
-**Gstaad and St-Moritz.** From the chalets of [Gstaad](/en/services/alpine-chalets-residences/#gstaad) to the hotels of St-Moritz, these destinations host intimate celebrations as well as larger events; St-Moritz, far from Geneva, is often reached via Zurich or through Samedan airport.
+## Lead times and availability
 
-**The French Alps.** [Megève](/en/services/alpine-chalets-residences/#megeve), Chamonix and Courchevel suit weddings and destination events; local suppliers and venue rules are checked there as anywhere else.
+There is no standard lead time. The venue weighs most: sought-after places book early, particularly on Saturdays, in the warmer months and during major events that fill the region's hotels. Next come in-demand suppliers such as certain photographers, florists or caterers, then guest accommodation when many guests travel from abroad.
 
-For guest accommodation in the resorts, see our [Alpine chalets and residences](/en/services/alpine-chalets-residences/); for arrivals at the airport, a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) can meet each flight.
+A private dinner at a residence can be prepared faster, provided the cooking, service and styling stay simple. Either way, we tell you from the outset what looks realistic and what does not, rather than promising a date the market will not allow.
 
-## Who does what
+For a wedding in the mountains, guest accommodation and access to the venue need specific preparation: our pages on [Alpine chalets and residences](/en/services/alpine-chalets-residences/) and [transfers between Geneva and the Alps](/en/services/geneva-alps-transfers/) explain what we arrange there.
 
-The Valet designs the project, selects suppliers, negotiates and coordinates bookings, keeps the timeline and provides on-the-day coordination. We are your single point of contact.
+## On the day, and afterwards
 
-The services themselves are delivered by independent suppliers: venues, caterers and chefs, florists, decorators, technicians, performers, photographers. Guest transport is provided by partners holding the required licences, and any security arrangements are entrusted to independent, appropriately licensed partners; see [security and protection](/en/services/security-protection/). Each supplier's terms are presented to you before engagement.
+A few days before the event, every supplier receives a precise running order: arrival times, access, contacts, set-up, service, take-down. On the day, on-site coordination follows it, welcomes suppliers, keeps to time and handles the unexpected (a delay, a shower, a last-minute change to the seating plan) without you having to step in.
 
-## Weddings: hair, makeup and those closest to you
+Afterwards, we check with you that each service matched what was agreed, deal with any feedback with suppliers, and organise what remains: return of equipment, thank-you gifts, guests' departures.
 
-Getting ready with the bride, those close to her and the groom is often the most intimate moment of the day. Our [Glam Team](/en/services/glam-team-at-home/) comes to the location of your choice, with a trial beforehand if you wish and a schedule that fits the overall running order.
+## What is included, what is contracted separately
 
-## Discretion
+Our work covers concept, supplier search and selection, negotiation, scheduling and coordination. The suppliers themselves (venue, caterer, florist, performers, transport) are independent professionals: depending on the project they are contracted through us or directly by you, and we tell you clearly which before anything is booked.
 
-Guest lists, schedules, venues: this information is shared only with the suppliers who need it, and only as far as needed. Photos and publications are decided with you. To begin, you can [tell us about your wedding or event](/en/request/?service=events): the date, the place you have in mind and the number of guests are enough for a first conversation.
+Where the situation calls for it (high-profile guests, a widely covered event, valuables on site), an arrangement can be studied with specialist partners: see our page on [security and protection](/en/services/security-protection/), which explains how such services are assessed and confirmed.

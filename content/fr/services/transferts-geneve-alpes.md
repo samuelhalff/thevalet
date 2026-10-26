@@ -1,102 +1,98 @@
 ---
 title: "Transferts Genève–Alpes avec chauffeur privé"
-description: "Transfert privé depuis Genève vers Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève ou Chamonix, avec bagages et skis, par des partenaires agréés."
+description: "Transfert privé de Genève et de l'aéroport GVA vers Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève ou Chamonix, bagages et skis compris."
 translationKey: "alpine-transfers"
 updated: "2026-10-26"
 order: 3
 summary: "Transferts privés de Genève et de l'aéroport GVA vers les stations suisses et françaises, bagages et skis compris."
 serviceType: "Transfert privé vers les stations de ski"
 delivery: "partner"
-answer: "The Valet organise vos transferts privés depuis Genève et l'aéroport de Genève (GVA) vers les stations des Alpes : Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève et Chamonix. Les trajets sont assurés par des partenaires indépendants titulaires des autorisations requises ; nous coordonnons l'horaire, les bagages, le véhicule et votre arrivée sur place."
+answer: "The Valet organise vos transferts privés depuis Genève et l'aéroport de Genève (GVA) vers les stations des Alpes : Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève et Chamonix. Les trajets sont effectués par des partenaires indépendants, choisis pour leur activité autorisée ; nous coordonnons l'horaire, le véhicule, les bagages et l'arrivée au chalet, et vous confirmons par écrit qui conduit et à quelles conditions."
 faq:
-  - q: "Le chauffeur tient-il compte d'un retard de vol ?"
-    a: "Nous transmettons votre numéro de vol au partenaire afin que la prise en charge suive l'heure d'arrivée réelle. Les conditions d'attente sont précisées dans la proposition."
-  - q: "Peut-on transporter des skis et beaucoup de bagages ?"
-    a: "Oui, à condition de nous indiquer à l'avance le nombre de passagers, de valises, de housses de skis et d'équipements volumineux. Nous choisissons le véhicule en conséquence, par exemple un van de type Mercedes-Benz Classe V."
-  - q: "Comment se passe un transfert vers Zermatt ?"
-    a: "Zermatt est une station sans voitures. Le trajet en voiture s'arrête à Täsch, d'où une navette ferroviaire rejoint le village. Nous pouvons coordonner la suite de votre arrivée jusqu'à votre hébergement."
-  - q: "Peut-on réserver le retour en même temps ?"
-    a: "Oui. Nous pouvons organiser l'aller et le retour dans une même demande, ainsi que des trajets entre stations pendant le séjour."
-  - q: "Combien de temps à l'avance faut-il réserver ?"
-    a: "Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. Pendant les vacances scolaires et les week-ends d'hiver, une demande anticipée laisse plus de choix."
-  - q: "Faut-il des documents pour aller à Courchevel, Megève ou Chamonix ?"
-    a: "Ces stations sont en France : le trajet depuis Genève franchit la frontière. Chaque passager doit avoir sur lui un document d'identité valable pour l'entrée en France."
-  - q: "Des sièges enfants peuvent-ils être prévus ?"
-    a: "Oui. Indiquez-nous l'âge et la taille de chaque enfant ; des sièges adaptés sont prévus dans le véhicule."
-  - q: "Comment le prix est-il fixé ?"
-    a: "Il dépend de la destination, du véhicule, de l'horaire, du nombre de passagers et des éventuels temps d'attente. Vous recevez une proposition avant toute réservation."
+  - q: "Comment organiser un transfert de l'aéroport de Genève vers une station ?"
+    a: "Indiquez-nous le numéro de vol, le nombre de passagers, de valises et de housses de skis, et l'adresse exacte du logement. Nous proposons le véhicule adapté et confirmons les conditions avant la réservation."
+  - q: "Peut-on aller en voiture jusqu'à Zermatt ?"
+    a: "Non. Zermatt est sans voitures : le chauffeur s'arrête à Täsch, d'où un train navette rejoint Zermatt. Sur place, des taxis électriques assurent le dernier trajet."
+  - q: "Comment rejoindre St-Moritz depuis Genève ?"
+    a: "Le trajet par la route est long. On passe souvent par Zurich, ou l'on rejoint en avion l'aéroport de l'Engadine à Samedan. Nous vous indiquons les options selon votre programme."
+  - q: "Les skis et le matériel tiennent-ils dans le véhicule ?"
+    a: "Oui, à condition de les annoncer à la réservation. Le nombre de housses et de valises détermine le véhicule, par exemple un van premium plutôt qu'une berline."
+  - q: "Que se passe-t-il si le vol ou la route retarde l'arrivée ?"
+    a: "Avec le numéro de vol, l'heure de prise en charge peut suivre l'arrivée réelle. Les conditions de route peuvent allonger le trajet ; les temps d'attente et leurs conditions figurent dans la proposition."
+  - q: "Organisez-vous aussi le retour vers Genève ?"
+    a: "Oui. Le retour peut être réservé en même temps que l'aller ou pendant le séjour. Indiquez l'heure de votre vol : l'heure de départ est fixée avec l'opérateur."
+  - q: "Les transferts en hélicoptère sont-ils possibles ?"
+    a: "Sur demande, selon disponibilité des opérateurs, conditions météo et règles des héliports ou altiports concernés. Ces vols sont effectués par des opérateurs indépendants."
 ---
 
-## Ce que nous organisons
+## De l'aéroport à la porte du chalet
 
-Un transfert aéroport Genève–Verbier, Genève–Courchevel ou Genève–Zermatt se prépare comme un petit voyage : l'heure d'atterrissage, la quantité de bagages, l'état des routes et l'accès au chalet comptent autant que le trajet lui-même. Nous prenons en charge cette préparation.
+Un transfert vers une station se joue souvent sur les deux extrémités du trajet : la sortie de l'aéroport de Genève, avec beaucoup de bagages, et l'arrivée devant un chalet où il faut trouver la bonne entrée, quelqu'un pour ouvrir et de la place pour décharger. Nous organisons le trajet entier :
 
-- Transferts depuis l'aéroport de Genève (GVA), la gare de Genève-Cornavin ou votre domicile vers les stations suisses et françaises
-- Retours vers Genève à l'heure qui convient à votre vol ou à votre train
-- Trajets entre stations pendant le séjour, ou vers un autre aéroport de la région
-- Véhicules adaptés aux familles, aux groupes et aux bagages volumineux : skis, chaussures, poussettes, équipement de golf ou de vélo en été
-- Sièges enfants adaptés à l'âge et à la taille de chaque enfant
-- Coordination de votre arrivée au chalet ou à l'hôtel : remise des clés, accueil, courses prévues avant votre venue
+- la prise en charge à l'aéroport de Genève (GVA), côté suisse ou côté français selon votre vol, à la gare ou à votre adresse ;
+- l'accueil à l'aviation privée de l'aéroport de Genève, si vous arrivez en avion privé, avec un véhicule prévu pour l'heure de l'atterrissage ;
+- le véhicule adapté au nombre de passagers, de valises et de housses de skis ;
+- le suivi du vol pour ajuster l'heure de prise en charge ;
+- l'arrivée coordonnée avec le logement : remise des clés, accueil, courses déposées avant votre venue, en lien avec nos [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/) ou avec l'[intendance de votre résidence](/fr/services/intendance-residence/) ;
+- le retour vers Genève, réservé à l'avance ou pendant le séjour.
 
-Pour vos déplacements à Genève même, avant ou après le séjour, nous faisons appel à un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/). Pour la préparation du logement, voir notre page consacrée aux [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/).
+Pour un déplacement en ville ou une mise à disposition à Genève, voir plutôt notre [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/).
 
-## Comment se déroule un transfert
+## Les informations qui font un bon transfert
 
-1. **Votre demande.** Date, numéro de vol ou de train, adresse de prise en charge, adresse exacte d'arrivée, nombre de passagers, de valises et de paires de skis, âge des enfants. Vous pouvez [demander un transfert vers votre station](/fr/demande/?service=alpine-transfers) avec ces éléments, même incomplets.
-2. **Notre proposition.** Nous choisissons le partenaire et le véhicule selon la destination et votre groupe, puis vous confirmons l'horaire et les conditions avant toute réservation.
-3. **La veille.** Nous vérifions l'horaire du vol, les conditions de route annoncées et les détails d'arrivée sur place. Le chauffeur reçoit les informations utiles, et seulement celles-ci.
-4. **Le jour du trajet.** Le chauffeur vous attend à l'arrivée et s'occupe des bagages. En cas de retard ou de changement, vous gardez un seul contact chez The Valet.
-5. **Le retour.** Nous confirmons l'heure de départ quelques jours avant la fin du séjour, en tenant compte de l'heure de votre vol et de la météo.
+Le jour de l'arrivée, les questions se règlent mieux si elles ont été posées avant. Nous vous demanderons :
 
-## Situations courantes
+1. **Le vol ou le train**, avec son numéro et l'heure prévue, ou l'heure de départ de votre adresse.
+2. **Les passagers**, adultes et enfants, avec l'âge des enfants pour les sièges à prévoir.
+3. **Les bagages** : valises, housses de skis ou de snowboard, poussettes, matériel encombrant.
+4. **L'adresse exacte** du logement et la personne qui vous accueille sur place, ou la manière de récupérer les clés.
+5. **Les arrêts souhaités** en route, par exemple pour récupérer du matériel ou faire une course.
+6. **Le retour** : date, heure du vol et éventuel changement de lieu de prise en charge.
 
-- **Un vol qui arrive tard le soir**, avec des enfants fatigués et beaucoup de bagages : véhicule spacieux, sièges installés à l'avance et chalet prêt à l'arrivée.
-- **Un groupe d'amis arrivant sur plusieurs vols** le même jour : plusieurs prises en charge coordonnées, ou une attente organisée pour regrouper les arrivées.
-- **Une arrivée en train à Genève** suivie d'une montée directe en station, sans changement supplémentaire.
-- **Une chute de neige annoncée** le jour du départ : horaire avancé, itinéraire vérifié et information transmise au chalet.
-- **Un aller-retour dans la journée** depuis une station vers Genève, pour un rendez-vous ou un vol.
-- **Un séjour en deux étapes**, par exemple quelques jours à Verbier puis à Zermatt, avec un transfert entre les deux.
+## Station par station : comment on y accède
 
-## Où nous allons : les stations, une par une
-
-Chaque station a son accès, ses contraintes et son rythme. Voici ce qui change d'une destination à l'autre pour un transfert depuis Genève.
+Chaque station a sa logique d'accès. Voici ce qu'il faut savoir pour préparer le trajet ; pour le séjour lui-même, chaque section renvoie à la station correspondante sur notre page chalets.
 
 ### Verbier
 
-Verbier se trouve en Valais, au-dessus du Val de Bagnes, dans le domaine des 4 Vallées. Depuis Genève, l'accès se fait par l'autoroute du Rhône via Martigny, puis par la route de montagne qui monte du Châble jusqu'à la station. Le dernier tronçon est en lacets : un véhicule bien équipé en hiver compte. Pour les vols privés, l'aéroport de Sion est le plus proche. L'été, le Verbier Festival attire un public de musique classique ; en fin d'hiver, l'Xtreme Verbier réunit le freeride. Pour le logement et l'intendance sur place, voir la section [Verbier de notre page chalets](/fr/services/chalets-residences-alpes/#verbier).
+Verbier se trouve en Valais, au-dessus du Châble, dans le Val de Bagnes. Depuis Genève, la route longe le Léman, remonte la vallée du Rhône jusqu'à Martigny, puis entre dans le Val de Bagnes. Le train passe aussi par Martigny jusqu'au Châble, d'où une télécabine monte à Verbier : utile pour un passager qui rejoint le groupe plus tard. Pour l'aviation privée, l'aéroport de Sion se trouve dans la vallée du Rhône. Le chauffeur vous dépose à l'adresse du chalet ; pour le séjour, voir [séjourner à Verbier](/fr/services/chalets-residences-alpes/#verbier).
 
 ### Zermatt
 
-Zermatt, au pied du Cervin, est une station sans voitures. Depuis Genève, la route suit la vallée du Rhône puis remonte la vallée de Zermatt jusqu'à Täsch, où l'on laisse le véhicule ; une navette ferroviaire continue vers le village. Nous organisons cette correspondance : prise en charge des bagages à Täsch et accueil à l'arrivée à Zermatt, selon votre hébergement. Un héliport dessert la station. Au printemps, le festival Zermatt Unplugged s'y tient. Voir aussi notre section [séjourner à Zermatt](/fr/services/chalets-residences-alpes/#zermatt).
+Zermatt est sans voitures. On remonte la vallée du Rhône jusqu'à Viège, puis la vallée de la Matter jusqu'à Täsch, où s'arrêtent tous les véhicules, y compris ceux avec chauffeur. De Täsch, un train navette rejoint Zermatt ; le train de Viège à Zermatt dessert aussi le village. Sur place, des taxis électriques et les véhicules électriques des hôtels transportent passagers et bagages. Zermatt dispose également d'un héliport. Nous coordonnons le passage du véhicule au train, puis l'arrivée au logement ; pour le séjour, voir [séjourner à Zermatt](/fr/services/chalets-residences-alpes/#zermatt).
 
 ### Gstaad
 
-Gstaad, dans le Saanenland (Oberland bernois), se rejoint depuis Genève par la route, en passant par le canton de Vaud, soit par la Gruyère et le Pays-d'Enhaut, soit par le Chablais et le col du Pillon, selon la saison et les conditions. Un aérodrome à Saanen accueille de petits appareils et des hélicoptères. L'été, le Menuhin Festival Gstaad rythme la saison. Pour un mariage ou une réception à Gstaad, nous coordonnons aussi les trajets des invités ; voir nos [mariages et événements privés](/fr/services/mariages-evenements/) et notre section [chalets à Gstaad](/fr/services/chalets-residences-alpes/#gstaad).
+Gstaad se trouve dans le Saanenland, dans le canton de Berne, près de la frontière vaudoise. Depuis Genève, la route passe par la région lémanique, puis traverse le Pays-d'Enhaut. Le train de Montreux, qui traverse le Pays-d'Enhaut, dessert aussi Gstaad. À Saanen, tout proche, un aérodrome accueille petits avions et hélicoptères. Pour le séjour, voir [séjourner à Gstaad](/fr/services/chalets-residences-alpes/#gstaad) ; pour une soirée ou un mariage dans la région, nous coordonnons aussi les navettes des invités avec notre service d'[organisation d'événements](/fr/services/mariages-evenements/).
 
 ### St-Moritz
 
-St-Moritz, en Haute-Engadine (Grisons), est loin de Genève : le trajet complet par la route est long et passe par des cols de montagne. Beaucoup de voyageurs choisissent d'arriver par Zurich, ou par avion jusqu'à l'aéroport de Samedan (Engadin Airport). Nous organisons selon votre choix un transfert depuis Genève, depuis Zurich ou depuis Samedan. L'hiver, la station accueille la Snow Polo World Cup St. Moritz et les courses du White Turf sur le lac gelé. Voir notre section [séjourner à St-Moritz](/fr/services/chalets-residences-alpes/#st-moritz).
+St-Moritz se trouve en Engadine, dans les Grisons, loin à l'est de Genève. Le trajet par la route est long : on passe souvent par Zurich, ou l'on rejoint en avion l'aéroport de l'Engadine à Samedan, qui accueille l'aviation privée. Par la route, l'Engadine se rejoint par des cols alpins comme le Julier, ou avec le train autos du Vereina. Par le rail, les Chemins de fer rhétiques desservent St-Moritz, et le Glacier Express relie Zermatt à St-Moritz. Nous vous aidons à choisir la combinaison la plus simple pour votre groupe ; pour le séjour, voir [séjourner à St-Moritz](/fr/services/chalets-residences-alpes/#st-moritz).
 
 ### Courchevel
 
-Courchevel se trouve en Savoie, dans la vallée de la Tarentaise, au sein du domaine des 3 Vallées. Depuis Genève, l'accès passe par Albertville puis Moûtiers avant la montée vers la station. Courchevel dispose d'un altiport, utilisé par les petits avions et les hélicoptères. Le trajet franchit la frontière : chaque passager doit avoir son document d'identité. Voir notre section [chalets à Courchevel](/fr/services/chalets-residences-alpes/#courchevel).
+Courchevel se trouve en Savoie, en France, au-dessus de la vallée de la Tarentaise. Depuis Genève, la route se dirige vers Albertville, puis remonte la Tarentaise par Moûtiers, qui est aussi la gare la plus proche. Courchevel dispose d'un altiport, utilisé par de petits avions et des hélicoptères. Le chauffeur vous dépose au village et à l'adresse indiqués, la station comptant plusieurs villages ; pour le séjour, voir [séjourner à Courchevel](/fr/services/chalets-residences-alpes/#courchevel).
 
 ### Megève
 
-Megève, en Haute-Savoie, fait face au massif du Mont-Blanc. Depuis Genève, on emprunte l'autoroute Blanche vers Sallanches avant de monter vers le village. La station possède un altiport. Megève attire autant en hiver qu'en été, pour le ski comme pour le golf et la randonnée. Voir notre section [séjourner à Megève](/fr/services/chalets-residences-alpes/#megeve).
+Megève se trouve en Haute-Savoie, dans le Val d'Arly. Depuis Genève, la route suit la vallée de l'Arve vers Sallanches, puis monte à Megève. La gare la plus proche est celle de Sallanches-Combloux-Megève, et Megève dispose d'un altiport pour les petits avions. Pour le séjour, voir [séjourner à Megève](/fr/services/chalets-residences-alpes/#megeve).
 
 ### Chamonix
 
-Chamonix est au pied du Mont-Blanc, en Haute-Savoie, au bout de l'autoroute Blanche depuis Genève. Le tunnel du Mont-Blanc relie la vallée à l'Italie, ce qui permet de combiner un séjour avec Courmayeur. Chaque fin d'été, l'Ultra-Trail du Mont-Blanc (UTMB) réunit coureurs et accompagnants : les hébergements et les transferts se réservent tôt. Voir notre section [chalets à Chamonix](/fr/services/chalets-residences-alpes/#chamonix).
+Chamonix-Mont-Blanc se trouve en Haute-Savoie, au pied du Mont-Blanc. Depuis Genève, l'autoroute Blanche suit la vallée de l'Arve avant la montée vers Chamonix. Le tunnel du Mont-Blanc relie Chamonix à Courmayeur, en Italie. Par le rail, le Mont-Blanc Express arrive de Martigny, en Suisse, et la ligne française de Saint-Gervais-Le Fayet. Pour le séjour, voir [séjourner à Chamonix](/fr/services/chalets-residences-alpes/#chamonix).
 
-## Qui fait quoi
+## Ce qui influe sur l'horaire et la disponibilité
 
-The Valet coordonne : nous recueillons votre demande, choisissons le partenaire, vérifions la disponibilité, transmettons les informations nécessaires et suivons le trajet jusqu'à votre arrivée. Nous restons votre interlocuteur en cas de changement.
+Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. En hiver, la demande se concentre sur les mêmes jours : les samedis de changement de location, les vacances scolaires suisses et françaises, les fêtes de fin d'année. Les vans sont les premiers réservés ces jours-là ; mieux vaut donc nous écrire dès que vos dates sont connues.
 
-Le transport lui-même est assuré par des partenaires indépendants dûment autorisés, titulaires des autorisations requises pour le transport professionnel de personnes en Suisse et, pour les trajets vers la France, des autorisations nécessaires de l'autre côté de la frontière. Ce sont eux qui fournissent le véhicule et le chauffeur, et qui confirment leurs conditions avant la réservation. Pour les trajets réguliers d'enfants à Genève, voir notre [transport privé d'enfants](/fr/services/transport-prive-enfants/).
+Nous ne fixons pas la durée du trajet à l'avance : elle dépend de la circulation, de la météo et de l'état des routes de montagne. Nous fixons l'heure de départ avec l'opérateur en tenant compte de ces éléments, et nous vous prévenons si les conditions annoncées conduisent à modifier le programme. Pour un départ vers un vol, prévoyez de la marge : l'opérateur vous proposera une heure de prise en charge.
 
-## Véhicules, bagages et conditions hivernales
+## Bagages, skis et choix du véhicule
 
-Selon la disponibilité et votre groupe, nos partenaires proposent des berlines haut de gamme pour deux ou trois personnes, et des vans premium de type Mercedes-Benz Classe V pour les familles et les bagages volumineux. Pour un groupe important ou beaucoup d'équipement, deux véhicules peuvent être prévus.
+Le véhicule se choisit sur le volume, pas seulement sur le nombre de passagers. Une famille de quatre avec skis, valises et poussette voyage plus à l'aise dans un van premium de type Mercedes-Benz Classe V qu'en berline ; un groupe plus grand peut nécessiter deux véhicules partant à la même heure. Des sièges enfants peuvent être demandés à la réservation, selon l'âge et la taille des enfants ; leur type est confirmé par l'opérateur. Si vous louez votre matériel sur place, dites-le : le volume à transporter change.
 
-L'équipement hivernal des véhicules est organisé par nos partenaires selon la saison et les conditions de route. Neige, fermetures de routes ou trafic des samedis d'hiver peuvent modifier l'horaire : nous vous tenons informé et prévenons le chalet ou l'hôtel en conséquence. Si vous souhaitez une mise en beauté à l'arrivée pour une soirée le soir même, notre [Glam Team à domicile](/fr/services/glam-team-domicile/) peut se déplacer en station, selon disponibilité.
+## Qui conduit, qui coordonne
+
+The Valet reçoit votre demande, choisit l'opérateur et le véhicule, vous transmet la proposition, réserve après votre accord et suit le trajet, aller et retour. Les trajets sont effectués par des chauffeurs de partenaires indépendants, choisis pour leur activité autorisée de transport de personnes ; les transferts en hélicoptère ou en avion privé sont, sur demande, ceux d'opérateurs indépendants, selon leur disponibilité. Les conditions de chaque trajet sont celles de l'opérateur et vous sont communiquées avant la réservation.
+
+Pour préparer votre arrivée, vous pouvez [réserver un transfert de Genève vers votre station](/fr/demande/?service=alpine-transfers) avec vos dates, votre vol et le nombre de bagages.

@@ -1,76 +1,68 @@
 ---
 title: "Medical concierge in Geneva"
-description: "Medical concierge in Geneva: appointments, consultations and tests coordinated, transport and logistics. Care is given by healthcare professionals."
+description: "Medical concierge in Geneva: appointment booking, transport, accommodation and organisation around consultations. Logistics only, no medical advice."
 translationKey: "medical"
 updated: "2026-10-26"
 order: 9
-summary: "Appointments, consultations, tests and transport coordinated; care is given by independent healthcare professionals."
-serviceType: "Medical concierge service"
+summary: "The logistics around your healthcare appointments in Geneva: booking, transport, accommodation and practical support."
+serviceType: "Medical concierge"
 delivery: "partner"
-answer: "The Valet handles the logistics of your healthcare in Geneva and across Switzerland: booking appointments, arranging specialist consultations and tests, transport and practical support. The Valet does not provide medical advice or treatment; care is delivered by independent healthcare professionals, with whom you deal directly."
+answer: "The Valet's medical concierge handles the logistics around your healthcare appointments in Geneva and Switzerland: booking appointments with independent healthcare professionals, transport, nearby accommodation and the practical organisation of consultations and tests. The Valet does not provide medical advice or care: diagnosis, treatment and every medical decision rest solely with the healthcare professionals you consult."
 faq:
   - q: "Does The Valet give medical advice?"
-    a: "No. The Valet does not provide medical advice or treatment. Our role is logistical; medical questions are for the independent healthcare professionals you consult."
-  - q: "What can you arrange?"
-    a: "Appointments with healthcare professionals, specialist consultations and tests, transport there and back, and the practical side of the visit."
-  - q: "Can you choose a doctor or clinic for me?"
-    a: "We can look for professionals according to the practical criteria you give us: specialty, language, location, timing. The choice of professional and any medical decision remain yours, where appropriate on your own doctor's advice."
-  - q: "Should I send my health information through the form?"
-    a: "No. Please do not include medical details in the website form. Share that information only with the healthcare professional concerned."
-  - q: "Is this service suitable for an emergency?"
-    a: "No. In a medical emergency, call the emergency services directly (144 in Switzerland, 112 in Europe)."
-  - q: "Do you arrange appointments for people coming from abroad?"
-    a: "Yes, for the logistics: appointments, airport transfers, accommodation and transport between consultations. Medical and administrative formalities are handled with the facilities and professionals concerned."
-  - q: "How is the price set?"
-    a: "Our coordination is quoted in a proposal. Medical fees are set and invoiced directly by the healthcare professionals."
+    a: "No. The Valet does not provide medical advice, diagnosis or care. We organise the logistics; the independent healthcare professionals you consult are solely responsible for advice and treatment."
+  - q: "What can you organise?"
+    a: "Appointment booking, transport there and back, nearby accommodation, coordinating times across several appointments and, on request, practical support during your stay."
+  - q: "Do I need to send you medical information?"
+    a: "No. Please do not include health details in the website form. We only need the specialty, the city, the dates and your practical preferences; medical information is shared directly with the healthcare professional."
+  - q: "Can you choose a doctor for me?"
+    a: "We do not recommend treatment or judge the merits of medical advice. Depending on the specialty and city, we can suggest independent professionals and book with the one you choose."
+  - q: "Do you handle emergencies?"
+    a: "No. In a medical emergency, call 144, the Swiss emergency medical number, or 112 immediately."
+  - q: "How are medical fees paid?"
+    a: "Medical fees are invoiced directly by the healthcare professionals or facilities. Our coordination service is quoted and invoiced separately."
 ---
 
-## What we arrange
+A medical appointment abroad, or simply in an unfamiliar city, involves a great deal of organisation that has nothing medical about it: finding a slot, working out where the practice is, arranging the journey, booking a nearby hotel, fitting a test and a consultation into the same day, planning the return. That is the part we take on, so you can focus on the appointment itself.
 
-Medical concierge covers everything around a healthcare appointment, without touching the medical act itself. The idea is simple: you focus on the consultation, not on the diary, the journeys and the bookings.
+## Our role, and its limits
 
-- **Booking appointments** with healthcare professionals, according to the specialty, language and availability you give us.
-- **Arranging specialist consultations and tests**, including when several appointments need to follow one another on the same day or in the same week.
-- **Transport** there and back, with a chauffeur who waits until the consultation is over if you wish.
-- **Accommodation** nearby when appointments take place far from home, for you or for a relative accompanying you.
-- **The practical side** of the visit: restaurant bookings, planning the day, getting home.
-- **Logistical follow-up**: a postponed appointment, a new time, transport to rearrange.
+The Valet does not provide medical advice, diagnosis or care, and does not assess whether a treatment is appropriate. We do not employ healthcare professionals. Consultations, tests and treatment are provided by independent professionals and facilities, who set their own terms, fees and waiting times.
+
+Our work is logistical: organising, booking, coordinating and practical support. We make no medical decision on your behalf and do not act as a go-between for health information.
+
+## What we can organise
+
+- **Appointments.** Booking a consultation, check-up or test according to the specialty and city you name, and grouping several appointments into one period where possible.
+- **Journeys.** Transfers from the airport or station, trips to the practice or clinic and back, with a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) through our partner operators. Medical transport is outside this scope: it is a matter for specialised services.
+- **Accommodation.** A nearby hotel or apartment, with what you need for a recovery stay (access, quiet, flexible length).
+- **The stay.** Restaurant bookings, arrangements for a companion or family, and any practical request handled by our [private concierge in Geneva](/en/services/private-concierge-geneva/) during your stay.
+- **After the appointment.** Arranging a follow-up if the professional asks for one, extending accommodation, changing the return journey.
+
+## Your health information
+
+Please do not send medical information to The Valet through the website form, by message or by email. To organise an appointment we need to know which specialty or type of test you are looking for, in which city, on which dates, and your practical constraints. The reason for the consultation, medical history, test results and prescriptions are shared directly with the healthcare professional, through the channels they indicate.
+
+This rule protects your privacy and keeps data away from a non-medical intermediary who has no need for it.
 
 ## How a request works
 
-1. **Your request.** You tell us the type of appointment or test you need, the city, your availability and your practical needs: transport, language, someone to accompany you. No medical information is needed at this stage.
-2. **The search.** We identify appointment slots and, if you wish, professionals matching your practical criteria. You decide.
-3. **Coordination.** We book the confirmed appointments, arrange transport and accommodation, and send you a clear summary.
-4. **On the day.** You attend the consultation; everything to do with your health stays between you and the professional. We remain your contact for logistics and any changes.
+1. **First exchange.** You tell us the specialty or type of test, the city, the period and your travel constraints. You can [ask us to organise medical appointments](/en/request/?service=medical) with these details alone.
+2. **Proposals.** Depending on the specialty, we suggest independent professionals or facilities and the availability we have been able to obtain. The choice is yours.
+3. **Bookings.** Once the appointment is set, we arrange transport and accommodation around it and send you a written summary of times, addresses and contacts.
+4. **During the stay.** We remain reachable for practical adjustments: a moved appointment, an earlier pick-up, an extra night.
 
-## Typical situations
+## What affects lead times
 
-- Someone living abroad who wants to combine several consultations in Geneva over a few days, with airport transfers and nearby accommodation.
-- An elderly parent who needs to attend several tests and whom no relative can accompany that day.
-- A stay in a resort interrupted by the need to see a doctor in town, with a journey to arrange and a return to the chalet afterwards.
-- A busy work diary in which a slot must be found for a check-up, without endless phone calls.
-- Coming home after a hospital stay, when the house needs to be prepared and the shopping done.
+Lead times depend first on the healthcare professionals: some specialties have full diaries, and some tests require a prescription or preparation that only the professional can specify. The period also matters for accommodation, particularly during the large trade fairs and conferences that fill Geneva's hotels. We tell you what is possible once availability has been checked, without promising a slot we do not control.
 
-## Where
+## The questions we will ask you
 
-**Geneva.** The most common setting: appointments, transport in town and from Geneva Airport (GVA), nearby accommodation if needed.
+- The specialty or type of test, with no detail about your health.
+- The preferred city or region, and whether you already have a professional in mind.
+- Your available dates and where you are travelling from.
+- The number of companions and their needs.
+- Your practical travel needs: mobility, luggage, wheelchair, step-free access.
+- The language you would like to be seen in, which we mention when booking.
 
-**Vaud and the Lake Geneva region.** Appointments may be elsewhere around the lake; journeys are arranged from your home or hotel.
-
-**Valais, Gstaad, St-Moritz and the French Alps.** When you are staying in a resort, we arrange the journey to the consultation and back. Winter road conditions are taken into account when choosing times.
-
-## Who does what
-
-The Valet coordinates the logistics: finding slots, bookings, transport, accommodation, following up on changes. We give no opinion on your health, the choice of a treatment or whether a test is advisable.
-
-Care, diagnoses and recommendations are provided by independent healthcare professionals, who remain solely responsible for their work. Medical fees are set and invoiced directly by them. Transport is provided by partners holding the required licences; see our [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/).
-
-This service does not replace emergency care: in a medical emergency, call 144 in Switzerland or 112 in Europe.
-
-## Before and after the appointment
-
-Healthcare logistics often go beyond the appointment itself. For a return home, we can have your house prepared and the linen and supplies organised through our [residence management](/en/services/residence-management/). For everything not related to health (reservations, paperwork, research), our [private concierge in Geneva](/en/services/private-concierge-geneva/) takes over with the same contact.
-
-## Confidentiality of your health information
-
-Please do not include medical details in the website form. We only need the practical elements: type of appointment, place, dates. Your health information is shared only with the healthcare professional concerned. To begin, you can [ask us to arrange a medical appointment](/en/request/?service=medical), keeping to those practical details.
+In a medical emergency, do not go through The Valet: call 144 or 112. If you live in Geneva and are looking instead for regular help at home, our [residence management](/en/services/residence-management/) service can also organise the practical side of the household during a period of convalescence.

@@ -1,76 +1,68 @@
 ---
 title: "Conciergerie médicale à Genève"
-description: "Conciergerie médicale à Genève : rendez-vous, consultations et examens coordonnés, transports et logistique. Les soins relèvent de professionnels de santé."
+description: "Conciergerie médicale à Genève : prise de rendez-vous, transports, hébergement et organisation des consultations. Logistique seule, sans conseil médical."
 translationKey: "medical"
 updated: "2026-10-26"
 order: 9
-summary: "Rendez-vous, consultations, examens et transports coordonnés ; les soins relèvent de professionnels de santé indépendants."
+summary: "La logistique autour de vos rendez-vous de santé à Genève : prise de rendez-vous, transports, hébergement et accompagnement."
 serviceType: "Conciergerie médicale"
 delivery: "partner"
-answer: "The Valet prend en charge la logistique de votre parcours de santé à Genève et en Suisse : prise de rendez-vous, organisation des consultations spécialisées et des examens, transports et accompagnement pratique. The Valet ne fournit ni conseil médical ni traitement ; les soins sont délivrés par des professionnels de santé indépendants, avec qui vous échangez directement."
+answer: "La conciergerie médicale de The Valet prend en charge la logistique autour de vos rendez-vous de santé à Genève et en Suisse : prise de rendez-vous auprès de professionnels de santé indépendants, transports, hébergement à proximité et organisation pratique des consultations et examens. The Valet ne fournit ni conseil médical ni soins : le diagnostic, le traitement et toute décision médicale relèvent uniquement des professionnels de santé que vous consultez."
 faq:
-  - q: "The Valet donne-t-elle des avis médicaux ?"
-    a: "Non. The Valet ne fournit ni conseil médical ni traitement. Notre rôle est logistique ; les questions médicales relèvent des professionnels de santé indépendants que vous consultez."
+  - q: "The Valet donne-t-il des conseils médicaux ?"
+    a: "Non. The Valet ne fournit ni conseil médical, ni diagnostic, ni soins. Nous organisons la logistique ; les professionnels de santé indépendants que vous consultez sont seuls responsables de l'avis et du traitement."
   - q: "Que pouvez-vous organiser ?"
-    a: "La prise de rendez-vous avec des professionnels de santé, l'organisation de consultations spécialisées et d'examens, les transports aller et retour et les aspects pratiques autour de la visite."
-  - q: "Pouvez-vous choisir un médecin ou une clinique pour moi ?"
-    a: "Nous pouvons rechercher des professionnels selon les critères pratiques que vous indiquez : spécialité, langue, lieu, délai. Le choix du professionnel et toute décision médicale vous appartiennent, le cas échéant sur l'avis de votre médecin."
-  - q: "Dois-je transmettre mes informations de santé via le formulaire ?"
-    a: "Non. Merci de ne pas indiquer de détails médicaux dans le formulaire du site. Ces informations se partagent uniquement avec le professionnel de santé concerné."
-  - q: "Ce service convient-il à une urgence ?"
-    a: "Non. En cas d'urgence médicale, appelez directement les services d'urgence (144 en Suisse, 112 en Europe)."
-  - q: "Organisez-vous des rendez-vous pour des personnes venant de l'étranger ?"
-    a: "Oui, pour la partie logistique : rendez-vous, transferts depuis l'aéroport, hébergement et transports entre les consultations. Les formalités médicales et administratives restent traitées avec les établissements et professionnels concernés."
-  - q: "Comment le prix est-il fixé ?"
-    a: "Notre coordination fait l'objet d'une proposition. Les honoraires médicaux sont fixés et facturés directement par les professionnels de santé."
+    a: "La prise de rendez-vous, les transports aller et retour, l'hébergement à proximité, la coordination des horaires entre plusieurs rendez-vous, et sur demande un accompagnement pratique pendant le séjour."
+  - q: "Dois-je vous transmettre des informations médicales ?"
+    a: "Non. N'indiquez pas de détails de santé dans le formulaire du site. Nous avons seulement besoin de la spécialité, de la ville, des dates et de vos préférences pratiques ; les informations médicales se partagent directement avec le professionnel de santé."
+  - q: "Pouvez-vous choisir un médecin pour moi ?"
+    a: "Nous ne recommandons pas de traitement et ne jugeons pas de la pertinence d'un avis médical. Selon la spécialité et la ville, nous pouvons vous indiquer des professionnels indépendants et prendre rendez-vous auprès de celui que vous retenez."
+  - q: "Intervenez-vous en cas d'urgence ?"
+    a: "Non. En cas d'urgence médicale, appelez immédiatement le 144, numéro d'urgence sanitaire en Suisse, ou le 112."
+  - q: "Comment les frais médicaux sont-ils réglés ?"
+    a: "Les honoraires et frais médicaux sont facturés directement par les professionnels de santé ou les établissements. Notre prestation de coordination est proposée et facturée séparément."
 ---
 
-## Ce que nous organisons
+Un rendez-vous médical à l'étranger, ou simplement dans une ville que l'on connaît mal, demande beaucoup d'organisation qui n'a rien de médical : trouver un créneau, comprendre où se trouve le cabinet, organiser le trajet, réserver un hôtel proche, enchaîner un examen et une consultation le même jour, prévoir le retour. C'est cette partie que nous prenons en charge, pour que vous puissiez vous concentrer sur le rendez-vous lui-même.
 
-La conciergerie médicale s'occupe de tout ce qui entoure un rendez-vous de santé, sans toucher à l'acte médical lui-même. L'idée est simple : que vous puissiez vous concentrer sur la consultation, pas sur l'agenda, les trajets et les réservations.
+## Notre rôle, et ses limites
 
-- **Prise de rendez-vous** avec des professionnels de santé, selon la spécialité, la langue et les disponibilités que vous indiquez.
-- **Organisation de consultations spécialisées et d'examens**, y compris lorsque plusieurs rendez-vous doivent s'enchaîner sur une même journée ou une même semaine.
-- **Transports** aller et retour, avec un chauffeur qui attend la fin de la consultation si vous le souhaitez.
-- **Hébergement** à proximité lorsque les rendez-vous se déroulent loin de chez vous, pour vous ou pour un proche qui vous accompagne.
-- **Aspects pratiques** autour de la visite : réservations de restaurant, organisation de la journée, retour à domicile.
-- **Suivi logistique** : report d'un rendez-vous, nouvel horaire, transport à réorganiser.
+The Valet ne fournit ni conseil médical, ni diagnostic, ni soins, et n'évalue pas la pertinence d'un traitement. Nous n'employons pas de professionnels de santé. Les consultations, examens et traitements sont assurés par des professionnels et des établissements indépendants, qui fixent eux-mêmes leurs conditions, leurs honoraires et leurs délais.
+
+Notre intervention est logistique : organiser, réserver, coordonner, accompagner sur le plan pratique. Nous ne prenons aucune décision médicale à votre place et ne servons pas d'intermédiaire pour des informations de santé.
+
+## Ce que nous pouvons organiser
+
+- **Les rendez-vous.** Prise de rendez-vous pour une consultation, un bilan ou un examen, selon la spécialité et la ville que vous indiquez, et regroupement de plusieurs rendez-vous sur une même période lorsque c'est possible.
+- **Les trajets.** Transferts depuis l'aéroport ou la gare, trajets vers le cabinet ou la clinique et retour, avec un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) par l'intermédiaire de nos opérateurs partenaires. Un transport médicalisé n'entre pas dans ce cadre : il relève de services spécialisés.
+- **L'hébergement.** Recherche d'un hôtel ou d'un appartement à proximité, avec les conditions dont vous avez besoin pour un séjour de récupération (accès, calme, durée flexible).
+- **Le séjour.** Réservations de restaurants, organisation pour un accompagnant ou la famille, et toutes les demandes pratiques de la [conciergerie privée à Genève](/fr/services/conciergerie-privee-geneve/) pendant votre séjour.
+- **Après le rendez-vous.** Organisation d'un rendez-vous de suivi si le professionnel le demande, prolongation de l'hébergement, modification du retour.
+
+## Vos informations de santé
+
+Nous vous demandons de ne pas transmettre d'informations médicales par le formulaire du site, par message ou par courriel à The Valet. Pour organiser un rendez-vous, nous avons besoin de savoir quelle spécialité ou quel type d'examen vous recherchez, dans quelle ville, à quelles dates, et quelles sont vos contraintes pratiques. Le motif de la consultation, les antécédents, les résultats d'examens et les ordonnances se partagent directement avec le professionnel de santé, selon les canaux qu'il vous indique.
+
+Cette règle protège votre vie privée et évite qu'un intermédiaire non médical détienne des données qui ne le concernent pas.
 
 ## Comment se déroule une demande
 
-1. **Votre demande.** Vous nous indiquez le type de rendez-vous ou d'examen souhaité, la ville, vos disponibilités et vos besoins pratiques : transport, langue, accompagnement. Aucune information médicale n'est nécessaire à ce stade.
-2. **La recherche.** Nous identifions des créneaux et, si vous le souhaitez, des professionnels correspondant à vos critères pratiques. Vous décidez.
-3. **La coordination.** Nous réservons les rendez-vous confirmés, organisons les transports et l'hébergement, et vous transmettons un récapitulatif clair.
-4. **Le jour du rendez-vous.** Vous vous rendez à la consultation ; tout ce qui relève de votre santé se passe entre vous et le professionnel. Nous restons votre interlocuteur pour la logistique et les éventuels changements.
+1. **Premier échange.** Vous nous indiquez la spécialité ou le type d'examen, la ville, la période et vos contraintes de déplacement. Vous pouvez [demander une organisation de rendez-vous médicaux](/fr/demande/?service=medical) avec ces seuls éléments.
+2. **Propositions.** Selon la spécialité, nous vous indiquons des professionnels ou établissements indépendants et les disponibilités que nous avons pu obtenir. Le choix vous appartient.
+3. **Réservations.** Une fois le rendez-vous fixé, nous organisons les trajets et l'hébergement autour de lui et vous transmettons un récapitulatif écrit des horaires, adresses et contacts.
+4. **Pendant le séjour.** Nous restons joignables pour les ajustements pratiques : un rendez-vous déplacé, un trajet à avancer, une nuit supplémentaire.
 
-## Situations typiques
+## Ce qui influence les délais
 
-- Une personne qui vit à l'étranger et souhaite réunir plusieurs consultations à Genève sur quelques jours, avec transferts depuis l'aéroport et hébergement à proximité.
-- Un parent âgé qui doit se rendre à plusieurs examens et qu'un proche ne peut pas accompagner ce jour-là.
-- Un séjour en station interrompu par la nécessité de consulter en ville, avec un trajet à organiser et un retour au chalet ensuite.
-- Un agenda professionnel chargé dans lequel il faut trouver un créneau pour un bilan, sans multiplier les appels.
-- Un retour à domicile après une hospitalisation, pour lequel la maison doit être préparée et les courses faites.
+Les délais dépendent avant tout des professionnels de santé : certaines spécialités ont des agendas chargés, et certains examens nécessitent une prescription ou une préparation préalable que seul le professionnel peut indiquer. La période compte aussi pour l'hébergement, en particulier pendant les grands salons et conférences qui remplissent les hôtels de Genève. Nous vous indiquons ce qui est possible une fois les disponibilités vérifiées, sans promesse sur un créneau que nous ne maîtrisons pas.
 
-## Où
+## Les questions que nous vous poserons
 
-**Genève.** C'est le cadre le plus fréquent : rendez-vous, transports en ville et depuis l'aéroport de Genève (GVA), hébergement proche si nécessaire.
+- La spécialité ou le type d'examen, sans détail sur votre état de santé.
+- La ville ou la région souhaitée, et si vous avez déjà un professionnel en tête.
+- Vos dates de disponibilité et votre lieu de départ.
+- Le nombre d'accompagnants et leurs besoins.
+- Vos besoins pratiques de déplacement : mobilité, bagages, fauteuil, accès sans escalier.
+- La langue dans laquelle vous souhaitez être reçu, que nous signalons lors de la prise de rendez-vous.
 
-**Vaud et l'arc lémanique.** Les rendez-vous peuvent se situer ailleurs sur l'arc lémanique ; les trajets sont organisés depuis votre domicile ou votre hôtel.
-
-**Valais, Gstaad, St-Moritz et les Alpes françaises.** Lorsque vous séjournez en station, nous organisons le déplacement vers la consultation et le retour. Les conditions de route en hiver sont prises en compte dans le choix des horaires.
-
-## Qui fait quoi
-
-The Valet coordonne la logistique : recherche de créneaux, réservations, transports, hébergement, suivi des changements. Nous ne donnons aucun avis sur votre état de santé, sur le choix d'un traitement ou sur l'opportunité d'un examen.
-
-Les soins, les diagnostics et les recommandations sont délivrés par des professionnels de santé indépendants, qui restent seuls responsables de leurs actes. Les honoraires médicaux sont fixés et facturés directement par eux. Les transports sont assurés par des partenaires titulaires des autorisations requises ; voir notre [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/).
-
-Ce service ne remplace pas les urgences : en cas d'urgence médicale, appelez le 144 en Suisse ou le 112 en Europe.
-
-## Avant et après le rendez-vous
-
-La logistique de santé déborde souvent du rendez-vous lui-même. Pour un retour à domicile, nous pouvons faire préparer votre maison, organiser le linge et l'approvisionnement grâce à notre [intendance de résidence](/fr/services/intendance-residence/). Pour tout ce qui ne relève pas de la santé (réservations, démarches, recherches), notre [conciergerie privée à Genève](/fr/services/conciergerie-privee-geneve/) prend le relais avec le même interlocuteur.
-
-## Confidentialité de vos informations de santé
-
-Merci de ne pas indiquer de détails médicaux dans le formulaire du site. Nous avons seulement besoin des éléments pratiques : type de rendez-vous, lieu, dates. Vos informations de santé se partagent uniquement avec le professionnel de santé concerné. Pour commencer, vous pouvez [demander l'organisation d'un rendez-vous médical](/fr/demande/?service=medical) en vous limitant à ces éléments pratiques.
+En cas d'urgence médicale, ne passez pas par The Valet : appelez le 144 ou le 112. Si vous résidez à Genève et cherchez plutôt une aide régulière au quotidien, notre service d'[intendance de résidence](/fr/services/intendance-residence/) peut aussi organiser les aspects pratiques de la maison pendant une période de convalescence.

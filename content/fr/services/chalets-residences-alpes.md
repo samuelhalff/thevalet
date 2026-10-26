@@ -7,107 +7,97 @@ order: 6
 summary: "Chalets, résidences privées et hôtels dans les stations suisses et françaises, avec conciergerie pendant le séjour."
 serviceType: "Location de chalets et conciergerie de chalet"
 delivery: "coordinated"
-answer: "The Valet recherche et réserve votre chalet, votre résidence privée ou votre hôtel dans les Alpes, à Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève et Chamonix, puis coordonne votre séjour : transferts, intendance, chef privé, forfaits de ski et expériences. Nous travaillons avec les propriétaires, agences et prestataires locaux, et restons votre seul interlocuteur."
+answer: "The Valet recherche et réserve votre chalet, votre résidence privée ou votre hôtel dans les Alpes, à Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève et Chamonix, puis coordonne votre séjour : chef privé, entretien du chalet, forfaits, matériel, cours et expériences. Nous travaillons avec les propriétaires, les agences et les prestataires locaux, et vous confirmons par écrit ce qui est compris et à quelles conditions."
 faq:
-  - q: "Proposez-vous des chalets en location saisonnière ou à la semaine ?"
-    a: "Les deux, selon les biens disponibles. Nous recherchons à la semaine, pour un week-end prolongé ou pour toute la saison, selon vos dates."
-  - q: "Pouvez-vous trouver un chalet avec un service complet ?"
-    a: "Oui. Certains chalets sont proposés avec du personnel ; pour les autres, nous coordonnons l'intendance, un chef privé et la conciergerie pendant le séjour."
-  - q: "Organisez-vous aussi les hôtels en station ?"
-    a: "Oui. Si un hôtel convient mieux à votre séjour, nous recherchons et réservons l'établissement selon vos critères, puis coordonnons les services autour."
-  - q: "Pouvez-vous préparer les forfaits et le matériel de ski ?"
-    a: "Oui. Nous organisons les forfaits, la location du matériel avec vos tailles et pointures, et les cours avec des écoles ou moniteurs locaux, selon la disponibilité."
-  - q: "Combien de temps à l'avance faut-il réserver un chalet ?"
-    a: "Le plus tôt possible pour les vacances de fin d'année et de février. Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande."
-  - q: "Les stations françaises sont-elles couvertes ?"
-    a: "Oui : Courchevel en Savoie, Megève et Chamonix en Haute-Savoie. Le trajet depuis Genève franchit la frontière ; chaque voyageur a besoin d'un document d'identité valable."
-  - q: "Qui signe le contrat de location ?"
-    a: "Le contrat est conclu avec le propriétaire ou l'agence qui loue le bien, à ses conditions. Nous vous les présentons avant tout engagement et suivons la réservation."
-  - q: "Les chalets sont-ils proposés aussi en été ?"
-    a: "Oui. Plusieurs stations vivent toute l'année, avec des festivals, de la randonnée et du golf. Nous recherchons des biens pour l'été comme pour l'hiver."
+  - q: "Comment louer un chalet de luxe à Verbier, Zermatt ou Courchevel ?"
+    a: "Indiquez-nous la station, les dates, le nombre de chambres et vos priorités. Nous sélectionnons des chalets disponibles auprès des propriétaires et des agences, vous présentons les options et réservons après votre accord."
+  - q: "Quand faut-il réserver un chalet pour l'hiver ?"
+    a: "Dès que les dates sont connues. Les semaines de fêtes de fin d'année et de vacances scolaires sont les plus demandées ; les disponibilités sont confirmées pour chaque demande."
+  - q: "Qu'est-ce qu'une conciergerie de chalet ?"
+    a: "C'est la coordination de tout ce qui entoure le séjour : préparation du chalet, chef privé, entretien pendant le séjour, forfaits, matériel, cours, restaurants et activités. Nous l'organisons pour un chalet que nous avons réservé ou pour le vôtre."
+  - q: "Peut-on avoir un chef privé au chalet ?"
+    a: "Oui, selon la disponibilité des chefs dans la station. Le chef peut cuisiner pour quelques repas ou pour tout le séjour ; les menus et les régimes alimentaires sont convenus avant l'arrivée."
+  - q: "Réservez-vous aussi des hôtels en station ?"
+    a: "Oui. Selon votre groupe et la durée du séjour, un hôtel peut être plus simple qu'un chalet. Nous comparons les deux solutions avec vous."
+  - q: "Organisez-vous des séjours en été ?"
+    a: "Oui. Plusieurs de ces stations vivent aussi en été, avec randonnée, VTT, alpinisme et festivals. Nous adaptons les propositions à la saison."
+  - q: "Qui est responsable du chalet pendant la location ?"
+    a: "Le propriétaire ou l'agence, selon le contrat de location, dont les conditions vous sont transmises avant la réservation. The Valet coordonne le séjour et fait le lien en cas de question."
 ---
 
-## Ce que nous organisons
+## Chalet, résidence ou hôtel : trouver le bon logement
 
-Un séjour en montagne réussi dépend autant du chalet que de tout ce qui l'entoure : l'arrivée, la maison prête, les repas, le ski, les enfants, les soirées. Nous recherchons le logement et coordonnons le reste.
+Le choix du logement décide de la manière dont le séjour se déroule. Un chalet offre de l'espace, de l'intimité et la possibilité de vivre à son rythme, avec un chef et un entretien organisés autour de vous. Une résidence privée, appartement ou maison, convient aux séjours plus longs ou aux familles qui veulent une base sans services quotidiens. Un hôtel reste souvent la solution la plus simple pour quelques nuits, pour un couple ou lorsque l'on veut un restaurant et un spa sur place.
 
-### Le logement
+Nous partons de votre programme, pas d'un catalogue : le nombre de chambres et de salles de bains, la proximité des pistes ou du village, les besoins des enfants, la place pour travailler, la présence d'un sauna ou d'une piscine, l'accès sans escalier pour un parent âgé. Nous interrogeons propriétaires et agences, vérifions les disponibilités, puis vous présentons quelques options comparées, avec ce qui est compris et les conditions d'annulation.
 
-- **Chalets privés** en location à la semaine, pour un long week-end ou pour la saison
-- **Résidences privées et appartements** au cœur des villages ou plus à l'écart
-- **Hôtels de montagne**, lorsqu'un service hôtelier convient mieux à votre séjour
-- Sélection selon vos critères : nombre de chambres, accès aux pistes, calme, espace bien-être, pièces pour les enfants, accès en hiver
+## Ce que nous préparons pour le séjour
 
-### Autour du séjour
+Une fois le logement réservé, la conciergerie de chalet prend le relais :
 
-- Transferts depuis Genève et entre stations ; voir nos [transferts Genève–Alpes](/fr/services/transferts-geneve-alpes/)
-- Intendance du chalet : ménage, linge, approvisionnement avant arrivée, remise en ordre au départ
-- Chef privé pour les dîners ou pour toute la semaine
-- Forfaits de ski, location de matériel avec vos tailles, cours avec des écoles ou moniteurs locaux
-- Réservations de restaurants, de soins, d'activités et d'expériences
-- Mise en beauté pour une soirée avec notre [Glam Team à domicile](/fr/services/glam-team-domicile/)
+- **avant l'arrivée** : chalet préparé, réfrigérateur rempli selon votre liste, lits d'enfants installés, horaires d'arrivée transmis au propriétaire ;
+- **chef privé** pour quelques dîners ou pour tout le séjour, avec des menus convenus à l'avance ;
+- **entretien du chalet** pendant le séjour, linge et ménage, en lien avec notre service d'[intendance de résidence](/fr/services/intendance-residence/) ;
+- **forfaits, location de matériel et cours** réservés auprès des écoles et des loueurs de la station ;
+- **restaurants, activités et guides de montagne** pour les sorties hors des pistes ;
+- **mise en beauté** pour une soirée, avec notre [Glam Team à domicile](/fr/services/glam-team-domicile/) ;
+- **dîners et fêtes** au chalet, coordonnés avec notre service d'[organisation d'événements](/fr/services/mariages-evenements/).
 
-## Comment se déroule une réservation
+Le trajet depuis Genève relève de nos [transferts privés vers les Alpes](/fr/services/transferts-geneve-alpes/), qui détaillent l'accès à chaque station.
 
-1. **Votre demande.** Station ou région, dates, nombre de personnes et de chambres, budget indicatif, services souhaités. Vous pouvez [demander un chalet pour votre séjour](/fr/demande/?service=chalets) même si la station n'est pas encore choisie.
-2. **Notre sélection.** Nous interrogeons propriétaires, agences et hôtels, vérifions la disponibilité et vous présentons une sélection courte, avec les conditions de chacun.
-3. **La réservation.** Vous choisissez ; le contrat est conclu avec le propriétaire, l'agence ou l'hôtel, à ses conditions. Nous suivons la réservation et les paiements prévus.
-4. **La préparation.** Transferts, courses, chef, forfaits, matériel, cours de ski : nous organisons les services choisis avant votre arrivée.
-5. **Pendant le séjour.** Vous gardez un seul contact pour toute demande, de la table du soir à la modification d'un transfert de retour.
+## Choisir sa station
 
-## Situations courantes
-
-- **Une famille qui arrive en fin de journée** avec de jeunes enfants : chalet chauffé, lits faits, repas prévu, matériel de ski déjà réservé.
-- **Un groupe d'amis pour une semaine de ski**, avec un chef pour les dîners et des niveaux de ski très différents.
-- **Un séjour d'été** autour d'un festival, avec des places à réserver et des randonnées à organiser.
-- **Une réception ou un anniversaire en chalet**, avec un traiteur, une décoration et des invités à transporter.
-- **Un séjour en deux stations**, par exemple Verbier puis Zermatt, avec un transfert entre les deux.
-- **Une saison entière** dans un chalet, avec une intendance régulière et des invités qui se succèdent.
-
-## Où nous organisons des séjours
-
-Chaque station a son caractère, ses accès et son calendrier. Voici ce qui compte pour choisir et préparer un séjour.
+Chaque station a son caractère, sa saison et son calendrier. Voici ce qui les distingue pour un séjour.
 
 ### Verbier
 
-Verbier domine le Val de Bagnes, en Valais, et donne accès au domaine des 4 Vallées. La station est connue pour le ski hors-piste et le freeride, mis en avant chaque fin d'hiver par l'Xtreme Verbier ; l'été, le Verbier Festival fait de la station un rendez-vous de musique classique. Les chalets se répartissent entre le centre du village et des secteurs plus calmes, plus ou moins proches des remontées. Nous coordonnons à Verbier la conciergerie de chalet, l'intendance, un chef privé, les forfaits et le matériel. Pour l'arrivée, voir le [transfert vers Verbier](/fr/services/transferts-geneve-alpes/#verbier).
+Verbier fait partie du domaine skiable des 4 Vallées. La station vit en hiver comme en été, avec la randonnée et le VTT à la belle saison, et son logement est surtout fait de chalets et d'appartements autour d'un centre animé. Chaque été, le Verbier Festival y réunit des musiciens classiques ; à la fin de l'hiver, l'Xtreme Verbier se court sur le Bec des Rosses. Nous organisons chalet, chef privé et forfaits ; pour le trajet, voir le [transfert de Genève à Verbier](/fr/services/transferts-geneve-alpes/#verbier).
 
 ### Zermatt
 
-Zermatt, au pied du Cervin, est une station sans voitures : on circule à pied ou en véhicules électriques, ce qui donne au village son calme. Le domaine skiable rejoint l'Italie et permet le ski sur glacier en été. Au printemps, le festival Zermatt Unplugged anime la station. L'absence de voitures rend l'arrivée plus technique : nous coordonnons le passage par Täsch, le transport des bagages et l'accueil au chalet. Voir le [transfert vers Zermatt](/fr/services/transferts-geneve-alpes/#zermatt).
+Zermatt s'étend au pied du Cervin. Son domaine skiable rejoint Breuil-Cervinia, en Italie, et la station est ouverte en hiver comme en été, avec ski en altitude et alpinisme. Au printemps, le festival Zermatt Unplugged y programme des concerts. Pour un séjour à Zermatt, nous coordonnons l'arrivée au logement, le chef et les guides ; pour l'accès, voir le [transfert de Genève à Zermatt](/fr/services/transferts-geneve-alpes/#zermatt).
 
 ### Gstaad
 
-Gstaad, dans le Saanenland (Oberland bernois), a conservé une architecture de chalets en bois et une atmosphère de village. La saison d'hiver y est suivie d'un été riche, rythmé par le Menuhin Festival Gstaad. On y séjourne souvent en famille ou pour des réceptions privées. Nous y coordonnons l'intendance, les chefs privés, les réservations et l'organisation d'événements ; pour une fête ou un mariage, voir nos [mariages et événements privés](/fr/services/mariages-evenements/). Pour l'arrivée, voir le [transfert vers Gstaad](/fr/services/transferts-geneve-alpes/#gstaad).
+Le village de Gstaad s'organise autour d'une promenade en grande partie piétonne. La station est connue pour ses chalets, son atmosphère calme et ses deux saisons. Chaque été, le Menuhin Festival Gstaad accueille des concerts de musique classique et le Swiss Open Gstaad un tournoi de tennis. Gstaad se prête aux séjours en famille comme aux [mariages et événements privés en montagne](/fr/services/mariages-evenements/) ; pour la route, voir le [transfert de Genève à Gstaad](/fr/services/transferts-geneve-alpes/#gstaad).
 
 ### St-Moritz
 
-St-Moritz se trouve en Haute-Engadine, dans les Grisons, au bord d'un lac qui gèle l'hiver. C'est sur ce lac que se tiennent la Snow Polo World Cup St. Moritz et les courses du White Turf. La station est éloignée de Genève : beaucoup de voyageurs arrivent par Zurich ou par l'aéroport de Samedan (Engadin Airport). Nous coordonnons à St-Moritz le logement, les réservations pour ces événements selon la disponibilité, la conciergerie et les trajets. Voir le [transfert vers St-Moritz](/fr/services/transferts-geneve-alpes/#st-moritz).
+St-Moritz a accueilli deux fois les Jeux olympiques d'hiver, en 1928 et en 1948. L'hiver s'y vit en partie sur le lac gelé, où se tiennent la Snow Polo World Cup St. Moritz et les courses de chevaux du White Turf ; le Cresta Run et la piste de bobsleigh en glace naturelle font partie de la tradition de la station. Pour un séjour pendant ces événements, mieux vaut réserver tôt ; pour le trajet, voir comment [rejoindre St-Moritz depuis Genève](/fr/services/transferts-geneve-alpes/#st-moritz).
 
 ### Courchevel
 
-Courchevel, en Savoie, fait partie du domaine des 3 Vallées. La station s'étage en plusieurs villages à différentes altitudes, chacun avec son ambiance, du plus animé au plus familial. Un altiport accueille les petits avions et les hélicoptères. Nous y recherchons chalets et hôtels, et coordonnons chef privé, intendance, forfaits et réservations. Voir le [transfert vers Courchevel](/fr/services/transferts-geneve-alpes/#courchevel).
+Courchevel fait partie du domaine des Trois Vallées. La station réunit plusieurs villages à des niveaux différents, dont Courchevel 1850, Moriond et Le Praz, et vit surtout l'hiver, avec chalets, appartements et hôtels. Le choix du village compte autant que celui du chalet : nous vous aidons à le faire selon votre groupe et votre niveau de ski. Pour l'accès, voir le [transfert de Genève à Courchevel](/fr/services/transferts-geneve-alpes/#courchevel).
 
 ### Megève
 
-Megève, en Haute-Savoie, a gardé un centre de village ancien, avec ses rues piétonnes et ses calèches en hiver, face au massif du Mont-Blanc. La station se vit autant en été qu'en hiver, pour le golf, la randonnée et la table. Elle dispose d'un altiport. Nous y coordonnons chalets, intendance, chefs privés, activités et réservations. Voir le [transfert vers Megève](/fr/services/transferts-geneve-alpes/#megeve).
+Megève est un village-station historique, avec un centre médiéval piéton. Elle appartient au domaine Évasion Mont-Blanc et vit en hiver comme en été. Ses chalets conviennent bien aux séjours en famille et aux réunions entre amis ; nous y organisons chef privé, entretien et activités. Pour le trajet, voir le [transfert de Genève à Megève](/fr/services/transferts-geneve-alpes/#megeve).
 
 ### Chamonix
 
-Chamonix, au pied du Mont-Blanc, est d'abord une ville de montagne : alpinisme, ski hors-piste, téléphérique de l'Aiguille du Midi. Le tunnel du Mont-Blanc relie la vallée à l'Italie. Chaque fin d'été, l'Ultra-Trail du Mont-Blanc (UTMB) remplit la vallée ; les hébergements se réservent tôt. Nous y coordonnons logement, conciergerie, intendance et transferts, et pouvons organiser des sorties avec des guides de haute montagne indépendants. Voir le [transfert vers Chamonix](/fr/services/transferts-geneve-alpes/#chamonix).
+Chamonix a accueilli les premiers Jeux olympiques d'hiver, en 1924, et reste un centre de l'alpinisme, hiver comme été. Le téléphérique de l'Aiguille du Midi et le train du Montenvers vers la Mer de Glace partent de la vallée ; la Vallée Blanche se descend hors-piste, avec un guide de montagne. Chaque fin d'été, l'UTMB fait le tour du Mont-Blanc. Nous réservons guides, logement et activités ; pour l'accès, voir le [transfert de Genève à Chamonix](/fr/services/transferts-geneve-alpes/#chamonix).
 
-## Qui fait quoi
+## Calendrier : saisons, semaines chargées et réservation
 
-**The Valet coordonne.** Nous recherchons les biens, comparons les options, vous présentons les conditions, suivons la réservation et organisons les services du séjour. Nous restons votre interlocuteur unique avant, pendant et après.
+Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. En hiver, les semaines les plus demandées sont celles des fêtes de fin d'année et des vacances scolaires suisses et françaises ; beaucoup de chalets se louent alors à la semaine, du samedi au samedi. Les grands événements des stations remplissent aussi les logements. En dehors de ces périodes, les durées sont plus souples et le choix plus large. En été, la saison est plus courte et certaines adresses ne rouvrent qu'une partie de l'année : nous vérifions les dates d'ouverture avant de vous proposer une option.
 
-**Les loueurs louent.** Le chalet, la résidence ou la chambre sont loués par leur propriétaire, une agence ou un hôtel, à leurs conditions. Les règles d'annulation, de caution et d'arrivée sont les leurs ; nous vous les présentons clairement avant tout engagement.
+## Votre demande de séjour, point par point
 
-**Les prestataires réalisent.** Chefs, intervenants de ménage, écoles de ski, moniteurs et guides sont des professionnels indépendants choisis sur place. Les transferts sont assurés par des partenaires indépendants dûment autorisés pour le transport de personnes.
+Pour vous proposer des chalets adaptés, nous vous demanderons :
 
-## Chef privé, intendance et expériences
+1. **La station, ou les deux ou trois qui vous intéressent**, et vos dates, avec leur souplesse éventuelle.
+2. **Le groupe** : nombre d'adultes et d'enfants, âges, chambres et salles de bains nécessaires.
+3. **Vos priorités** : skis aux pieds, proximité du village, calme, espace bien-être, bureau.
+4. **Les services souhaités** : chef, entretien quotidien, forfaits, cours, matériel, activités pour les enfants.
+5. **Le budget** pour le logement, et ce que vous voulez inclure ou non.
+6. **Les contraintes** : animaux, accessibilité, allergies alimentaires à transmettre au chef.
 
-Un chef privé peut préparer les petits-déjeuners, les dîners ou une seule soirée, selon vos goûts et les régimes de chacun. L'intendance du chalet suit le même principe que notre [intendance de résidence](/fr/services/intendance-residence/) : ménage, linge et approvisionnement, au rythme du séjour. Pour les expériences, nous recherchons ce qui correspond à votre groupe : une journée avec un guide, une table en altitude, un soin après le ski, une sortie en traîneau, une soirée au village.
+## Le jour du départ et après
 
-## Chalet, résidence ou hôtel : comment choisir
+La fin d'un séjour en chalet demande aussi un peu d'organisation. Les contrats prévoient souvent un état des lieux, une heure de départ et une caution, dont les conditions vous sont communiquées à la réservation. Nous convenons avec le propriétaire ou l'agence de l'heure de remise des clés, faisons restituer le matériel loué et réglons avec les prestataires les dernières factures du séjour, présentées sur un relevé. Si un objet a été oublié, nous organisons son renvoi. Et si le chalet vous a plu, nous pouvons interroger le propriétaire sur ses disponibilités pour la saison suivante, avant que les semaines les plus demandées ne soient prises.
 
-Un chalet privé offre l'espace et l'intimité d'une maison, avec des services à organiser autour. Une résidence ou un appartement convient aux séjours plus courts ou aux petits groupes qui veulent être au cœur du village. Un hôtel apporte le service sur place, utile pour un court séjour ou lorsque vous ne souhaitez rien gérer. Nous vous aidons à trancher selon la taille du groupe, la durée, la saison et le degré de service attendu, puis nous réservons l'option retenue.
+## Propriétaires, agences et prestataires : qui fait quoi
+
+Le chalet appartient à un propriétaire et se loue directement ou par une agence, selon un contrat dont les conditions vous sont transmises avant la réservation. Les services du séjour sont assurés par des prestataires locaux : chefs, entreprises d'entretien, écoles de ski, loueurs, guides. The Valet recherche, compare, réserve et coordonne ; nous vous confirmons par écrit qui intervient, ce qui est compris et à quelles conditions. Pour la vie quotidienne à Genève entre deux séjours, voir notre [conciergerie à Genève](/fr/services/conciergerie-privee-geneve/).
+
+Pour la saison qui vient, vous pouvez [demander un chalet ou une résidence en station](/fr/demande/?service=chalets) en précisant la station, les dates et la taille du groupe.

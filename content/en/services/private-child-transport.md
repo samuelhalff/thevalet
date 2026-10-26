@@ -1,89 +1,73 @@
 ---
 title: "Private child transport in Geneva"
-description: "Private child transport in Geneva: school runs, activities and appointments, suitable child seats and parents' written instructions, by licensed partners."
+description: "Private child transport in Geneva: school, activities and appointments, with seats and handover agreed with the operator before booking."
 translationKey: "child-transport"
 updated: "2026-10-26"
 order: 4
 summary: "School runs, activities and regular appointments, arranged according to the parents' written instructions."
 serviceType: "Private child transport"
 delivery: "partner"
-answer: "The Valet arranges private transport for your children in Geneva and the surrounding region: journeys to school, activities, appointments and outings, one-off or regular. Journeys are provided by independent, appropriately licensed partners, subject to local regulations and prior confirmation, and follow your written instructions."
+answer: "The Valet arranges private transport for your children in Geneva and the surrounding region: journeys to school, activities, appointments and outings, one-off or regular. Journeys are driven by independent partners, chosen for their authorised activity, subject to local regulations and prior confirmation; seats, handover and messages to parents are agreed with the operator before booking, based on your written instructions."
 faq:
+  - q: "From what age can a child travel with this service?"
+    a: "That depends on the applicable regulations and the operator's terms. Tell us each child's age: we confirm before booking what is possible and on what conditions."
   - q: "Are child seats provided?"
-    a: "Yes. We arrange seats suited to each child's age and size; simply tell us when you make the request."
-  - q: "Who can hand over or collect my child?"
-    a: "Only the people you name in writing. The pick-up point, drop-off point and the person receiving the child are confirmed before the first journey."
-  - q: "Can you arrange regular journeys?"
-    a: "Yes. We can arrange recurring journeys for school or activities, subject to our partners' availability and the applicable regulations."
-  - q: "What if plans change at the last minute?"
-    a: "Let us know as soon as possible. Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request."
-  - q: "Who drives the vehicle?"
-    a: "A professional driver from an independent partner holding the licences required for passenger transport. The Valet coordinates the journey and remains your contact."
-  - q: "Can my child travel without a family adult?"
-    a: "It depends on their age, the journey and the applicable regulations. We discuss it with you when you make the request; some situations call for an accompanying person you designate."
-  - q: "What happens if nobody is there on arrival?"
-    a: "What to do is set out in your written instructions: whom to call, where to wait, to whom the child may be handed. The driver does not depart from them without your agreement."
+    a: "They can be provided by the confirmed operator, according to each child's age and size. The type of seat is agreed before booking; you can also supply your own."
+  - q: "Who is the child handed over to on arrival?"
+    a: "To the person you have named in writing. The handover arrangements are agreed with the operator before booking, including what happens if that person is not there."
+  - q: "Will I be kept informed during the journey?"
+    a: "Messages to parents (departure, arrival, handover) are agreed with the operator before booking, according to what it can offer. You choose who receives them."
+  - q: "Can regular journeys be arranged for the whole school year?"
+    a: "Yes, subject to the operator's availability. The schedule is set with you, then adjusted for holidays, public holidays and timetable changes."
+  - q: "How do I change or cancel a journey?"
+    a: "Write to us as early as possible. Change and cancellation deadlines are the operator's and are set out in the proposal."
 ---
 
-## What we arrange
+## Which journeys
 
-Transport for young children and schoolchildren calls for attention more than speed. We arrange journeys built around the child, their timetable and your family's rules.
+Private child transport meets a specific need: a parent who cannot be in two places at once, office hours that do not match the end of the school day, an activity on the other side of the canton. In Geneva and the surrounding region, we arrange:
 
-- School runs, morning and late afternoon, one-off or regular
-- Sports, arts and after-school activities, including at weekends
-- Appointments with a doctor, dentist or therapist, with the person you designate
-- Educational outings, birthday parties, visits to grandparents
-- Transfers to Geneva Airport (GVA) or the station, with a parent or an accompanying person
-- Seats suited to each child's age and size, fitted before pick-up
-- A quiet activity on board for longer journeys if you wish: a book, music chosen with you
+- journeys between home and school, in the morning, at lunchtime or at the end of the day;
+- return trips to activities: sport, music, language lessons;
+- medical or therapy appointments, coordinated with our [medical concierge](/en/services/medical-concierge/) if you wish;
+- one-off outings, birthday parties, trips to the station or airport to meet a parent;
+- regular journeys throughout the school year.
 
-When the whole family travels together, in town or to the airport, we arrange a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) instead.
+For the adults in the family, see our [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/); for arriving at a resort with children, our [transfers from Geneva to the Alps](/en/services/geneva-alps-transfers/).
 
-## How it is set up
+## The instructions we ask for in writing
 
-1. **A first conversation.** You describe the journeys, the children's ages, their habits and what matters to you. You can [arrange transport for your children](/en/request/?service=child-transport) through the form, and we call you back.
-2. **Your written instructions.** Places and times, authorised people, contacts in case of the unexpected, and what to do if nobody is there on arrival.
-3. **Confirmation.** Our partner confirms that it can carry out the journeys in line with local regulations. We then confirm the vehicle, seats and terms with you.
-4. **The journeys.** The driver receives your instructions and only the information needed. You are kept informed in the way agreed: a message at pick-up, at drop-off, or both.
-5. **Adjustments.** Absences, holidays, a change of activity: you write to us and we adapt the schedule.
+Everything rests on your instructions. Before the first journey, we ask you to tell us in writing:
 
-## Typical situations
+1. **The children concerned**, their age and height, to determine the seats.
+2. **The addresses** for pick-up and drop-off, with the precise entrance (school gate, club reception).
+3. **The people authorised** to hand the child over and to receive them, with a number for each.
+4. **What should happen if something changes**: a delay, nobody at the drop-off, a child unwell at departure time.
+5. **Information useful for the journey** that you choose to share, for example an allergy to mention in an emergency. Health details should not be sent through the website form.
 
-- **Both parents travelling in the same week**, with a child to drop at school and collect from an evening activity.
-- **An activity on the other side of the canton** that does not fit into a busy working day.
-- **A child returning from boarding school** who must be met at the airport or station by a designated person.
-- **Siblings on different timetables**, with schools and activities that do not overlap.
-- **A daytime medical appointment**, with a family member or trusted person accompanying.
-- **A Saturday birthday party**, with a drop-off and collection at set times.
+These instructions are passed to the operator, and only what the journey requires.
 
-## Where we work
+## What the confirmed operator puts in place
 
-**Geneva** is the heart of the service: schools, nurseries, clubs and activities across the canton, and journeys to the airport and station.
+The practical measures are the responsibility of the operator driving the journey. They are agreed with it before booking, then confirmed in writing:
 
-**The canton of Vaud** and the Lake Geneva region, for schools and activities outside Geneva or families living along the lake.
+- **seats** suited to each child's age and size, supplied by the operator or by you;
+- **handover** of the child to the person named in your instructions, and what to do if they are not there;
+- **messages to parents** at departure, arrival or handover, according to what the operator can offer;
+- **the chauffeur** for regular journeys, where the operator can assign the same person.
 
-**Neighbouring France**, for some cross-border journeys, subject to our partner's authorisations and the child's identity documents.
+The Valet does not drive or accompany children itself; we coordinate and check that what was agreed appears in the confirmation.
 
-**The Alpine resorts**, during the holidays: journeys to ski lessons or activities, arranged locally. See our [Alpine chalets and residences](/en/services/alpine-chalets-residences/) and, for the drive up, our [Geneva–Alps transfers](/en/services/geneva-alps-transfers/).
+## Regulations, age and seats: the framework
 
-What changes from place to place: the applicable regulations, partner availability and, in the mountains, road conditions.
+Transporting children is regulated: the use of suitable restraints, whether an escort is needed, and the age from which a child may travel without a family adult depend on local regulations and the operator's terms. Depending on the children's ages and the journey, an escort in addition to the chauffeur may be requested; we tell you what is possible before booking. Schools and clubs sometimes have their own drop-off and collection rules: we ask you to check them on your side, then build them into the schedule.
+
+## Regular journeys: setting up and adjusting
+
+For a regular schedule, we first draw up a standard timetable with you, then propose it to the operator. Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. Availability depends mostly on peak times: school starts and finishes happen at the same moment for every family, and morning slots are the most requested. Holidays, public holidays, teacher training days and timetable changes during the year are reviewed with you, ideally before each term.
 
 ## Who does what
 
-**The Valet coordinates.** We collect your instructions, choose the partner, check availability, pass on the information and remain your single contact. We keep the schedule up to date and handle any changes.
+We gather your instructions, choose the operator, send you the proposal, book once you agree and remain your contact for changes. Journeys are driven by independent partners, chosen for their authorised passenger transport activity, subject to local regulations and prior confirmation. If your family also needs help at home, our [residence management](/en/services/residence-management/) can take over welcoming and day-to-day organisation.
 
-**Our partners carry out the journeys.** They are independent partners appropriately licensed for passenger transport, who provide the vehicle, the driver and suitable seats. Each journey is subject to local regulations and their prior confirmation. They follow your written instructions and do not depart from them without your agreement.
-
-**You stay in control.** Authorised people, places and times are decided by you, in writing. Any change goes through a message from you.
-
-## Your instructions, in writing
-
-Before the first journey, we ask for:
-
-- the place and time of pick-up and drop-off;
-- the people authorised to hand over or receive the child;
-- the contact details to use if anything unexpected happens;
-- what to do if nobody is there on arrival;
-- anything else the driver should know: habits, items not to forget, family rules.
-
-These instructions are confirmed with you and passed to the partner, and to no one else. If you would like to hand over other everyday tasks, such as reservations or welcoming visitors, see our [private concierge](/en/services/private-concierge-geneva/).
+To start, you can [request transport for your children](/en/request/?service=child-transport) with the journeys, times and each child's age.

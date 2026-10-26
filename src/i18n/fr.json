@@ -60,14 +60,14 @@
     "languagesLabel": "Langues",
     "languagesText": "Français, anglais",
     "deliveryLabel": "Prestation",
-    "deliveryPartner": "Assurée par des partenaires indépendants dûment autorisés, coordonnée par The Valet",
+    "deliveryPartner": "Assurée par des partenaires indépendants, choisis pour leur activité autorisée ; coordonnée par The Valet",
     "deliveryCoordinated": "Organisée et coordonnée par The Valet, avec des prestataires sélectionnés",
     "cta": "Demander ce service",
     "asideTitle": "Une demande, un seul interlocuteur",
     "asideText": "Indiquez la date, le lieu et vos souhaits : nous revenons vers vous avec une proposition claire.",
     "relatedTitle": "Services associés",
     "areasNote": "Selon la demande, nous coordonnons aussi des prestations ailleurs en Suisse et à l'étranger.",
-    "deliveryPartnerShort": "Par des partenaires agréés, coordonné par The Valet",
+    "deliveryPartnerShort": "Par des partenaires indépendants, coordonné par The Valet",
     "deliveryCoordinatedShort": "Organisé par The Valet"
   },
   "journalPage": {
@@ -233,5 +233,10 @@
     "residence": "Résidences",
     "car": "Transport",
     "alps": "Alpes suisses et françaises"
+  },
+  "routeIndex": {
+    "access": "Accès depuis Genève",
+    "stay": "Séjour",
+    "title": "Index des itinéraires"
   }
 }

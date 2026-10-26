@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { getPublishedEntries } from "@/lib/content";
+import { getByKey, getPublishedEntries } from "@/lib/content";
 import { pagesCopy } from "@/lib/copy";
 import { t } from "@/lib/i18n";
-import { pagePath } from "@/lib/paths";
+import { localePath, pagePath } from "@/lib/paths";
+import type { Locale } from "@/lib/i18n";
 import { fixedPageMetadata, getLocale, type LocaleParams } from "@/lib/page";
 import { serviceItinerary } from "@/lib/itinerary";
 import { plainTitle } from "@/lib/typography";
@@ -16,6 +17,30 @@ import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Timeline from "@/components/ui/Timeline";
+import Link from "next/link";
+
+/** The three chapters of the home itinerary (translationKeys, in display order). */
+const CHAPTERS: Record<string, string[]> = {
+  move: ["chauffeur", "alpine-transfers", "child-transport"],
+  stay: ["chalets", "residence-management", "events", "glam-team"],
+  accompany: ["concierge", "medical", "security", "legal-real-estate"],
+};
+
+/** Resorts of the route index; ids match the H3 anchors on both pillar pages. */
+const RESORTS = [
+  ["Verbier", "verbier"],
+  ["Zermatt", "zermatt"],
+  ["Gstaad", "gstaad"],
+  ["St-Moritz", "st-moritz"],
+  ["Courchevel", "courchevel"],
+  ["Megève", "megeve"],
+  ["Chamonix", "chamonix"],
+] as const;
+
+function pillarPath(locale: Locale, key: string): string | undefined {
+  const e = getByKey(locale, "services", key);
+  return e ? localePath(locale, `/services/${e.slug}/`) : undefined;
+}
 
 export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const locale = await getLocale(params);
@@ -64,12 +89,25 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
         </div>
       </Section>
 
-      {/* Dense practical: the itinerary of services */}
+      {/* The services as three typographic chapters, each an itinerary */}
       <Section spacing="md">
         <SectionHeading title={c.services.title} />
         <RichText text={c.services.lead} className="mt-5 max-w-2xl text-muted" />
-        <div className="mt-12">
-          <Itinerary items={serviceItinerary(locale, services)} />
+        <div className="mt-16 space-y-20">
+          {c.chapters.map((ch) => {
+            const items = (CHAPTERS[ch.key] ?? [])
+              .map((k) => services.find((e) => e.translationKey === k))
+              .filter((e): e is (typeof services)[number] => Boolean(e));
+            return (
+              <div key={ch.key} className="grid gap-8 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.6fr)] lg:gap-16">
+                <div>
+                  <h3 className="t-2">{ch.title}</h3>
+                  <RichText text={ch.text} className="mt-4 max-w-sm text-muted" />
+                </div>
+                <Itinerary size="md" items={serviceItinerary(locale, items)} />
+              </div>
+            );
+          })}
         </div>
       </Section>
 
@@ -96,29 +134,63 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
         </div>
       </Section>
 
-      {/* Dense: where we work */}
+      {/* Compact route index: each resort → access (transfers) and stay (chalets) */}
       <Section spacing="md">
-        <SectionHeading title={c.destinations.title} lead={c.destinations.lead} />
-        <dl className="mt-12 grid gap-x-12 gap-y-9 sm:grid-cols-2">
-          {c.destinations.items.map((d) => (
-            <div key={d.name} className="grid gap-1 sm:grid-cols-[8.5rem_minmax(0,1fr)] sm:gap-6">
-              <dt className="font-display text-[1.45rem] leading-tight">{d.name}</dt>
-              <dd className="text-[0.98rem] text-muted">
-                <RichText as="span" text={d.text} />
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </Section>
-
-      <Section spacing="md" container="narrow">
-        <SectionHeading title={c.partners.title} size="md" />
-        <div className="mt-6 space-y-5">
-          {c.partners.paragraphs.map((p) => (
-            <RichText key={p} text={p} />
-          ))}
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.3fr)] lg:gap-24">
+          <SectionHeading title={c.destinations.title} lead={c.destinations.lead} />
+          <table className="w-full text-left">
+            <caption className="sr-only">{t(locale, "routeIndex.title")}</caption>
+            <thead className="t-small text-muted">
+              <tr className="border-b border-line">
+                <th scope="col" className="py-2 font-medium">
+                  <span className="sr-only">{t(locale, "routeIndex.title")}</span>
+                </th>
+                <th scope="col" className="py-2 font-medium">{t(locale, "routeIndex.access")}</th>
+                <th scope="col" className="py-2 font-medium">{t(locale, "routeIndex.stay")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {RESORTS.map(([name, id]) => {
+                const transfers = pillarPath(locale, "alpine-transfers");
+                const chalets = pillarPath(locale, "chalets");
+                return (
+                  <tr key={id} className="border-b border-line">
+                    <th scope="row" className="py-3 pr-6 font-display text-[1.35rem] font-normal">
+                      {name}
+                    </th>
+                    <td className="py-3 pr-4">
+                      {transfers ? (
+                        <Link href={`${transfers}#${id}`} className="link">
+                          {locale === "fr" ? `Genève → ${name}` : `Geneva → ${name}`}
+                        </Link>
+                      ) : null}
+                    </td>
+                    <td className="py-3">
+                      {chalets ? (
+                        <Link href={`${chalets}#${id}`} className="link">
+                          {locale === "fr" ? `Séjour à ${name}` : `Staying in ${name}`}
+                        </Link>
+                      ) : null}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
       </Section>
+
+      {/* Who does what: one full-width bordeaux statement */}
+      <section className="band">
+        <Container className="grid gap-10 py-20 sm:py-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-24">
+          <h2 className="t-1">{c.partners.title}</h2>
+          <div className="t-lead space-y-5">
+            {c.partners.paragraphs.map((p) => (
+              <RichText key={p} text={p} />
+            ))}
+          </div>
+        </Container>
+      </section>
 
       <Section spacing="md" container="narrow">
         <Faq title={c.faq.title} items={c.faq.items} />

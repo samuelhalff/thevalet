@@ -1,102 +1,98 @@
 ---
 title: "Geneva to the Alps: private chauffeur transfers"
-description: "Private transfers from Geneva to Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève or Chamonix, with luggage and skis, by licensed partners."
+description: "Private transfers from Geneva and GVA airport to Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève or Chamonix, with luggage and skis."
 translationKey: "alpine-transfers"
 updated: "2026-10-26"
 order: 3
 summary: "Private transfers from Geneva and GVA airport to Swiss and French ski resorts, luggage and skis included."
 serviceType: "Private ski resort transfer"
 delivery: "partner"
-answer: "The Valet arranges private transfers from Geneva and Geneva Airport (GVA) to the Alpine resorts: Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève and Chamonix. Journeys are provided by independent partners holding the required licences; we coordinate the timing, luggage, vehicle and your arrival at the resort."
+answer: "The Valet arranges private transfers from Geneva and Geneva Airport (GVA) to the Alpine resorts: Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève and Chamonix. Journeys are driven by independent partners, chosen for their authorised activity; we coordinate the timing, vehicle, luggage and your arrival at the chalet, and confirm in writing who will drive and on what terms."
 faq:
-  - q: "Does the driver allow for a delayed flight?"
-    a: "We pass your flight number to the partner so that the pick-up follows the actual arrival time. Waiting terms are set out in the proposal."
-  - q: "Can I bring skis and a lot of luggage?"
-    a: "Yes, as long as you tell us in advance the number of passengers, suitcases, ski bags and bulky equipment. We choose the vehicle accordingly, for example a van such as the Mercedes-Benz V-Class."
-  - q: "How does a transfer to Zermatt work?"
-    a: "Zermatt is car-free. The car journey ends at Täsch, where a shuttle train continues to the village. We can coordinate the rest of your arrival up to your accommodation."
-  - q: "Can I book the return journey at the same time?"
-    a: "Yes. We can arrange the outward and return journeys in a single request, as well as trips between resorts during your stay."
-  - q: "How far in advance should I book?"
-    a: "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. During school holidays and winter weekends, an early request leaves more choice."
-  - q: "Do I need documents to travel to Courchevel, Megève or Chamonix?"
-    a: "These resorts are in France, so the journey from Geneva crosses the border. Every passenger must carry an identity document valid for entry into France."
-  - q: "Can child seats be provided?"
-    a: "Yes. Tell us each child's age and size; suitable seats are fitted in the vehicle."
-  - q: "How is the price set?"
-    a: "It depends on the destination, vehicle, time of day, number of passengers and any waiting time. You receive a proposal before anything is booked."
+  - q: "How do I arrange a transfer from Geneva Airport to a resort?"
+    a: "Give us the flight number, the number of passengers, suitcases and ski bags, and the exact address of your accommodation. We propose the right vehicle and confirm the terms before booking."
+  - q: "Can you drive all the way to Zermatt?"
+    a: "No. Zermatt is car-free: the chauffeur stops at Täsch, where a shuttle train runs to Zermatt. In the village, electric taxis cover the last stretch."
+  - q: "How do you get to St-Moritz from Geneva?"
+    a: "The road journey is long. Travellers often go via Zurich, or fly to Engadin Airport at Samedan. We set out the options according to your plans."
+  - q: "Will skis and equipment fit in the vehicle?"
+    a: "Yes, provided you mention them when booking. The number of ski bags and suitcases decides the vehicle, for example a premium van rather than a saloon."
+  - q: "What if the flight or the road delays arrival?"
+    a: "With the flight number, the pick-up time can follow the actual arrival. Road conditions can lengthen the journey; waiting time and its terms are set out in the proposal."
+  - q: "Do you also arrange the return to Geneva?"
+    a: "Yes. The return can be booked with the outward journey or during your stay. Give us your flight time: the departure time is set with the operator."
+  - q: "Are helicopter transfers possible?"
+    a: "On request, subject to operator availability, weather and the rules of the heliports or altiports involved. These flights are operated by independent operators."
 ---
 
-## What we arrange
+## From the airport to the chalet door
 
-A Geneva airport transfer to Verbier, Courchevel or Zermatt is planned like a short trip: landing time, the amount of luggage, road conditions and access to the chalet matter as much as the drive itself. We take care of that preparation.
+A transfer to a resort often comes down to its two ends: leaving Geneva Airport with a lot of luggage, and arriving at a chalet where you need the right entrance, someone to open up and room to unload. We arrange the whole journey:
 
-- Transfers from Geneva Airport (GVA), Geneva-Cornavin station or your home to Swiss and French resorts
-- Return journeys to Geneva timed around your flight or train
-- Trips between resorts during your stay, or to another airport in the region
-- Vehicles suited to families, groups and bulky luggage: skis, boots, pushchairs, golf or bike equipment in summer
-- Child seats suited to each child's age and size
-- Coordination of your arrival at the chalet or hotel: key handover, welcome, groceries arranged before you arrive
+- pick-up at Geneva Airport (GVA), on the Swiss or French side depending on your flight, at the station or at your address;
+- meeting you at Geneva Airport's private aviation facilities if you arrive by private aircraft, with a vehicle planned for the landing time;
+- a vehicle suited to the number of passengers, suitcases and ski bags;
+- flight tracking so the pick-up time can be adjusted;
+- an arrival coordinated with your accommodation: key handover, welcome, shopping delivered before you arrive, together with our [chalets and residences in the Alps](/en/services/alpine-chalets-residences/) or the [management of your residence](/en/services/residence-management/);
+- the return to Geneva, booked in advance or during your stay.
 
-For journeys within Geneva before or after your stay, we call on a [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/). For preparing your accommodation, see our page on [Alpine chalets and residences](/en/services/alpine-chalets-residences/).
+For journeys around town or hourly hire in Geneva, see our [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) instead.
 
-## How a transfer works
+## The details that make a good transfer
 
-1. **Your request.** Date, flight or train number, pick-up address, exact arrival address, number of passengers, suitcases and pairs of skis, children's ages. You can [request a transfer to your resort](/en/request/?service=alpine-transfers) with these details, even if some are missing.
-2. **Our proposal.** We choose the partner and vehicle for the destination and your party, then confirm the timing and terms before anything is booked.
-3. **The day before.** We check the flight time, the forecast road conditions and the arrival details at the resort. The driver receives the information needed for the job, and nothing more.
-4. **On the day.** The driver meets you on arrival and handles the luggage. If anything is delayed or changes, you keep a single contact at The Valet.
-5. **The return.** We confirm the departure time a few days before the end of your stay, taking your flight time and the weather into account.
+On arrival day, questions are easier to settle if they were asked beforehand. We will ask for:
 
-## Typical situations
+1. **The flight or train**, with its number and scheduled time, or the time you leave your address.
+2. **The passengers**, adults and children, with the children's ages so the right seats can be requested.
+3. **The luggage**: suitcases, ski or snowboard bags, pushchairs, bulky equipment.
+4. **The exact address** of the accommodation and who will meet you there, or how to collect the keys.
+5. **Any stops** you want on the way, for example to collect equipment or do some shopping.
+6. **The return**: date, flight time and any change of pick-up point.
 
-- **A flight landing late in the evening**, with tired children and plenty of luggage: a spacious vehicle, seats fitted in advance and a chalet ready on arrival.
-- **A group of friends arriving on several flights** on the same day: several coordinated pick-ups, or a planned wait to bring arrivals together.
-- **An arrival by train in Geneva** followed by a direct drive up to the resort, with no further change.
-- **Snowfall forecast** on the day of travel: an earlier departure, a checked route and the chalet kept informed.
-- **A same-day round trip** from a resort to Geneva for an appointment or a flight.
-- **A two-stage stay**, for example a few days in Verbier then Zermatt, with a transfer between the two.
+## Resort by resort: how you get there
 
-## Where we go: resort by resort
-
-Each resort has its own access, constraints and rhythm. Here is what changes from one destination to another for a transfer from Geneva.
+Each resort has its own access logic. Here is what to know to plan the journey; for the stay itself, each section links to the same resort on our chalets page.
 
 ### Verbier
 
-Verbier is in Valais, above the Val de Bagnes, within the 4 Vallées ski area. From Geneva, the route follows the Rhône valley motorway via Martigny, then the mountain road climbing from Le Châble to the resort. The last stretch is a series of hairpins, so a well-equipped winter vehicle matters. For private flights, Sion airport is the closest. In summer the Verbier Festival draws a classical music audience; at the end of winter, the Xtreme Verbier brings freeriders together. For accommodation and housekeeping there, see the [Verbier section of our chalets page](/en/services/alpine-chalets-residences/#verbier).
+Verbier is in the canton of Valais, above Le Châble in the Val de Bagnes. From Geneva, the road follows Lake Geneva, climbs the Rhône valley to Martigny, then enters the Val de Bagnes. The train also runs via Martigny to Le Châble, where a gondola goes up to Verbier: useful for a passenger joining the group later. For private aviation, Sion airport is in the Rhône valley. The chauffeur drops you at the chalet address; for the stay, see [staying in Verbier](/en/services/alpine-chalets-residences/#verbier).
 
 ### Zermatt
 
-Zermatt, at the foot of the Matterhorn, is car-free. From Geneva, the road follows the Rhône valley, then climbs the Zermatt valley to Täsch, where the vehicle stops; a shuttle train continues to the village. We arrange that connection: help with luggage at Täsch and a welcome on arrival in Zermatt, depending on your accommodation. A heliport serves the resort. In spring, the Zermatt Unplugged festival takes place there. See also our section on [staying in Zermatt](/en/services/alpine-chalets-residences/#zermatt).
+Zermatt is car-free. The route climbs the Rhône valley to Visp, then the Mattertal to Täsch, where all vehicles stop, chauffeured ones included. From Täsch, a shuttle train runs to Zermatt; the Visp–Zermatt railway also serves the village. In Zermatt, electric taxis and hotel electric vehicles carry passengers and luggage. Zermatt also has a heliport. We coordinate the change from vehicle to train, then the arrival at your accommodation; for the stay, see [staying in Zermatt](/en/services/alpine-chalets-residences/#zermatt).
 
 ### Gstaad
 
-Gstaad, in the Saanenland (Bernese Oberland), is reached by road from Geneva through the canton of Vaud, either via the Gruyère and the Pays-d'Enhaut, or via the Chablais and the Col du Pillon, depending on season and conditions. An airfield at Saanen takes small aircraft and helicopters. In summer, the Menuhin Festival Gstaad sets the pace of the season. For a wedding or reception in Gstaad, we also coordinate guest transport; see our [weddings and private events](/en/services/weddings-private-events/) and our section on [chalets in Gstaad](/en/services/alpine-chalets-residences/#gstaad).
+Gstaad is in the Saanenland, in the canton of Bern, close to the Vaud border. From Geneva, the road goes through the Lake Geneva region, then across the Pays-d'Enhaut. The railway from Montreux, which crosses the Pays-d'Enhaut, also serves Gstaad. In nearby Saanen, an airfield is used by small aircraft and helicopters. For the stay, see [staying in Gstaad](/en/services/alpine-chalets-residences/#gstaad); for a party or wedding in the area, we also coordinate guest shuttles with our [event planning](/en/services/weddings-private-events/).
 
 ### St-Moritz
 
-St-Moritz, in the Upper Engadine (Graubünden), is far from Geneva: the full road journey is long and crosses mountain passes. Many travellers choose to arrive via Zurich, or fly to Samedan (Engadin Airport). We arrange a transfer from Geneva, from Zurich or from Samedan, as you prefer. In winter, the resort hosts the Snow Polo World Cup St. Moritz and the White Turf races on the frozen lake. See our section on [staying in St-Moritz](/en/services/alpine-chalets-residences/#st-moritz).
+St-Moritz is in the Engadin, in the canton of Graubünden, far to the east of Geneva. The road journey is long: travellers often go via Zurich, or fly to Engadin Airport at Samedan, which handles private aviation. By road, the Engadin is reached over Alpine passes such as the Julier, or with the Vereina car-carrying train. By rail, the Rhaetian Railway serves St-Moritz, and the Glacier Express links Zermatt and St-Moritz. We help you choose the simplest combination for your group; for the stay, see [staying in St-Moritz](/en/services/alpine-chalets-residences/#st-moritz).
 
 ### Courchevel
 
-Courchevel is in Savoie, in the Tarentaise valley, within Les 3 Vallées ski area. From Geneva, the route runs via Albertville and Moûtiers before the climb to the resort. Courchevel has an altiport used by small aircraft and helicopters. The journey crosses the border, so every passenger needs an identity document. See our section on [chalets in Courchevel](/en/services/alpine-chalets-residences/#courchevel).
+Courchevel is in Savoie, France, above the Tarentaise valley. From Geneva, the road heads towards Albertville, then climbs the Tarentaise via Moûtiers, which is also the nearest railway station. Courchevel has an altiport, used by small aircraft and helicopters. The chauffeur drops you at the village and address given, as the resort is made up of several villages; for the stay, see [staying in Courchevel](/en/services/alpine-chalets-residences/#courchevel).
 
 ### Megève
 
-Megève, in Haute-Savoie, faces the Mont Blanc massif. From Geneva, the Autoroute Blanche leads towards Sallanches before the climb to the village. The resort has an altiport. Megève draws visitors in winter and summer alike, for skiing as well as golf and hiking. See our section on [staying in Megève](/en/services/alpine-chalets-residences/#megeve).
+Megève is in Haute-Savoie, France, in the Val d'Arly. From Geneva, the road follows the Arve valley towards Sallanches, then climbs to Megève. The nearest railway station is Sallanches-Combloux-Megève, and Megève has an altiport for small aircraft. For the stay, see [staying in Megève](/en/services/alpine-chalets-residences/#megeve).
 
 ### Chamonix
 
-Chamonix lies at the foot of Mont Blanc, in Haute-Savoie, at the end of the Autoroute Blanche from Geneva. The Mont Blanc Tunnel links the valley to Italy, making it easy to combine a stay with Courmayeur. Every late summer, the Ultra-Trail du Mont-Blanc (UTMB) brings runners and their supporters to the valley, and accommodation and transfers are booked early. See our section on [chalets in Chamonix](/en/services/alpine-chalets-residences/#chamonix).
+Chamonix-Mont-Blanc is in Haute-Savoie, France, at the foot of Mont Blanc. From Geneva, the Autoroute Blanche follows the Arve valley before the climb to Chamonix. The Mont Blanc Tunnel links Chamonix with Courmayeur in Italy. By rail, the Mont-Blanc Express comes from Martigny in Switzerland, and the French line from Saint-Gervais-Le Fayet. For the stay, see [staying in Chamonix](/en/services/alpine-chalets-residences/#chamonix).
 
-## Who does what
+## What affects timing and availability
 
-The Valet coordinates: we take your request, choose the partner, check availability, pass on the necessary information and follow the journey until you arrive. We remain your contact if anything changes.
+Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. In winter, demand concentrates on the same days: Saturday changeovers for rentals, Swiss and French school holidays, the Christmas and New Year period. Vans are the first to be booked on those days, so write to us as soon as your dates are known.
 
-The transport itself is provided by independent, appropriately licensed partners, holding the licences required for professional passenger transport in Switzerland and, for journeys into France, the authorisations needed across the border. They provide the vehicle and driver and confirm their terms before booking. For regular journeys with children in Geneva, see our [private child transport](/en/services/private-child-transport/).
+We do not fix the journey time in advance: it depends on traffic, weather and the state of mountain roads. We set the departure time with the operator with these in mind, and let you know if forecast conditions mean the plan should change. For a departure to catch a flight, allow a margin: the operator will propose a pick-up time.
 
-## Vehicles, luggage and winter conditions
+## Luggage, skis and choosing the vehicle
 
-Depending on availability and your party, our partners provide luxury saloons for two or three people, and premium vans such as the Mercedes-Benz V-Class for families and bulky luggage. For a large group or a lot of equipment, two vehicles can be arranged.
+The vehicle is chosen by volume, not just by the number of passengers. A family of four with skis, suitcases and a pushchair travels more comfortably in a premium van such as the Mercedes-Benz V-Class than in a saloon; a larger group may need two vehicles leaving at the same time. Child seats can be requested when booking, according to the children's age and size; the type is confirmed by the operator. If you are renting equipment at the resort, tell us: it changes what has to be carried.
 
-Winter equipment for the vehicles is arranged by our partners according to the season and road conditions. Snow, road closures or winter Saturday traffic can change the timing: we keep you informed and let the chalet or hotel know. If you would like hair and makeup on arrival for an evening event the same day, our [Glam Team at home](/en/services/glam-team-at-home/) can travel to the resort, subject to availability.
+## Who drives, who coordinates
+
+The Valet receives your request, chooses the operator and vehicle, sends you the proposal, books once you agree and follows the journey, outward and return. Journeys are driven by chauffeurs from independent partners, chosen for their authorised passenger transport activity; helicopter or private aircraft transfers are, on request, provided by independent operators, subject to their availability. The terms of each journey are the operator's and are given to you before booking.
+
+To prepare your arrival, you can [book a transfer from Geneva to your resort](/en/request/?service=alpine-transfers) with your dates, flight and amount of luggage.

@@ -1,76 +1,76 @@
 ---
 title: "Maquilleuse et coiffeuse à domicile à Genève"
-description: "Maquillage, coiffure et stylisme à domicile à Genève, à l'hôtel ou sur le lieu de l'événement : mariages, soirées, séances photo et apparitions publiques."
+description: "Maquillage, coiffure et stylisme à domicile à Genève, à l'hôtel ou sur le lieu de l'événement : mariage, soirée privée, séance photo, apparition publique."
 translationKey: "glam-team"
 updated: "2026-10-26"
 order: 8
-summary: "Maquillage, coiffure et stylisme à domicile, à l'hôtel ou sur place, pour mariages, soirées et séances photo."
+summary: "Maquillage, coiffure et stylisme à domicile, à l'hôtel ou sur place, pour un mariage, une soirée ou une séance photo."
 serviceType: "Maquillage et coiffure à domicile"
 delivery: "coordinated"
-answer: "La Glam Team de The Valet réunit des maquilleurs, des coiffeurs et des stylistes indépendants qui se déplacent à votre domicile, à votre hôtel ou sur le lieu de votre événement, à Genève et ailleurs en Suisse selon la disponibilité. Mariages, soirées privées, séances photo, apparitions publiques : nous composons l'équipe, coordonnons les horaires et restons votre seul interlocuteur."
+answer: "La Glam Team de The Valet réunit des maquilleuses, coiffeuses et stylistes indépendantes qui se déplacent à votre domicile, à votre hôtel ou sur le lieu de votre événement, à Genève et ailleurs en Suisse selon les disponibilités. Nous composons l'équipe selon l'occasion et le nombre de personnes, fixons avec vous le planning de préparation et confirmons par écrit qui vient, à quelle heure et pour quelles prestations."
 faq:
-  - q: "Où intervient la Glam Team ?"
-    a: "À votre domicile, à votre hôtel ou sur le lieu de l'événement, à Genève et, selon la disponibilité, ailleurs en Suisse et dans les stations alpines. Le lieu et les horaires sont confirmés pour chaque demande."
-  - q: "Proposez-vous la coiffure et le maquillage de mariage ?"
-    a: "Oui. Pour un mariage, un essai peut être organisé en amont, et la préparation peut inclure la mariée, ses proches et le marié, avec des retouches pendant la journée si vous le souhaitez."
-  - q: "Quels services peut-on réserver ?"
+  - q: "Où la Glam Team intervient-elle ?"
+    a: "À votre domicile, à votre hôtel ou sur le lieu de l'événement, à Genève et, selon les disponibilités, ailleurs en Suisse et dans les Alpes. Le lieu et les horaires sont confirmés pour chaque demande."
+  - q: "Proposez-vous un essai avant un mariage ?"
+    a: "Oui, un essai maquillage et coiffure peut être organisé quelques semaines avant la date, idéalement avec la même professionnelle que le jour J, pour arrêter le style et le temps nécessaire."
+  - q: "Quelles prestations peut-on réserver ?"
     a: "Maquillage, coiffure classique ou contemporaine, conseil en stylisme vestimentaire, préparation de la peau, manucure et pédicure sur demande, et retouches pendant l'événement."
   - q: "Peut-on réserver pour plusieurs personnes ?"
-    a: "Oui. Pour un mariage ou une soirée, l'équipe est dimensionnée selon le nombre de personnes à préparer et l'heure à laquelle tout le monde doit être prêt."
-  - q: "Combien de temps faut-il prévoir ?"
-    a: "Cela dépend du nombre de personnes et des prestations choisies. Nous établissons un planning de préparation avec vous lors de la réservation."
-  - q: "Faut-il fournir le matériel ou les produits ?"
-    a: "Non. Les professionnels viennent avec leur matériel et leurs produits. Il suffit de prévoir un espace calme, une prise électrique et, si possible, une bonne lumière naturelle."
-  - q: "Comment le prix est-il fixé ?"
-    a: "Selon les prestations, le nombre de personnes, la durée, le lieu et l'horaire. Vous recevez une proposition avant toute réservation."
+    a: "Oui. Pour un mariage ou une soirée, l'équipe est dimensionnée selon le nombre de personnes à préparer et l'heure à laquelle chacune doit être prête."
+  - q: "Faut-il fournir du matériel ou des produits ?"
+    a: "Non. Les professionnelles viennent avec leur matériel et leurs produits. Il suffit d'un espace calme, d'une prise électrique et, si possible, d'une bonne lumière naturelle."
+  - q: "Comment le prix est-il établi ?"
+    a: "Selon les prestations, le nombre de personnes, la durée, le lieu et l'heure. Vous recevez une proposition avant toute réservation."
+  - q: "Que faire en cas de peau sensible ou d'allergie à un produit ?"
+    a: "Signalez-le au moment de la réservation, sans détail médical : l'information est transmise à la professionnelle, qui adapte ses produits ou vous en parle directement."
 ---
 
-## Ce que nous organisons
+Se faire préparer chez soi change le rythme d'une journée importante. Il n'y a pas de trajet vers un salon, pas d'attente, et la préparation se fait dans un lieu que vous connaissez, à l'heure qui convient au reste du programme. C'est l'idée de la Glam Team : réunir autour de votre rendez-vous les métiers de la beauté dont vous avez besoin, et les faire arriver ensemble, au bon moment.
 
-La Glam Team réunit les métiers de la mise en beauté autour de votre rendez-vous, pour que vous n'ayez qu'un seul interlocuteur et un seul planning.
+## Pour quelles occasions
 
-- **Maquillage.** Réalisé avec des produits haut de gamme et des techniques professionnelles, il met en valeur vos traits et tient compte de la lumière : jour, soirée, flash ou studio.
-- **Coiffure.** Styles classiques ou contemporains, chignons, ondulations, coiffures de mariée. La tenue est pensée pour la durée de l'événement et les conditions extérieures : vent du lac, humidité, froid en montagne.
-- **Stylisme vestimentaire.** Conseils selon votre silhouette, votre teint et vos goûts, choix et harmonie de la tenue et des accessoires.
-- **Soins complémentaires.** Préparation de la peau, manucure et pédicure sur demande.
-- **Retouches.** Une présence pendant l'événement ou entre deux moments forts, si vous le souhaitez.
+- **Un mariage.** La mariée, mais aussi les témoins, les mères, les demoiselles d'honneur, parfois le marié. La préparation se fait le plus souvent à l'hôtel ou dans la maison familiale, avec des retouches possibles avant la cérémonie, entre les photos et avant la soirée.
+- **Une soirée privée ou un gala.** Pour vous, ou pour plusieurs hôtes qui se préparent au même endroit avant de partir ensemble.
+- **Une séance photo.** Portrait, photographie de famille, catalogue : le maquillage est pensé pour l'objectif et la lumière du lieu.
+- **Une apparition publique.** Conférence, interview, remise de prix, tournage : une préparation rapide et nette, compatible avec votre emploi du temps.
+- **Un séjour à Genève.** Pour celles et ceux qui sont de passage à l'hôtel et ne connaissent pas les professionnelles de la ville.
 
-## Comment se déroule une réservation
+## Qui compose l'équipe
 
-1. **Un premier échange.** Vous nous indiquez l'occasion, la date, l'heure à laquelle vous devez être prête, le lieu et le nombre de personnes. Des photos de votre tenue et d'inspiration sont bienvenues.
-2. **La consultation.** Les préférences de maquillage, de coiffure et de style sont précisées avec les professionnels, pour un résultat cohérent avec vous et avec l'occasion.
-3. **L'équipe et le planning.** Nous composons l'équipe adaptée et établissons un horaire de préparation, puis nous vous confirmons les conditions. Pour un mariage, un essai peut être prévu en amont.
-4. **Le jour venu.** Les professionnels arrivent à l'heure convenue avec leur matériel, s'installent dans l'espace prévu et suivent votre rythme.
-5. **Pendant l'événement.** Des retouches peuvent être organisées, notamment entre la cérémonie et la soirée.
+Selon la demande, l'équipe réunit une ou plusieurs professionnelles indépendantes :
 
-## Situations typiques
+- **Maquillage.** Un maquillage réalisé avec des produits professionnels, qui met en valeur les traits naturels et tient la durée de l'événement, de la cérémonie à la fin de la soirée.
+- **Coiffure.** Chignons, ondulations, coiffures classiques ou plus contemporaines, avec une tenue adaptée au contexte : vent en extérieur, chaleur d'une salle, voile ou accessoire à fixer.
+- **Stylisme.** Un conseil sur la tenue selon la silhouette, le teint et l'occasion, et l'harmonie entre tenue, coiffure et maquillage.
+- **Soins complémentaires.** Préparation de la peau la veille ou le matin, manucure et pédicure sur demande.
 
-- Une mariée qui se prépare à l'hôtel avec sa mère et ses témoins, et qui doit être prête pour les photos avant de partir vers la cérémonie.
-- Une soirée de gala où l'on souhaite une coiffure et un maquillage réalisés chez soi, en fin d'après-midi, sans passer par un salon.
-- Une séance photo ou un tournage pour lequel la mise en beauté doit tenir sous les projecteurs et être ajustée entre les prises.
-- Une apparition publique ou une conférence, avec une préparation rapide et discrète dans une loge ou une chambre d'hôtel.
-- Un séjour à la montagne pendant lequel une soirée importante se prépare au chalet plutôt qu'en ville.
+Nous choisissons les professionnelles selon le style recherché et l'occasion. Si vous avez vu un travail qui vous plaît, envoyez-nous une ou deux images : c'est souvent la façon la plus rapide de se comprendre.
 
-## Où intervient la Glam Team
+## L'essai et le planning du jour J
 
-**À Genève.** À domicile, à l'hôtel ou sur le lieu de réception. C'est le cadre le plus fréquent : vous restez chez vous ou dans votre chambre, et l'équipe vient à vous.
+Pour un mariage, nous recommandons un essai quelques semaines avant la date. Il permet d'arrêter le maquillage et la coiffure, de tester la tenue d'une coiffure avec le voile ou un accessoire, et surtout de mesurer le temps réellement nécessaire pour chaque personne.
 
-**Vaud et l'arc lémanique.** Mêmes prestations à domicile, dans les hôtels ou les domaines où se tiennent mariages et réceptions.
+À partir de là, nous établissons un planning de préparation à rebours depuis l'heure de départ : qui passe en premier, combien de professionnelles sont nécessaires pour que tout le monde soit prêt à temps, à quel moment le photographe arrive. Ce planning est partagé avec les personnes concernées et, si l'événement est organisé avec nous, intégré au déroulé de notre service [mariages et événements privés](/fr/services/mariages-evenements/).
 
-**Valais, Gstaad et St-Moritz.** Dans les stations, la préparation se fait souvent au chalet ou à l'hôtel. Le déplacement des professionnels, parfois sur plusieurs jours, s'organise à l'avance ; à [Gstaad](/fr/services/chalets-residences-alpes/#gstaad) ou à [Verbier](/fr/services/chalets-residences-alpes/#verbier), nous coordonnons leur venue avec le reste de votre séjour.
+## Les informations dont nous avons besoin
 
-**Les Alpes françaises.** Megève, Courchevel ou Chamonix sont envisageables selon la disponibilité, avec les mêmes règles : lieu, horaires et conditions confirmés pour chaque demande.
+- l'occasion, la date et l'heure à laquelle vous devez être prête ;
+- l'adresse de la préparation (domicile, hôtel, lieu de l'événement) et les conditions d'accès ;
+- le nombre de personnes et, pour chacune, les prestations souhaitées ;
+- le style recherché, avec des images de référence si vous en avez ;
+- la tenue prévue, ou au moins sa couleur et son encolure ;
+- une sensibilité de peau ou un produit à éviter, sans entrer dans le détail médical.
 
-## Qui fait quoi
+Avec ces éléments, vous pouvez [réserver la Glam Team pour votre préparation](/fr/demande/?service=glam-team) ; nous revenons vers vous avec une proposition d'équipe et d'horaires.
 
-The Valet reçoit votre demande, compose l'équipe, établit le planning, confirme les conditions et reste votre interlocuteur avant et pendant le rendez-vous. Si votre emploi du temps change, c'est à nous que vous le dites.
+## Contraintes à anticiper
 
-Les prestations de maquillage, de coiffure, de stylisme et de soins sont réalisées par des professionnels indépendants de la beauté, avec leur propre matériel et leurs produits. Si vous avez une allergie, une sensibilité de peau ou des produits que vous préférez éviter, signalez-le directement aux professionnels lors de la consultation.
+La lumière compte : une pièce lumineuse, près d'une fenêtre, donne un résultat plus juste qu'une salle de bains sombre. Prévoyez un espace calme, une table, une chaise et une prise électrique par professionnelle. À l'hôtel, vérifiez que la chambre ou la suite permet d'accueillir plusieurs personnes en même temps.
 
-## Coiffure et maquillage de mariage à Genève
+Les dates les plus demandées, en particulier les samedis de la saison des mariages et les soirs de grands événements à Genève, se réservent plus tôt. Hors de Genève, le déplacement de l'équipe est organisé et chiffré à part ; pour une préparation en montagne, nous nous coordonnons avec l'organisation de votre séjour, décrite sur notre page [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/).
 
-Le jour du mariage, le temps de préparation compte autant que le résultat. Nous organisons un essai en amont lorsque vous le souhaitez, puis un horaire précis le jour même pour la mariée, ses proches et, si besoin, le marié. Si nous organisons aussi votre réception, la Glam Team s'intègre au déroulé de vos [mariages et événements privés](/fr/services/mariages-evenements/) ; pour les déplacements de la journée, un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) peut vous attendre à la sortie de la préparation.
+## Ce que comprend la prestation
 
-## Discrétion et respect de votre rythme
+La proposition indique les professionnelles prévues, leurs horaires d'arrivée et de départ, les prestations par personne, les éventuelles retouches pendant l'événement et les frais de déplacement. Les produits et le matériel sont apportés par l'équipe. Si un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) doit ensuite vous conduire à la cérémonie ou à la soirée, nous calons son arrivée sur la fin de la préparation.
 
-Chaque rendez-vous respecte votre intimité, votre emploi du temps et vos préférences. L'objectif est que vous vous sentiez à l'aise et prête, sans pression inutile. Pour fixer une date, vous pouvez [réserver la Glam Team pour votre préparation](/fr/demande/?service=glam-team) en précisant l'occasion, le lieu et l'heure.
+Nous demandons aux professionnelles de respecter la confidentialité de votre rendez-vous et de votre domicile, et de ne prendre aucune photographie ni de rien publier sans votre accord exprès.

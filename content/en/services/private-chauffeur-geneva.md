@@ -1,84 +1,77 @@
 ---
 title: "Private chauffeur Geneva and airport transfers"
-description: "Private chauffeur in Geneva: GVA airport transfers, hourly and full-day hire, evenings and long-distance journeys, provided by licensed partners."
+description: "Private chauffeur in Geneva: GVA airport transfers, hourly and full-day hire, evenings and long-distance journeys, with independent partners."
 translationKey: "chauffeur"
 updated: "2026-10-26"
 order: 2
 summary: "Geneva airport transfers, hourly hire, evenings and long-distance journeys, by luxury saloon, premium van or limousine."
 serviceType: "Private chauffeur service"
 delivery: "partner"
-answer: "The Valet arranges your private chauffeur in Geneva: transfers to and from Geneva Airport (GVA) and the railway station, hourly or full-day hire, evenings, appointments and long-distance journeys. Journeys are provided by independent partners holding the required licences; we coordinate every detail and remain your single point of contact."
+answer: "The Valet arranges your private chauffeur in Geneva: transfers to and from Geneva Airport (GVA) and the railway station, hourly or full-day hire, evenings, appointments and long-distance journeys. Journeys are driven by independent partners, chosen for their authorised activity; we book, coordinate and confirm in writing who will drive and on what terms."
 faq:
-  - q: "Can I book a chauffeur at night or at the weekend?"
-    a: "Requests are received 24 hours a day, 7 days a week. Lead times and availability are confirmed for each request, especially for very early departures, nights and high-demand dates."
+  - q: "Can I book a chauffeur at night or at weekends?"
+    a: "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request, particularly for very early departures, nights and busy dates."
   - q: "Who drives the vehicle?"
-    a: "A professional driver from an independent partner holding the licences required for passenger transport. The Valet selects the partner, coordinates the booking and remains your contact from start to finish."
-  - q: "Can I hire a chauffeur by the hour or for a full day?"
-    a: "Yes. Hourly or full-day hire suits busy schedules, back-to-back appointments and evenings. The minimum duration and terms are set out in the proposal."
+    a: "A chauffeur from an independent partner, chosen for its authorised passenger transport activity. The Valet chooses the operator, books and coordinates; the operator's name and the terms are confirmed to you in writing."
+  - q: "Can I book a chauffeur by the hour or for the day?"
+    a: "Yes. Hourly or daily hire suits busy schedules, back-to-back meetings and evenings. The minimum duration and terms depend on the operator and are set out in the proposal."
   - q: "Which vehicles are available?"
-    a: "Depending on availability and your needs: luxury saloons, premium vans such as the Mercedes-Benz V-Class, and limousines. Child seats can be arranged on request."
+    a: "Subject to operator availability: luxury saloons, premium vans such as the Mercedes-Benz V-Class and, on request, limousines. Child seats can be requested when booking."
   - q: "What happens if my flight is delayed?"
-    a: "With your flight number, the pick-up time is adjusted to the actual arrival. Any waiting time and its terms are set out in the proposal."
-  - q: "Can the chauffeur drive to a ski resort or into France?"
-    a: "Yes. Journeys to Swiss and French resorts and long-distance trips within Switzerland or into neighbouring France are arranged with partners licensed for those routes."
+    a: "With your flight number, the pick-up time can be adjusted to the actual arrival. Waiting time and its terms are set out in the proposal."
+  - q: "Do you also arrange private jets or yachts?"
+    a: "On request, subject to operator availability. These services are provided by independent operators; The Valet presents the options and coordinates the booking."
   - q: "How is the price set?"
-    a: "The price depends on the route, duration, vehicle, time of day and any waiting time. You receive a proposal before anything is booked."
+    a: "The price depends on the route, duration, vehicle, time of day and any waiting time. You receive a proposal before any commitment."
 ---
 
-## What we arrange
+## The journeys we arrange
 
-- Transfers to and from Geneva Airport (GVA) and Geneva-Cornavin station
-- A chauffeur at your disposal by the hour or for the day
-- Business appointments and multi-stop days
-- Evenings, dinners, galas and private events
-- Long-distance journeys within Switzerland and into neighbouring France
-- Transfers to the ski resorts, from [Verbier](/en/services/geneva-alps-transfers/#verbier) to [Courchevel](/en/services/geneva-alps-transfers/#courchevel): see our [Geneva–Alps transfers](/en/services/geneva-alps-transfers/)
+A private chauffeur in Geneva is first of all a way to stop thinking about the journey. The requests we receive most often:
 
-You share your timings and preferences; we find the right vehicle and driver, then confirm every element with you before the day of travel. A welcome on arrival or help with luggage can be requested when booking.
+- transfers to and from Geneva Airport (GVA) and Geneva-Cornavin railway station;
+- a chauffeur by the hour or for the day, for a series of meetings;
+- evenings, dinners, galas and [private events or weddings](/en/services/weddings-private-events/), with a return at the time you choose;
+- long-distance journeys in Switzerland, for example to Lausanne, Bern or Zurich, working on the way;
+- trips up to the resorts, covered on our page on [transfers from Geneva to the Alps](/en/services/geneva-alps-transfers/), with a section for each resort, from [Verbier](/en/services/geneva-alps-transfers/#verbier) to [Chamonix](/en/services/geneva-alps-transfers/#chamonix).
 
-## How a booking works
+Regular journeys for children are organised differently: see our [private child transport](/en/services/private-child-transport/).
 
-1. **Your request.** Date, time, pick-up point, destination, number of passengers and bags and, for a flight, its number.
-2. **Our proposal.** We check availability, choose the vehicle and confirm the terms with you before anything is booked.
-3. **Preparation.** The driver receives the information needed for the job, and nothing more: timings, addresses, the name for the welcome, special requests. For a flight, the arrival time is tracked.
-4. **The journey.** The driver waits for you at the agreed point. You keep a single contact at The Valet if anything changes, before or during the journey.
+## What we need to book
 
-## Typical situations
+A booking takes only a few details, but each one matters:
 
-- A flight landing late in the evening in Geneva, with tired children and a lot of luggage, and a residence to reach without queuing for a taxi.
-- A day of appointments in town, from one office to the next, with a driver who waits and adjusts the route to your diary.
-- A dinner or gala in the evening, with a return at the time you choose and no parking to think about.
-- A day return trip to Bern or Zurich, working during the journey.
-- A very early departure for the airport, when you want to be certain the car will be at the door on time.
+1. **Date, time and addresses.** The exact pick-up point (terminal, building entrance, hotel) and the destination.
+2. **Passengers and luggage.** The number of people, suitcases and bulky items: this decides the vehicle.
+3. **Flight or train number**, for an arrival, so the pick-up time can follow the actual arrival.
+4. **The name for the greeting sign**, if you want to be met, and a number that can be reached on the day.
+5. **Particular requests**: a child seat, a stop on the way, water on board, discretion about the name displayed.
 
-## Where
+We pass these details to the chauffeur, and only those needed for the journey.
 
-**Geneva.** Airport and station transfers, travel around town, evenings. During the city's major international gatherings, such as Watches and Wonders Genève in spring, demand is high: booking early is wise.
+## Lead times, hours and what affects availability
 
-**Vaud and the Lake Geneva region.** The towns along the Vaud shore of the lake are covered for appointments, evenings and airport transfers.
+Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. Several things make a booking easier or harder: a very early or very late departure, a date when major events are held in Geneva, a school-holiday weekend, a specific vehicle (a van for a group, a limousine). The earlier the request, the wider the choice of vehicles and times. For hourly hire, tell us whether the end time is fixed or open: price and availability depend on it.
 
-**Valais, Gstaad and St-Moritz.** For the resorts, see our [transfers to Verbier, Zermatt, Gstaad and St-Moritz](/en/services/geneva-alps-transfers/). Zermatt is car-free: the driver stops at Täsch and the journey continues by shuttle train; St-Moritz, far from Geneva, is often reached via Zurich or through Samedan airport.
+## Vehicles available
 
-**The French Alps and neighbouring France.** Chamonix, Megève, Courchevel and neighbouring Haute-Savoie: cross-border journeys are arranged with partners licensed for this type of trip.
+Subject to operator availability and the type of journey, we offer luxury saloons for one or two passengers, premium vans such as the Mercedes-Benz V-Class for families, groups and bulky luggage, and limousines on request for a special occasion. Child seats can be requested when booking; the type is confirmed by the operator. If you have a preference for colour, model or equipment, say so: we will tell you what is possible.
 
-## Who does what
+## On request: limousines, prestige cars, jets and yachts
 
-The Valet takes your request, chooses the partner and vehicle, confirms the terms, passes on the necessary information and follows the journey. You have one contact, even when several journeys or vehicles are planned.
+Beyond the chauffeur, these are services our partners can provide, on request, subject to operator availability:
 
-Journeys are provided by professional drivers from independent partners holding the licences required for passenger transport. For regular journeys with children, see our [private child transport](/en/services/private-child-transport/); for security support while you travel, see [security and protection](/en/services/security-protection/).
+- prestige car hire, with or without a chauffeur depending on the operator;
+- private jet charter, on a route that fits your schedule;
+- yacht charter with crew, for a day or a longer stay;
+- transport of personal belongings, priority parcels or valuables, with an escort where needed arranged through our [security and protection](/en/services/security-protection/) partners.
 
-## Vehicles
+The Valet presents the options and coordinates; terms, authorisations and prices are the operator's and are given to you before any booking.
 
-Depending on availability and the journey, our partners provide luxury saloons, premium vans such as the Mercedes-Benz V-Class, practical for families and larger luggage, and limousines for special occasions. Suitable child seats can be arranged on request. In winter, mountain equipment on the vehicle is checked with the partner.
+## The role of The Valet and the role of the operator
 
-## Prestige cars, private jets and yachts
+We receive your request, choose the operator and vehicle, check availability, send you the proposal and, once you agree, book and follow the journey. If your timing changes, you let us know and we adjust with the operator.
 
-Beyond chauffeuring, we coordinate through licensed partners the rental of prestige cars (with or without a driver, depending on availability), private jet charters on flexible itineraries and crewed yacht charters. Terms, licences and prices are confirmed by the operator before anything is booked.
+The journey itself is driven by a chauffeur from an independent partner, chosen for its authorised passenger transport activity. What you tell us about your travel is shared only with that operator, as far as the journey requires. For help with daily life beyond journeys, see [our concierge in Geneva](/en/services/private-concierge-geneva/).
 
-## Transport of goods and valuables
-
-Personal belongings, priority parcels or delicate items: we arrange their delivery with vehicles and handling suited to what is being moved. Where security support is needed, it is entrusted to specialist partners.
-
-## Punctuality and discretion
-
-Reliability starts with careful preparation: timings checked, route planned ahead, information shared only as far as needed. What you tell us about your travel stays between you, us and the partner carrying out the journey. For your next journey, you can [book a private chauffeur in Geneva](/en/request/?service=chauffeur), giving the date, time and pick-up address.
+For your next journey, you can [book a private chauffeur in Geneva](/en/request/?service=chauffeur) with the date, time and pick-up address.
