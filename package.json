@@ -1,5 +1,5 @@
 {
-  "name": "switzerlandresidency-website",
+  "name": "thevalet-website",
   "private": true,
   "version": "0.1.0",
   "engines": {
@@ -14,7 +14,9 @@
     "serve": "npx serve out -l 4600",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "postbuild": "node scripts/check-site.mjs",
+    "report": "node scripts/validate-content.mjs --report && node scripts/check-site.mjs --report"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

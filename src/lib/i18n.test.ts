@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import en from "@/i18n/en.json";
 import fr from "@/i18n/fr.json";
-import { getMessages, t } from "./i18n";
+import { defaultLocale, getMessages, locales, t } from "./i18n";
 
 /** Every string leaf of a message tree. */
 function strings(value: unknown, out: string[] = []): string[] {
@@ -11,20 +11,20 @@ function strings(value: unknown, out: string[] = []): string[] {
   return out;
 }
 
-describe("getMessages", () => {
-  it("applies French typography to nested list strings", () => {
-    const summaries = Object.values(getMessages("fr").services.items).map((i) => i.summary);
-    const eu = summaries.find((s) => s.includes("UE"));
-    expect(eu).toContain("l’UE");
-    expect(eu).not.toContain("l'UE");
+describe("locales", () => {
+  it("are fr (default) and en only", () => {
+    expect(locales).toEqual(["fr", "en"]);
+    expect(defaultLocale).toBe("fr");
   });
+});
 
+describe("getMessages", () => {
   it("leaves no straight apostrophe between letters anywhere in fr", () => {
     for (const s of strings(getMessages("fr"))) expect(s).not.toMatch(/\p{L}'\p{L}/u);
   });
 
   it("agrees with t() for plain keys", () => {
-    expect(getMessages("fr").contact.channelsTitle).toBe(t("fr", "contact.channelsTitle"));
+    expect(getMessages("fr").channels.title).toBe(t("fr", "channels.title"));
   });
 
   it("does not mutate the source dictionary and memoises per locale", () => {
@@ -34,5 +34,10 @@ describe("getMessages", () => {
 
   it("returns en unchanged", () => {
     expect(getMessages("en")).toEqual(en);
+  });
+
+  it("uses the exact availability wording", () => {
+    expect(fr.common.availability).toBe("Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande.");
+    expect(en.common.availability).toBe("Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request.");
   });
 });

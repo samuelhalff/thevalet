@@ -33,7 +33,7 @@ export function tableColumnCount(table: Element | undefined): number {
 
 /**
  * Tiny rehype plugin: stable ids for H1–H3 and table body rows (first cell), so guides can be
- * deep-linked (e.g. /en/guides/lump-sum-taxation-by-canton/#geneva). Id rule: scripts/lib/heading-id.mjs.
+ * deep-linked (e.g. /fr/services/chalets-residences-alpes/#verbier). Id rule: scripts/lib/heading-id.mjs.
  */
 export default function rehypeAnchors() {
   return (tree: Root) => {

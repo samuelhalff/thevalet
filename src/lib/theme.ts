@@ -1,10 +1,10 @@
 /** Light/dark preference, persisted in localStorage; no key = follow the system. */
 export type ThemePref = "light" | "dark" | "system";
 
-export const THEME_STORAGE_KEY = "sr-theme";
+export const THEME_STORAGE_KEY = "tv-theme";
 
 /** Matches the `--bg` tokens in globals.css for each theme. */
-export const THEME_COLORS: Record<"light" | "dark", string> = { light: "#f7f1e8", dark: "#1c1916" };
+export const THEME_COLORS: Record<"light" | "dark", string> = { light: "#f6f1f1", dark: "#1a1215" };
 
 /**
  * Inline <head> script: applies the saved theme and the matching `theme-color` meta before

@@ -3,107 +3,81 @@
 @tailwind utilities;
 
 /* ------------------------------------------------------------------------------------------------
-   Design tokens — quiet, photo-led, warm. Ivory ground, warm charcoal text, ONE muted earth accent
-   (deep umber). Dark = warm espresso. Colours are RGB channels so Tailwind opacity modifiers work.
-   Theme: [data-theme="light|dark"] on <html> (set before paint by the inline script in the layout);
-   no attribute = follow the system preference.
+   The Valet — tokens (docs/DESIGN.md is binding). Rose-tinted porcelain paper, aubergine ink,
+   bordeaux used as a SURFACE (request band, footer), blush for quiet panels and text on bordeaux.
+   No gradients, no shadows beyond a 1px tinted edge, no pure black or white.
+   Colours are RGB channels so Tailwind opacity modifiers work. Contrast: src/lib/contrast.test.ts.
    ------------------------------------------------------------------------------------------------ */
 :root {
-  --bg: 245 240 232;            /* ivory #F5F0E8 */
-  --surface: 250 247 241;       /* panel #FAF7F1 */
-  --subtle: 236 229 218;        /* fields, table heads #ECE5DA */
-  --ink: 42 38 34;              /* warm charcoal #2A2622 */
-  --muted: 107 97 88;           /* #6B6158, AA on ivory */
-  --line: 218 208 194;          /* hairlines #DAD0C2 */
-  --accent: 122 74 46;          /* deep umber #7A4A2E, 7:1 on ivory, white text 7.9:1 */
-  --accent-strong: 98 58 35;
-  --danger: 163 42 30;          /* form errors #A32A1E, 6.6:1 on the panel */
-  --on-image: 250 245 236;
-  --shadow: 60 44 30;
-  --focus: #7a4a2e;
-  --hero-fallback: linear-gradient(160deg, #6e5a48 0%, #a88467 55%, #d8b793 100%);
-
-  /* Buttons */
-  --btn-primary-bg: var(--ink);
-  --btn-primary-fg: 250 245 236;
-  --btn-primary-wave: var(--accent);
-  --btn-primary-fg-hover: 255 255 255;
-  --btn-secondary-bg: var(--surface);
-  --btn-secondary-fg: var(--ink);
-  --btn-secondary-wave: var(--ink);
-  --btn-secondary-fg-hover: var(--bg);
-  --btn-secondary-ring: 42 38 34 / 0.18;
-  --em: var(--accent);
-
+  --bg: 246 241 241;            /* paper #F6F1F1 */
+  --surface: 250 246 246;       /* note paper #FAF6F6 */
+  --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
+  --ink: 34 26 28;              /* ink #221A1C */
+  --muted: 107 94 97;           /* muted #6B5E61 */
+  --line: 214 199 201;          /* 1px tinted edge #D6C7C9 */
+  --brand: 106 31 43;           /* bordeaux #6A1F2B: the V, links, primary action */
+  --accent: var(--brand);
+  --accent-strong: 84 22 33;
+  --blush: 235 214 214;         /* #EBD6D6 */
+  --band-bg: 106 31 43;         /* bordeaux surface */
+  --band-fg: 235 214 214;       /* blush on bordeaux */
+  --band-muted: 222 190 193;
+  --band-line: 140 72 82;
+  --danger: 160 36 40;
+  --focus: #6a1f2b;
+  --em: var(--brand);
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: 26 23 20;             /* espresso #1A1714 */
-    --surface: 34 30 26;        /* #221E1A */
-    --subtle: 44 39 34;
-    --ink: 237 230 219;         /* #EDE6DB */
-    --muted: 184 172 157;       /* #B8AC9D */
-    --line: 62 55 48;
-    --accent: 217 162 126;      /* warm clay #D9A27E, 8:1 on espresso */
-    --accent-strong: 230 184 152;
-    --danger: 242 153 133;      /* #F29985, 7.6:1 on the dark panel */
-    --shadow: 0 0 0;
-    --focus: #d9a27e;
-    --hero-fallback: linear-gradient(160deg, #2b231d 0%, #4a3a2e 60%, #6b5240 100%);
-    --btn-primary-fg: 26 23 20;
-    --btn-primary-fg-hover: 26 23 20;
-    --btn-secondary-ring: 237 230 219 / 0.2;
+    --bg: 26 18 21;             /* night #1A1215 */
+    --surface: 33 23 27;
+    --subtle: 44 30 35;
+    --ink: 243 233 232;         /* #F3E9E8 */
+    --muted: 191 175 178;       /* #BFAFB2 */
+    --line: 66 48 54;
+    --brand: 217 154 163;       /* rose #D99AA3 */
+    --accent-strong: 233 184 191;
+    --blush: 58 24 32;
+    --band-bg: 58 24 32;        /* deep bordeaux #3A1820 */
+    --band-fg: 243 233 232;
+    --band-muted: 214 190 194;
+    --band-line: 98 50 60;
+    --danger: 244 150 150;
+    --focus: #d99aa3;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: 26 23 20;
-  --surface: 34 30 26;
-  --subtle: 44 39 34;
-  --ink: 237 230 219;
-  --muted: 184 172 157;
-  --line: 62 55 48;
-  --accent: 217 162 126;
-  --accent-strong: 230 184 152;
-  --danger: 242 153 133;
-  --shadow: 0 0 0;
-  --focus: #d9a27e;
-  --hero-fallback: linear-gradient(160deg, #2b231d 0%, #4a3a2e 60%, #6b5240 100%);
-  --btn-primary-fg: 26 23 20;
-  --btn-primary-fg-hover: 26 23 20;
-  --btn-secondary-ring: 237 230 219 / 0.2;
+  --bg: 26 18 21;
+  --surface: 33 23 27;
+  --subtle: 44 30 35;
+  --ink: 243 233 232;
+  --muted: 191 175 178;
+  --line: 66 48 54;
+  --brand: 217 154 163;
+  --accent-strong: 233 184 191;
+  --blush: 58 24 32;
+  --band-bg: 58 24 32;
+  --band-fg: 243 233 232;
+  --band-muted: 214 190 194;
+  --band-line: 98 50 60;
+  --danger: 244 150 150;
+  --focus: #d99aa3;
   color-scheme: dark;
 }
 
-/* Text set on photographs (hero, transparent header over the hero) in both themes. */
-.on-dark,
-body:has([data-hero-overlay]) .site-header:not([data-solid]):not([data-menu-open]) {
-  --ink: var(--on-image);
-  --logo-accent: var(--em); /* logo ridge stays visible on photos */
-  --muted: 232 224 212;
-  --line: 196 186 172;
-  --em: 240 206 172;
-  --focus: #f0ceac;
-  --btn-primary-bg: var(--on-image);
-  --btn-primary-fg: 42 38 34;
-  --btn-primary-wave: 122 74 46;
-  --btn-primary-fg-hover: 255 255 255;
-  --btn-secondary-bg: 255 255 255 / 0.08;
-  --btn-secondary-fg: var(--on-image);
-  --btn-secondary-wave: var(--on-image);
-  --btn-secondary-fg-hover: 42 38 34;
-  --btn-secondary-ring: 250 245 236 / 0.6;
-  color: rgb(var(--on-image));
+/* The check: the logo's V, used as the only ornament (list ticks, active nav). */
+:root {
+  --check: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-9%20-3%20431%20431%22%3E%3Cpath%20d%3D%22M11.0%20106.0C37.0%2097.0%2076.0%20104.0%20103.0%20124.0C124.0%20139.0%20135.0%20163.0%20146.0%20192.0C159.0%20227.0%20175.0%20275.0%20197.0%20340.0C231.0%20242.0%20264.0%20149.0%20295.0%2086.0C319.0%2037.0%20349.0%201.0%20377.0%200.0C393.0%20-1.0%20404.0%2010.0%20404.0%2024.0C404.0%2037.0%20396.0%2044.0%20382.0%2045.0C350.0%2048.0%20323.0%2067.0%20301.0%20103.0C269.0%20157.0%20238.0%20244.0%20205.0%20340.0L180.0%20419.0C178.0%20424.0%20173.0%20425.0%20170.0%20419.0C146.0%20354.0%20121.0%20293.0%2096.0%20239.0C73.0%20188.0%2051.0%20143.0%2028.0%20132.0C19.0%20127.0%2012.0%20128.0%207.0%20124.0C-2.0%20120.0%20-1.0%20110.0%2011.0%20106.0Z%22/%3E%3C/svg%3E");
 }
 
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -119,99 +93,98 @@ html {
 body {
   background: rgb(var(--bg));
   color: rgb(var(--ink));
-  font-family: var(--font-inter), system-ui, sans-serif;
-  font-size: 1.0625rem;
-  line-height: 1.7;
+  font-family: var(--font-text), "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern", "liga";
 }
 
+/* ---------- Type scale (custom; display = Playfair, the logo's lettering) ---------- */
 h1,
 h2,
 h3,
 h4,
 .font-display {
-  font-family: var(--font-fraunces), Georgia, serif;
-  font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 72;
-  font-weight: 350;
-  line-height: 1.12;
-  letter-spacing: -0.015em;
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
-.font-light-display {
-  font-family: var(--font-fraunces), Georgia, serif;
-  /* A lower optical size keeps hairlines sturdy at display sizes. */
-  font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 40;
-  font-weight: 300;
-  letter-spacing: -0.025em;
+.t-hero {
+  font-size: clamp(2.6rem, 1.6rem + 4.4vw, 5.6rem);
+  line-height: 1.02;
 }
-
-/* The one emphasised word in a headline: Fraunces italic in the accent colour. */
-.accent-em {
+.t-1 {
+  font-size: clamp(2.25rem, 1.6rem + 2.8vw, 4rem);
+  line-height: 1.04;
+}
+.t-2 {
+  font-size: clamp(1.75rem, 1.35rem + 1.7vw, 2.75rem);
+  line-height: 1.08;
+}
+.t-3 {
+  font-size: clamp(1.35rem, 1.2rem + 0.6vw, 1.7rem);
+  line-height: 1.18;
+}
+.t-lead {
+  font-size: clamp(1.125rem, 1.05rem + 0.35vw, 1.3rem);
+  line-height: 1.55;
+}
+.t-small {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+.t-note {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+/* A whole phrase in true italics (never a single accented word). */
+.phrase {
+  font-family: var(--font-display), Georgia, serif;
   font-style: italic;
-  font-variation-settings: "SOFT" 100, "WONK" 0, "opsz" 48;
-  color: rgb(var(--em));
 }
 
 :focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 2px solid var(--focus);
   outline-offset: 3px;
-  border-radius: 6px;
 }
 
 ::selection {
-  background: rgb(var(--accent) / 0.2);
+  background: rgb(var(--brand) / 0.18);
   color: rgb(var(--ink));
 }
 
 @layer components {
-  /* ---------- Buttons (animation replicated from ark-fid.ch .btn-main-cta / .btn-secondary-cta) ---------- */
+  /* ---------- Buttons: flat, square-cornered, quiet hover ---------- */
   .btn {
-    position: relative;
-    isolation: isolate;
-    text-shadow: none; /* never inherit the hero's legibility shadow */
-    overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border-radius: 9999px;
-    font-weight: 600;
+    border-radius: 2px;
+    font-weight: 500;
     line-height: 1.2;
     text-align: center;
     text-decoration: none;
-    white-space: normal;
     cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      box-shadow 0.2s ease;
     -webkit-tap-highlight-color: transparent;
-  }
-  .btn:focus-visible {
-    outline: 3px solid var(--focus);
-    outline-offset: 3px;
-    border-radius: 9999px;
   }
   .btn:disabled,
   .btn[aria-disabled="true"] {
     cursor: not-allowed;
     opacity: 0.6;
   }
-  .btn > span {
-    position: relative;
-    z-index: 1;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  @media (min-width: 640px) {
-    .btn {
-      white-space: nowrap; /* one-line labels from tablet up; long DE labels may wrap on phones */
-      flex: none; /* never squeezed by a flex row (text would slide under the chevron) */
-    }
-  }
-
   .btn-sm {
     min-height: 2.5rem;
     padding: 0.5rem 1.1rem;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
   }
   .btn-md {
     min-height: 2.875rem;
@@ -223,94 +196,36 @@ h4,
     padding: 0.85rem 1.9rem;
     font-size: 1.0625rem;
   }
-
-  /* Wave fill rising from the bottom, shared by primary / secondary / ghost. */
-  .btn-primary::after,
-  .btn-secondary::after,
-  .btn-ghost::after {
-    content: "";
-    position: absolute;
-    inset: auto -18% -52% -18%;
-    z-index: -1;
-    height: 0%;
-    border-radius: 48% 52% 0 0 / 20% 26% 0 0;
-    background: var(--btn-wave-fill);
-    transform: translate3d(0, 0, 0);
-    transition: height 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .btn-primary:hover::after,
-  .btn-primary:focus-visible::after,
-  .btn-secondary:hover::after,
-  .btn-secondary:focus-visible::after,
-  .btn-ghost:hover::after,
-  .btn-ghost:focus-visible::after {
-    height: 162%;
-  }
-
   .btn-primary {
-    --btn-wave-fill: rgb(var(--btn-primary-wave));
-    background-color: rgb(var(--btn-primary-bg));
-    color: rgb(var(--btn-primary-fg));
-    transform: none;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease 0.18s;
+    background-color: rgb(var(--brand));
+    color: rgb(var(--bg));
   }
-  .btn-primary.btn-sm {
-    padding-left: 2.35rem;
+  .btn-primary:hover {
+    background-color: rgb(var(--ink));
   }
-  .btn-primary.btn-md,
-  .btn-primary.btn-lg {
-    padding-left: 2.75rem;
-  }
-  /* Chevron */
-  .btn-primary::before {
-    content: "";
-    position: absolute;
-    left: 1.18rem;
-    top: 50%;
-    z-index: 1;
-    width: 0.42rem;
-    height: 0.42rem;
-    border-bottom: 2px solid currentColor;
-    border-right: 2px solid currentColor;
-    transform: translateY(-50%) rotate(-45deg);
-    pointer-events: none;
-  }
-  .btn-primary.btn-sm::before {
-    left: 0.98rem;
-  }
-  .btn-primary:hover,
-  .btn-primary:focus-visible {
-    transform: none;
-    color: rgb(var(--btn-primary-fg-hover));
-  }
-
-  .btn-secondary {
-    --btn-wave-fill: rgb(var(--btn-secondary-wave));
-    background-color: rgb(var(--btn-secondary-bg));
-    color: rgb(var(--btn-secondary-fg));
-    box-shadow: inset 0 0 0 1px rgb(var(--btn-secondary-ring));
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease 0.18s;
-  }
-  .btn-secondary:hover,
-  .btn-secondary:focus-visible {
-    color: rgb(var(--btn-secondary-fg-hover));
-  }
-
+  .btn-secondary,
   .btn-ghost {
-    --btn-wave-fill: rgb(var(--subtle));
     background-color: transparent;
     color: rgb(var(--ink));
-    transition: color 0.2s ease 0.18s;
+    box-shadow: inset 0 0 0 1px rgb(var(--ink) / 0.35);
+  }
+  .btn-secondary:hover,
+  .btn-ghost:hover {
+    box-shadow: inset 0 0 0 1px rgb(var(--ink));
+  }
+  /* On the bordeaux band the primary action turns to blush paper. */
+  .band .btn-primary {
+    background-color: rgb(var(--band-fg));
+    color: rgb(var(--band-bg));
+  }
+  .band .btn-primary:hover {
+    background-color: rgb(var(--bg));
+  }
+  .btn-primary[aria-busy="true"] {
+    opacity: 0.75;
   }
 
-  /* Secondary actions: an underlined text link, optionally with an arrow.
-     Normal inline flow (not flex) so the underline stays continuous across a wrapped
-     line and the arrow flows right after the last word instead of sitting flex-centred
-     at the far edge of the box. */
+  /* Secondary actions: underlined text, no arrow. */
   .btn-link {
     display: inline;
     font-weight: 500;
@@ -318,43 +233,20 @@ h4,
     text-decoration: underline;
     text-decoration-color: rgb(var(--ink) / 0.35);
     text-decoration-thickness: 1px;
-    text-underline-offset: 6px;
-    transition:
-      text-decoration-color 0.2s ease,
-      color 0.2s ease;
+    text-underline-offset: 5px;
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
   }
-  .btn-link:hover,
-  .btn-link:focus-visible {
-    color: rgb(var(--em));
+  .btn-link:hover {
+    color: rgb(var(--brand));
     text-decoration-color: currentColor;
   }
-  .btn-arrow {
-    display: inline-block;
-    vertical-align: -3px;
-    margin-left: 0.4rem;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .btn-link:hover .btn-arrow,
-  .btn-link:focus-visible .btn-arrow,
-  .group:hover .btn-arrow {
-    transform: translateX(4px);
+  .band .btn-link {
+    color: rgb(var(--band-fg));
+    text-decoration-color: rgb(var(--band-fg) / 0.5);
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .btn-primary,
-    .btn-secondary,
-    .btn-ghost,
-    .btn-primary::before,
-    .btn-primary::after,
-    .btn-secondary::after,
-    .btn-ghost::after {
-      transition: none;
-    }
-  }
-
-  /* ---------- Inline text link ---------- */
   .link {
-    color: rgb(var(--em));
+    color: rgb(var(--brand));
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
@@ -363,52 +255,50 @@ h4,
     text-decoration-thickness: 2px;
   }
 
-  /* ---------- Form fields ---------- */
+  /* ---------- Correspondence-card fields: underlined, on paper ---------- */
   .field {
-    @apply block w-full rounded-[4px] bg-surface px-4 py-3 text-base text-ink;
-    box-shadow: inset 0 0 0 1px rgb(var(--line));
-    transition: box-shadow 0.2s ease;
-  }
-  /* Selects match text inputs in a shared row (browsers size them smaller by default). */
-  select.field {
-    min-height: calc(1.5rem + 1.0625rem * 1.7);
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(var(--ink) / 0.4);
+    border-radius: 0;
+    padding: 0.55rem 0 0.5rem;
     font-size: 1.0625rem;
+    color: rgb(var(--ink));
+    transition: border-color 0.2s ease;
+  }
+  textarea.field {
+    resize: vertical;
+    line-height: 1.6;
+    background-image: linear-gradient(transparent calc(1.7em - 1px), rgb(var(--line)) calc(1.7em - 1px));
+    background-size: 100% 1.7em;
   }
   .field::placeholder {
-    color: rgb(var(--muted) / 0.8);
+    color: rgb(var(--muted) / 0.85);
   }
   .field:hover {
-    box-shadow: inset 0 0 0 1px rgb(var(--muted) / 0.7);
+    border-bottom-color: rgb(var(--ink));
   }
   .field:focus-visible {
-    outline-offset: 1px;
-    border-radius: 4px;
+    outline: none;
+    border-bottom: 2px solid rgb(var(--brand));
+    padding-bottom: calc(0.5rem - 1px);
   }
-  /* Invalid after a submit attempt: a heavier ring in the danger colour (never colour alone:
-     the field also gets a message with an icon underneath). */
-  .field[aria-invalid="true"],
-  .field[aria-invalid="true"]:hover {
-    box-shadow: inset 0 0 0 2px rgb(var(--danger));
-    background-color: rgb(var(--danger) / 0.04);
-  }
-  .field[aria-invalid="true"]:focus-visible {
-    outline-color: rgb(var(--danger));
+  .field[aria-invalid="true"] {
+    border-bottom: 2px solid rgb(var(--danger));
   }
   .checkbox {
     @apply mt-1 h-5 w-5 shrink-0;
-    accent-color: rgb(var(--accent));
+    accent-color: rgb(var(--brand));
   }
   .checkbox[aria-invalid="true"] {
     outline: 2px solid rgb(var(--danger));
     outline-offset: 2px;
-    border-radius: 3px;
   }
   .consent-invalid {
-    margin-inline: -0.75rem;
-    padding: 0.75rem;
-    border-radius: 4px;
-    background-color: rgb(var(--danger) / 0.06);
-    box-shadow: inset 0 0 0 1px rgb(var(--danger) / 0.45);
+    padding-left: 0.75rem;
+    border-left: 2px solid rgb(var(--danger));
   }
   .field-error {
     display: flex;
@@ -420,19 +310,17 @@ h4,
     line-height: 1.45;
     color: rgb(var(--danger));
   }
-  /* Validation summary and send-error panel, right above the submit button. */
   .form-alert {
     display: flex;
     align-items: flex-start;
     gap: 0.7rem;
     padding: 0.9rem 1rem;
-    border-radius: 4px;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     color: rgb(var(--ink));
-    background-color: rgb(var(--danger) / 0.07);
-    box-shadow: inset 0 0 0 1px rgb(var(--danger) / 0.5);
+    border-left: 2px solid rgb(var(--danger));
+    background-color: rgb(var(--danger) / 0.06);
   }
   .form-alert > svg {
     color: rgb(var(--danger));
@@ -441,18 +329,13 @@ h4,
     font-weight: 400;
   }
   .form-success-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 9999px;
-    color: rgb(var(--accent));
-    background-color: rgb(var(--accent) / 0.1);
-    box-shadow: inset 0 0 0 1.5px rgb(var(--accent) / 0.55);
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(var(--brand));
+    -webkit-mask: var(--check) center / contain no-repeat;
+    mask: var(--check) center / contain no-repeat;
   }
-  /* Keyboard / browser-driven scrolling keeps fields and messages clear of the sticky header
-     and of the cookie banner (its measured height is published by CookieBanner). */
   form .field,
   form .checkbox,
   .field-error,
@@ -462,34 +345,33 @@ h4,
     scroll-margin-bottom: calc(var(--cookie-banner-h, 0px) + 1.5rem);
   }
 
-  /* Loading state of the submit button: the chevron becomes a spinner. */
-  .btn-primary[aria-busy="true"]::before {
-    left: 1.05rem;
-    width: 0.95rem;
-    height: 0.95rem;
-    border: 2px solid currentColor;
-    border-right-color: transparent;
-    border-radius: 9999px;
-    animation: btn-spin 0.8s linear infinite;
+  /* The note: request/contact forms read as a written card, not a boxed widget. */
+  .note-card {
+    background: rgb(var(--surface));
+    box-shadow: inset 0 0 0 1px rgb(var(--line));
+    padding: 1.75rem 1.25rem 2rem;
   }
-  .btn-primary[aria-busy="true"]::after {
-    display: none; /* no hover wave while sending */
-  }
-  @keyframes btn-spin {
-    from {
-      transform: translateY(-50%) rotate(0deg);
-    }
-    to {
-      transform: translateY(-50%) rotate(360deg);
+  @media (min-width: 640px) {
+    .note-card {
+      padding: 3rem 3.25rem 3.25rem;
     }
   }
 
-  /* ---------- Photo slot: real <img>, object-fit: cover, over a warm gradient fallback ---------- */
+  /* ---------- The check ---------- */
+  .check {
+    display: inline-block;
+    width: 0.95em;
+    height: 0.95em;
+    background-color: rgb(var(--brand));
+    -webkit-mask: var(--check) center / contain no-repeat;
+    mask: var(--check) center / contain no-repeat;
+  }
+
+  /* ---------- Photo slot (only rendered when a real photo exists) ---------- */
   .img-slot {
     position: relative;
     overflow: hidden;
     background-color: rgb(var(--subtle));
-    background-image: var(--hero-fallback);
   }
   .img-slot > img {
     position: absolute;
@@ -499,78 +381,82 @@ h4,
     object-fit: cover;
     object-position: var(--img-pos, center);
   }
-  /* One warm grade for all photography. */
-  .img-graded {
-    filter: saturate(0.92) sepia(0.08) contrast(1.02);
-  }
-  :root[data-theme="dark"] .img-graded {
-    filter: saturate(0.88) sepia(0.1) brightness(0.88);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) .img-graded {
-      filter: saturate(0.88) sepia(0.1) brightness(0.88);
-    }
-  }
-  .zoom-media {
-    transition: transform 1.1s cubic-bezier(0.2, 0.7, 0.2, 1);
-  }
-  .group:hover .zoom-media {
-    transform: scale(1.04);
-  }
 }
 
-/* ---------- Header: transparent over a full-bleed hero, solid ivory once scrolled ----------
-   The background + blur live on ::before: backdrop-filter on the header itself would become the
-   containing block of the fixed mobile menu panel. */
+/* ---------- Header: solid paper, 1px tinted edge ---------- */
 .site-header {
-  isolation: isolate;
-  transition: color 0.35s ease;
-}
-.site-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgb(var(--bg) / 0.9);
+  background-color: rgb(var(--bg));
   box-shadow: 0 1px 0 rgb(var(--line));
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  transition: opacity 0.35s ease;
 }
-body:has([data-hero-overlay]) .site-header:not([data-solid]):not([data-menu-open])::before {
-  opacity: 0;
+.nav-link[aria-current="page"] {
+  color: rgb(var(--brand));
 }
-body:has([data-hero-overlay]) .site-header:not([data-solid]):not([data-menu-open]) [role="radiogroup"] {
-  background-color: rgb(255 255 255 / 0.1);
+.nav-link[aria-current="page"]::before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 0.35em;
+  vertical-align: -0.02em;
+  background-color: rgb(var(--brand));
+  -webkit-mask: var(--check) center / contain no-repeat;
+  mask: var(--check) center / contain no-repeat;
 }
 
-/* ---------- Fade-up on scroll (armed by RevealObserver after on-screen elements are shown) ---------- */
-html.reveal-ready [data-reveal] {
-  opacity: 0;
-  transform: translateY(18px);
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
-  transition-delay: var(--reveal-delay, 0ms);
+/* ---------- Bordeaux band (request band, footer) ---------- */
+.band {
+  background-color: rgb(var(--band-bg));
+  color: rgb(var(--band-fg));
+  --ink: var(--band-fg);
+  --muted: var(--band-muted);
+  --line: var(--band-line);
+  --brand: var(--band-fg);
+  --focus: rgb(var(--band-fg));
 }
-html.reveal-ready [data-reveal].is-visible {
-  opacity: 1;
-  transform: none;
+
+/* ---------- Hero: the check draws itself once ---------- */
+.hero-check path {
+  fill: rgb(var(--brand));
+  stroke: rgb(var(--brand));
+  stroke-width: 6;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
 }
-@media (prefers-reduced-motion: reduce) {
-  html.reveal-ready [data-reveal] {
-    opacity: 1;
-    transform: none;
+@media (prefers-reduced-motion: no-preference) {
+  .hero-check path {
+    fill-opacity: 0;
+    stroke-dashoffset: 1;
+    animation:
+      check-draw 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.2s forwards,
+      check-fill 0.6s ease 1.4s forwards;
+  }
+}
+@keyframes check-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes check-fill {
+  to {
+    fill-opacity: 1;
   }
 }
 
-/* ---------- FAQ accordion ---------- */
+/* ---------- Itinerary list (services) ---------- */
+.itinerary {
+  border-left: 2px solid rgb(var(--brand));
+}
+.itinerary > li + li {
+  margin-top: 0;
+}
+
+/* ---------- FAQ ---------- */
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
 .faq-item .faq-icon {
   display: inline-flex;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s ease;
 }
 .faq-item[open] .faq-icon {
   transform: rotate(45deg);
@@ -578,141 +464,113 @@ html.reveal-ready [data-reveal].is-visible {
 
 /* ---------- Long-form markdown ---------- */
 .prose {
-  max-width: 70ch;
+  max-width: 65ch;
   font-size: 1.0625rem;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 .prose > * + * {
   margin-top: 1.1em;
 }
+.prose > :first-child {
+  margin-top: 0;
+}
 .prose h2 {
-  font-size: 1.85rem;
-  margin-top: 2.2em;
+  font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem);
+  margin-top: 2.1em;
 }
 .prose h3 {
-  font-size: 1.4rem;
-  margin-top: 1.8em;
+  font-size: 1.45rem;
+  margin-top: 1.7em;
 }
-/* Deep-link targets (ids from src/lib/rehype-anchors.ts) clear the sticky header. */
 .prose [id] {
   scroll-margin-top: 6.5rem;
 }
-.prose tr:target td {
-  background: rgb(var(--accent) / 0.08);
-}
 .prose a {
-  color: rgb(var(--em));
+  color: rgb(var(--brand));
   text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+.prose a:hover {
+  text-decoration-thickness: 2px;
+}
+/* "What we arrange" lists: each item is ticked with the V. */
 .prose ul {
-  list-style: disc;
-  padding-left: 1.4em;
+  list-style: none;
+  padding-left: 0;
+}
+.prose ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+.prose ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.32em;
+  width: 1em;
+  height: 1em;
+  background-color: rgb(var(--brand));
+  -webkit-mask: var(--check) center / contain no-repeat;
+  mask: var(--check) center / contain no-repeat;
 }
 .prose ol {
   list-style: decimal;
   padding-left: 1.4em;
 }
-.prose li::marker {
-  color: rgb(var(--muted));
+.prose ol > li::marker {
+  font-family: var(--font-display), Georgia, serif;
+  color: rgb(var(--brand));
 }
 .prose li + li {
-  margin-top: 0.4em;
-}
-.prose blockquote {
-  border-left: 2px solid rgb(var(--accent));
-  padding: 0.2rem 0 0.2rem 1.25rem;
-  font-family: var(--font-fraunces), Georgia, serif;
-  font-size: 1.2rem;
+  margin-top: 0.45em;
 }
 .prose strong {
-  font-weight: 600;
+  font-weight: 500;
+}
+.prose blockquote {
+  border-left: 2px solid rgb(var(--brand));
+  padding-left: 1.25rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
 }
 .prose hr {
   border-color: rgb(var(--line));
   margin: 2.5em 0;
 }
-.prose code {
-  background: rgb(var(--subtle));
-  padding: 0.1em 0.35em;
-  border-radius: 6px;
-  font-size: 0.92em;
-}
-/* Tables. Up to three columns ("fit"): always fit the reading column, cells wrap, no sideways
-   scrolling on phones. Wider tables keep a horizontal scroll, with an edge fade that shows
-   there is more to the left / right (scroll shadows: the "cover" layers scroll with the content,
-   the shadow layers stay put — no JS). */
 .prose .table-wrap {
   max-width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
-  border-radius: 4px;
   border: 1px solid rgb(var(--line));
-  background:
-    linear-gradient(to right, rgb(var(--bg)) 35%, rgb(var(--bg) / 0)) left center / 3rem 100% no-repeat local,
-    linear-gradient(to left, rgb(var(--bg)) 35%, rgb(var(--bg) / 0)) right center / 3rem 100% no-repeat local,
-    linear-gradient(to right, rgb(var(--shadow) / 0.22), rgb(var(--shadow) / 0)) left center / 1.1rem 100% no-repeat scroll,
-    linear-gradient(to left, rgb(var(--shadow) / 0.22), rgb(var(--shadow) / 0)) right center / 1.1rem 100% no-repeat scroll;
 }
 .prose table {
   width: 100%;
-  min-width: 38rem;
   border-collapse: collapse;
   font-size: 0.95rem;
 }
 .prose th,
 .prose td {
-  padding: 0.75rem 1rem;
+  padding: 0.7rem 0.9rem;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid rgb(var(--line) / 0.7);
+  border-bottom: 1px solid rgb(var(--line));
 }
 .prose thead th {
-  /* Semi-transparent so the scroll hint stays visible across the header row too. */
-  background: rgb(var(--ink) / 0.06);
-  font-weight: 600;
-}
-.prose tbody tr:last-child td {
-  border-bottom: 0;
-}
-.prose .table-fit table {
-  min-width: 0;
-}
-/* Cells may break anywhere so the table always fits; browsers with a hyphenation dictionary
-   (iOS Safari has EN/FR/DE) break at syllables first. Minimum column widths below keep
-   ordinary words whole. */
-.prose .table-fit th,
-.prose .table-fit td {
-  overflow-wrap: anywhere;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-@media (max-width: 639px) {
-  .prose table {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  .prose th,
-  .prose td {
-    padding: 0.65rem 0.75rem;
-  }
-  .prose .table-fit th,
-  .prose .table-fit td {
-    min-width: 5.25rem; /* a column never collapses to a sliver */
-  }
-  .prose .table-fit th:first-child,
-  .prose .table-fit td:first-child {
-    min-width: 7.5rem; /* row labels ("Successions", "Wealth tax") stay on whole words */
-  }
+  font-weight: 500;
+  background: rgb(var(--subtle));
 }
 
 /* While the consent banner is open, the page can always scroll its last lines clear of it. */
 html[data-cookie-banner] body {
   padding-bottom: calc(var(--cookie-banner-h, 0px) + 1.5rem);
 }
-
-/* The mobile menu lives inside the header's stacking context; keep the consent banner out of its way. */
 body[data-menu-open] .cookie-banner {
   display: none;
+}
+/* Sticky mobile request bar: keep the last lines of the page clear of it. */
+@media (max-width: 1023px) {
+  body[data-sticky-cta] {
+    padding-bottom: 4.75rem;
+  }
 }

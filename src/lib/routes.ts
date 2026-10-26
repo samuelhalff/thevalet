@@ -1,34 +1,21 @@
 import { collections, getPublishedEntries, getTranslations } from "./content";
-import { getMessages, locales, type Locale } from "./i18n";
-import { collectionBase } from "./paths";
-
-/** Fixed pages that exist in every locale (locale-less paths). */
-export const STATIC_PATHS = [
-  "/",
-  "/how-it-works/",
-  "/services/",
-  "/cantons/",
-  "/moving-from/",
-  "/guides/",
-  "/for-advisers/",
-  "/eligibility-check/",
-  "/about/",
-  "/contact/",
-  "/privacy/",
-  "/legal-notice/",
-] as const;
+import { locales, type Locale } from "./i18n";
+import { collectionBase, pageAlternates, pageKeys, type PageKey } from "./paths";
 
 export type IndexablePage = {
-  /** Per-locale path for this page (hreflang group). */
+  /** Per-locale locale-less path for this page (hreflang group). */
   paths: Partial<Record<Locale, string>>;
   lastModified?: string;
 };
 
-/** Every indexable page, grouped across languages. Drafts and empty categories are excluded. */
+/** Fixed pages left out of the sitemap while they have nothing to show. */
+function isThin(key: PageKey): boolean {
+  return key === "journal" && locales.every((l) => getPublishedEntries(l, "journal").length === 0);
+}
+
+/** Every indexable page, grouped across languages. Drafts are excluded. */
 export function indexablePages(): IndexablePage[] {
-  const pages: IndexablePage[] = STATIC_PATHS.map((p) => ({
-    paths: Object.fromEntries(locales.map((l) => [l, p])),
-  }));
+  const pages: IndexablePage[] = pageKeys.filter((k) => !isThin(k)).map((k) => ({ paths: pageAlternates(k) }));
 
   for (const collection of collections) {
     const seen = new Set<string>();
@@ -47,15 +34,7 @@ export function indexablePages(): IndexablePage[] {
       }
     }
   }
-
-  for (const key of Object.keys(getMessages("en").guides.categories)) {
-    const paths: Partial<Record<Locale, string>> = {};
-    for (const locale of locales) {
-      if (getPublishedEntries(locale, "guides").some((g) => g.category === key)) {
-        paths[locale] = `/guides/category/${key}/`;
-      }
-    }
-    if (Object.keys(paths).length) pages.push({ paths });
-  }
   return pages;
 }
+
+export { isThin };

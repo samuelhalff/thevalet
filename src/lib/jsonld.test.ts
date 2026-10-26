@@ -3,47 +3,54 @@ import type { Entry } from "./content";
 import { articleLd, organizationLd, serviceLd } from "./jsonld";
 
 const entry: Entry = {
-  collection: "guides",
+  collection: "services",
   locale: "fr",
-  slug: "x",
-  title: "Titre",
+  slug: "chauffeur-prive-geneve",
+  title: "Chauffeur privé à Genève",
   description: "Description",
-  translationKey: "x",
-  updated: "2026-09-30",
-  category: "tax-and-wealth",
+  translationKey: "chauffeur",
+  updated: "2026-10-26",
   draft: false,
+  order: 2,
+  summary: "",
+  serviceType: "Chauffeur privé",
+  delivery: "partner",
+  answer: "",
+  service: "",
   faq: [],
-  cta: "check",
-  sources: [{ label: "Fedlex", url: "https://www.fedlex.admin.ch/" }],
+  sources: [],
   body: "",
 };
 
-describe("articleLd", () => {
-  it("emits keywords and about from frontmatter keywords", () => {
-    const ld = articleLd({ ...entry, keywords: { primary: "résidence fiscale suisse", secondary: ["domicile fiscal suisse", "permis B"] } }, "https://example.ch/fr/guides/x/");
-    expect(ld).toMatchObject({
-      inLanguage: "fr",
-      dateModified: "2026-09-30",
-      keywords: "résidence fiscale suisse, domicile fiscal suisse, permis B",
-      about: { "@type": "Thing", name: "résidence fiscale suisse" },
-    });
-  });
-
-  it("omits keywords when the guide has none", () => {
-    const ld = articleLd(entry, "https://example.ch/fr/guides/x/");
-    expect(ld).not.toHaveProperty("keywords");
-    expect(ld).not.toHaveProperty("about");
+describe("organizationLd", () => {
+  it("is an Organization + LocalBusiness with the logo and no unverified profiles", () => {
+    const ld = organizationLd("fr");
+    expect(ld["@type"]).toEqual(["Organization", "LocalBusiness"]);
+    expect(ld.logo).toMatch(/\/logo\.svg$/);
+    expect(ld.sameAs).toEqual([]);
+    // Unconfigured contact details are omitted, never faked.
+    expect(ld).not.toHaveProperty("telephone");
+    expect(ld).not.toHaveProperty("email");
+    expect(ld).not.toHaveProperty("address");
   });
 });
 
-describe("service vocabulary", () => {
-  it("uses the market term as serviceType when given", () => {
-    const ld = serviceLd({ ...entry, collection: "services", title: "Relocation" }, "https://example.ch/", "Relocation and destination services");
-    expect(ld.serviceType).toBe("Relocation and destination services");
-    expect(serviceLd({ ...entry, collection: "services", title: "Relocation" }, "https://example.ch/").serviceType).toBe("Relocation");
+describe("serviceLd", () => {
+  it("uses the market term and lists the regions served", () => {
+    const ld = serviceLd(entry, "https://thevalet.ch/fr/services/chauffeur-prive-geneve/");
+    expect(ld.serviceType).toBe("Chauffeur privé");
+    expect(ld.areaServed.map((a) => a.name)).toEqual(
+      expect.arrayContaining(["Genève", "Vaud", "Valais", "Haute-Savoie et Savoie"]),
+    );
   });
+});
 
-  it("names relocation and destination services on the organisation", () => {
-    expect(organizationLd().knowsAbout).toEqual(expect.arrayContaining(["Relocation services", "Destination services"]));
+describe("articleLd", () => {
+  it("emits keywords only when the article has them", () => {
+    const article = { ...entry, collection: "journal" as const };
+    expect(articleLd(article, "https://thevalet.ch/fr/journal/x/")).not.toHaveProperty("keywords");
+    expect(articleLd({ ...article, keywords: { primary: "chauffeur genève", secondary: ["vtc genève"] } }, "u")).toMatchObject({
+      keywords: "chauffeur genève, vtc genève",
+    });
   });
 });

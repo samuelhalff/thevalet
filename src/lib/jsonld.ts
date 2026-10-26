@@ -1,4 +1,5 @@
 import type { Entry } from "./content";
+import { business, hasAddress, AREAS_SERVED } from "./business";
 import { type Locale } from "./i18n";
 import { absoluteUrl, localePath } from "./paths";
 import { SITE_NAME, SITE_URL } from "./site";
@@ -6,30 +7,54 @@ import { SITE_NAME, SITE_URL } from "./site";
 const ORG_ID = `${SITE_URL}/#org`;
 const SITE_ID = `${SITE_URL}/#website`;
 
-export function organizationLd() {
+export function areaServedLd(locale: Locale) {
+  return AREAS_SERVED.map((a) => ({ "@type": a.type, name: a[locale] }));
+}
+
+/** Organization + LocalBusiness. Contact and address fields only when configured; sameAs only verified profiles. */
+export function organizationLd(locale: Locale) {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "LocalBusiness"],
     "@id": ORG_ID,
     name: SITE_NAME,
+    ...(business.legalName ? { legalName: business.legalName } : {}),
     url: `${SITE_URL}/`,
+    logo: absoluteUrl("/logo.svg"),
+    image: absoluteUrl("/og.png"),
+    slogan: locale === "fr" ? "Chaque souhait devient une réalité." : "Every wish, made real.",
     description:
-      "Relocation services in Switzerland for private clients and families: residence permits, lump-sum taxation, tax rulings, property search, destination services and settling in.",
-    knowsAbout: [
-      "Relocation services",
-      "Destination services",
-      "Relocation to Switzerland",
-      "Swiss residence permits",
-      "Lump-sum taxation (forfait fiscal, Pauschalbesteuerung)",
-      "Swiss tax rulings",
-      "Lex Koller",
-    ],
-    areaServed: "CH",
-    knowsLanguage: ["en", "fr", "de"],
+      locale === "fr"
+        ? "Conciergerie haut de gamme à Genève et dans les Alpes : chauffeur privé, transferts, conciergerie privée, intendance de résidence, chalets, événements, Glam Team ; services réglementés coordonnés par l'intermédiaire de partenaires indépendants dûment autorisés."
+        : "Premium concierge in Geneva and the Alps: private chauffeur, transfers, private concierge, residence management, chalets, events and Glam Team; regulated services coordinated through independent, appropriately licensed partners.",
+    areaServed: areaServedLd(locale),
+    knowsLanguage: ["fr", "en"],
+    ...(business.phone ? { telephone: business.phone } : {}),
+    ...(business.email ? { email: business.email } : {}),
+    ...(business.uid ? { taxID: business.uid } : {}),
+    ...(hasAddress
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: business.street,
+            postalCode: business.postalCode || undefined,
+            addressLocality: business.city,
+            addressCountry: business.country,
+          },
+        }
+      : {}),
+    sameAs: business.sameAs,
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      availableLanguage: ["English", "French", "German"],
+      availableLanguage: ["French", "English"],
+      hoursAvailable: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      ...(business.phone ? { telephone: business.phone } : {}),
     },
   };
 }
@@ -62,8 +87,7 @@ export function breadcrumbLd(crumbs: Crumb[]) {
   };
 }
 
-/** `serviceType` is the market term for the service (i18n services.items.<slug>.serviceType). */
-export function serviceLd(entry: Entry, url: string, serviceType?: string) {
+export function serviceLd(entry: Entry, url: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -71,32 +95,10 @@ export function serviceLd(entry: Entry, url: string, serviceType?: string) {
     description: entry.description,
     url,
     inLanguage: entry.locale,
-    serviceType: serviceType || entry.title,
+    serviceType: entry.serviceType || entry.title,
     provider: { "@id": ORG_ID },
-    areaServed: { "@type": "Country", name: "Switzerland" },
-    audience: {
-      "@type": "Audience",
-      audienceType: "Private individuals and families relocating to Switzerland",
-    },
-  };
-}
-
-/** The /for-advisers/ hub: the relocation service as offered to introducers. */
-export function adviserServiceLd(name: string, description: string, url: string, locale: Locale) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name,
-    description,
-    url,
-    inLanguage: locale,
-    serviceType: "Relocation services for private clients introduced by advisers",
-    provider: { "@id": ORG_ID },
-    areaServed: { "@type": "Country", name: "Switzerland" },
-    audience: {
-      "@type": "BusinessAudience",
-      audienceType: "Private bankers, wealth managers, lawyers, tax advisers, family offices and relocation partners",
-    },
+    areaServed: areaServedLd(entry.locale),
+    availableChannel: { "@type": "ServiceChannel", serviceUrl: url },
   };
 }
 
@@ -108,16 +110,14 @@ export function articleLd(entry: Entry, url: string) {
     description: entry.description,
     inLanguage: entry.locale,
     mainEntityOfPage: url,
+    image: absoluteUrl("/og.png"),
     datePublished: entry.published || entry.updated,
     dateModified: entry.updated,
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
     ...(entry.sources.length ? { citation: entry.sources.map((s) => s.url) } : {}),
     ...(entry.keywords
-      ? {
-          keywords: [entry.keywords.primary, ...entry.keywords.secondary].join(", "),
-          about: { "@type": "Thing", name: entry.keywords.primary },
-        }
+      ? { keywords: [entry.keywords.primary, ...entry.keywords.secondary].join(", "), about: { "@type": "Thing", name: entry.keywords.primary } }
       : {}),
   };
 }
@@ -131,19 +131,5 @@ export function faqLd(faq: { q: string; a: string }[]) {
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
-  };
-}
-
-export function webApplicationLd(name: string, description: string, url: string) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name,
-    description,
-    url,
-    applicationCategory: "FinanceApplication",
-    operatingSystem: "Any",
-    isAccessibleForFree: true,
-    provider: { "@id": ORG_ID },
   };
 }

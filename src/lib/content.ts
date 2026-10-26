@@ -3,13 +3,12 @@ import path from "node:path";
 import matter from "gray-matter";
 import { locales, type Locale } from "./i18n";
 import { typeset } from "./typography";
-import { defaultCta, isCtaKind, type CtaKind } from "./cta";
 
 /**
  * Markdown content lives in content/<locale>/<collection>/<slug>.md.
  * Adding a file is all that is needed: routes, listings, sitemap and hreflang pick it up at build time.
  */
-export const collections = ["guides", "services", "cantons", "origins", "advisers"] as const;
+export const collections = ["services", "journal"] as const;
 export type Collection = (typeof collections)[number];
 
 export type FaqItem = { q: string; a: string };
@@ -28,13 +27,22 @@ export type Entry = {
   published?: string;
   /** ISO date; the page is only built on/after this date (see readCollection). */
   publishAt?: string;
-  category: string;
   draft: boolean;
+  /** services: position in lists. */
+  order: number;
+  /** services: one line for lists. */
+  summary: string;
+  /** services: schema.org serviceType (market term). */
+  serviceType: string;
+  /** services: "partner" = performed by independent licensed partners; "coordinated" = arranged by The Valet. */
+  delivery: "partner" | "coordinated";
+  /** Quotable 2–3 sentence answer shown at the top of the page. */
+  answer: string;
+  /** journal: translationKey of the related service page. */
+  service: string;
   faq: FaqItem[];
   sources: Source[];
   keywords?: Keywords;
-  /** Call to action for this page (frontmatter `cta`, else the collection default). */
-  cta: CtaKind;
   body: string;
 };
 
@@ -75,14 +83,18 @@ function readCollection(locale: Locale, collection: Collection): Entry[] {
       updated: toIsoDate(data.updated),
       published: toIsoDate(data.published) || publishAt || undefined,
       publishAt: publishAt || undefined,
-      category: String(data.category ?? ""),
       draft: data.draft === true,
+      order: typeof data.order === "number" ? data.order : 99,
+      summary: typeset(locale, String(data.summary ?? "")),
+      serviceType: String(data.serviceType ?? ""),
+      delivery: data.delivery === "partner" ? "partner" : "coordinated",
+      answer: typeset(locale, String(data.answer ?? "")),
+      service: String(data.service ?? ""),
       faq: Array.isArray(data.faq)
         ? (data.faq as FaqItem[]).map((f) => ({ q: typeset(locale, f.q), a: typeset(locale, f.a) }))
         : [],
       sources: Array.isArray(data.sources) ? (data.sources as Source[]) : [],
       keywords: toKeywords(data.keywords),
-      cta: isCtaKind(data.cta) ? data.cta : defaultCta[collection],
       body: typeset(locale, content),
     };
   });
@@ -90,7 +102,11 @@ function readCollection(locale: Locale, collection: Collection): Entry[] {
   // daily scheduled deploy runs on or after that date — no route, listing or sitemap entry.
   const today = new Date().toISOString().slice(0, 10);
   const live = entries.filter((e) => !e.publishAt || e.publishAt <= today);
-  live.sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title));
+  live.sort((a, b) =>
+    collection === "services"
+      ? a.order - b.order || a.title.localeCompare(b.title)
+      : (b.published || b.updated).localeCompare(a.published || a.updated) || a.title.localeCompare(b.title),
+  );
   cache.set(cacheKey, live);
   return live;
 }
@@ -122,4 +138,9 @@ export function getTranslations(entry: Entry): Partial<Record<Locale, Entry>> {
     if (match) out[loc] = match;
   }
   return out;
+}
+
+/** Published entry of `collection` in `locale` with this translationKey. */
+export function getByKey(locale: Locale, collection: Collection, key: string): Entry | undefined {
+  return getPublishedEntries(locale, collection).find((e) => e.translationKey === key);
 }

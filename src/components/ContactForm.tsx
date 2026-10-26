@@ -1,52 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { trackEvent } from "@/lib/analytics";
-import { CHECK_STORAGE_KEY, type StoredCheck } from "@/lib/eligibility";
 import type { FieldRule } from "@/lib/form-validation";
 import { fieldValue, submitToFormspark } from "@/lib/formspark";
 import { attributionFields } from "@/lib/attribution";
-import type { Messages } from "@/lib/i18n";
-import Panel from "./ui/Panel";
-import { Consent, FallbackPanel, Field, FormFooter, Honeypot, RequiredNote, Select, SuccessPanel, invalidProps, type FormLabels } from "./form/FormParts";
+import { Consent, Field, FormFooter, Honeypot, RequiredNote, SuccessPanel, invalidProps, type FormLabels } from "./form/FormParts";
 import { useLeadForm } from "./form/useLeadForm";
 
 export type ContactFormProps = {
   labels: FormLabels;
-  /** Optional qualification fields (timing, cantons, introducing adviser). */
-  extra: Messages["contactExtra"];
+  channels: { value: string; label: string }[];
   locale: string;
   formsparkId: string;
-  /** wa.me link when NEXT_PUBLIC_WHATSAPP is set, else "". */
   whatsappHref: string;
   privacyHref: string;
-  languages: { code: string; name: string }[];
 };
 
-function readStoredCheck(): StoredCheck | null {
-  try {
-    const raw = window.sessionStorage.getItem(CHECK_STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as StoredCheck) : null;
-  } catch {
-    return null;
-  }
-}
-
-function clearStoredCheck() {
-  try {
-    window.sessionStorage.removeItem(CHECK_STORAGE_KEY);
-  } catch {
-    /* ignore */
-  }
-}
-
-export default function ContactForm({ labels, extra, locale, formsparkId, whatsappHref, privacyHref, languages }: ContactFormProps) {
-  const [check, setCheck] = useState<StoredCheck | null>(null);
-
-  useEffect(() => {
-    setCheck(readStoredCheck());
-  }, []);
-
+/** Simple contact form (name, email, optional phone, preferred channel, message, consent) → Formspark. */
+export default function ContactForm({ labels, channels, locale, formsparkId, whatsappHref, privacyHref }: ContactFormProps) {
   const e = labels.errors;
   const rules: FieldRule[] = [
     { name: "name", id: "cf-name", kind: "text", required: e.name },
@@ -57,58 +28,29 @@ export default function ContactForm({ labels, extra, locale, formsparkId, whatsa
 
   const { status, errors, errorCount, onSubmit, onChange } = useLeadForm(rules, async (data) => {
     const value = (k: string) => fieldValue(data, k);
-    const payload: Record<string, string | boolean> = {
+    // No form id configured (env): the form still renders, sending reports the fallback.
+    if (!formsparkId) throw new Error("form not configured");
+    await submitToFormspark(formsparkId, {
       form_type: "contact",
       name: value("name"),
       email: value("email"),
       phone: value("phone"),
-      preferred_language: value("language"),
+      preferred_channel: value("channel"),
       message: value("message"),
-      timing: value("timing"),
-      cantons: value("cantons"),
-      introduced_by: value("introduced_by"),
       consent: true,
       site_locale: locale,
       page: window.location.pathname,
       ...attributionFields(),
-    };
-    if (check) {
-      payload.check_result = check.summary.join("\n");
-      payload.check_codes = `routes=${check.routes.join("+")}; lump_sum=${check.lumpSum}; cantons=${check.cantons.join("+")}; flags=${check.flags.join("+")}`;
-      payload.check_answers = check.answers;
-    }
-    await submitToFormspark(formsparkId, payload);
-    trackEvent("generate_lead", { method: check ? "check" : "form" });
-    clearStoredCheck();
+    });
+    // Analytics never receives form content.
+    trackEvent("generate_lead", { method: "contact_form" });
   });
 
-  if (!formsparkId) return <FallbackPanel labels={labels} whatsappHref={whatsappHref} />;
   if (status === "success") return <SuccessPanel title={labels.successTitle} text={labels.successText} />;
 
   return (
-    <Panel padding="lg">
-      <form onSubmit={onSubmit} onChange={onChange} noValidate className="space-y-5">
-        {check ? (
-          <div className="border-l-2 border-accent pl-4 text-sm">
-            <p className="font-medium">{labels.checkAttached}</p>
-            <ul className="mt-2 list-disc space-y-1 pl-5 text-muted">
-              {check.summary.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
-            </ul>
-            <button
-              type="button"
-              className="link mt-3 text-sm"
-              onClick={() => {
-                clearStoredCheck();
-                setCheck(null);
-              }}
-            >
-              {labels.checkRemove}
-            </button>
-          </div>
-        ) : null}
-
+    <div className="note-card">
+      <form onSubmit={onSubmit} onChange={onChange} noValidate className="space-y-7">
         <RequiredNote labels={labels} />
         <Field id="cf-name" label={labels.name} required error={errors.name}>
           <input id="cf-name" name="name" type="text" autoComplete="name" required className="field" {...invalidProps("cf-name", errors.name)} />
@@ -121,54 +63,26 @@ export default function ContactForm({ labels, extra, locale, formsparkId, whatsa
             <input id="cf-phone" name="phone" type="tel" autoComplete="tel" className="field" />
           </Field>
         </div>
-        <Field id="cf-language" label={labels.language}>
-          <select id="cf-language" name="language" defaultValue={locale} className="field">
-            {languages.map((l) => (
-              <option key={l.code} value={l.code}>
-                {l.name}
-              </option>
+        <fieldset>
+          <legend className="block text-sm font-medium">{labels.channel}</legend>
+          <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2">
+            {channels.map((c, i) => (
+              <label key={c.value} className="inline-flex items-center gap-2 text-[0.95rem]">
+                <input type="radio" name="channel" value={c.value} defaultChecked={i === 0} className="checkbox !mt-0" />
+                {c.label}
+              </label>
             ))}
-          </select>
-        </Field>
-        <Field id="cf-message" label={labels.message} required error={errors.message}>
-          <textarea
-            id="cf-message"
-            name="message"
-            rows={5}
-            required
-            placeholder={labels.messagePlaceholder}
-            className="field"
-            {...invalidProps("cf-message", errors.message)}
-          />
-        </Field>
-
-        {/* Optional qualification, folded away so the form stays light. */}
-        <details className="group border-t border-line pt-4">
-          <summary className="cursor-pointer list-none text-sm font-medium text-ink [&::-webkit-details-marker]:hidden">
-            <span className="inline-flex items-center gap-2">
-              <span aria-hidden="true" className="inline-block w-4 text-center text-lg leading-none text-accent transition-transform group-open:rotate-45">+</span>
-              {extra.details}
-            </span>
-          </summary>
-          <div className="mt-5 space-y-5">
-            <div className="grid gap-5 sm:grid-cols-2">
-              <Field id="cf-timing" label={extra.timing}>
-                <Select id="cf-timing" name="timing" options={extra.timingOptions} placeholder={extra.timingPlaceholder} />
-              </Field>
-              <Field id="cf-cantons" label={extra.cantons}>
-                <input id="cf-cantons" name="cantons" type="text" placeholder={extra.cantonsPlaceholder} className="field" />
-              </Field>
-            </div>
-            <Field id="cf-introduced" label={extra.introducedBy}>
-              <input id="cf-introduced" name="introduced_by" type="text" autoComplete="organization" placeholder={extra.introducedByPlaceholder} className="field" />
-            </Field>
           </div>
-        </details>
-
+        </fieldset>
+        <Field id="cf-message" label={labels.message} required error={errors.message}>
+          <textarea id="cf-message" name="message" rows={5} required placeholder={labels.messagePlaceholder} className="field" {...invalidProps("cf-message", errors.message)} />
+        </Field>
+        <p className="text-sm text-muted">{labels.sensitiveNote}</p>
         <Honeypot id="cf-hp" label={labels.honeypot} />
         <Consent id="cf-consent" labels={labels} privacyHref={privacyHref} error={errors.consent} />
+        {!formsparkId ? <p className="t-small border-l-2 border-brand pl-3 text-muted">{labels.fallbackText}</p> : null}
         <FormFooter labels={labels} status={status} errorCount={errorCount} submitLabel={labels.submit} whatsappHref={whatsappHref} />
       </form>
-    </Panel>
+    </div>
   );
 }

@@ -1,8 +1,8 @@
 /**
  * Formspark submission (the only written channel: no email addresses on the site).
- * Every form sends a `form_type` so enquiries can be triaged: "contact" | "adviser".
+ * Every form sends a `form_type` so enquiries can be triaged: "contact" | "request".
  */
-export type FormType = "contact" | "adviser";
+export type FormType = "contact" | "request";
 
 /** Give up after this long so the form never stays on "Sending…" on a dead connection. */
 const TIMEOUT_MS = 20000;

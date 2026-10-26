@@ -1,4 +1,4 @@
-# switzerlandresidency.ch — static export (Next.js `out/`) on Apache shared hosting.
+# thevalet.ch — static export (Next.js `out/`) on Apache hosting (host to be confirmed).
 # Subdirectories with their own .htaccess (e.g. the deny-all archive folder) keep their rules;
 # nothing below rewrites anything except the bare root "/".
 
@@ -24,12 +24,12 @@ AddType application/xml .xml
 AddType image/webp .webp
 
 # ---------------------------------------------------------------------------
-# "/" → best language by Accept-Language (primary language only), else /en/
+# "/" → best language by Accept-Language (primary language only), French fallback
 # ---------------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Force HTTPS (certificat Let's Encrypt installé le 30.09.2026, renouvelé automatiquement par acme.sh)
+  # Force HTTPS (enable once the certificate is installed on the final host)
   RewriteCond %{HTTPS} !=on
   RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
@@ -39,13 +39,10 @@ AddType image/webp .webp
   RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
   RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
-  RewriteCond %{HTTP:Accept-Language} ^\s*fr [NC]
-  RewriteRule ^$ /fr/ [R=302,L]
-
-  RewriteCond %{HTTP:Accept-Language} ^\s*de [NC]
-  RewriteRule ^$ /de/ [R=302,L]
-
+  RewriteCond %{HTTP:Accept-Language} ^\s*en [NC]
   RewriteRule ^$ /en/ [R=302,L]
+
+  RewriteRule ^$ /fr/ [R=302,L]
 </IfModule>
 
 # ---------------------------------------------------------------------------
@@ -63,9 +60,8 @@ AddType image/webp .webp
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()"
   Header always set X-Frame-Options "DENY"
 
-  # HSTS: HTTPS works on the apex and www (Let's Encrypt, acme.sh auto-renewal, 30.09.2026).
-  # No includeSubDomains: other subdomains on this hosting are not covered by the certificate.
-  Header always set Strict-Transport-Security "max-age=31536000"
+  # HSTS: enable once HTTPS is confirmed on the apex and www of the final host.
+  # Header always set Strict-Transport-Security "max-age=31536000"
 
   # Caching: hashed build assets are immutable; HTML must revalidate so deploys show up at once.
   # (_buildManifest.js/_ssgManifest.js keep a fixed URL because next.config.mjs pins the build id,

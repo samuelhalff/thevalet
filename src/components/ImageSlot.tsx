@@ -1,36 +1,31 @@
 import type { CSSProperties } from "react";
-import { imageFor, images, type ImageName } from "@/lib/images";
+import { imageAlt, imageSrc, type ImageName } from "@/lib/images";
 import type { Locale } from "@/lib/i18n";
 
-type Props = {
-  name: ImageName;
-  className?: string;
-  /** CSS object-position, e.g. "center 30%". */
-  position?: string;
-  /** Above-the-fold images: eager-load with a high fetch priority instead of lazy. */
-  priority?: boolean;
-} & ({ decorative: true; locale?: Locale } | { decorative?: false; locale: Locale });
-
 /**
- * Photo slot rendered as a real <img> filling its box (object-fit: cover) over a warm gradient:
- * if the file in public/images/ is missing, the gradient shows through and nothing breaks.
+ * Photo slot, rendered only when a real photograph is configured in src/lib/images.ts
+ * (docs/DESIGN.md: no stock, no empty placeholders). Always carries alt text.
  */
-export default function ImageSlot(props: Props) {
-  const { name, className = "", position, priority } = props;
+export default function ImageSlot({
+  name,
+  locale,
+  className = "",
+  position,
+  priority,
+}: {
+  name: ImageName;
+  locale: Locale;
+  className?: string;
+  position?: string;
+  priority?: boolean;
+}) {
+  const src = imageSrc(name);
+  if (!src) return null;
   const style = (position ? { "--img-pos": position } : undefined) as CSSProperties | undefined;
-  const img = (alt: string) => (
-    <img src={images[name].src} alt={alt} decoding="async" loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} />
-  );
-  if (props.decorative || !props.locale) {
-    return (
-      <div className={`img-slot ${className}`} style={style} aria-hidden="true">
-        {img("")}
-      </div>
-    );
-  }
   return (
     <div className={`img-slot ${className}`} style={style}>
-      {img(imageFor(name, props.locale).alt)}
+      {/* eslint-disable-next-line @next/next/no-img-element -- static export, images are pre-sized webp */}
+      <img src={src} alt={imageAlt(name, locale)} decoding="async" loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} />
     </div>
   );
 }

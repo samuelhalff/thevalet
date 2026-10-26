@@ -1,8 +1,8 @@
 /**
  * GA4 event helper. No-ops when gtag is absent (no GA ID, consent not given, or server render).
- * Events (docs/PLAN.md resolutions): eligibility_start, eligibility_step_{n}, eligibility_result,
- * generate_lead (method=form|check|adviser_form), contact_channel_click (channel=whatsapp|email).
- * Never pass personal data here.
+ * Events: request_start, request_step_{n}, generate_lead (method=request|contact_form),
+ * contact_channel_click (channel=whatsapp|phone|email).
+ * Never pass personal data or form content here (not even the chosen service).
  */
 type Gtag = (...args: unknown[]) => void;
 
@@ -14,9 +14,8 @@ declare global {
 }
 
 export type AnalyticsEvent =
-  | "eligibility_start"
-  | `eligibility_step_${number}`
-  | "eligibility_result"
+  | "request_start"
+  | `request_step_${number}`
   | "generate_lead"
   | "contact_channel_click";
 

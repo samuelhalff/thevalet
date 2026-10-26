@@ -5,7 +5,7 @@ import Icon, { type IconName } from "./Icon";
 import { cn } from "./cn";
 import { THEME_COLORS, THEME_STORAGE_KEY, type ThemePref } from "@/lib/theme";
 
-const SYNC_EVENT = "sr-theme-change";
+const SYNC_EVENT = "tv-theme-change";
 
 const options: { value: ThemePref; icon: IconName }[] = [
   { value: "light", icon: "sun" },
@@ -89,7 +89,7 @@ export default function ThemeToggle({
     <div
       role="radiogroup"
       aria-label={labels.label}
-      className={cn("inline-flex items-center gap-0.5 rounded-full p-1 shadow-[inset_0_0_0_1px_rgb(var(--line))]", full && "w-full", className)}
+      className={cn("inline-flex items-center gap-0.5 rounded-soft p-1 shadow-[inset_0_0_0_1px_rgb(var(--line))]", full && "w-full", className)}
     >
       {options.map((o) => {
         const checked = pref === o.value;
@@ -98,7 +98,7 @@ export default function ThemeToggle({
             key={o.value}
             title={labels[o.value]}
             className={cn(
-              "relative inline-flex cursor-pointer items-center justify-center gap-2 rounded-full text-sm font-medium transition-colors duration-200",
+              "relative inline-flex cursor-pointer items-center justify-center gap-2 rounded-soft text-sm font-medium transition-colors duration-200",
               "has-[:focus-visible]:outline has-[:focus-visible]:outline-[3px] has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[var(--focus)]",
               full ? "h-10 flex-1 px-3" : "h-8 w-8",
               checked ? "bg-ink text-bg" : "text-ink/65 hover:text-ink",

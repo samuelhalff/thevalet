@@ -5,11 +5,10 @@ import { errorSummary } from "@/lib/form-validation";
 import type { Messages } from "@/lib/i18n";
 import Button from "../ui/Button";
 import Icon from "../ui/Icon";
-import Panel from "../ui/Panel";
 import { cn } from "../ui/cn";
 import { focusAndReveal, type FormStatus } from "./useLeadForm";
 
-export type FormLabels = Messages["contact"]["form"];
+export type FormLabels = Messages["contactForm"];
 
 /** aria attributes for a control that may carry a validation error (message id = `${id}-error`). */
 export function invalidProps(id: string, error?: string) {
@@ -58,7 +57,7 @@ export function Field({
 }) {
   return (
     <div className={className} data-field="">
-      <label htmlFor={id} className="block text-sm font-medium">
+      <label htmlFor={id} className="block text-[0.9rem] font-medium text-muted">
         {label}
         {required ? <RequiredMark /> : null}
         {optional ? <span className="font-normal text-muted"> ({optionalLabel})</span> : null}
@@ -226,14 +225,10 @@ export function SuccessPanel({ title, text }: { title: string; text: string }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => focusAndReveal(ref.current), []);
   return (
-    <div ref={ref} role="status" tabIndex={-1} className="form-success rounded-soft focus:outline-none" data-form-success="">
-      <Panel padding="lg">
-        <span className="form-success-icon" aria-hidden="true">
-          <Icon name="check" size={26} />
-        </span>
-        <h2 className="mt-5 text-[1.75rem]">{title}</h2>
-        <p className="mt-3 text-muted">{text}</p>
-      </Panel>
+    <div ref={ref} role="status" tabIndex={-1} className="form-success note-card focus:outline-none" data-form-success="">
+      <span className="form-success-icon" aria-hidden="true" />
+      <h2 className="t-2 mt-5">{title}</h2>
+      <p className="mt-3 text-muted">{text}</p>
     </div>
   );
 }
@@ -241,13 +236,13 @@ export function SuccessPanel({ title, text }: { title: string; text: string }) {
 /** Shown when no Formspark id is configured. */
 export function FallbackPanel({ labels, whatsappHref }: { labels: FormLabels; whatsappHref: string }) {
   return (
-    <Panel padding="lg">
+    <div className="note-card">
       <p>{labels.fallbackText}</p>
       {whatsappHref ? (
         <Button href={whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-6">
           {labels.whatsappLink}
         </Button>
       ) : null}
-    </Panel>
+    </div>
   );
 }

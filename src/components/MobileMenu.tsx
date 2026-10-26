@@ -6,6 +6,9 @@ import ThemeToggle from "./ui/ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 type Props = {
+  services: { href: string; label: string }[];
+  servicesLabel: string;
+  allServices: { href: string; label: string };
   links: { href: string; label: string }[];
   cta: { href: string; label: string };
   openLabel: string;
@@ -17,13 +20,12 @@ type Props = {
   current: string;
 };
 
-export default function MobileMenu({ links, cta, openLabel, closeLabel, navLabel, themeLabels, languageLabel, languages, current }: Props) {
+export default function MobileMenu({ services, servicesLabel, allServices, links, cta, openLabel, closeLabel, navLabel, themeLabels, languageLabel, languages, current }: Props) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Keep the header solid while the panel is open (it is transparent over the home hero).
     document.querySelector(".site-header")?.toggleAttribute("data-menu-open", open);
     if (!open) return;
     const main = document.getElementById("main");
@@ -32,7 +34,7 @@ export default function MobileMenu({ links, cta, openLabel, closeLabel, navLabel
     footer?.setAttribute("inert", "");
     const getFocusable = () =>
       Array.from(
-        panelRef.current?.querySelectorAll<HTMLElement>('a[href], button, input, [tabindex]:not([tabindex="-1"])') ?? [],
+        panelRef.current?.querySelectorAll<HTMLElement>('a[href], button, input, summary, [tabindex]:not([tabindex="-1"])') ?? [],
       );
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -108,11 +110,34 @@ export default function MobileMenu({ links, cta, openLabel, closeLabel, navLabel
       >
         <nav aria-label={navLabel}>
           <ul className="flex flex-col border-t border-line">
+            <li>
+              {/* Native disclosure: keyboard and screen-reader accessible without extra script. */}
+              <details className="group border-b border-line">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-display text-[1.45rem] text-ink [&::-webkit-details-marker]:hidden">
+                  {servicesLabel}
+                  <span aria-hidden="true" className="text-accent transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <ul className="pb-3 pl-1">
+                  {services.map((l) => (
+                    <li key={l.href}>
+                      <a href={l.href} className="block py-1.5 text-[0.98rem] text-ink active:text-accent" onClick={() => setOpen(false)}>
+                        {l.label}
+                      </a>
+                    </li>
+                  ))}
+                  <li>
+                    <a href={allServices.href} className="link mt-1 inline-block text-sm" onClick={() => setOpen(false)}>
+                      {allServices.label}
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
             {links.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="flex items-center justify-between border-b border-line py-3 font-serif text-[1.25rem] font-light text-ink transition-colors active:text-accent focus-visible:text-accent focus-visible:outline-none"
+                  className="flex items-center justify-between border-b border-line py-3 font-display text-[1.45rem] text-ink transition-colors active:text-accent focus-visible:text-accent focus-visible:outline-none"
                   onClick={() => setOpen(false)}
                 >
                   {l.label}

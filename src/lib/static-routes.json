@@ -1,0 +1,15 @@
+{
+  "_comment": "Fixed pages and their per-locale paths (locale-less, leading and trailing slash). Read by src/lib/routes.ts and scripts/validate-content.mjs. Pages rendered by app/[locale]/[...slug] are flagged catchAll.",
+  "pages": {
+    "home": { "fr": "/", "en": "/" },
+    "services": { "fr": "/services/", "en": "/services/" },
+    "journal": { "fr": "/journal/", "en": "/journal/" },
+    "about": { "fr": "/a-propos/", "en": "/about/", "catchAll": true },
+    "faq": { "fr": "/faq/", "en": "/faq/", "catchAll": true },
+    "contact": { "fr": "/contact/", "en": "/contact/", "catchAll": true },
+    "request": { "fr": "/demande/", "en": "/request/", "catchAll": true },
+    "privacy": { "fr": "/confidentialite/", "en": "/privacy/", "catchAll": true },
+    "legal": { "fr": "/mentions-legales/", "en": "/legal-notice/", "catchAll": true },
+    "terms": { "fr": "/conditions-generales/", "en": "/terms/", "catchAll": true }
+  }
+}

@@ -1,41 +1,40 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { fraunces, inter } from "@/lib/fonts";
+import { display, text } from "@/lib/fonts";
 import { getMessages, locales } from "@/lib/i18n";
 import { themeInitScript } from "@/lib/theme";
 import Logo from "@/components/Logo";
 import Button from "@/components/ui/Button";
 import Panel from "@/components/ui/Panel";
 import Container from "@/components/ui/Container";
-import Eyebrow from "@/components/ui/Eyebrow";
 
 export const metadata: Metadata = {
-  title: "404 | Switzerland Residency",
+  title: "404 | The Valet",
   robots: { index: false, follow: true },
 };
 
-/** Served as /404.html by Apache (ErrorDocument). One page, all three languages. */
+/** Served as /404.html (ErrorDocument). One page, both languages. */
 export default function GlobalNotFound() {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang="fr" className={`${display.variable} ${text.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="flex min-h-screen flex-col">
         <header className="border-b border-line">
           <Container className="flex h-[72px] items-center">
-            <a href="/en/" aria-label="Switzerland Residency" className="rounded-full">
-              <Logo />
+            <a href="/fr/" aria-label="The Valet" className="rounded-soft">
+              <Logo decorative className="h-9 w-[71px]" />
             </a>
           </Container>
         </header>
         <main id="main" className="flex-1 py-16">
           <Container>
-            <Eyebrow>404</Eyebrow>
-            <div className="mt-6 grid gap-6 md:grid-cols-3">
+            <p className="font-display text-[1.4rem] italic text-brand">404</p>
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
               {locales.map((loc) => {
                 const m = getMessages(loc).notFound;
-                const Heading = loc === "en" ? "h1" : "h2";
+                const Heading = loc === "fr" ? "h1" : "h2";
                 return (
                   <Panel key={loc} as="section" padding="lg">
                     <div lang={loc}>

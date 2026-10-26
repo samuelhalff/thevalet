@@ -14,21 +14,24 @@ const config: Config = {
         muted: tone("muted"),
         line: tone("line"),
         accent: tone("accent"),
+        brand: tone("brand"),
+        blush: tone("blush"),
         "accent-strong": tone("accent-strong"),
         danger: tone("danger"),
       },
       fontFamily: {
-        serif: ["var(--font-fraunces)", "Georgia", "serif"],
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        sans: ["var(--font-text)", "Helvetica Neue", "Arial", "sans-serif"],
       },
       fontSize: {
-        base: ["1.0625rem", { lineHeight: "1.7" }],
+        base: ["1.0625rem", { lineHeight: "1.65" }],
       },
       borderRadius: {
-        /* Small radii everywhere; pills are reserved for buttons. */
-        soft: "4px",
+        /* Near-square corners everywhere (docs/DESIGN.md). */
+        soft: "2px",
       },
-      maxWidth: { prose: "70ch" },
+      maxWidth: { prose: "65ch" },
     },
   },
   plugins: [],

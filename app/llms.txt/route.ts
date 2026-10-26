@@ -1,44 +1,66 @@
-import { collections, getPublishedEntries } from "@/lib/content";
+import { getPublishedEntries } from "@/lib/content";
+import { pagesCopy } from "@/lib/copy";
 import { t } from "@/lib/i18n";
-import { absoluteUrl, collectionBase, localePath } from "@/lib/paths";
+import { AREAS_SERVED } from "@/lib/business";
+import { absoluteUrl, localePath, pagePath } from "@/lib/paths";
+import { stripLinks } from "@/components/RichText";
 
 export const dynamic = "force-static";
 
-const sectionTitle = { services: "Services", cantons: "Cantons", origins: "Moving from", guides: "Guides", advisers: "For advisers" } as const;
-
+/** llms.txt built from the site content (EN first, FR mirror listed below). */
 export function GET() {
-  const en = "en" as const;
-  const link = (path: string, title: string, desc?: string) =>
-    `- [${title}](${absoluteUrl(localePath(en, path))})${desc ? `: ${desc}` : ""}`;
+  const link = (path: string, title: string, desc?: string) => `- [${title}](${absoluteUrl(path)})${desc ? `: ${stripLinks(desc)}` : ""}`;
+  const en = pagesCopy("en");
+  const fr = pagesCopy("fr");
 
   const lines = [
-    "# Switzerland Residency",
+    "# The Valet",
     "",
-    `> ${t(en, "meta.homeDescription")}`,
+    `> ${en.home.metaDescription}`,
     "",
-    "Switzerland Residency helps international families and private individuals settle in Switzerland: residence permits, lump-sum taxation, tax rulings, the choice of canton, property and settling in. It is based in Geneva and works with a partner law firm of around 40 lawyers on legal and permit matters. Content is available in English (/en/), French (/fr/) and German (/de/). Information is general and not legal or tax advice; permits and lump-sum taxation are decided by the cantonal authorities.",
+    `The Valet is a premium concierge service based in Geneva, Switzerland ("${t("fr", "meta.tagline")}" / "${t("en", "meta.tagline")}"). One point of contact for private chauffeur and airport transfers, Geneva–Alps transfers, private child transport, private concierge, residence management, chalets and residences, weddings and private events, the Glam Team (hair, makeup, styling), medical concierge, security and legal or real estate introductions.`,
+    `Areas: ${AREAS_SERVED.map((a) => a.en).join(", ")}; other destinations on request.`,
+    `Availability: ${t("en", "common.availability")}`,
+    "Regulated services (chauffeur/VTC, child transport, security, medical, legal, real estate, private jets, yachts) are coordinated through independent, appropriately licensed partners; The Valet does not itself give medical or legal advice. No prices are published: each request receives a proposal.",
+    `How to request: the request form (${absoluteUrl(pagePath("en", "request"))}, French: ${absoluteUrl(pagePath("fr", "request"))}) or the contact page. Languages: French (default, /fr/) and English (/en/).`,
     "",
-    "## Main pages",
-    link("/", "Home"),
-    link("/how-it-works/", t(en, "howItWorks.title"), t(en, "howItWorks.description")),
-    link("/eligibility-check/", t(en, "check.title"), t(en, "check.description")),
-    link("/services/", t(en, "services.title"), t(en, "services.description")),
-    link("/cantons/", t(en, "cantons.title"), t(en, "cantons.description")),
-    link("/moving-from/", t(en, "origins.title"), t(en, "origins.description")),
-    link("/guides/", t(en, "guides.title"), t(en, "guides.description")),
-    link("/for-advisers/", t(en, "advisers.title"), t(en, "advisers.description")),
-    link("/about/", t(en, "about.title"), t(en, "about.description")),
-    link("/contact/", t(en, "contact.title"), t(en, "contact.description")),
+    "## Main pages (English)",
+    link(localePath("en", "/"), "Home", en.home.metaDescription),
+    link(pagePath("en", "services"), en.servicesHub.metaTitle, en.servicesHub.metaDescription),
+    link(pagePath("en", "about"), en.about.metaTitle, en.about.metaDescription),
+    link(pagePath("en", "faq"), en.faq.metaTitle, en.faq.metaDescription),
+    link(pagePath("en", "request"), en.request.metaTitle, en.request.metaDescription),
+    link(pagePath("en", "contact"), en.contact.metaTitle, en.contact.metaDescription),
+    "",
+    "## Services (English)",
+    ...getPublishedEntries("en", "services").map((e) => link(localePath("en", `/services/${e.slug}/`), e.title, e.answer || e.description)),
+    "",
+    "## Services (français)",
+    ...getPublishedEntries("fr", "services").map((e) => link(localePath("fr", `/services/${e.slug}/`), e.title, e.description)),
+    "",
+    "## Pages principales (français)",
+    link(localePath("fr", "/"), "Accueil", fr.home.metaDescription),
+    link(pagePath("fr", "services"), fr.servicesHub.metaTitle),
+    link(pagePath("fr", "about"), fr.about.metaTitle),
+    link(pagePath("fr", "faq"), fr.faq.metaTitle),
+    link(pagePath("fr", "request"), fr.request.metaTitle),
+    link(pagePath("fr", "contact"), fr.contact.metaTitle),
   ];
 
-  for (const c of collections) {
-    const entries = getPublishedEntries(en, c);
-    if (!entries.length) continue;
-    lines.push("", `## ${sectionTitle[c]}`);
-    for (const e of entries) lines.push(link(`/${collectionBase[c]}/${e.slug}/`, e.title, e.description));
+  const journal = [...getPublishedEntries("en", "journal"), ...getPublishedEntries("fr", "journal")];
+  if (journal.length) {
+    lines.push("", "## Journal");
+    for (const e of journal) lines.push(link(localePath(e.locale, `/journal/${e.slug}/`), e.title, e.description));
   }
 
-  lines.push("", "## Optional", link("/privacy/", t(en, "privacy.title")), link("/legal-notice/", t(en, "legal.title")), "");
+  lines.push(
+    "",
+    "## Optional",
+    link(pagePath("en", "privacy"), t("en", "nav.privacy")),
+    link(pagePath("en", "legal"), t("en", "nav.legal")),
+    link(pagePath("en", "terms"), t("en", "nav.terms")),
+    "",
+  );
 
   return new Response(lines.join("\n"), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
 }

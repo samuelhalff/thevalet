@@ -1,16 +1,18 @@
-import { Fraunces, Inter } from "next/font/google";
+import { Hanken_Grotesk, Playfair_Display } from "next/font/google";
 
-/** Variable Fraunces with the SOFT/WONK axes (headings, weight 400–500) and its italic (accent words). */
-export const fraunces = Fraunces({
+/** Display only: Playfair Display, the logo's lettering (docs/DESIGN.md). */
+export const display = Playfair_Display({
   subsets: ["latin"],
-  axes: ["SOFT", "WONK", "opsz"],
+  weight: ["400", "500"],
   style: ["normal", "italic"],
-  variable: "--font-fraunces",
+  variable: "--font-display",
   display: "swap",
 });
 
-export const inter = Inter({
+/** Text and UI: Hanken Grotesk 400/500. */
+export const text = Hanken_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500"],
+  variable: "--font-text",
   display: "swap",
 });

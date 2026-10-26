@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { isLocale, t, type Locale, type TKey } from "./i18n";
+import { isLocale, type Locale } from "./i18n";
+import { pageAlternates, pageSlug, type PageKey } from "./paths";
 import { pageMetadata } from "./seo";
 
 export type LocaleParams = Promise<{ locale: string }>;
@@ -11,16 +12,21 @@ export async function getLocale(params: LocaleParams): Promise<Locale> {
   return locale;
 }
 
-/** generateMetadata for a fixed page whose title/description live in the i18n JSON. */
-export function staticMetadata(path: string, titleKey: TKey, descriptionKey: TKey, opts: { noindex?: boolean } = {}) {
-  return async ({ params }: { params: LocaleParams }): Promise<Metadata> => {
-    const locale = await getLocale(params);
-    return pageMetadata({
-      locale,
-      path,
-      title: t(locale, titleKey),
-      description: t(locale, descriptionKey),
-      noindex: opts.noindex,
-    });
-  };
+/** Metadata for a fixed page (localized path + reciprocal hreflang from static-routes.json). */
+export function fixedPageMetadata(
+  locale: Locale,
+  key: PageKey,
+  title: string,
+  description: string,
+  opts: { noindex?: boolean; absoluteTitle?: boolean } = {},
+): Metadata {
+  return pageMetadata({
+    locale,
+    path: pageSlug(locale, key),
+    title,
+    description,
+    alternates: pageAlternates(key),
+    noindex: opts.noindex,
+    absoluteTitle: opts.absoluteTitle,
+  });
 }

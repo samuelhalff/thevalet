@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 import type { AnalyticsEvent } from "@/lib/analytics";
 import TrackedLink from "../TrackedLink";
-import Icon from "./Icon";
 import { cn } from "./cn";
 
 export type ButtonVariant = "primary" | "secondary" | "ghost" | "link";
@@ -14,8 +13,6 @@ type Common = {
   /** Stretch to the container width (on mobile only with "mobile"). */
   fullWidth?: boolean | "mobile";
   className?: string;
-  /** link variant only: trailing arrow that nudges on hover. */
-  arrow?: boolean;
   children: ReactNode;
 };
 
@@ -55,34 +52,26 @@ export function buttonClasses({
   );
 }
 
-function Inner({ variant, arrow, children }: { variant: ButtonVariant; arrow?: boolean; children: ReactNode }) {
+function Inner({ variant, children }: { variant: ButtonVariant; children: ReactNode }) {
   if (variant === "link") {
-    // No wrapping <span> and no flex layout: the arrow must flow inline right after the
-    // last word of the (possibly wrapped) text, not sit flex-centred at the far edge.
-    return (
-      <>
-        {children}
-        {arrow ? <Icon name="arrow" size={17} className="btn-arrow" /> : null}
-      </>
-    );
+    return <>{children}</>;
   }
   return <span>{children}</span>;
 }
 
 /**
  * The one button of the site. Renders <a> when `href` is given, <button> otherwise.
- * primary / secondary / ghost share ark-fid.ch's rising-wave hover. Use ONE primary per view;
- * secondary actions are `variant="link"` (underlined text, optional arrow).
+ * Use ONE primary per view; secondary actions are `variant="link"` (underlined text, no arrow).
  */
 export default function Button(props: ButtonProps) {
-  const { variant = "primary", size = "md", fullWidth, className, arrow, children } = props;
+  const { variant = "primary", size = "md", fullWidth, className, children } = props;
   const classes = buttonClasses({ variant, size, fullWidth, className });
 
   if (props.href !== undefined) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { variant: _v, size: _s, fullWidth: _f, className: _c, arrow: _a, children: _ch, native, track, href, ...rest } = props;
+    const { variant: _v, size: _s, fullWidth: _f, className: _c, children: _ch, native, track, href, ...rest } = props;
     const inner = (
-      <Inner variant={variant} arrow={arrow}>
+      <Inner variant={variant}>
         {children}
       </Inner>
     );
@@ -106,10 +95,10 @@ export default function Button(props: ButtonProps) {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { variant: _v, size: _s, fullWidth: _f, className: _c, arrow: _a, children: _ch, href: _h, type = "button", ...rest } = props;
+  const { variant: _v, size: _s, fullWidth: _f, className: _c, children: _ch, href: _h, type = "button", ...rest } = props;
   return (
     <button type={type} className={classes} {...rest}>
-      <Inner variant={variant} arrow={arrow}>
+      <Inner variant={variant}>
         {children}
       </Inner>
     </button>

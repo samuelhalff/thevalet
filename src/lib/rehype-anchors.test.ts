@@ -5,12 +5,12 @@ import { anchorIds, slugify } from "../../scripts/lib/heading-id.mjs";
 
 const md = `Intro
 
-## Which cantons offer lump-sum taxation in 2026?
+## Which resorts can we reach from Geneva in 2026?
 
-| Canton | Offered |
+| Resort | Served |
 |---|---|
-| Geneva (GE) | Yes |
-| **Vaud** (VD) | Yes |
+| Verbier (VS) | Yes |
+| **Gstaad** (BE) | Yes |
 
 ### Genève et l'impôt
 
@@ -22,16 +22,16 @@ const md = `Intro
 describe("heading and row anchors", () => {
   it("slugifies accents, apostrophes and punctuation", () => {
     expect(slugify("Genève et l’impôt ?")).toBe("geneve-et-limpot");
-    expect(slugify("Zürich: Grundstückgewinnsteuer")).toBe("zurich-grundstuckgewinnsteuer");
+    expect(slugify("Zürich : arrivée à l’aéroport")).toBe("zurich-arrivee-a-laeroport");
   });
 
   it("renders ids on headings and table rows, matching the validator", () => {
     const html = renderToStaticMarkup(Markdown({ source: md }));
     const rendered = [...html.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]);
     expect(rendered).toEqual([
-      "which-cantons-offer-lump-sum-taxation-in-2026",
-      "geneva",
-      "vaud",
+      "which-resorts-can-we-reach-from-geneva-in-2026",
+      "verbier",
+      "gstaad",
       "geneve-et-limpot",
       "how-we-help",
       "how-we-help-2",

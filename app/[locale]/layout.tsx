@@ -2,18 +2,18 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import { fraunces, inter } from "@/lib/fonts";
+import { display, text } from "@/lib/fonts";
 import { htmlLang, isLocale, locales, t } from "@/lib/i18n";
-import { localePath } from "@/lib/paths";
-import { GA_ID, NOINDEX, SITE_NAME, SITE_URL } from "@/lib/site";
+import { pagePath } from "@/lib/paths";
+import { GA_ID, NOINDEX, SITE_NAME, SITE_URL, whatsappUrl } from "@/lib/site";
 import { organizationLd, websiteLd } from "@/lib/jsonld";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import AnalyticsBootstrap from "@/components/Analytics";
 import CookieBanner from "@/components/CookieBanner";
+import StickyCta from "@/components/StickyCta";
 import AttributionCapture from "@/components/AttributionCapture";
-import RevealObserver from "@/components/ui/RevealObserver";
 import { THEME_COLORS, themeInitScript } from "@/lib/theme";
 
 export const dynamicParams = false;
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   applicationName: SITE_NAME,
   robots: NOINDEX ? { index: false, follow: false } : undefined,
   formatDetection: { telephone: false },
+  openGraph: { images: [{ url: "/og.png", width: 1200, height: 630, alt: SITE_NAME }] },
 };
 
 export const viewport: Viewport = {
@@ -46,17 +47,17 @@ export default async function LocaleLayout({
   if (!isLocale(locale)) notFound();
 
   return (
-    <html lang={htmlLang[locale]} className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang={htmlLang[locale]} className={`${display.variable} ${text.variable}`} suppressHydrationWarning>
       <head>
         {/* Applies the saved light/dark choice before first paint. */}
         <script id="theme-init" dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <AnalyticsBootstrap />
-        <JsonLd data={[organizationLd(), websiteLd(locale)]} />
+        <JsonLd data={[organizationLd(locale), websiteLd(locale)]} />
       </head>
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"
-          className="sr-only z-50 rounded-full bg-ink px-5 py-2.5 text-bg focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+          className="sr-only z-50 bg-ink px-5 py-2.5 text-bg focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
         >
           {t(locale, "common.skipToContent")}
         </a>
@@ -65,7 +66,13 @@ export default async function LocaleLayout({
           {children}
         </main>
         <Footer locale={locale} />
-        <RevealObserver />
+        <StickyCta
+          href={pagePath(locale, "request")}
+          label={t(locale, "stickyCta.label")}
+          whatsappHref={whatsappUrl}
+          whatsappLabel={t(locale, "stickyCta.whatsapp")}
+          hideOn={[pagePath(locale, "request"), pagePath(locale, "contact")]}
+        />
         <AttributionCapture />
         {GA_ID ? (
           <CookieBanner
@@ -74,7 +81,7 @@ export default async function LocaleLayout({
             decline={t(locale, "cookies.decline")}
             more={t(locale, "cookies.more")}
             label={t(locale, "cookies.label")}
-            privacyHref={localePath(locale, "/privacy/")}
+            privacyHref={pagePath(locale, "privacy")}
           />
         ) : null}
       </body>

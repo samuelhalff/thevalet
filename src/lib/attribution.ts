@@ -8,7 +8,7 @@
  */
 import { readConsent } from "./consent";
 
-export const ATTRIBUTION_KEY = "sr-attribution";
+export const ATTRIBUTION_KEY = "tv-attribution";
 const MAX_VALUE = 150;
 const MAX_PATH = 200;
 const MAX_PAGES = 20;

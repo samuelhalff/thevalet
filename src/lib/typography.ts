@@ -21,3 +21,8 @@ export function frenchTypography(text: string): string {
 export function typeset(locale: string, text: string): string {
   return locale === "fr" ? frenchTypography(text) : text;
 }
+
+/** Headline text without the legacy {em}…{/em} markers (single accented words are not used). */
+export function plainTitle(text: string): string {
+  return text.replace(/\{\/?em\}/g, "");
+}

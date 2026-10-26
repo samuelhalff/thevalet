@@ -1,48 +1,40 @@
-import { ctaContent, type CtaKind } from "@/lib/cta";
-import type { Locale } from "@/lib/i18n";
+import { t, type Locale } from "@/lib/i18n";
+import { pagePath, requestPath } from "@/lib/paths";
+import { plainTitle } from "@/lib/typography";
 import Button from "./ui/Button";
-import Section from "./ui/Section";
-import SectionHeading from "./ui/SectionHeading";
+import Container from "./ui/Container";
 
-/**
- * Closing call to action: a quiet centred statement on the page ground (no coloured box),
- * one primary button and a secondary text link. `kind` picks the pair (default: private
- * conversation + eligibility check); see src/lib/cta.ts.
- */
+/** Full-bleed bordeaux request band (docs/DESIGN.md): statement left, the request action right. */
 export default function CtaBand({
   locale,
-  eyebrow,
   title,
-  accent,
   text,
-  kind = "contact",
+  serviceKey,
+  buttonLabel,
 }: {
   locale: Locale;
-  kind?: CtaKind;
-  eyebrow?: string;
   title?: string;
-  accent?: string;
   text?: string;
+  serviceKey?: string;
+  buttonLabel?: string;
 }) {
-  const cta = ctaContent(kind, locale);
   return (
-    <Section spacing="lg" hairline>
-      <SectionHeading
-        align="center"
-        size="lg"
-        eyebrow={eyebrow}
-        title={title ?? cta.band.title}
-        accent={title ? accent : (accent ?? cta.band.accent)}
-        lead={text ?? cta.band.text}
-      />
-      <div className="mt-10 flex flex-col items-center gap-6" data-reveal="">
-        <Button href={cta.primary.href} size="lg">
-          {cta.primary.label}
-        </Button>
-        <Button href={cta.secondary.href} variant="link" arrow>
-          {cta.secondary.label}
-        </Button>
-      </div>
-    </Section>
+    <section className="band mt-16">
+      <Container className="grid gap-10 py-20 sm:py-24 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
+        <div>
+          <h2 className="t-1 max-w-2xl">{plainTitle(title ?? t(locale, "ctaBand.title"))}</h2>
+          <p className="t-lead mt-6 max-w-xl text-muted">{text ?? t(locale, "ctaBand.text")}</p>
+        </div>
+        <div className="flex flex-col items-start gap-5">
+          <Button href={requestPath(locale, serviceKey)} size="lg">
+            {buttonLabel ?? t(locale, "common.ctaRequest")}
+          </Button>
+          <Button href={pagePath(locale, "contact")} variant="link">
+            {t(locale, "common.ctaContact")}
+          </Button>
+          <p className="t-small max-w-sm text-muted">{t(locale, "common.availability")}</p>
+        </div>
+      </Container>
+    </section>
   );
 }

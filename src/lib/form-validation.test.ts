@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 import en from "@/i18n/en.json";
 import fr from "@/i18n/fr.json";
-import de from "@/i18n/de.json";
 import { centeredScrollTop, errorSummary, isValidEmail, validateField, validateForm, type FieldRule } from "./form-validation";
 
 const rules: FieldRule[] = [
@@ -67,11 +66,11 @@ describe("errorSummary", () => {
     expect(errorSummary(4, templates)).toBe("4 fields need your attention.");
   });
   it("has a {count} placeholder in every locale's plural string and a message for every validated field", () => {
-    for (const dict of [en, fr, de]) {
-      const f = dict.contact.form;
+    for (const dict of [en, fr]) {
+      const f = dict.contactForm;
       expect(f.errorSummaryMany).toContain("{count}");
       expect(errorSummary(3, { one: f.errorSummaryOne, many: f.errorSummaryMany })).toMatch(/3/);
-      for (const key of ["name", "email", "emailFormat", "message", "consent", "firm", "role", "clientOrigin"] as const) {
+      for (const key of ["name", "email", "emailFormat", "phone", "message", "consent", "service", "when", "date", "place", "channel"] as const) {
         expect(f.errors[key].length).toBeGreaterThan(10);
       }
     }

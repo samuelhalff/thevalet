@@ -1,13 +1,15 @@
 import type { ReactNode } from "react";
 
-/** Minimal root layout for "/" only (Apache normally redirects before this is served). */
+/** Minimal root layout for "/" only: language negotiation (Apache normally redirects before this is served). */
 export default function RootRedirectLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
-        <meta httpEquiv="refresh" content="0; url=/en/" />
+        <noscript>
+          <meta httpEquiv="refresh" content="0; url=/fr/" />
+        </noscript>
       </head>
-      <body style={{ background: "#f7f1e8", color: "#2b2a27", fontFamily: "system-ui, sans-serif" }}>{children}</body>
+      <body style={{ background: "#F7F2ED", color: "#201A1B", fontFamily: "system-ui, sans-serif" }}>{children}</body>
     </html>
   );
 }

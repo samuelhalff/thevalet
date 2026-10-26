@@ -1,8 +1,8 @@
 /** Banner choice. Before 2026-10 a "granted" here covered analytics only (see ADS_CONSENT_KEY). */
-export const CONSENT_KEY = "sr-consent";
+export const CONSENT_KEY = "tv-consent";
 /** Advertising-signal choice, written with every banner choice since 2026-10. Absent = legacy choice. */
-export const ADS_CONSENT_KEY = "sr-ads-consent";
-export const CONSENT_EVENT = "sr:open-cookie-settings";
+export const ADS_CONSENT_KEY = "tv-ads-consent";
+export const CONSENT_EVENT = "tv:open-cookie-settings";
 export type ConsentValue = "granted" | "denied";
 
 /** EEA member states (EU + IS, LI, NO) plus the United Kingdom: opt-in regions. */
