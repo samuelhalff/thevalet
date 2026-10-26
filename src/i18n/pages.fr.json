@@ -1,0 +1,362 @@
+{
+  "home": {
+    "metaTitle": "The Valet | Conciergerie de luxe à Genève et en Suisse",
+    "metaDescription": "Conciergerie privée à Genève et dans les Alpes : chauffeurs, intendance, chalets, événements et Glam Team, avec un seul interlocuteur pour vos demandes.",
+    "hero": {
+      "h1": "Conciergerie privée à Genève et dans les Alpes",
+      "headline": "Chaque souhait devient une {em}réalité{/em}.",
+      "lead": "The Valet est une conciergerie de luxe basée à Genève. Un seul interlocuteur pour vos déplacements, votre résidence, vos séjours à la montagne et vos événements."
+    },
+    "intro": {
+      "title": "Votre temps mérite toute notre {em}attention{/em}",
+      "paragraphs": [
+        "Notre rôle est simple : retirer la complexité de vos journées. Une table à trouver un soir de forte affluence, un [chalet à préparer avant votre arrivée](/fr/services/chalets-residences-alpes/), un cadeau introuvable, une famille à accueillir à l'aéroport : vous nous décrivez ce dont vous avez besoin, nous organisons le reste et vous tenons informé à chaque étape.",
+        "Nous accompagnons des particuliers, des familles et des personnes de passage, à Genève, en Suisse romande et dans les stations des Alpes suisses et françaises. Certaines demandes tiennent en un message ; d'autres s'étendent sur une saison entière. Dans les deux cas, vous gardez le même interlocuteur, qui connaît vos habitudes."
+      ]
+    },
+    "services": {
+      "title": "Ce que nous {em}organisons{/em}",
+      "lead": "Un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/), des [transferts vers les stations des Alpes](/fr/services/transferts-geneve-alpes/), le [transport privé de vos enfants](/fr/services/transport-prive-enfants/), une [conciergerie privée](/fr/services/conciergerie-privee-geneve/) pour le quotidien, l'[intendance de votre résidence](/fr/services/intendance-residence/), des [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/), l'[organisation de mariages et d'événements privés](/fr/services/mariages-evenements/) et une [Glam Team à domicile](/fr/services/glam-team-domicile/). S'y ajoutent des services spécialisés coordonnés avec des partenaires indépendants : [conciergerie médicale](/fr/services/conciergerie-medicale/), [sécurité et protection](/fr/services/securite-protection/), [mises en relation juridiques et immobilières](/fr/services/juridique-immobilier/). Chaque service peut être demandé seul ou combiné aux autres dans une même organisation."
+    },
+    "values": {
+      "title": "Nos {em}atouts{/em}",
+      "items": [
+        {
+          "title": "Fiabilité",
+          "text": "Ce qui est confirmé est fait. Nous vérifions horaires, adresses et détails pratiques avant chaque prestation, et vous prévenons dès qu'un élément change."
+        },
+        {
+          "title": "Discrétion",
+          "text": "Chaque prestataire reçoit uniquement ce dont il a besoin, et votre nom n'apparaît jamais dans nos communications."
+        },
+        {
+          "title": "Confiance",
+          "text": "Nous choisissons nos prestataires avec soin et vous disons clairement qui intervient, à quel titre et à quelles conditions."
+        },
+        {
+          "title": "Disponibilité",
+          "text": "Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. Une demande urgente est examinée dès réception."
+        },
+        {
+          "title": "Sur-mesure",
+          "text": "Chaque prestation part de votre agenda et de vos priorités, puis s'ajuste au fil de la relation."
+        }
+      ]
+    },
+    "steps": {
+      "title": "Comment cela se {em}passe{/em}",
+      "lead": "Trois étapes, que la demande soit simple ou qu'elle mobilise plusieurs intervenants.",
+      "items": [
+        {
+          "title": "Vous nous dites ce dont vous avez besoin",
+          "text": "Par le [formulaire de demande](/fr/demande/), par téléphone ou par WhatsApp. Indiquez le service, la date, le lieu et ce qui compte pour vous ; quelques lignes suffisent pour commencer."
+        },
+        {
+          "title": "Nous confirmons les détails",
+          "text": "Vous recevez une proposition claire : ce qui est possible, qui interviendra, dans quels délais et à quelles conditions. Rien n'est engagé sans votre accord."
+        },
+        {
+          "title": "Nous coordonnons, vous profitez",
+          "text": "Nous réservons, briefons les intervenants et suivons la prestation jusqu'à son terme, y compris lorsqu'un programme change en route."
+        }
+      ]
+    },
+    "destinations": {
+      "title": "Genève et les {em}Alpes{/em}",
+      "lead": "Basés à Genève, nous organisons des séjours dans les grandes stations des Alpes suisses et françaises.",
+      "items": [
+        {
+          "name": "Genève",
+          "text": "Ville internationale au bord du Léman, point de départ de nos missions, de la [conciergerie au quotidien](/fr/services/conciergerie-privee-geneve/) au [chauffeur pour une arrivée à l'aéroport de Genève](/fr/services/chauffeur-prive-geneve/), qui dessert aussi bien la ville que les stations valaisannes et françaises."
+        },
+        {
+          "name": "Verbier",
+          "text": "Dans le Valais, au-dessus du val de Bagnes, Verbier se rejoint depuis Genève par l'autoroute du Rhône via Martigny. La station accueille chaque été le Verbier Festival. Voir notre [transfert vers Verbier](/fr/services/transferts-geneve-alpes/#verbier) et nos [chalets à Verbier](/fr/services/chalets-residences-alpes/#verbier)."
+        },
+        {
+          "name": "Zermatt",
+          "text": "Village sans voitures au pied du Cervin : on laisse le véhicule à Täsch, puis une navette ferroviaire continue jusqu'à Zermatt. Le [transfert vers Zermatt](/fr/services/transferts-geneve-alpes/#zermatt) et l'[arrivée au chalet à Zermatt](/fr/services/chalets-residences-alpes/#zermatt) s'organisent en conséquence."
+        },
+        {
+          "name": "Gstaad",
+          "text": "Dans le Saanenland, au cœur de l'Oberland bernois, Gstaad a gardé l'allure d'un village de chalets. L'été y est rythmé par le Menuhin Festival Gstaad. Nous organisons le [trajet vers Gstaad](/fr/services/transferts-geneve-alpes/#gstaad) et votre [séjour en chalet à Gstaad](/fr/services/chalets-residences-alpes/#gstaad)."
+        },
+        {
+          "name": "St-Moritz",
+          "text": "En Engadine, dans les Grisons, St-Moritz est éloignée de Genève et se rejoint souvent via Zurich ou par avion jusqu'à l'aéroport de Samedan. L'hiver, le lac gelé accueille le White Turf. Voir l'[accès à St-Moritz](/fr/services/transferts-geneve-alpes/#st-moritz) et les [résidences à St-Moritz](/fr/services/chalets-residences-alpes/#st-moritz)."
+        },
+        {
+          "name": "Courchevel",
+          "text": "En Savoie, au sein des 3 Vallées, Courchevel dispose d'un altiport. Depuis Genève, le [transfert vers Courchevel](/fr/services/transferts-geneve-alpes/#courchevel) passe la frontière française, comme l'accès à votre [chalet à Courchevel](/fr/services/chalets-residences-alpes/#courchevel)."
+        },
+        {
+          "name": "Megève",
+          "text": "En Haute-Savoie, Megève a conservé un centre de village ancien aux rues piétonnes, face au massif du Mont-Blanc. Une destination recherchée l'hiver comme l'été : voir nos [chalets à Megève](/fr/services/chalets-residences-alpes/#megeve) et le [transfert vers Megève](/fr/services/transferts-geneve-alpes/#megeve)."
+        },
+        {
+          "name": "Chamonix",
+          "text": "Au pied du Mont-Blanc, en Haute-Savoie, Chamonix vit toute l'année et accueille le départ du téléphérique de l'Aiguille du Midi. Voir le [transfert vers Chamonix](/fr/services/transferts-geneve-alpes/#chamonix) et nos [résidences à Chamonix](/fr/services/chalets-residences-alpes/#chamonix)."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Qui fait {em}quoi{/em}",
+      "paragraphs": [
+        "The Valet coordonne : nous recevons votre demande, cherchons la bonne solution, réservons, briefons les intervenants et suivons chaque étape. Une grande partie de ce travail, comme la [conciergerie privée](/fr/services/conciergerie-privee-geneve/), l'[intendance de résidence](/fr/services/intendance-residence/), les chalets, les [événements](/fr/services/mariages-evenements/) ou la [Glam Team](/fr/services/glam-team-domicile/), est organisée directement par notre équipe avec des prestataires que nous avons choisis.",
+        "D'autres services sont réglementés : [transport professionnel de personnes](/fr/services/chauffeur-prive-geneve/), [transport d'enfants](/fr/services/transport-prive-enfants/), [sécurité](/fr/services/securite-protection/), [conseil juridique et transactions immobilières](/fr/services/juridique-immobilier/), [coordination médicale](/fr/services/conciergerie-medicale/), aviation privée. Ils sont coordonnés par l'intermédiaire de partenaires indépendants dûment autorisés, qui confirment avec vous l'étendue de la mission et leurs conditions. Nous ne fournissons nous-mêmes ni conseil juridique, ni avis ou soin médical, ni protection rapprochée. Nous ne publions pas le nom de nos partenaires ; avant chaque engagement, vous savez qui interviendra et à quel titre."
+      ]
+    },
+    "faq": {
+      "title": "Questions {em}fréquentes{/em}",
+      "items": [
+        {
+          "q": "Quels services propose The Valet ?",
+          "a": "Transport et transferts, [conciergerie et assistance personnelle](/fr/services/conciergerie-privee-geneve/), intendance de résidence, chalets et séjours, événements et Glam Team. Voir [tous nos services](/fr/services/), dont les services spécialisés coordonnés avec des partenaires indépendants."
+        },
+        {
+          "q": "Peut-on vous joindre à toute heure ?",
+          "a": "Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. Pour une date chargée ou un service spécialisé, mieux vaut nous écrire le plus tôt possible."
+        },
+        {
+          "q": "Où intervenez-vous ?",
+          "a": "À Genève, dans le canton de Vaud, en Valais, à Gstaad, à St-Moritz et dans les stations françaises proches de Genève, avec des [transferts depuis Genève vers les Alpes](/fr/services/transferts-geneve-alpes/) et des [chalets en location saisonnière](/fr/services/chalets-residences-alpes/). D'autres destinations sont possibles selon la demande."
+        },
+        {
+          "q": "Peut-on combiner plusieurs services ?",
+          "a": "Oui. Un transfert, l'ouverture d'un chalet par notre [service d'intendance](/fr/services/intendance-residence/), un chef et une réservation peuvent être organisés ensemble, avec un seul interlocuteur pour l'ensemble."
+        },
+        {
+          "q": "Comment les prix sont-ils fixés ?",
+          "a": "Selon l'étendue de la demande, la date, le lieu et les prestataires concernés. Vous recevez une proposition ou une estimation avant tout engagement : [décrivez votre demande](/fr/demande/) pour l'obtenir."
+        },
+        {
+          "q": "Que deviennent les informations que je vous confie ?",
+          "a": "Elles servent uniquement à organiser votre demande et ne sont transmises qu'aux intervenants qui en ont besoin. D'autres réponses figurent dans notre [FAQ complète](/fr/faq/)."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Dites-nous ce dont vous avez {em}besoin{/em}",
+      "text": "Quelques lignes suffisent : le service, la date, le lieu. Nous revenons vers vous pour confirmer les détails et vous proposer la suite."
+    }
+  },
+  "about": {
+    "metaTitle": "À propos : notre conciergerie à Genève",
+    "metaDescription": "The Valet, conciergerie privée à Genève : notre manière de travailler, un interlocuteur unique, des partenaires choisis avec soin, des engagements clairs.",
+    "title": "Un service personnel, sans {em}détour{/em}",
+    "intro": "The Valet est une conciergerie privée basée à Genève, pensée pour les personnes qui accordent de la valeur à leur temps, à leur vie privée et au travail bien fait. Nous traitons les besoins du quotidien et les demandes exceptionnelles avec la même attention, du premier échange jusqu'à la dernière confirmation.",
+    "sections": [
+      {
+        "h": "Une maison fondée sur l'écoute",
+        "paragraphs": [
+          "The Valet a été fondée et est dirigée par une femme. Ce choix se ressent moins dans un discours que dans une manière de faire : écouter avant de proposer, remarquer les détails qui comptent pour vous, et préférer une réponse juste à une réponse rapide qui devra être corrigée.",
+          "Nous avons voulu une conciergerie à taille humaine, où l'on sait qui s'occupe de votre demande. Pas de centre d'appels, pas de formulaires sans réponse : une personne qui connaît votre dossier, vos préférences et la manière dont vous aimez être tenu informé, par un message court, un appel ou un récapitulatif écrit. Cette continuité compte davantage que la rapidité d'une première réponse : elle évite les malentendus, les doublons et les explications répétées."
+        ]
+      },
+      {
+        "h": "Notre façon de travailler",
+        "paragraphs": [
+          "Chaque demande commence par une conversation. Nous cherchons à comprendre ce que vous attendez vraiment : l'horaire qui ne peut pas bouger, la personne qu'il faut prévenir, le détail qui transformera un trajet ou une soirée. Nous évaluons ensuite ce qui est faisable, dans quels délais et avec quels intervenants.",
+          "Vous recevez une proposition claire avant tout engagement. Une fois votre accord donné, nous réservons, briefons les prestataires et suivons chaque étape. Si un vol est retardé, si la météo ferme un col ou si un programme change, nous adaptons l'organisation et vous prévenons, sans que vous ayez à relancer qui que ce soit.",
+          "Nous gardons une trace de vos préférences, avec votre accord : le type de véhicule que vous aimez, la façon dont une maison doit être préparée, les allergies d'un enfant pour une réservation. La deuxième demande est ainsi plus simple que la première."
+        ]
+      },
+      {
+        "h": "Un seul interlocuteur, des partenaires choisis",
+        "paragraphs": [
+          "Nous coordonnons nous-mêmes une grande partie des prestations : conciergerie, intendance de résidence, chalets et séjours, événements, Glam Team. Pour les services réglementés, comme le transport professionnel de personnes, la sécurité, le conseil juridique, l'immobilier ou les soins médicaux, nous travaillons avec des partenaires indépendants dûment autorisés, qui exercent sous leur propre responsabilité.",
+          "Nous choisissons ces partenaires avec soin et nous ne publions pas leur nom. Avant chaque mission, vous savez qui interviendra, à quel titre et à quelles conditions. Vous gardez de votre côté un seul contact chez The Valet, qui fait le lien entre tous les intervenants et reste responsable du suivi de votre demande."
+        ]
+      },
+      {
+        "h": "Ce que nous ne faisons pas",
+        "paragraphs": [
+          "Nous ne promettons pas l'impossible. Lorsqu'une date est complète, qu'un délai est trop court ou qu'une demande dépasse ce que nous pouvons organiser correctement, nous vous le disons tout de suite et proposons, si possible, une autre solution.",
+          "Nous ne donnons ni conseil juridique, ni avis médical, et nous n'assurons pas nous-mêmes de protection rapprochée : ces missions relèvent de professionnels autorisés, que nous pouvons vous présenter. L'ensemble de ce que nous organisons figure sur la page [de nos services](/fr/services/). Nous n'affichons ni témoignages ni noms de clients : votre confiance tient à la discrétion que nous vous devons, y compris lorsque tout s'est bien passé. Pour en parler, [contactez notre équipe](/fr/contact/)."
+        ]
+      }
+    ],
+    "commitments": {
+      "title": "Nos engagements",
+      "items": [
+        "Un service confidentiel et respectueux de votre vie privée",
+        "Des réponses rapides et une communication claire à chaque étape",
+        "Une sélection attentive des prestataires et des partenaires",
+        "Des solutions adaptées à chaque personne, jamais une formule toute faite",
+        "Le soin du détail, de la préparation jusqu'à la fin de la prestation"
+      ]
+    }
+  },
+  "faq": {
+    "metaTitle": "FAQ : conciergerie privée à Genève",
+    "metaDescription": "Questions fréquentes sur The Valet : demandes, disponibilité, transport, résidences, événements, services réglementés, confidentialité et prix.",
+    "title": "Questions {em}fréquentes{/em}",
+    "intro": "Les réponses aux questions que l'on nous pose le plus souvent avant une première demande. Si la vôtre n'y figure pas, écrivez-nous : nous répondons volontiers, même pour une simple question.",
+    "groups": [
+      {
+        "title": "Demandes et disponibilité",
+        "items": [
+          {
+            "q": "Comment faire une demande ?",
+            "a": "Par le [formulaire de demande](/fr/demande/), par e-mail, par téléphone ou par WhatsApp. Indiquez le service souhaité, la date, le lieu et les détails qui comptent pour vous. Nous revenons vers vous pour confirmer ce qui est possible et vous proposer la suite."
+          },
+          {
+            "q": "Êtes-vous disponibles en permanence ?",
+            "a": "Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. Les services spécialisés dépendent en plus de la disponibilité des professionnels concernés. Vous pouvez aussi [nous contacter directement](/fr/contact/)."
+          },
+          {
+            "q": "Combien de temps à l'avance faut-il vous contacter ?",
+            "a": "Cela dépend du service. Un transfert ou une réservation peut parfois s'organiser rapidement ; un mariage, la location d'un chalet en haute saison ou une mission de sécurité demandent davantage d'anticipation. Plus nous sommes prévenus tôt, plus le choix est large."
+          },
+          {
+            "q": "Peut-on faire une demande ponctuelle ?",
+            "a": "Oui. Vous pouvez faire appel à nous pour une demande ponctuelle comme pour un accompagnement régulier, par exemple l'intendance d'une résidence ou l'organisation de vos séjours d'une saison. Les modalités sont convenues avec vous."
+          }
+        ]
+      },
+      {
+        "title": "Transport",
+        "items": [
+          {
+            "q": "Quels véhicules pouvez-vous proposer ?",
+            "a": "Selon la disponibilité et vos besoins : berlines, véhicules premium de type Mercedes-Benz Classe V, et limousines. Le [service de chauffeur privé](/fr/services/chauffeur-prive-geneve/) est assuré par des partenaires indépendants autorisés pour le transport professionnel de personnes."
+          },
+          {
+            "q": "Organisez-vous les transferts entre Genève et les stations ?",
+            "a": "Oui, vers Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève et Chamonix. Nous tenons compte du numéro de vol, des bagages et des skis, des conditions hivernales et de l'arrivée au chalet. Voir nos [transferts Genève–Alpes](/fr/services/transferts-geneve-alpes/)."
+          },
+          {
+            "q": "Pouvez-vous organiser le transport régulier d'enfants ?",
+            "a": "Oui, pour l'école, les activités ou les rendez-vous, sous réserve des réglementations locales et d'une confirmation préalable. Les trajets suivent les instructions écrites de la famille, et des sièges adaptés à l'âge et à la taille de l'enfant sont prévus. Voir le [transport privé d'enfants](/fr/services/transport-prive-enfants/)."
+          },
+          {
+            "q": "Est-il possible d'affréter un jet privé ou un yacht ?",
+            "a": "Nous coordonnons l'affrètement de jets privés et la location de yachts avec des opérateurs indépendants autorisés. Itinéraire, horaires et conditions sont confirmés directement par l'opérateur avant toute réservation, puis notre [conciergerie privée](/fr/services/conciergerie-privee-geneve/) coordonne le reste du voyage."
+          }
+        ]
+      },
+      {
+        "title": "Conciergerie et résidences",
+        "items": [
+          {
+            "q": "Que couvre l'assistance personnelle ?",
+            "a": "La gestion d'agenda et de réservations, la recherche et l'achat de cadeaux, la recherche d'expériences ou de spécialistes, la coordination des chauffeurs et des prestataires de la maison, et les demandes imprévues. Voir notre [conciergerie privée](/fr/services/conciergerie-privee-geneve/)."
+          },
+          {
+            "q": "Prenez-vous en charge l'entretien d'une résidence ?",
+            "a": "Oui, de façon régulière ou saisonnière : ménage, linge, approvisionnement, suivi des réparations, gestion des clés et des accès, accueil des visiteurs, jardinage. Nous pouvons aussi préparer une maison avant votre arrivée. Voir l'[intendance de résidence](/fr/services/intendance-residence/)."
+          },
+          {
+            "q": "Pouvez-vous trouver un chalet ou une résidence privée ?",
+            "a": "Oui, en location saisonnière ou pour un séjour court, en Suisse comme dans les Alpes françaises. Nous recherchons selon vos dates, le nombre de personnes, le style souhaité et les services attendus sur place, comme un chef ou une intendance. Voir nos [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/)."
+          },
+          {
+            "q": "Réservez-vous aussi des hôtels à l'étranger ?",
+            "a": "Oui. Nous recherchons et réservons des hôtels dans le monde entier, selon vos préférences de quartier, de catégorie de chambre, de restauration ou de bien-être, et coordonnons les transferts si vous le souhaitez, grâce à notre [conciergerie privée](/fr/services/conciergerie-privee-geneve/)."
+          }
+        ]
+      },
+      {
+        "title": "Événements et Glam Team",
+        "items": [
+          {
+            "q": "Quels événements organisez-vous ?",
+            "a": "Mariages, dîners et soirées privés, anniversaires, lancements de produits et soirées d'entreprise. Nous accompagnons la conception, le choix du lieu, la décoration, la restauration, les animations, la logistique des invités et la coordination le jour même, comme l'explique notre page [événements privés](/fr/services/mariages-evenements/)."
+          },
+          {
+            "q": "Pouvez-vous organiser un mariage en Suisse pour des invités venant de l'étranger ?",
+            "a": "Oui. En plus de l'événement lui-même, nous coordonnons les transferts, l'hébergement et les demandes particulières des invités. Voir [mariages et événements](/fr/services/mariages-evenements/)."
+          },
+          {
+            "q": "Où intervient la Glam Team ?",
+            "a": "À votre domicile, à votre hôtel ou sur le lieu de l'événement. Maquillage, coiffure et conseil en style se préparent lors d'un premier échange sur l'occasion, votre tenue et le résultat recherché. Voir la [Glam Team à domicile](/fr/services/glam-team-domicile/)."
+          },
+          {
+            "q": "La Glam Team peut-elle rester pendant l'événement ?",
+            "a": "Sur demande, des retouches pendant l'événement peuvent être prévues, ainsi que des soins de la peau, une manucure ou une pédicure en amont. Ces prestations sont confirmées lors de la [réservation de la Glam Team](/fr/demande/?service=glam-team)."
+          }
+        ]
+      },
+      {
+        "title": "Sécurité, médical, juridique",
+        "items": [
+          {
+            "q": "Comment se passe une demande de sécurité ?",
+            "a": "Toute mission commence par une évaluation de la situation. Les prestations sont assurées par des partenaires indépendants dûment autorisés, sous réserve de disponibilité, du droit local et des autorisations requises. Les moyens précis sont confirmés avant tout engagement. Voir [sécurité et protection](/fr/services/securite-protection/)."
+          },
+          {
+            "q": "Donnez-vous des avis médicaux ?",
+            "a": "Non. The Valet ne fournit ni avis ni soin médical. Nous nous occupons de la logistique : prise de rendez-vous, transport, organisation des consultations. Les soins sont assurés par des professionnels de santé indépendants. Voir la [conciergerie médicale](/fr/services/conciergerie-medicale/)."
+          },
+          {
+            "q": "Pouvez-vous me conseiller sur une question juridique ou immobilière ?",
+            "a": "The Valet ne fournit pas de conseil juridique. Nous vous mettons en relation avec des avocats ou des professionnels de l'immobilier indépendants, qui confirment directement avec vous l'étendue de leur mission et leurs honoraires. Voir [juridique et immobilier](/fr/services/juridique-immobilier/)."
+          },
+          {
+            "q": "Pourquoi ne nommez-vous pas vos partenaires ?",
+            "a": "Par discrétion, envers eux comme envers vous. Avant chaque mission, vous savez qui interviendra et à quel titre, et le partenaire vous confirme ses propres conditions."
+          }
+        ]
+      },
+      {
+        "title": "Confidentialité et prix",
+        "items": [
+          {
+            "q": "Comment protégez-vous ma vie privée ?",
+            "a": "Nous ne transmettons vos informations qu'aux intervenants qui en ont besoin pour la mission convenue, dans le respect des règles applicables en matière de protection des données. Nous ne citons jamais nos clients."
+          },
+          {
+            "q": "Puis-je indiquer des informations médicales ou de sécurité dans le formulaire ?",
+            "a": "Nous vous demandons de ne pas le faire. Décrivez simplement le type de besoin ; les détails sensibles sont échangés ensuite, directement avec le professionnel concerné, que ce soit pour la [conciergerie médicale](/fr/services/conciergerie-medicale/) ou la [sécurité](/fr/services/securite-protection/)."
+          },
+          {
+            "q": "Comment sont calculés vos prix ?",
+            "a": "Selon l'étendue de la demande, la date, le lieu, le prestataire et le degré de personnalisation. Une proposition ou une estimation vous est remise une fois la demande étudiée, avant tout engagement."
+          },
+          {
+            "q": "Que se passe-t-il si je dois modifier ou annuler ?",
+            "a": "Prévenez-nous dès que possible. Les conditions de modification et d'annulation dépendent du service et du prestataire ; elles vous sont communiquées avec la proposition, avant que vous ne confirmiez."
+          }
+        ]
+      }
+    ]
+  },
+  "servicesHub": {
+    "metaTitle": "Nos services de conciergerie à Genève",
+    "metaDescription": "Chauffeurs, transferts vers les Alpes, intendance, chalets, événements, Glam Team et services spécialisés : tous les services de The Valet en Suisse.",
+    "title": "Tous nos {em}services{/em}",
+    "intro": "The Valet réunit sous un même toit les services dont une vie bien remplie a besoin : se déplacer, tenir une maison, partir à la montagne, recevoir, se préparer pour une occasion. Chaque service a sa page, mais vous pouvez toujours combiner plusieurs demandes en un seul échange. Une arrivée à Genève peut ainsi réunir le chauffeur à l'aéroport, la préparation de la maison, une réservation pour le soir et un rendez-vous de coiffure le lendemain, coordonnés par la même personne, qui vous confirme chaque élément avant de l'engager.",
+    "paragraphs": [
+      "Le transport est souvent la première demande. Un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) pour un rendez-vous, une soirée ou une arrivée à l'aéroport, des [transferts entre Genève et les Alpes](/fr/services/transferts-geneve-alpes/) avec skis et bagages, ou le [transport privé d'enfants](/fr/services/transport-prive-enfants/) pour les trajets scolaires et les activités. Ces trajets sont assurés par des partenaires autorisés pour le transport professionnel de personnes ; nous les organisons et en assurons le suivi.",
+      "La [conciergerie privée](/fr/services/conciergerie-privee-geneve/) couvre tout ce qui prend du temps sans demander votre présence : réservations, recherches, cadeaux, agenda, demandes imprévues. L'[intendance de résidence](/fr/services/intendance-residence/) s'occupe de la maison, de façon régulière ou avant une arrivée. Pour la montagne, nous recherchons [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/) et coordonnons ce qui fait un bon séjour : chef, intendance, matériel de ski, transferts.",
+      "Pour les grandes occasions, nous organisons [mariages et événements privés](/fr/services/mariages-evenements/), de la conception à la coordination le jour même, et la [Glam Team](/fr/services/glam-team-domicile/) se déplace à domicile, à l'hôtel ou sur le lieu de la fête pour la coiffure, le maquillage et le style.",
+      "Enfin, certains besoins exigent des professionnels autorisés. La [conciergerie médicale](/fr/services/conciergerie-medicale/) prend en charge la logistique de vos rendez-vous, sans jamais remplacer l'avis d'un médecin. La [sécurité et la protection](/fr/services/securite-protection/) commencent toujours par une évaluation. Pour le [juridique et l'immobilier](/fr/services/juridique-immobilier/), nous vous présentons des avocats et des professionnels indépendants, qui confirment avec vous l'étendue de leur mission."
+    ]
+  },
+  "journal": {
+    "metaTitle": "Journal : Genève, les Alpes, les saisons",
+    "metaDescription": "Le journal de The Valet : notes pratiques sur Genève, les stations des Alpes, les saisons et les grands rendez-vous, pour bien préparer vos séjours.",
+    "title": "Le {em}journal{/em}",
+    "intro": "Des notes pratiques, écrites par l'équipe de The Valet, pour préparer un séjour, une saison ou un événement à Genève et dans les Alpes. Nous publions peu, et seulement lorsque nous avons quelque chose d'utile à partager : pas de liste de tendances, pas de contenu sponsorisé, pas de classement d'adresses.",
+    "paragraphs": [
+      "Vous y trouverez ce que nous expliquons souvent à nos clients : comment se passe une [arrivée à Zermatt](/fr/services/transferts-geneve-alpes/#zermatt), où les voitures s'arrêtent à Täsch ; à quoi penser avant d'[ouvrir un chalet pour la saison](/fr/services/chalets-residences-alpes/) ; comment [organiser un mariage en Suisse](/fr/services/mariages-evenements/) lorsque la moitié des invités arrivent de l'étranger ; ce qui change à Genève pendant les grands salons et conférences, lorsque les hôtels, les tables et les [chauffeurs privés à Genève](/fr/services/chauffeur-prive-geneve/) sont réservés longtemps à l'avance. Nous y parlons aussi des saisons : l'ouverture des stations en début d'hiver, les semaines de vacances scolaires où tout se remplit, l'été en montagne avec ses festivals, l'automne genevois plus calme, propice aux travaux dans une résidence.",
+      "Ces articles restent généraux. Ils ne remplacent ni un conseil juridique, ni un avis médical, ni l'avis d'un professionnel de la sécurité, et les informations pratiques, comme les horaires, les accès ou les règles locales, peuvent évoluer : vérifiez-les toujours au moment de votre séjour, ou demandez-nous de le faire pour vous. Nous ne citons ni clients, ni partenaires, ni établissements : les conseils restent pratiques et valables quel que soit l'endroit où vous séjournez.",
+      "Chaque article renvoie au service concerné, qu'il s'agisse de l'[intendance d'une villa à Genève](/fr/services/intendance-residence/), d'une [mise en beauté avant un mariage](/fr/services/glam-team-domicile/) ou d'un [séjour en chalet à Verbier](/fr/services/chalets-residences-alpes/#verbier). Nous indiquons la date de mise à jour de chaque texte et revoyons régulièrement ceux qui sont le plus consultés, pour qu'ils restent exacts d'une saison à l'autre. Si une question vous vient en lisant, le plus simple reste de [nous écrire](/fr/contact/) : nous répondons avec plaisir, même lorsqu'il ne s'agit pas encore d'une demande, et nous gardons vos questions pour nourrir les prochains articles."
+    ],
+    "empty": "Les premiers articles arrivent bientôt ; d'ici là, nous répondons volontiers à vos questions directement."
+  },
+  "contact": {
+    "metaTitle": "Contacter The Valet, conciergerie à Genève",
+    "metaDescription": "Contactez The Valet par téléphone, e-mail, WhatsApp ou formulaire. Décrivez votre demande : nous confirmons détails, délais et disponibilité.",
+    "title": "Comment pouvons-nous vous {em}aider{/em} ?",
+    "intro": "Dites-nous ce dont vous avez besoin, quand et où. Un membre de l'équipe The Valet étudie votre demande et revient vers vous pour confirmer les détails.",
+    "availability": "Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. Pour les services spécialisés, les voyages internationaux, les événements et les dates de forte affluence, nous vous recommandons de nous contacter le plus tôt possible.",
+    "privacyNote": "Merci de ne pas indiquer d'informations médicales ou de sécurité dans ce formulaire : nous les recueillerons ensuite par un canal approprié, avec le professionnel concerné."
+  },
+  "request": {
+    "metaTitle": "Faire une demande sur mesure",
+    "metaDescription": "Décrivez votre demande à The Valet en quelques étapes : service, date, lieu et détails. Nous revenons vers vous pour confirmer disponibilité et suite.",
+    "title": "Votre {em}demande{/em}",
+    "intro": "Quelques questions pour comprendre ce dont vous avez besoin : le service, la date, le lieu, le nombre de personnes et vos coordonnées. Répondez à ce que vous savez déjà ; nous compléterons le reste ensemble."
+  }
+}

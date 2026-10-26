@@ -1,125 +1,62 @@
-# Content guide — switzerlandresidency.ch
+# Content guide — thevalet.ch
 
-Read fully before writing. Facts: **only** from `research/legal-facts.md`. Audience and angles:
-`research/seo-topics.md` (§1 keywords, §2 gaps/GEO, §3 page templates, §4 topics).
+Read fully before writing. Sources: `brief/FR_revisee.txt` (the owner's own words, FR master),
+`brief/EN_copy.txt` (EN copy), `docs/PLAN.md` (positioning, SEO targets), `docs/DESIGN.md` (banned words).
+FR is written first; EN mirrors it (same facts, same sections, same FAQ count).
 
 ## Voice
-- Warm, calm, human, reassuring — a knowledgeable friend who has done this many times.
-  Not corporate, not salesy, no hype, no exclamation marks, no clichés ("nestled", "look no further").
-- "We" = Switzerland Residency. **Main partner: a Geneva law firm of around 40 lawyers — never
-  named and never linked** (owner decision 2026-10-01). Mention it at most once per page, only where
-  the context is legal, immigration, permit or ruling work: "we work with a partner law firm of
-  around 40 lawyers in Geneva on legal and permit matters". Elsewhere use neutral wording ("our tax
-  partners", "trusted local partners").
-- **Ark Fiduciaire SA is mentioned on one page only:** `services/ongoing-tax-wealth` (all three
-  locales), as a short closing partner note with a plain link to ark-fid.ch (EN
-  `https://ark-fid.ch/en/`, FR `https://ark-fid.ch/fr/`, DE `https://ark-fid.ch/de/`). No other
-  content page names Ark or "the Ark group". Ridger (linked from `guides/ongoing-support-after-moving`)
-  is described simply as "a Geneva multi-family office".
-- Sentence case headings. Short paragraphs. Plain English (British spelling). Explain jargon once.
-- Never show prices or fees. Never guarantee outcomes, permits, tax amounts or timelines.
-  Say "indicative", "typically", "the canton decides". Cantonal practice varies — say so.
-- No invented testimonials, client counts, years of experience or statistics.
+Calm, warm, precise; "nous" = The Valet, vouvoiement. Concrete nouns (a late flight, skis, a chalet
+to prepare), no hype, no exclamation marks. Banned words (DESIGN.md): élever/elevate, sans couture/
+seamless, solutions sur mesure, votre partenaire de confiance, découvrez l'excellence, expérience unique.
 
-## Accuracy rules (hard)
-- Every figure, threshold, date or legal rule must come from `research/legal-facts.md`
-  and be cited in `sources` frontmatter (official source preferred). Keep "as of <month year>"
-  wording for figures that change (e.g. "CHF 435,000 federal minimum for 2026").
-- Anything marked UNVERIFIED in legal-facts.md: do **not** state it as fact. Either omit it
-  or phrase as "varies by canton; confirm in a ruling" without numbers.
-- Proposals (e.g. the 2026 Lex Koller consultation) must be labelled as proposals, not law.
-- Not tax/legal advice: each guide ends with one sentence noting it is general information
-  as of the `updated` date and that a ruling/advice is needed for a specific situation.
-- No US-person structuring advice; for the US say plainly what complicates things and suggest
-  coordinating with a US adviser.
+## Honesty rules (hard)
+- No invented figures, prices, testimonials, client cases, response times, fleet or staff counts,
+  travel times or distances.
+- Availability, verbatim: FR « Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour
+  chaque demande. » EN "Requests received 24 hours a day, 7 days a week; lead times and availability
+  confirmed for each request."
+- Regulated services (security, medical, legal, real estate, chauffeur/VTC, child transport, jets,
+  yachts) are coordinated through independent, appropriately licensed partners. No "sûr / sécurisé /
+  garanti / qualifié" (safe / secure / guaranteed / qualified) claims. Partners are never named.
+- Contact details, address and legal entity come from env (`src/lib/business.ts`); never write them in copy.
 
-## GEO / SEO structure (every guide)
-1. H1 is the title (the page renders it from frontmatter — do **not** repeat an H1 in the body).
-2. Opening paragraph answers the core question directly in 2–3 sentences (quotable).
-3. A "**Key facts**" box right after: a short bullet list or 2-column Markdown table of the
-   5–7 most important cited facts (as of date).
-4. H2 sections that match real search questions; use tables for comparisons (cantons, routes).
-5. Internal links (3–6): to the eligibility check, the relevant service, canton/origin pages and
-   related guides — **only** URLs from the list below.
-6. A short "How we help" section (2–4 sentences) ending with a link to `/en/eligibility-check/`
-   or `/en/contact/`.
-7. 4–6 FAQ items in frontmatter `faq` (concise, factual answers; they become FAQPage schema).
-8. Length: guides 1,200–2,000 words; service pages 700–1,100; origin pages 900–1,400;
-   canton pages 600–900.
+## Where things live
+- Service pages: `content/<locale>/services/<slug>.md` (FR slugs in French, EN in English; the pair
+  shares `translationKey`, which is also the `?service=` key of the request builder).
+- Journal: `content/<locale>/journal/<slug>.md` (none yet; the index is noindex while empty).
+- Fixed pages: `src/i18n/pages.<locale>.json` (home, about, FAQ, hubs, contact, request) and
+  `src/i18n/legal.<locale>.json` (privacy, legal notice, terms). UI strings: `src/i18n/<locale>.json`.
+- Localized fixed-page paths: `src/lib/static-routes.json`.
 
-## Frontmatter (YAML) — exact fields
-```yaml
----
-title: "…"                # ≤ 60 chars ideally, includes main keyword
-description: "…"          # 140–155 chars, answers the query, no clickbait
-slug: "…"                 # from the list below, identical across locales
-translationKey: "…"       # same as slug
-collection: guides        # guides | services | cantons | origins | advisers
-category: "…"             # guides only: lump-sum-taxation | residence-permits | moving-from |
-                          # property | where-to-live | settling-in | tax-and-wealth
-updated: "2026-09-30"
-draft: false
-cta: check                # optional: check | contact | adviser. Default by collection:
-                          # guides → check, services/cantons/origins → contact, advisers → adviser
-keywords:                 # optional; written by the article pipeline (scripts/ai-article.mjs)
-  primary: "…"            # main search phrase in this language (used in title, description, opening)
-  secondary: ["…", "…"]   # 5–10 related/question searches; emitted in Article JSON-LD, never shown
-faq:
-  - q: "…"
-    a: "…"
-sources:
-  - label: "ESTV — Circular 44 (lump-sum taxation)"
-    url: "https://…"
----
-```
-File path: `content/en/<collection>/<slug>.md` (EN). Adviser briefings: `content/<locale>/advisers/<slug>.md`
-(no `category`; all three locales required; served at `/<locale>/for-advisers/<slug>/`). FR/DE later at `content/fr/…`, `content/de/…`
-with the **same slug**; internal links then use `/fr/…` or `/de/…`.
+## Service page frontmatter
+`title` (H1; ≤ 48 chars, " | The Valet" is appended), `description` (≤ 155), `translationKey`,
+`updated`, `order`, `summary` (one line), `serviceType`, `delivery` (`partner` | `coordinated`),
+`answer` (quotable 2–3 sentences at the top), `faq` (5–8).
+Body sections: what we arrange → how it works (3–5 steps) → typical situations (generic, never
+invented cases) → where → who does what (partner vs The Valet). Only H2/H3 in the body.
 
-## Allowed internal URLs (EN; swap /en/ for /fr/ or /de/ in translations)
-- `/en/` · `/en/how-it-works/` · `/en/eligibility-check/` · `/en/contact/` · `/en/about/` ·
-  `/en/for-advisers/` (+ `/en/for-advisers/<slug>/` once published) · `/en/contact/?type=adviser`
-- `/en/services/` + `/en/services/<slug>/` for: residence-permit, lump-sum-taxation, tax-ruling,
-  property-search-purchase, settling-in, ongoing-tax-wealth
-- `/en/moving-from/` + `/en/moving-from/<slug>/` for: united-kingdom, european-union, gulf,
-  americas, asia, africa
-- `/en/cantons/` + `/en/cantons/<slug>/` for: geneva, vaud, valais, ticino, graubunden, zug,
-  schwyz, lucerne, bern, fribourg, zurich
-- `/en/guides/` + `/en/guides/<slug>/` for: swiss-lump-sum-taxation, lump-sum-taxation-by-canton,
-  how-lump-sum-tax-is-calculated, tax-ruling-before-moving, modified-lump-sum-tax-treaties,
-  lump-sum-or-ordinary-taxation, residence-non-eu-financially-independent,
-  switzerland-golden-visa, eu-citizens-b-permit-without-work, retiring-in-switzerland,
-  swiss-permits-explained, moving-from-uk-after-non-dom, uk-non-doms-switzerland-italy-uae-monaco,
-  moving-from-france, moving-from-germany, moving-from-usa, moving-from-uae-gulf,
-  moving-from-asia, moving-from-africa, buying-property-lex-koller, lex-koller-reform-2026, holiday-homes-alps,
-  best-cantons-wealthy-families, geneva-or-vaud, international-schools-switzerland,
-  health-insurance-new-residents, first-90-days-checklist, inheritance-gift-tax,
-  ongoing-support-after-moving, relocation-services-switzerland, swiss-tax-residency,
-  swiss-residence-timeline*, swiss-citizenship-naturalisation*, family-reunification-switzerland*,
-  swiss-wealth-tax-by-canton*, how-much-wealth-to-move-to-switzerland*
-- `/en/for-advisers/` + `/en/for-advisers/<slug>/` for: referring-a-client, uk-private-client-briefing*,
-  non-eu-client-checklist*, french-clients-briefing*, german-clients-briefing*
-  (* = scheduled via `publishAt`; only link to them from pages that go live on/after that date —
-  the validator enforces this)
-- Deep links: `/en/guides/<slug>/#<id>` (or `#<id>` on the same page). H2/H3 headings get an id
-  from their text; table body rows get an id from their first cell, up to any "(". Id rule: lower
-  case, accents removed, apostrophes dropped, other runs of punctuation/spaces → "-", repeats get
-  "-2", "-3". Examples: "## How we help" → `#how-we-help`; row "Geneva (GE)" → `#geneva`
-  (FR "Genève (GE)" → `#geneve`, DE "Genf (GE)" → `#genf`). The validator fails on a fragment that
-  does not exist, so renaming a heading breaks links to it: search for the old id first.
-  Implementation: `scripts/lib/heading-id.mjs` (shared by the renderer and the validator).
-- External: official sources freely. Partner links: none for the partner law firm (unnamed);
-  ark-fid.ch only in the closing note of `services/ongoing-tax-wealth`
-  (footer/about handle it elsewhere). Guides generated by the article pipeline must not link to
-  partner sites in the body: `scripts/lib/source-policy.mjs` rejects non-official body links.
+## Journal frontmatter
+`title`, `description`, `translationKey`, `updated`, optional `published`, `draft`, `faq`,
+`sources`, `keywords`, `service` (translationKey of the main related service).
+**Every article links in its body to at least 2 service pages and 1 pillar page** (chalets
+`/fr/services/chalets-residences-alpes/` or transfers `/fr/services/transferts-geneve-alpes/`, EN
+equivalents). The article template adds a "related services" block automatically.
+Cadence when the pipeline is re-enabled: max 2 per month (2nd and 16th), FR + EN only.
 
-## Page templates
-- **Service page:** what it covers → who it's for → how we work (steps) → what you get →
-  typical questions we solve → related guides → CTA. No prices, no promises.
-- **Origin page:** why people from X choose Switzerland now (facts) → the permit route for X
-  nationals → tax interplay (exit rules at home, treaty, lump-sum flags) → practical settling-in
-  notes → common pitfalls → how we help → related guides.
-- **Canton page:** at a glance (lump-sum status + cited minimum base, main towns, languages,
-  lifestyle) → lump-sum & other taxes (inheritance, wealth — cited only) → property notes →
-  living there (schools/areas/lifestyle, factual, no rankings) → how we help. Zurich page:
-  explain clearly it abolished lump-sum taxation (cite) and what options remain (ordinary taxation).
+## Internal linking (the build enforces it)
+- Absolute paths only, FR pages → `/fr/…`, EN pages → `/en/…`.
+- Service pages link in their body to ≥ 3 other services and to `/fr/demande/?service=<key>`
+  (`/en/request/?service=<key>`); each service receives ≥ 3 content links.
+- Resort sections on the pillar pages are H3s named exactly Verbier, Zermatt, Gstaad, St-Moritz,
+  Courchevel, Megève, Chamonix (ids `#verbier`, `#st-moritz`, `#megeve`, …).
+- Descriptive, varied anchors; never "cliquez ici", "en savoir plus", "click here", "learn more".
+
+## Depth (the build enforces it; counted on answer + body + FAQ, or the page copy)
+Services FR ≥ 900 / EN ≥ 800 words; pillar pages (chalets, transfers) FR ≥ 1,500 / EN ≥ 1,350;
+home FR ≥ 900; about FR ≥ 600; FAQ page ≥ 22 Q&As; hubs ≥ 300 words of intro.
+Titles ≤ 60 characters with the suffix, descriptions ≤ 155, unique per language.
+
+## Checks
+`npm run validate` (prebuild) checks parity, links, anchors, depth, titles; `npm run build` then runs
+`scripts/check-site.mjs` on the built HTML (one H1, unique titles, link targets, incoming links).
+`npm run report` prints words and links per page.

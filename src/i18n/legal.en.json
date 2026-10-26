@@ -1,0 +1,282 @@
+{
+  "privacy": {
+    "metaTitle": "Privacy policy | The Valet",
+    "metaDescription": "How The Valet in Geneva processes your personal data: forms, WhatsApp, analytics, partners, retention and your rights under Swiss revFADP and the GDPR.",
+    "title": "Privacy policy",
+    "intro": "This policy explains which personal data The Valet processes when you visit this website, send us a request or correspond with us, for what purposes, on what basis and with whom it is shared. It is based on the Swiss Federal Act on Data Protection (revFADP) and, where applicable, the European Union General Data Protection Regulation (GDPR).",
+    "sections": [
+      {
+        "h": "Controller",
+        "p": [
+          "The controller is The Valet, the operator identified at the top of this page.",
+          "For any question about data protection or to exercise your rights, please write to us through the [contact page](/en/contact/)."
+        ]
+      },
+      {
+        "h": "Data you provide through the forms",
+        "p": [
+          "Request form: the service requested, date or level of urgency, place, party size, preferred reply channel, name, email address and/or phone number, and any message you choose to write.",
+          "Contact form: name, contact details and message.",
+          "Only the data needed to handle your request is required. Optional fields remain optional; please share only what is useful for preparing a proposal."
+        ]
+      },
+      {
+        "h": "WhatsApp conversations",
+        "p": [
+          "If you choose to contact us via WhatsApp, we process your phone number, your profile name and the content of the messages and files you send us, in order to answer your request and organise the service.",
+          "Using WhatsApp is optional and your choice. The service is provided by WhatsApp/Meta, which also processes data under its own terms and privacy policy. The website forms remain available as an alternative."
+        ]
+      },
+      {
+        "h": "Technical data",
+        "p": [
+          "Each time the website is visited, the host automatically records technical data in server logs: IP address, date and time of access, page requested, referrer, browser type and operating system.",
+          "This data is used to keep the website running, secure and stable. It is not used to identify you personally."
+        ]
+      },
+      {
+        "h": "Analytics (Google Analytics 4)",
+        "p": [
+          "We use Google Analytics 4 to understand how the website is used and to improve it. The service runs with Google Consent Mode v2.",
+          "For visitors in the European Economic Area and the United Kingdom, analytics is enabled only after your express consent (opt-in). For visitors in Switzerland, it is active by default and you can refuse it at any time through the banner or the cookie settings link (opt-out).",
+          "In Switzerland, advertising signals (ad storage, user data and ad personalisation) remain denied. The content of the forms you fill in is never sent to the analytics tool."
+        ]
+      },
+      {
+        "h": "Attribution data",
+        "p": [
+          "To learn how you found The Valet, the website may keep in your browser the landing page, the origin of the referring site, campaign parameters (utm tags) and the pages viewed during your visit.",
+          "This attribution data is sent to us only together with a form you submit yourself. It is not shared with other websites and is not used for advertising."
+        ]
+      },
+      {
+        "h": "Health and security information",
+        "p": [
+          "Please do not send information about your health or personal security through the website forms (for example a diagnosis, treatment, protection arrangements or a sensitive itinerary).",
+          "If such information is needed for a service, share it only with the professional concerned, in the way that professional indicates. The Valet only notes that a need exists, without collecting the details."
+        ]
+      },
+      {
+        "h": "Purposes and legal bases",
+        "p": [
+          "Handling your requests, preparing proposals, performing and following up booked services: pre-contractual steps and performance of a contract (Art. 6(1)(b) GDPR, where it applies).",
+          "Operation and security of the website, technical logs, attribution data sent with a form: legitimate interest in running a secure website and understanding how well our communication channels work (Art. 6(1)(f) GDPR).",
+          "Analytics: consent for visitors in the European Economic Area and the United Kingdom (Art. 6(1)(a) GDPR); legitimate interest, with the option to object, for visitors in Switzerland.",
+          "Keeping accounting records and meeting other obligations: legal obligation (Art. 6(1)(c) GDPR).",
+          "In Switzerland, the revFADP does not require a legal basis for each processing activity; we comply with its principles of lawfulness, good faith, proportionality and purpose limitation."
+        ]
+      },
+      {
+        "h": "Recipients and processors",
+        "p": [
+          "Formspark (USA): receiving and forwarding the forms submitted on the website.",
+          "WhatsApp/Meta (Ireland and USA): only if you choose to contact us via WhatsApp.",
+          "Google Ireland Limited and Google LLC (USA): analytics with Google Analytics 4.",
+          "The website host, named in the operator details at the top of this page: hosting and technical logs.",
+          "The independent partners who carry out a service you have booked: they receive only the data needed for that service.",
+          "We do not sell your personal data. It may also be disclosed to authorities where the law requires it."
+        ]
+      },
+      {
+        "h": "Transfers abroad",
+        "p": [
+          "Some recipients are based in the United States. Where the provider is certified under the Swiss-US Data Privacy Framework or the EU-US Data Privacy Framework, the transfer relies on that framework. Otherwise, it relies on standard contractual clauses recognised by the Federal Data Protection and Information Commissioner (FDPIC) and the European Commission.",
+          "Where a service is performed outside Switzerland, the necessary data may be disclosed to the partner concerned in the country where the service takes place, to the extent needed to perform the contract concluded with you."
+        ]
+      },
+      {
+        "h": "Retention",
+        "p": [
+          "Requests sent through the forms: as long as needed to handle the request and, where applicable, to perform any resulting contract, then deleted within a reasonable time unless a legal retention obligation applies. Accounting records, for example, are kept for 10 years under Swiss law.",
+          "Analytics data: according to the retention period set in Google Analytics 4, at most 14 months.",
+          "WhatsApp conversations: for as long as needed for the conversation and the service concerned, then deleted, subject to legal retention obligations.",
+          "Technical logs: according to the retention period applied by the host."
+        ]
+      },
+      {
+        "h": "Cookies and local storage",
+        "p": [
+          "The website stores in your browser your consent choice and your display choice (light or dark theme). These items are needed for the website to work as you have chosen.",
+          "The session copy of attribution data is stored only after your consent. Google Analytics cookies are set only when analytics is active, under the rules described above.",
+          "You can change your choice at any time through the cookie settings link, or delete cookies and local storage in your browser settings."
+        ]
+      },
+      {
+        "h": "Security",
+        "p": [
+          "We take appropriate technical and organisational measures to protect your data against loss, unauthorised access and alteration: encrypted connection (HTTPS), access limited to those who need it, providers chosen for an adequate level of protection, and disclosure to partners limited to what is strictly necessary.",
+          "As no transmission over the internet is entirely free of risk, we recommend that you do not send sensitive information through the website forms."
+        ]
+      },
+      {
+        "h": "Your rights",
+        "p": [
+          "Within the limits set by law, you have the right to access your data, to have it rectified or deleted, to object to processing, to receive or transfer your data (portability) and to withdraw any consent at any time, without affecting the lawfulness of earlier processing.",
+          "To exercise these rights, write to us through the [contact page](/en/contact/). We may ask you to confirm your identity.",
+          "You may also lodge a complaint with the Federal Data Protection and Information Commissioner (FDPIC) in Switzerland or, where the GDPR applies, with a supervisory authority in the European Union, in particular in your place of residence."
+        ]
+      },
+      {
+        "h": "Changes and contact",
+        "p": [
+          "We may update this policy to reflect changes to the website, our providers or the applicable law. The version published on this page is the one that applies.",
+          "For any question, please use the [contact page](/en/contact/)."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "metaTitle": "Legal notice | The Valet",
+    "metaDescription": "Legal notice for the website of The Valet, a concierge in Geneva: operator, liability, external links, intellectual property and partner-run services.",
+    "title": "Legal notice",
+    "intro": "This legal notice applies to the website of The Valet and all of its pages, in French and in English.",
+    "sections": [
+      {
+        "h": "Website operator",
+        "p": [
+          "The website is operated by The Valet, the operator identified at the top of this page, which is responsible for it under Swiss law.",
+          "For any enquiry, please use the [contact page](/en/contact/)."
+        ]
+      },
+      {
+        "h": "Responsibility for content",
+        "p": [
+          "The content of the website is published under the responsibility of the operator identified at the top of this page. The texts describe the services The Valet coordinates; the exact scope of each service is set out in the proposal provided for each request."
+        ]
+      },
+      {
+        "h": "Liability for published information",
+        "p": [
+          "We take great care to keep the information published accurate and up to date. We cannot, however, rule out errors or omissions, and information may change without notice.",
+          "To the extent permitted by law, The Valet accepts no liability for damage arising from access to, use of or inability to access the website, or from use of the information it contains."
+        ]
+      },
+      {
+        "h": "External links",
+        "p": [
+          "The website may contain links to third-party websites. These websites are outside our control and are the sole responsibility of their operators. No unlawful content was apparent when the link was created; we remove any link reported to us as unlawful."
+        ]
+      },
+      {
+        "h": "Intellectual property",
+        "p": [
+          "The texts, The Valet name and logo, the layout and the other elements of the website are protected by copyright and, where applicable, trademark law. Any reproduction, modification or distribution, in whole or in part, requires the operator's prior written consent, subject to the exceptions provided by law.",
+          "Third-party trademarks and logos mentioned on the website remain the property of their respective owners."
+        ]
+      },
+      {
+        "h": "No professional advice",
+        "p": [
+          "The information published on the website, in particular on legal, medical or security matters, is general in nature. It does not constitute professional advice and does not replace the opinion of a qualified professional consulted about your particular situation."
+        ]
+      },
+      {
+        "h": "Regulated services delivered by partners",
+        "p": [
+          "Some services presented on the website require a licence or are subject to specific regulation, for example passenger transport, security, medical care, legal advice or real estate brokerage. They are carried out by independent partners holding the required licences, under their own responsibility and on their own terms.",
+          "The Valet does not itself carry out these regulated activities; it coordinates them. Details are set out in the terms and conditions."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Terms and conditions | The Valet",
+    "metaDescription": "Terms and conditions of The Valet, concierge service in Geneva: coordination role, partners, requests and proposals, prices, cancellations and liability.",
+    "title": "Terms and conditions",
+    "intro": "These terms and conditions govern the relationship between The Valet, the operator identified at the top of this page, and any person who sends it a request or books a service through it (the \"client\").",
+    "sections": [
+      {
+        "h": "Scope",
+        "p": [
+          "These terms apply to all requests, proposals and services of The Valet. Specific terms set out in an accepted proposal take precedence over these terms.",
+          "The client's own terms and conditions apply only if The Valet has expressly accepted them in writing."
+        ]
+      },
+      {
+        "h": "The Valet's role",
+        "p": [
+          "The Valet acts as coordinator and intermediary. It receives your request, identifies suitable providers, submits a proposal to you and follows up on the arrangements.",
+          "Unless the proposal states otherwise, The Valet does not itself perform the services; it arranges them with independent partners."
+        ]
+      },
+      {
+        "h": "Independent partners",
+        "p": [
+          "Many services are delivered by independent, appropriately licensed partners, including: chauffeurs and private hire (VTC), child transport, security, medical services, legal advice, real estate, private aviation, yacht charter, accommodation, event suppliers and beauty professionals.",
+          "These partners perform their services under their own responsibility and on their own terms, which are communicated to you before booking. By booking, you also accept those terms for the service concerned."
+        ]
+      },
+      {
+        "h": "Requests and proposals",
+        "p": [
+          "A request sent through the website, WhatsApp or any other channel is not a booking and commits neither the client nor The Valet.",
+          "For each request The Valet agrees to handle, it submits a proposal stating the scope of the service, the price and the terms of the partner or partners concerned.",
+          "A booking is made when you accept the proposal in writing (including by email or WhatsApp message) and, where applicable, once the deposit stated in the proposal has been paid."
+        ]
+      },
+      {
+        "h": "Availability",
+        "p": [
+          "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request.",
+          "Availability of a service depends in particular on the partners' availability, the date, the place and the time available for organisation. Until a booking is made, no availability is reserved."
+        ]
+      },
+      {
+        "h": "Prices and payment",
+        "p": [
+          "Prices and payment terms are those stated in the proposal. A deposit may be requested before booking or before costs are committed with partners.",
+          "Third-party costs (for example tickets, rentals, on-site consumption or expenses incurred at your request) are invoiced as stated in the proposal or, failing that, on presentation of receipts.",
+          "Unless the proposal states otherwise, prices are in Swiss francs."
+        ]
+      },
+      {
+        "h": "Changes and cancellations",
+        "p": [
+          "Change requests and cancellations are subject to the terms set out in the accepted proposal and the terms of the partner or partners concerned.",
+          "The Valet passes your change requests on to partners as quickly as possible. Cancellation or change fees charged by partners are borne by you, to the extent provided in their terms."
+        ]
+      },
+      {
+        "h": "Client obligations",
+        "p": [
+          "You undertake to provide accurate and complete information, to update it if anything changes, and to make only lawful requests.",
+          "The Valet may decline a request, in particular where it is unlawful, contrary to public morals, likely to endanger anyone, or where the information provided is insufficient. It is not required to give reasons."
+        ]
+      },
+      {
+        "h": "Liability",
+        "p": [
+          "The Valet coordinates services with care. Partners are solely responsible for performing the services they provide.",
+          "To the extent permitted by Swiss law, The Valet's liability is limited to direct damage caused by a breach of its own coordination obligations; any liability for indirect or consequential damage, and for the acts of partners, is excluded.",
+          "These limitations do not apply in cases of intent or gross negligence, or where the law does not allow such a limitation."
+        ]
+      },
+      {
+        "h": "Confidentiality",
+        "p": [
+          "The Valet treats information about its clients and their requests as confidential. It discloses it to partners only to the extent needed to perform the service and requires the same discretion from them.",
+          "This obligation continues after the contractual relationship ends, subject to legal disclosure obligations."
+        ]
+      },
+      {
+        "h": "Data protection",
+        "p": [
+          "The processing of your personal data is described in the [privacy policy](/en/privacy/)."
+        ]
+      },
+      {
+        "h": "Changes to these terms",
+        "p": [
+          "The Valet may change these terms at any time. The applicable version is the one in force when the proposal is accepted."
+        ]
+      },
+      {
+        "h": "Applicable law and jurisdiction",
+        "p": [
+          "These terms and the contractual relationships arising from them are governed by Swiss law, excluding conflict-of-laws rules and the United Nations Convention on Contracts for the International Sale of Goods.",
+          "The courts at the operator's registered office have jurisdiction, subject to mandatory provisions on consumer contracts, which may provide for jurisdiction at the client's place of residence."
+        ]
+      }
+    ]
+  }
+}

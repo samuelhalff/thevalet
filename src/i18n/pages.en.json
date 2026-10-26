@@ -1,0 +1,362 @@
+{
+  "home": {
+    "metaTitle": "The Valet | Luxury Concierge Services in Switzerland",
+    "metaDescription": "Private concierge in Geneva and the Alps: chauffeurs, residence management, chalets, events and a Glam Team, with one point of contact for every request.",
+    "hero": {
+      "h1": "Private concierge in Geneva and the Alps",
+      "headline": "Every wish, made {em}real{/em}.",
+      "lead": "The Valet is a luxury concierge based in Geneva. One point of contact for your travel, your residence, your stays in the mountains and your events."
+    },
+    "intro": {
+      "title": "Your time deserves our full {em}attention{/em}",
+      "paragraphs": [
+        "Our role is simple: to take the complexity out of your day. A table on a busy evening, a [chalet prepared before you arrive](/en/services/alpine-chalets-residences/), a gift that seems impossible to find, a family to meet at the airport: you tell us what you need, we arrange the rest and keep you informed at every step.",
+        "We work with private individuals, families and visitors in Geneva, French-speaking Switzerland and the resorts of the Swiss and French Alps. Some requests fit in a single message; others last a whole season. Either way, you keep the same contact, who knows your habits."
+      ]
+    },
+    "services": {
+      "title": "What we {em}arrange{/em}",
+      "lead": "A [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/), [transfers to the Alpine resorts](/en/services/geneva-alps-transfers/), [private transport for your children](/en/services/private-child-transport/), a [private concierge](/en/services/private-concierge-geneva/) for everyday life, [management of your residence](/en/services/residence-management/), [chalets and residences in the Alps](/en/services/alpine-chalets-residences/), [weddings and private events](/en/services/weddings-private-events/) and a [Glam Team at home](/en/services/glam-team-at-home/). Alongside these, specialist services are coordinated with independent partners: [medical concierge](/en/services/medical-concierge/), [security and protection](/en/services/security-protection/), [legal and real estate introductions](/en/services/legal-real-estate/). Each service can be requested on its own or combined with others in a single arrangement."
+    },
+    "values": {
+      "title": "What we {em}stand{/em} for",
+      "items": [
+        {
+          "title": "Reliability",
+          "text": "What is confirmed gets done. We check times, addresses and practical details before each service, and tell you as soon as anything changes."
+        },
+        {
+          "title": "Discretion",
+          "text": "Each provider receives only what they need, and your name never appears in our communications."
+        },
+        {
+          "title": "Trust",
+          "text": "We choose our providers with care and tell you clearly who is involved, in what capacity and on what terms."
+        },
+        {
+          "title": "Availability",
+          "text": "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. An urgent request is reviewed as soon as it arrives."
+        },
+        {
+          "title": "Tailored",
+          "text": "Every service starts from your schedule and your priorities, then adjusts as we get to know you."
+        }
+      ]
+    },
+    "steps": {
+      "title": "How it {em}works{/em}",
+      "lead": "Three steps, whether the request is simple or involves several providers.",
+      "items": [
+        {
+          "title": "Tell us what you need",
+          "text": "Through the [request form](/en/request/), by telephone or on WhatsApp. Give us the service, the date, the place and what matters to you; a few lines are enough to begin."
+        },
+        {
+          "title": "We confirm the details",
+          "text": "You receive a clear proposal: what is possible, who will be involved, the lead times and the terms. Nothing is committed without your agreement."
+        },
+        {
+          "title": "We coordinate, you enjoy",
+          "text": "We book, brief the providers and follow the service through to the end, including when plans change along the way."
+        }
+      ]
+    },
+    "destinations": {
+      "title": "Geneva and the {em}Alps{/em}",
+      "lead": "Based in Geneva, we arrange stays in the leading resorts of the Swiss and French Alps.",
+      "items": [
+        {
+          "name": "Geneva",
+          "text": "An international city on Lake Geneva and the starting point of our work, from [everyday concierge support](/en/services/private-concierge-geneva/) to a [chauffeur for your arrival at Geneva Airport](/en/services/private-chauffeur-geneva/), which serves both the city and the resorts of Valais and France."
+        },
+        {
+          "name": "Verbier",
+          "text": "In Valais, above the Val de Bagnes, Verbier is reached from Geneva along the Rhône valley motorway via Martigny. Every summer the resort hosts the Verbier Festival. See our [transfer to Verbier](/en/services/geneva-alps-transfers/#verbier) and our [chalets in Verbier](/en/services/alpine-chalets-residences/#verbier)."
+        },
+        {
+          "name": "Zermatt",
+          "text": "A car-free village at the foot of the Matterhorn: vehicles stop at Täsch and a shuttle train continues to Zermatt. The [transfer to Zermatt](/en/services/geneva-alps-transfers/#zermatt) and your [chalet arrival in Zermatt](/en/services/alpine-chalets-residences/#zermatt) are planned accordingly."
+        },
+        {
+          "name": "Gstaad",
+          "text": "In the Saanenland, in the Bernese Oberland, Gstaad has kept the feel of a chalet village. Summer brings the Menuhin Festival Gstaad. We arrange the [journey to Gstaad](/en/services/geneva-alps-transfers/#gstaad) and your [chalet stay in Gstaad](/en/services/alpine-chalets-residences/#gstaad)."
+        },
+        {
+          "name": "St-Moritz",
+          "text": "In the Engadine, in Graubünden, St-Moritz is far from Geneva and is often reached via Zurich or by air to Samedan airport. In winter the frozen lake hosts White Turf. See [getting to St-Moritz](/en/services/geneva-alps-transfers/#st-moritz) and [residences in St-Moritz](/en/services/alpine-chalets-residences/#st-moritz)."
+        },
+        {
+          "name": "Courchevel",
+          "text": "In Savoie, within Les 3 Vallées, Courchevel has its own altiport. From Geneva, the [transfer to Courchevel](/en/services/geneva-alps-transfers/#courchevel) crosses the French border, as does the road to your [chalet in Courchevel](/en/services/alpine-chalets-residences/#courchevel)."
+        },
+        {
+          "name": "Megève",
+          "text": "In Haute-Savoie, Megève has kept an old village centre with pedestrian streets, facing the Mont Blanc massif. A destination sought after in winter and summer alike: see our [chalets in Megève](/en/services/alpine-chalets-residences/#megeve) and the [transfer to Megève](/en/services/geneva-alps-transfers/#megeve)."
+        },
+        {
+          "name": "Chamonix",
+          "text": "At the foot of Mont Blanc, in Haute-Savoie, Chamonix is lively all year and is the starting point of the Aiguille du Midi cable car. See the [transfer to Chamonix](/en/services/geneva-alps-transfers/#chamonix) and our [residences in Chamonix](/en/services/alpine-chalets-residences/#chamonix)."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Who does {em}what{/em}",
+      "paragraphs": [
+        "The Valet coordinates: we receive your request, find the right solution, book, brief the providers and follow every step. Much of this work, such as [private concierge support](/en/services/private-concierge-geneva/), [residence management](/en/services/residence-management/), chalets, [events](/en/services/weddings-private-events/) or the [Glam Team](/en/services/glam-team-at-home/), is organised directly by our team with providers we have chosen.",
+        "Other services are regulated: [professional passenger transport](/en/services/private-chauffeur-geneva/), [child transport](/en/services/private-child-transport/), [security](/en/services/security-protection/), [legal advice and property transactions](/en/services/legal-real-estate/), [medical coordination](/en/services/medical-concierge/), private aviation. They are coordinated through independent, appropriately licensed partners, who confirm the scope of the assignment and their terms with you. We do not ourselves provide legal advice, medical advice or care, or close protection. We do not publish our partners' names; before any engagement, you know who will be involved and in what capacity."
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked {em}questions{/em}",
+      "items": [
+        {
+          "q": "What services does The Valet provide?",
+          "a": "Transport and transfers, [concierge and personal assistance](/en/services/private-concierge-geneva/), residence management, chalets and stays, events and the Glam Team. See [all our services](/en/services/), including the specialist services coordinated with independent partners."
+        },
+        {
+          "q": "Can I reach you at any hour?",
+          "a": "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. For a busy date or a specialist service, please write to us as early as possible."
+        },
+        {
+          "q": "Where do you work?",
+          "a": "In Geneva, Vaud, Valais, Gstaad, St-Moritz and the French resorts close to Geneva, with [transfers from Geneva to the Alps](/en/services/geneva-alps-transfers/) and [seasonal chalet rentals](/en/services/alpine-chalets-residences/). Other destinations are possible depending on the request."
+        },
+        {
+          "q": "Can several services be combined?",
+          "a": "Yes. A transfer, the opening of a chalet by our [residence management service](/en/services/residence-management/), a chef and a reservation can be arranged together, with one contact for all of it."
+        },
+        {
+          "q": "How are prices set?",
+          "a": "According to the scope of the request, the date, the place and the providers involved. You receive a proposal or estimate before any commitment: [describe your request](/en/request/) to obtain one."
+        },
+        {
+          "q": "What happens to the information I share with you?",
+          "a": "It is used only to arrange your request and is passed only to the providers who need it. More answers are in our [full FAQ](/en/faq/)."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Tell us what you {em}need{/em}",
+      "text": "A few lines are enough: the service, the date, the place. We will come back to you to confirm the details and suggest the next step."
+    }
+  },
+  "about": {
+    "metaTitle": "About our private concierge in Geneva",
+    "metaDescription": "The Valet, private concierge in Geneva: how we work, a single point of contact, carefully chosen partners and clear commitments to every client.",
+    "title": "Personal service, without {em}fuss{/em}",
+    "intro": "The Valet is a private concierge based in Geneva, designed for people who value their time, their privacy and work done properly. We handle everyday needs and exceptional requests with the same attention, from the first conversation to the final confirmation.",
+    "sections": [
+      {
+        "h": "A house built on listening",
+        "paragraphs": [
+          "The Valet was founded and is run by a woman. It shows less in what we say than in how we work: listening before proposing, noticing the details that matter to you, and preferring the right answer to a quick one that will need correcting.",
+          "We wanted a concierge on a human scale, where you know who is handling your request. No call centre, no forms left unanswered: one person who knows your file, your preferences and how you like to be kept informed, whether by a short message, a call or a written summary. That continuity matters more than the speed of a first reply: it avoids misunderstandings, duplication and repeated explanations."
+        ]
+      },
+      {
+        "h": "How we work",
+        "paragraphs": [
+          "Every request begins with a conversation. We try to understand what you really expect: the time that cannot move, the person who needs to be told, the detail that will change a journey or an evening. We then assess what is feasible, in what timeframe and with which providers.",
+          "You receive a clear proposal before any commitment. Once you agree, we book, brief the providers and follow every step. If a flight is delayed, if the weather closes a pass or if plans change, we adjust the arrangements and let you know, without you having to chase anyone.",
+          "With your consent, we keep a record of your preferences: the type of vehicle you like, how a house should be prepared, a child's allergies for a restaurant booking. The second request is then simpler than the first."
+        ]
+      },
+      {
+        "h": "One contact, carefully chosen partners",
+        "paragraphs": [
+          "We coordinate much of the work ourselves: concierge, residence management, chalets and stays, events, the Glam Team. For regulated services, such as professional passenger transport, security, legal advice, real estate or medical care, we work with independent, appropriately licensed partners, who act under their own responsibility.",
+          "We choose these partners with care and do not publish their names. Before each assignment, you know who will be involved, in what capacity and on what terms. On your side, you keep a single contact at The Valet, who links all the providers and remains responsible for following up your request."
+        ]
+      },
+      {
+        "h": "What we do not do",
+        "paragraphs": [
+          "We do not promise the impossible. When a date is full, a deadline is too short or a request goes beyond what we can arrange properly, we tell you straight away and, where possible, suggest an alternative.",
+          "We give neither legal advice nor medical advice, and we do not provide close protection ourselves: these assignments belong to licensed professionals, whom we can introduce. Everything we arrange is described on our [services page](/en/services/). We display no testimonials or client names: your trust rests on the discretion we owe you, including when everything has gone well. To discuss a request, [contact our team](/en/contact/)."
+        ]
+      }
+    ],
+    "commitments": {
+      "title": "Our commitments",
+      "items": [
+        "Confidential service that respects your privacy",
+        "Prompt replies and clear communication at every step",
+        "Careful selection of providers and partners",
+        "Solutions adapted to each person, never a ready-made formula",
+        "Attention to detail from preparation to completion"
+      ]
+    }
+  },
+  "faq": {
+    "metaTitle": "FAQ: private concierge in Geneva",
+    "metaDescription": "Answers to common questions about The Valet: requests, availability, transport, residences, events, regulated services, privacy and pricing.",
+    "title": "Frequently asked {em}questions{/em}",
+    "intro": "Answers to the questions we are asked most often before a first request. If yours is not here, write to us: we are happy to answer, even a simple question.",
+    "groups": [
+      {
+        "title": "Requests and availability",
+        "items": [
+          {
+            "q": "How do I make a request?",
+            "a": "Through the [request form](/en/request/), by email, by telephone or on WhatsApp. Tell us the service, the date, the place and the details that matter to you. We come back to you to confirm what is possible and suggest the next step."
+          },
+          {
+            "q": "Are you available around the clock?",
+            "a": "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. Specialist services also depend on the availability of the professionals involved. You can also [contact us directly](/en/contact/)."
+          },
+          {
+            "q": "How far in advance should I contact you?",
+            "a": "It depends on the service. A transfer or a reservation can sometimes be arranged quickly; a wedding, a chalet in high season or a security assignment need more notice. The earlier we hear from you, the wider the choice."
+          },
+          {
+            "q": "Can I make a one-off request?",
+            "a": "Yes. You can come to us for a one-off request or for ongoing support, such as managing a residence or organising your stays for a season. The arrangements are agreed with you."
+          }
+        ]
+      },
+      {
+        "title": "Transport",
+        "items": [
+          {
+            "q": "Which vehicles can you arrange?",
+            "a": "Depending on availability and your needs: saloons, premium vans such as the Mercedes-Benz V-Class, and limousines. Our [private chauffeur service](/en/services/private-chauffeur-geneva/) is provided by independent partners licensed for professional passenger transport."
+          },
+          {
+            "q": "Do you arrange transfers between Geneva and the resorts?",
+            "a": "Yes, to Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève and Chamonix. We take into account the flight number, luggage and skis, winter conditions and your arrival at the chalet. See our [Geneva to Alps transfers](/en/services/geneva-alps-transfers/)."
+          },
+          {
+            "q": "Can you arrange regular transport for children?",
+            "a": "Yes, for school, activities or appointments, subject to local regulations and prior confirmation. Journeys follow the family's written instructions, and child seats suited to the child's age and size are arranged. See [private child transport](/en/services/private-child-transport/)."
+          },
+          {
+            "q": "Can I charter a private jet or a yacht?",
+            "a": "We coordinate private jet charters and yacht rentals with independent, licensed operators. Itinerary, timings and terms are confirmed directly by the operator before any booking, and our [private concierge](/en/services/private-concierge-geneva/) then coordinates the rest of the trip."
+          }
+        ]
+      },
+      {
+        "title": "Concierge and residences",
+        "items": [
+          {
+            "q": "What does personal assistance cover?",
+            "a": "Diary and reservation management, researching and buying gifts, finding experiences or specialists, coordinating drivers and household providers, and unexpected requests. See our [private concierge](/en/services/private-concierge-geneva/)."
+          },
+          {
+            "q": "Do you look after a residence?",
+            "a": "Yes, on a regular or seasonal basis: cleaning, laundry, supplies, repair follow-up, keys and access, receiving visitors, gardening. We can also prepare a house before you arrive. See [residence management](/en/services/residence-management/)."
+          },
+          {
+            "q": "Can you find a chalet or a private residence?",
+            "a": "Yes, as a seasonal rental or for a short stay, in Switzerland and the French Alps. We search according to your dates, the number of guests, the style you prefer and the services expected on site, such as a chef or housekeeping. See our [chalets and residences in the Alps](/en/services/alpine-chalets-residences/)."
+          },
+          {
+            "q": "Do you also book hotels abroad?",
+            "a": "Yes. We find and book hotels worldwide according to your preferences for location, room category, dining or wellness, and coordinate transfers if you wish, through our [private concierge](/en/services/private-concierge-geneva/)."
+          }
+        ]
+      },
+      {
+        "title": "Events and Glam Team",
+        "items": [
+          {
+            "q": "What events do you organise?",
+            "a": "Weddings, private dinners and parties, birthdays, product launches and corporate evenings. We handle concept, venue, decoration, catering, entertainment, guest logistics and coordination on the day, as described on our [private events page](/en/services/weddings-private-events/)."
+          },
+          {
+            "q": "Can you organise a wedding in Switzerland for guests travelling from abroad?",
+            "a": "Yes. Beyond the event itself, we coordinate transfers, accommodation and guests' particular requests. See [weddings and private events](/en/services/weddings-private-events/)."
+          },
+          {
+            "q": "Where does the Glam Team work?",
+            "a": "At your home, your hotel or the event venue. Makeup, hair and styling are prepared in a first conversation about the occasion, your outfit and the result you want. See the [Glam Team at home](/en/services/glam-team-at-home/)."
+          },
+          {
+            "q": "Can the Glam Team stay during the event?",
+            "a": "On request, touch-ups during the event can be arranged, as well as skin preparation, a manicure or a pedicure beforehand. These are confirmed when you [book the Glam Team](/en/request/?service=glam-team)."
+          }
+        ]
+      },
+      {
+        "title": "Security, medical, legal",
+        "items": [
+          {
+            "q": "How does a security request work?",
+            "a": "Every assignment begins with an assessment of the situation. Services are provided by independent, appropriately licensed partners, subject to availability, local law and the required licences. Specific capabilities are confirmed before engagement. See [security and protection](/en/services/security-protection/)."
+          },
+          {
+            "q": "Do you give medical advice?",
+            "a": "No. The Valet does not provide medical advice or treatment. We handle the logistics: booking appointments, transport, organising consultations. Care is delivered by independent healthcare professionals. See the [medical concierge](/en/services/medical-concierge/)."
+          },
+          {
+            "q": "Can you advise me on a legal or property matter?",
+            "a": "The Valet does not provide legal advice. We introduce you to independent lawyers or property professionals, who confirm the scope of their work and their fees directly with you. See [legal and real estate](/en/services/legal-real-estate/)."
+          },
+          {
+            "q": "Why do you not name your partners?",
+            "a": "Out of discretion, towards them as well as you. Before each assignment, you know who will be involved and in what capacity, and the partner confirms their own terms with you."
+          }
+        ]
+      },
+      {
+        "title": "Privacy and pricing",
+        "items": [
+          {
+            "q": "How do you protect my privacy?",
+            "a": "We share your information only with the providers who need it for the agreed assignment, in line with applicable data protection rules. We never name our clients."
+          },
+          {
+            "q": "Can I include medical or security information in the form?",
+            "a": "Please do not. Simply describe the type of need; sensitive details are exchanged later, directly with the professional concerned, whether for the [medical concierge](/en/services/medical-concierge/) or [security](/en/services/security-protection/)."
+          },
+          {
+            "q": "How are your prices calculated?",
+            "a": "According to the scope of the request, the date, the place, the provider and the degree of personalisation. A proposal or estimate is provided once the request has been reviewed, before any commitment."
+          },
+          {
+            "q": "What if I need to change or cancel?",
+            "a": "Let us know as soon as possible. Change and cancellation terms depend on the service and the provider; they are given to you with the proposal, before you confirm."
+          }
+        ]
+      }
+    ]
+  },
+  "servicesHub": {
+    "metaTitle": "Our concierge services in Geneva",
+    "metaDescription": "Chauffeurs, Alpine transfers, residence management, chalets, events, a Glam Team and specialist services: every service The Valet offers in Switzerland.",
+    "title": "All our {em}services{/em}",
+    "intro": "The Valet brings together the services a full life needs: getting around, running a home, heading to the mountains, entertaining, getting ready for an occasion. Each service has its own page, but you can always combine several requests in one conversation. An arrival in Geneva might bring together the airport chauffeur, the preparation of the house, a dinner reservation and a hair appointment the next day, coordinated by the same person, who confirms each element with you before committing to it.",
+    "paragraphs": [
+      "Transport is often the first request. A [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) for a meeting, an evening or an airport arrival, [transfers between Geneva and the Alps](/en/services/geneva-alps-transfers/) with skis and luggage, or [private child transport](/en/services/private-child-transport/) for school runs and activities. These journeys are provided by partners licensed for professional passenger transport; we arrange them, brief the driver on your preferences and follow each journey until you have arrived.",
+      "The [private concierge](/en/services/private-concierge-geneva/) covers everything that takes time without needing you there: reservations, research, gifts, diary, unexpected requests. [Residence management](/en/services/residence-management/) looks after the house, regularly or before an arrival. For the mountains, we find [chalets and residences in the Alps](/en/services/alpine-chalets-residences/) and coordinate what makes a good stay: chef, housekeeping, ski equipment, transfers.",
+      "For special occasions, we organise [weddings and private events](/en/services/weddings-private-events/), from concept to coordination on the day, and the [Glam Team](/en/services/glam-team-at-home/) comes to your home, hotel or venue for hair, makeup and styling.",
+      "Finally, some needs call for licensed professionals. The [medical concierge](/en/services/medical-concierge/) handles the logistics of your appointments, never replacing a doctor's advice. [Security and protection](/en/services/security-protection/) always begin with an assessment. For [legal and real estate matters](/en/services/legal-real-estate/), we introduce independent lawyers and professionals, who confirm the scope of their work with you."
+    ]
+  },
+  "journal": {
+    "metaTitle": "Journal: Geneva, the Alps, the seasons",
+    "metaDescription": "The Valet journal: practical notes on Geneva, the Alpine resorts, the seasons and major events, to help you prepare your stays with less effort.",
+    "title": "The {em}journal{/em}",
+    "intro": "Practical notes written by The Valet team to help you prepare a stay, a season or an event in Geneva and the Alps. We publish rarely, and only when we have something useful to share: no trend lists, no sponsored content, no rankings of addresses.",
+    "paragraphs": [
+      "Here you will find what we often explain to clients: how an [arrival in Zermatt](/en/services/geneva-alps-transfers/#zermatt) works, with cars stopping at Täsch; what to think about before [opening a chalet for the season](/en/services/alpine-chalets-residences/); how to [organise a wedding in Switzerland](/en/services/weddings-private-events/) when half the guests are coming from abroad; what changes in Geneva during the major fairs and conferences, when hotels, tables and [private chauffeurs in Geneva](/en/services/private-chauffeur-geneva/) are booked well in advance. We also write about the seasons: the resorts opening in early winter, the school holiday weeks when everything fills up, summer in the mountains with its festivals, the quieter Geneva autumn that suits work on a residence.",
+      "These articles stay general. They do not replace legal advice, medical advice or the opinion of a security professional, and practical information such as timetables, access or local rules can change: always check it at the time of your stay, or ask us to do so for you. We name no clients, partners or establishments: the advice stays practical and valid wherever you are staying.",
+      "Each article links to the relevant service, whether [managing a villa in Geneva](/en/services/residence-management/), [getting ready before a wedding](/en/services/glam-team-at-home/) or a [chalet stay in Verbier](/en/services/alpine-chalets-residences/#verbier). We show the update date of each text and regularly review the most-read ones so they stay accurate from one season to the next. If a question comes to mind as you read, the simplest thing is to [write to us](/en/contact/): we are glad to answer, even before there is a request, and we keep your questions to shape future articles."
+    ],
+    "empty": "The first articles are on their way; until then, we are happy to answer your questions directly."
+  },
+  "contact": {
+    "metaTitle": "Contact The Valet, concierge in Geneva",
+    "metaDescription": "Contact The Valet by telephone, email, WhatsApp or online form. Describe your request: we confirm the details, lead times and availability for you.",
+    "title": "How may we {em}help{/em}?",
+    "intro": "Tell us what you need, when and where. A member of The Valet team reviews your request and comes back to you to confirm the details.",
+    "availability": "Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. For specialist services, international travel, events and high-demand dates, we recommend contacting us as early as possible.",
+    "privacyNote": "Please do not include medical or security details in this form: we will collect them later through an appropriate channel, with the professional concerned."
+  },
+  "request": {
+    "metaTitle": "Make a tailored request",
+    "metaDescription": "Describe your request to The Valet in a few steps: service, date, place and details. We come back to you to confirm availability and the next steps.",
+    "title": "Your {em}request{/em}",
+    "intro": "A few questions to understand what you need: the service, the date, the place, the number of people and your contact details. Answer what you already know; we will complete the rest together."
+  }
+}
