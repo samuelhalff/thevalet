@@ -98,3 +98,8 @@ bar. The destination remains environment-configured (`NEXT_PUBLIC_WHATSAPP`), wi
 no prefilled visitor message. Requested number: +41 76 428 23 24 (41764282324).
 Production activation of this setting is still pending with Sam. The bilingual
 welcome reply is configured separately in WhatsApp Business by the owner.
+
+## WhatsApp colour — 2026-10-27
+Kadiata chose WhatsApp green (#25D366) with a white symbol for the floating
+shortcut on every French and English page, on mobile and desktop. This replaces
+the bordeaux shortcut colour only; other buttons retain their existing palette.

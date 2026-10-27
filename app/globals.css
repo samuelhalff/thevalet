@@ -586,6 +586,11 @@ body[data-menu-open] .cookie-banner {
 .logo-swiss-white { fill: var(--logo-white); }
 
 /* Floating WhatsApp shortcut (desktop, and phone pages without the request bar). */
+.whatsapp-green {
+  background-color: #25d366;
+  color: #ffffff;
+  border-color: #25d366;
+}
 .whatsapp-float {
   right: max(1rem, env(safe-area-inset-right));
   bottom: calc(var(--cookie-banner-h, 0px) + 1rem + env(safe-area-inset-bottom));

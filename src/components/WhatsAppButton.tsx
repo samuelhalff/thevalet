@@ -14,7 +14,7 @@ export default function WhatsAppButton({ href, label }: { href: string; label: s
       rel="noopener noreferrer"
       aria-label={label}
       title={label}
-      className="whatsapp-float btn btn-primary fixed z-30 h-12 w-12 lg:h-14 lg:w-14 rounded-soft !p-0"
+      className="whatsapp-green whatsapp-float btn fixed z-30 h-12 w-12 lg:h-14 lg:w-14 rounded-soft !p-0"
     >
       <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
         <path d={WHATSAPP_ICON_PATH} />

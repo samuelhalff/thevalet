@@ -44,7 +44,7 @@ export default function StickyCta({ href, label, whatsappHref, whatsappLabel, hi
             rel="noopener noreferrer"
             aria-label={whatsappLabel}
             title={whatsappLabel}
-            className="btn btn-secondary btn-md !px-4"
+            className="whatsapp-green btn btn-md !px-4"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
               <path d={WHATSAPP_ICON_PATH} />
