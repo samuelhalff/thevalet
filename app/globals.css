@@ -617,3 +617,14 @@ body[data-menu-open] .cookie-banner {
 .bold-page-headings :is(h1, h2, h3, h4, dt, .itinerary .font-display) {
   font-weight: 700;
 }
+
+/* Owner-approved black/white wordmark and fixed Swiss flag colours. */
+:root { --logo-ink: #000000; --logo-red: #e20a0a; --logo-white: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --logo-ink: #ffffff; }
+}
+:root[data-theme="dark"] { --logo-ink: #ffffff; }
+.logo-wordmark { color: var(--logo-ink); }
+.band .logo-wordmark { color: var(--logo-white); }
+.logo-swiss-red { fill: var(--logo-red); }
+.logo-swiss-white { fill: var(--logo-white); }

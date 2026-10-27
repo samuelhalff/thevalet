@@ -75,3 +75,9 @@ solutions sur mesure, votre partenaire de confiance, découvrez l'excellence, ex
 - 2026-10-27, Kadiata: all home and about page headings use bold (700), including
   service names, value titles and FAQ questions, in both languages and themes. Other pages
   keep their existing weights. Playfair Display includes the real 700 weight for these titles.
+
+- 2026-10-27, Kadiata: replace header/footer wordmark with her supplied bold
+  “The Valet.” artwork and Swiss flag. Crop empty margins, use black lettering
+  on light pages and white on dark pages/the bordeaux footer, keeping the flag red
+  and white. Pure black/white and Swiss red are approved exceptions for this logo.
+  Retain the existing decorative V elsewhere.

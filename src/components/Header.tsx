@@ -33,7 +33,7 @@ export default function Header({ locale }: { locale: Locale }) {
     <header className="site-header sticky top-0 z-40 text-ink">
       <Container className="flex h-[72px] items-center justify-between gap-4">
         <Link href={localePath(locale)} className="flex h-10 shrink-0 items-center rounded-soft" aria-label={`The Valet — ${t(locale, "common.home")}`}>
-          <Logo decorative className="h-[30px] w-[59px] lg:h-9 lg:w-[71px]" />
+          <Logo decorative className="h-[30px] w-[116px] lg:h-9 lg:w-[139px]" />
         </Link>
         <nav aria-label={t(locale, "common.mainNav")} className="hidden lg:block">
           <ul className="flex items-center gap-8 whitespace-nowrap text-[0.98rem]">

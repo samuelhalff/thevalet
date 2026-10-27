@@ -60,7 +60,7 @@ export default function Footer({ locale }: { locale: Locale }) {
       </Container>
       <Container className="grid gap-x-12 gap-y-12 pb-14 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1.1fr_1fr]">
         <div>
-          <Logo className="h-10 w-[79px]" />
+          <Logo className="h-10 w-[154px]" />
           <p className="mt-5 max-w-sm text-[0.95rem] text-muted">{t(locale, "footer.blurb")}</p>
           <p className="mt-4 max-w-sm text-sm text-muted">{t(locale, "common.availability")}</p>
           <div className="mt-5">
