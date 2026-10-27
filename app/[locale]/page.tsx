@@ -90,7 +90,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
             <Plate name="alps" locale={locale} className="mt-12 max-w-[20rem]" />
           </div>
           <div className="max-w-prose space-y-5 text-[1.0625rem]">
-            {c.intro.paragraphs.map((p) => (
+            {c.intro.paragraphs.flatMap((p) => p.split("\n\n")).map((p) => (
               <RichText key={p} text={p} />
             ))}
           </div>

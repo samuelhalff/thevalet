@@ -19,7 +19,7 @@ export default function AboutView({ locale }: { locale: Locale }) {
               <section key={s.h}>
                 <SectionHeading title={s.h} size="md" />
                 <div className="mt-5 space-y-5 text-lg leading-relaxed">
-                  {s.paragraphs.map((p) => (
+                  {s.paragraphs.flatMap((p) => p.split("\n\n")).map((p) => (
                     <RichText key={p} text={p} />
                   ))}
                 </div>
