@@ -35,10 +35,15 @@ The build fails on purpose when a page is too short, a title is too long or dupl
 broken: fix the content rather than the validator.
 
 ## Delivery
-Work on a branch and open a pull request into `main`. Merging into `main` deploys the site.
+Every push to `main` is built, checked and deployed by GitHub Actions; a failed check deploys nothing.
 
-On the VPS (user `kadiata`, folder `~/thevalet`): start from an up-to-date `main`
-(`git checkout main && git pull`), create a branch named after the change (e.g. `texte-glam-team`),
-commit, then `git push -u origin <branch>`. Pushing to `main` directly is refused. Give the user the
-pull-request link that `git push` prints, so she can open and merge it from the GitHub app.
+On the VPS (user `kadiata`, folder `~/thevalet`) the user only chats; you handle git yourself:
+1. Before starting: `git checkout main && git pull --rebase`.
+2. Make the change, run `npm run lint` and `npm test`, fix until both pass.
+3. `git add -A && git commit -m "<short description in French>" && git push origin main`
+   (if the push is refused because main moved, `git pull --rebase` and push again).
+4. Tell the user, in French, what changed and that the site updates by itself in about 3 minutes.
+   GitHub builds and checks the site first: if that fails, nothing goes live and the previous
+   version stays online, so say so if you are unsure and offer to fix it.
+Never force-push, never rewrite history, never touch `.github/` or `deploy/`.
 The VPS has little memory: `npm run lint` and `npm test` are fine; the full build runs on GitHub.
