@@ -80,6 +80,8 @@ jobs:
           USER: ${{ secrets.DEPLOY_SSH_USER }}
           PORT: ${{ secrets.DEPLOY_SSH_PORT }}
           KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          # The deploy key is locked to the web root by rrsync on the server (deploy/setup-vps.sh),
+          # which rebases paths: DEPLOY_PATH must be "." (the web root itself), not an absolute path.
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
           set -eu
@@ -91,7 +93,7 @@ jobs:
             -e "ssh -i ~/.ssh/deploy -p ${PORT:-22} -o StrictHostKeyChecking=accept-new" \
             out/ "$USER@$HOST:$DEPLOY_PATH/"
 
-      - name: Smoke test (straight to the server, works before DNS and HTTPS)
+      - name: Smoke test (HTTPS on the server itself, so a stale DNS cache cannot hide a failed deploy)
         if: steps.target.outputs.ready == 'true'
         env:
           HOST: ${{ secrets.DEPLOY_SSH_HOST }}
@@ -99,10 +101,10 @@ jobs:
           set -u
           fail=0
           check() {
-            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 -H 'Host: thevalet.ch' "http://$HOST$1")
-            case "$code" in $2) echo "OK   $1 → $code" ;; *) echo "FAIL $1 → $code (expected $2)"; fail=1 ;; esac
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 --resolve "thevalet.ch:443:$HOST" "https://thevalet.ch$1")
+            if [ "$code" = "200" ]; then echo "OK   $1"; else echo "FAIL $1 → $code"; fail=1; fi
           }
-          check /fr/ '200|301'
-          check /en/ '200|301'
-          check /images/alps.webp '200|301'
+          check /fr/
+          check /en/
+          check /images/alps.webp
           exit $fail

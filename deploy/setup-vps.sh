@@ -2,7 +2,8 @@
 # One-time (idempotent) setup of the thevalet.ch VPS (Ubuntu). Run as a sudo user:
 #   sudo bash setup-vps.sh "<deploy public key>"
 # - nginx serving /var/www/thevalet with the rules of deploy/nginx-thevalet.conf
-# - user `deploy`: owns the web root; its key can only rsync into it (rrsync, restrict)
+# - user `deploy`: owns the web root; its key can only rsync into it (rrsync, restrict). rrsync
+#   rebases paths, so the GitHub secret DEPLOY_PATH is "." (the web root), not an absolute path.
 # - firewall (SSH + HTTP/S), 2 GB swap, automatic security updates
 set -euo pipefail
 DEPLOY_KEY="${1:?deploy public key required}"
