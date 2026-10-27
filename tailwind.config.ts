@@ -28,8 +28,8 @@ const config: Config = {
         base: ["1.0625rem", { lineHeight: "1.65" }],
       },
       borderRadius: {
-        /* Near-square corners everywhere (docs/DESIGN.md). */
-        soft: "2px",
+        soft: "999px", // pill for buttons and toggles, echoing the arched photos (docs/DESIGN.md)
+        panel: "12px",
       },
       maxWidth: { prose: "65ch" },
     },

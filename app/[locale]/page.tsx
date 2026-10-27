@@ -28,8 +28,8 @@ const CHAPTERS: Record<string, string[]> = {
   accompany: ["concierge", "medical", "security", "legal-real-estate"],
 };
 
-/** Desktop-only photo plates under two of the three chapter intros (the third stays text). */
-const CHAPTER_PLATES: Record<string, ImageName> = { move: "chauffeur", stay: "chalet" };
+/** Desktop-only photo under one chapter intro; the other chapters stay text. */
+const CHAPTER_PLATES: Record<string, ImageName> = { stay: "table" };
 
 /** Resorts of the route index; ids match the H3 anchors on both pillar pages. */
 const RESORTS = [
@@ -85,14 +85,16 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
       {/* Airy statement */}
       <Section spacing="md">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.3fr)] lg:gap-24">
-          <SectionHeading title={c.intro.title} />
+          <div>
+            <SectionHeading title={c.intro.title} />
+            <Plate name="alps" locale={locale} className="mt-12 max-w-[20rem]" />
+          </div>
           <div className="max-w-prose space-y-5 text-[1.0625rem]">
             {c.intro.paragraphs.map((p) => (
               <RichText key={p} text={p} />
             ))}
           </div>
         </div>
-        <Plate name="alps" locale={locale} variant="bleed" className="mt-16 sm:mt-20" />
       </Section>
 
       {/* The services as three typographic chapters, each an itinerary */}
@@ -110,7 +112,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
                   <h3 className="t-2">{ch.title}</h3>
                   <RichText text={ch.text} className="mt-4 max-w-sm text-muted" />
                   {CHAPTER_PLATES[ch.key] ? (
-                    <Plate name={CHAPTER_PLATES[ch.key]} locale={locale} variant="portrait" className="mt-10 hidden max-w-[17rem] lg:block" />
+                    <Plate name={CHAPTER_PLATES[ch.key]} locale={locale} className="mt-10 hidden max-w-[17rem] lg:block" />
                   ) : null}
                 </div>
                 <Itinerary size="md" items={serviceItinerary(locale, items)} />

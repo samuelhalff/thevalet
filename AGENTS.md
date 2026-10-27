@@ -9,7 +9,7 @@ Next.js static export, French first (`/fr/`), English second (`/en/`).
 - Interface text (menu, buttons, labels, image alt text and captions): `src/i18n/fr.json` and `src/i18n/en.json`.
 - Resort facts (access, events): `content/facts/resorts.md`, the only source for those facts.
 - Photos: `public/images/*.webp`, declared in `src/lib/images.ts`, credited in `public/images/CREDITS.md`.
-  New photos go through `python3 scripts/brand/grade_photos.py <src> <name> <bleed|portrait>`.
+  New photos go through `python3 scripts/brand/grade_photos.py <src> <name> portrait`.
 - Design rules: `docs/DESIGN.md` (binding). Content plan and SEO: `docs/PLAN.md`.
 
 ## Rules

@@ -3,22 +3,19 @@ import type { Locale } from "@/lib/i18n";
 import { cn } from "./ui/cn";
 
 /**
- * A photographic plate (docs/DESIGN.md, "Photography"): one graded photo with a place caption.
- * - `bleed`: wide, runs from the text edge off the right side of the viewport (home only).
- * - `portrait`: 4:5 print with a bordeaux plate offset behind it (page headers, home chapters).
+ * A photographic plate (docs/DESIGN.md, "Photography"): one graded photo in an arched 4:5 frame
+ * with a bordeaux keyline, and a place caption when the source states the place.
  * Renders nothing when the slot has no photo.
  */
 export default function Plate({
   name,
   locale,
-  variant,
   className,
   position,
   priority,
 }: {
   name: ImageName;
   locale: Locale;
-  variant: "bleed" | "portrait";
   className?: string;
   position?: string;
   priority?: boolean;
@@ -27,7 +24,7 @@ export default function Plate({
   if (!src) return null;
   const caption = imageCaption(name, locale);
   return (
-    <figure className={cn("plate", `plate-${variant}`, className)}>
+    <figure className={cn("plate", className)}>
       <div className="plate-print">
         <div className="plate-frame">
           {/* eslint-disable-next-line @next/next/no-img-element -- static export, images are pre-sized webp */}

@@ -30,16 +30,19 @@ The logo already holds that idea: a bordeaux V drawn as a check mark. Everything
 - **Motion:** only the hero check drawing in and quiet hover states. No fade-up on scroll.
 - **Photography (revised 2026-10-27, Sam: "a lot of text right now"):** six Unsplash photos, used
   sparingly, until the owner supplies her own. All are graded with `scripts/brand/grade_photos.py`
-  (desaturated, shadows towards ink, highlights towards paper) so they read as one series, and
-  credited in `public/images/CREDITS.md`. They appear only as *plates* (`src/components/Plate.tsx`):
-  - **bleed**: one wide 2:1 photo on the home page, running from the text edge off the right of the
-    viewport, with a place caption after a short bordeaux rule;
-  - **portrait**: a 4:5 print with a bordeaux plate offset behind it (the band colour), in the header
-    of five service pages (chalets, transfers, chauffeur, events, Glam Team) and under two home
-    chapters on desktop.
+  (rose-aubergine duotone with a third of the original colour kept) so they read as one series in
+  the site's palette, and credited in `public/images/CREDITS.md`. They appear only as *plates*
+  (`src/components/Plate.tsx`): a 4:5 photo in an **arched frame** (a chalet window) with a 1px
+  bordeaux keyline offset up and right, and a place caption after a short bordeaux rule. Where:
+  the header of five service pages (chalets, transfers, chauffeur, events, Glam Team), beside the
+  home intro (Zermatt) and under one home chapter on desktop. Chosen by Sam over an offset bordeaux
+  plate and a V-notch cut; a full-width photo strip was tried and dropped (too heavy).
   No photos on medical, security, legal, concierge or child transport pages (nothing truthful to show
   from stock). Never people's faces, never a photo presented as the owner's own work. Captions name
   the real place only when the photo's source confirms it.
+- **Corners (2026-10-27, Sam: "a bit rough"):** buttons, the theme toggle and other controls are
+  pills (`rounded-soft` = 999px), echoing the arch; panels and the services dropdown use 12px
+  (`rounded-panel`). Form fields stay underlined (correspondence card).
 
 ## Banned on this site (from the skill)
 Tracked all-caps eyebrow labels above headings; `AccentText`-style single accented words;

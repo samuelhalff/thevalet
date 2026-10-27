@@ -55,7 +55,7 @@ export default function ServicePage({ locale, entry }: { locale: Locale; entry: 
           { label: t(locale, "nav.services"), path: pageSlug(locale, "services") },
           { label: shortServiceLabel(locale, entry.translationKey, entry.title), path: entryPath("services", entry.slug) },
         ]}
-        aside={photo ? <Plate name={photo} locale={locale} variant="portrait" priority /> : undefined}
+        aside={photo ? <Plate name={photo} locale={locale} priority /> : undefined}
       >
         {entry.answer ? <p className="t-lead mt-6 max-w-3xl">{entry.answer}</p> : null}
         <div className="mt-8 flex flex-wrap items-center gap-6">

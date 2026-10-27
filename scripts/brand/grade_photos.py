@@ -1,10 +1,10 @@
 """Grade and export site photography to public/images/ (docs/DESIGN.md, Photography).
 
 Every photo gets the same treatment so stock pictures read as one series, in the brand's palette:
-slightly desaturated, shadows pulled towards ink (#221A1C), highlights towards paper (#F6F1F1),
-then cropped to its slot ratio and saved as metadata-free WebP.
+a rose-aubergine duotone with a third of the original colour kept, then cropped to its slot ratio
+and saved as metadata-free WebP.
 
-Usage: python3 scripts/brand/grade_photos.py <src.jpg> <name> <bleed|portrait> [focus_x focus_y]
+Usage: python3 scripts/brand/grade_photos.py <src.jpg> <name> portrait [focus_x focus_y]
 focus_x/focus_y (0..1) place the crop window; default is the centre.
 """
 
@@ -13,9 +13,9 @@ from pathlib import Path
 
 from PIL import Image, ImageEnhance
 
-INK = (34, 26, 28)
-PAPER = (246, 241, 241)
-SLOTS = {"bleed": (2000, 1000), "portrait": (1040, 1300)}  # 2:1 and 4:5
+DUO_DARK = (52, 34, 40)
+DUO_LIGHT = (246, 226, 224)
+SLOTS = {"portrait": (1040, 1300)}  # 4:5, shown in an arched frame
 OUT = Path(__file__).resolve().parents[2] / "public" / "images"
 
 
@@ -31,14 +31,14 @@ def crop_to(img: Image.Image, ratio: float, fx: float, fy: float) -> Image.Image
 
 
 def grade(img: Image.Image) -> Image.Image:
-    img = ImageEnhance.Color(img).enhance(0.8)
-    img = ImageEnhance.Contrast(img).enhance(0.94)
-    # Split tone: per-channel curve mapping 0 -> ink and 255 -> paper, blended at 35% so the
-    # photo keeps its own colour but sits on the site's tinted neutrals.
-    luts = []
-    for lo, hi in zip(INK, PAPER):
-        luts += [round(v * 0.65 + (lo + (hi - lo) * v / 255) * 0.35) for v in range(256)]
-    return img.point(luts)
+    # Rose-aubergine duotone (aubergine #342228 -> blush #F6E2E0), then 35% of the original colour
+    # back in, so warm lights (windows, candles) still glow but every photo shares the palette.
+    duo = []
+    for dark, light in zip(DUO_DARK, DUO_LIGHT):
+        duo.append([round(dark + (light - dark) * (v / 255) ** 0.72) for v in range(256)])
+    grey = img.convert("L")
+    toned = Image.merge("RGB", [grey.point(lut) for lut in duo])
+    return Image.blend(toned, ImageEnhance.Color(img).enhance(0.8), 0.35)
 
 
 def main() -> None:

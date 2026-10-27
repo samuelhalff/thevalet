@@ -51,7 +51,7 @@ export default function ServicesMenu({ label, allLabel, allHref, links }: Props)
           <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
         </svg>
       </button>
-      <div id={id} hidden={!open} className="absolute left-1/2 top-full z-50 mt-4 w-[34rem] -translate-x-1/2 bg-surface p-7 shadow-[inset_0_0_0_1px_rgb(var(--line))]">
+      <div id={id} hidden={!open} className="absolute left-1/2 top-full z-50 mt-4 w-[34rem] -translate-x-1/2 rounded-panel bg-surface p-7 shadow-[inset_0_0_0_1px_rgb(var(--line))]">
         <ul className="grid grid-cols-2 gap-x-6 gap-y-1">
           {links.map((l) => (
             <li key={l.href}>

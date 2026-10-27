@@ -76,6 +76,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable; /* no sideways jump between pages or when a scroll lock applies */
   scroll-behavior: smooth;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -158,13 +159,13 @@ h4,
 }
 
 @layer components {
-  /* ---------- Buttons: flat, square-cornered, quiet hover ---------- */
+  /* ---------- Buttons: flat, pill-shaped (echoes the arched photos), quiet hover ---------- */
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border-radius: 2px;
+    border-radius: 999px;
     font-weight: 500;
     line-height: 1.2;
     text-align: center;
@@ -367,10 +368,25 @@ h4,
     mask: var(--check) center / contain no-repeat;
   }
 
-  /* ---------- Photographic plates (docs/DESIGN.md, Photography) ---------- */
+  /* ---------- Photographic plates (docs/DESIGN.md, Photography) ----------
+     An arched print, like a chalet window, with a bordeaux keyline offset up and right. */
+  .plate-print {
+    position: relative;
+    margin: 0.9rem 0.9rem 0 0;
+  }
+  .plate-print::after {
+    content: "";
+    position: absolute;
+    inset: -0.9rem -0.9rem 0.9rem 0.9rem;
+    border: 1px solid rgb(var(--brand));
+    border-radius: 999px 999px 0 0;
+    pointer-events: none;
+  }
   .plate-frame {
     position: relative;
     overflow: hidden;
+    aspect-ratio: 4 / 5;
+    border-radius: 999px 999px 0 0;
     background-color: rgb(var(--subtle));
   }
   .plate-frame > img {
@@ -380,16 +396,14 @@ h4,
     width: 100%;
     object-fit: cover;
   }
-  /* Photos are graded at build time; in dark mode they step back a little. */
-  :root[data-theme="dark"] .plate-frame > img { filter: brightness(0.86); }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) .plate-frame > img { filter: brightness(0.86); }
+  @media (max-width: 639px) {
+    .plate { max-width: 20rem; }
   }
   .plate-caption {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    margin-top: 0.85rem;
+    margin-top: 1rem;
     font-size: 1.05rem;
     color: rgb(var(--muted));
   }
@@ -398,39 +412,6 @@ h4,
     width: 2rem;
     height: 1px;
     background-color: rgb(var(--brand));
-  }
-
-  /* Bleed: full width on phones, then from the text edge off the right of the viewport. */
-  .plate-bleed { margin-inline: -1rem; }
-  .plate-bleed .plate-frame { aspect-ratio: 4 / 3; }
-  .plate-bleed .plate-caption { padding-inline: 1rem; }
-  @media (min-width: 640px) {
-    .plate-bleed { margin-inline: -1.5rem; }
-    .plate-bleed .plate-caption { padding-inline: 1.5rem; }
-  }
-  @media (min-width: 1024px) {
-    .plate-bleed { margin-left: 0; margin-right: calc(50% - 50vw); }
-    .plate-bleed .plate-frame { aspect-ratio: 2 / 1; }
-    .plate-bleed .plate-caption { padding-inline: 0; }
-  }
-
-  /* Portrait: a 4:5 print with the bordeaux plate set behind it, offset down and left. */
-  .plate-print { position: relative; }
-  .plate-portrait .plate-frame { aspect-ratio: 4 / 5; z-index: 1; }
-  @media (min-width: 640px) {
-    .plate-portrait { padding-left: 1.25rem; }
-    .plate-portrait .plate-print::before {
-      content: "";
-      position: absolute;
-      inset: 3rem 1.25rem -1.25rem -1.25rem;
-      background-color: rgb(var(--band-bg));
-    }
-    .plate-portrait .plate-caption { margin-top: 2rem; }
-  }
-  @media (max-width: 639px) {
-    .plate-portrait { margin-inline: -1rem; }
-    .plate-portrait .plate-frame { aspect-ratio: 4 / 3; }
-    .plate-portrait .plate-caption { padding-inline: 1rem; }
   }
 }
 
@@ -442,13 +423,19 @@ h4,
 .nav-link[aria-current="page"] {
   color: rgb(var(--brand));
 }
+
+/* The V sits outside the link box (absolute), so marking the current page never shifts the menu. */
+.nav-link[aria-current="page"] {
+  position: relative;
+}
 .nav-link[aria-current="page"]::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  right: calc(100% + 0.3em);
+  top: 50%;
   width: 0.7em;
   height: 0.7em;
-  margin-right: 0.35em;
-  vertical-align: -0.02em;
+  transform: translateY(-50%);
   background-color: rgb(var(--brand));
   -webkit-mask: var(--check) center / contain no-repeat;
   mask: var(--check) center / contain no-repeat;
