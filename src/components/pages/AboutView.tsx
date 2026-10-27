@@ -10,7 +10,7 @@ import SectionHeading from "../ui/SectionHeading";
 export default function AboutView({ locale }: { locale: Locale }) {
   const c = pagesCopy(locale).about;
   return (
-    <>
+    <div className="bold-page-headings">
       <PageHeader locale={locale} title={c.title} intro={c.intro} crumbs={[{ label: t(locale, "nav.about"), path: pageSlug(locale, "about") }]} />
       <Section spacing="sm" className="pb-20">
         <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)] lg:gap-20">
@@ -39,6 +39,6 @@ export default function AboutView({ locale }: { locale: Locale }) {
         </div>
       </Section>
       <CtaBand locale={locale} />
-    </>
+    </div>
   );
 }

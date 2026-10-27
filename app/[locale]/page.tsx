@@ -59,7 +59,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
   const services = getPublishedEntries(locale, "services");
 
   return (
-    <>
+    <div className="bold-page-headings">
       {/* Hero: strong left edge, the keyword H1 set large, the tagline as a whole italic phrase,
           and the V drawing itself once on the right. */}
       <section>
@@ -208,6 +208,6 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
       </Section>
 
       <CtaBand locale={locale} title={c.closing.title} text={c.closing.text} />
-    </>
+    </div>
   );
 }

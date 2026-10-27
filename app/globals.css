@@ -612,3 +612,8 @@ body[data-menu-open] .cookie-banner {
     padding-bottom: 4.75rem;
   }
 }
+
+/* Bold titles requested for the home and about pages only. */
+.bold-page-headings :is(h1, h2, h3, h4, dt, .itinerary .font-display) {
+  font-weight: 700;
+}

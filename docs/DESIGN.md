@@ -71,3 +71,7 @@ solutions sur mesure, votre partenaire de confiance, découvrez l'excellence, ex
   (one-time stroke draw, static under reduced motion); bordeaux surfaces are `.band` (request band,
   footer); forms use `.note-card` with underlined `.field`s. Image slots render nothing until real
   photography is set in `src/lib/images.ts`.
+
+- 2026-10-27, Kadiata: all home and about page headings use bold (700), including
+  service names, value titles and FAQ questions, in both languages and themes. Other pages
+  keep their existing weights. Playfair Display includes the real 700 weight for these titles.
