@@ -49,3 +49,19 @@ describe.each([
     expect(ratio(t["band-bg"], t["band-fg"])).toBeGreaterThanOrEqual(4.5);
   });
 });
+
+/** Dark mode is permanent (docs/DESIGN.md): both dark blocks must stay a real dark palette. */
+describe("dark mode stays dark", () => {
+  const media = block(':root:not([data-theme="light"]) {');
+  it.each([
+    ["prefers-color-scheme block", media],
+    ['[data-theme="dark"] block', block(':root[data-theme="dark"]')],
+  ])("%s keeps a dark page with light text", (_name, b) => {
+    expect(b.bg, "dark --bg missing").toBeDefined();
+    expect(lum(b.bg)).toBeLessThan(0.05);
+    expect(lum(b.ink)).toBeGreaterThan(0.6);
+  });
+  it("the two dark blocks use the same palette", () => {
+    expect(media).toEqual(block(':root[data-theme="dark"]'));
+  });
+});

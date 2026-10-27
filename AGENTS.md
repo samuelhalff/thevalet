@@ -22,6 +22,11 @@ Next.js static export, French first (`/fr/`), English second (`/en/`).
   your own initiative. When the owner (Kadiata) explicitly asks for a design change (e.g. colours),
   do it, in light and dark mode, keep text readable (WCAG AA contrast), and record the change in
   `docs/DESIGN.md`.
+- **Never remove or flatten dark mode.** The site has light, dark and system themes and the switch
+  must keep working. "Change the colour / background" means the light mode unless she says
+  otherwise; then give dark mode a matching readable value in both dark blocks of
+  `app/globals.css` (`@media (prefers-color-scheme: dark)` and `:root[data-theme="dark"]`), never
+  copy light values into them. If unsure what she wants in dark mode, ask her.
 - Contact details, company name and form IDs come from environment variables, never hard-coded.
 - Keep each change small and focused on what was asked.
 

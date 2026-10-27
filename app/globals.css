@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 /* ------------------------------------------------------------------------------------------------
-   The Valet — tokens (docs/DESIGN.md is binding). White paper, aubergine ink,
+   The Valet — tokens (docs/DESIGN.md is binding). White paper (light mode), aubergine ink,
    bordeaux used as a SURFACE (request band, footer), blush for quiet panels and text on bordeaux.
-   No gradients, no shadows beyond a 1px tinted edge, no pure black; white backgrounds requested by Kadiata.
+   No gradients, no shadows beyond a 1px tinted edge, no pure black; white page background
+   in light mode at Kadiata's request (2026-10-27). Dark mode keeps its own palette below.
    Colours are RGB channels so Tailwind opacity modifiers work. Contrast: src/lib/contrast.test.ts.
    ------------------------------------------------------------------------------------------------ */
 :root {
-  --bg: 255 255 255;            /* white #FFFFFF */
+  --bg: 255 255 255;            /* white #FFFFFF (Kadiata, 2026-10-27) */
   --surface: 250 246 246;       /* note paper #FAF6F6 */
   --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
   --ink: 34 26 28;              /* ink #221A1C */
@@ -29,49 +30,44 @@
   color-scheme: light;
 }
 
-/* Keep the requested white background and readable colours for every theme preference. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-  --bg: 255 255 255;            /* white #FFFFFF */
-  --surface: 250 246 246;       /* note paper #FAF6F6 */
-  --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
-  --ink: 34 26 28;              /* ink #221A1C */
-  --muted: 107 94 97;           /* muted #6B5E61 */
-  --line: 214 199 201;          /* 1px tinted edge #D6C7C9 */
-  --brand: 106 31 43;           /* bordeaux #6A1F2B: the V, links, primary action */
-  --accent: var(--brand);
-  --accent-strong: 84 22 33;
-  --blush: 235 214 214;         /* #EBD6D6 */
-  --band-bg: 106 31 43;         /* bordeaux surface */
-  --band-fg: 235 214 214;       /* blush on bordeaux */
-  --band-muted: 222 190 193;
-  --band-line: 140 72 82;
-  --danger: 160 36 40;
-  --focus: #6a1f2b;
-  --em: var(--brand);
-  color-scheme: light;
+    --bg: 26 18 21;             /* night #1A1215 */
+    --surface: 33 23 27;
+    --subtle: 44 30 35;
+    --ink: 243 233 232;         /* #F3E9E8 */
+    --muted: 191 175 178;       /* #BFAFB2 */
+    --line: 66 48 54;
+    --brand: 217 154 163;       /* rose #D99AA3 */
+    --accent-strong: 233 184 191;
+    --blush: 58 24 32;
+    --band-bg: 58 24 32;        /* deep bordeaux #3A1820 */
+    --band-fg: 243 233 232;
+    --band-muted: 214 190 194;
+    --band-line: 98 50 60;
+    --danger: 244 150 150;
+    --focus: #d99aa3;
+    color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: 255 255 255;            /* white #FFFFFF */
-  --surface: 250 246 246;       /* note paper #FAF6F6 */
-  --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
-  --ink: 34 26 28;              /* ink #221A1C */
-  --muted: 107 94 97;           /* muted #6B5E61 */
-  --line: 214 199 201;          /* 1px tinted edge #D6C7C9 */
-  --brand: 106 31 43;           /* bordeaux #6A1F2B: the V, links, primary action */
-  --accent: var(--brand);
-  --accent-strong: 84 22 33;
-  --blush: 235 214 214;         /* #EBD6D6 */
-  --band-bg: 106 31 43;         /* bordeaux surface */
-  --band-fg: 235 214 214;       /* blush on bordeaux */
-  --band-muted: 222 190 193;
-  --band-line: 140 72 82;
-  --danger: 160 36 40;
-  --focus: #6a1f2b;
-  --em: var(--brand);
-  color-scheme: light;
+  --bg: 26 18 21;
+  --surface: 33 23 27;
+  --subtle: 44 30 35;
+  --ink: 243 233 232;
+  --muted: 191 175 178;
+  --line: 66 48 54;
+  --brand: 217 154 163;
+  --accent-strong: 233 184 191;
+  --blush: 58 24 32;
+  --band-bg: 58 24 32;
+  --band-fg: 243 233 232;
+  --band-muted: 214 190 194;
+  --band-line: 98 50 60;
+  --danger: 244 150 150;
+  --focus: #d99aa3;
+  color-scheme: dark;
 }
 
 /* The check: the logo's V, used as the only ornament (list ticks, active nav). */
