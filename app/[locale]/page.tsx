@@ -65,7 +65,10 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
       <section>
         <Container className="grid gap-10 pb-16 pt-14 sm:pb-24 sm:pt-20 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] lg:items-end">
           <div>
-            <h1 className="t-hero max-w-[14ch]">{c.hero.h1}</h1>
+            <h1 className="t-hero">
+              <span className="block"><strong className="font-bold">{c.hero.h1.split("\n")[0].replace(" 🇨🇭", "")}</strong>{" 🇨🇭"}</span>
+              <span className="t-2 mt-6 block max-w-[24ch] font-normal">{c.hero.h1.split("\n")[1]}</span>
+            </h1>
             <p className="phrase t-2 mt-6 text-brand">{plainTitle(c.hero.headline)}</p>
             <p className="t-lead mt-8 max-w-xl text-muted">{c.hero.lead}</p>
             <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">

@@ -103,3 +103,8 @@ welcome reply is configured separately in WhatsApp Business by the owner.
 Kadiata chose WhatsApp green (#25D366) with a white symbol for the floating
 shortcut on every French and English page, on mobile and desktop. This replaces
 the bordeaux shortcut colour only; other buttons retain their existing palette.
+
+## Home title — 2026-10-27
+Kadiata chose “The Valet. 🇨🇭” followed by a spaced, regular-weight line:
+“Votre conciergerie haut de gamme” / “Your high-end concierge”. Only the
+brand name is bold within this heading. Other home headings remain unchanged.
