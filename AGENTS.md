@@ -5,9 +5,13 @@ Next.js static export, French first (`/fr/`), English second (`/en/`).
 
 ## How the site is built (read this before any change)
 The owner (Kadiata) is not a developer. Her requests are short and visual ("mets le fond en blanc",
-"change ce texte", "mets mon logo"). Your job is to do what she means **without breaking anything
-else**, in both languages and both themes. Small, targeted edits only: never refactor, rename,
-move or delete files, never "clean up" code you were not asked about.
+"change ce texte", "mets mon logo", "ajoute un bouton WhatsApp"). **She is free to make any change
+she wants to her site, and you carry it out.** Never answer "Sam must do it" for something you can
+do in this repository: texts, colours, theme, logo, photos, contact details, buttons, sections,
+pages, menu, forms wording, legal texts, layout. Your role is to understand what she means, warn her
+in one simple sentence when a choice has a real downside (readability, Google, mobile), then do what
+she decides, cleanly, without breaking the rest of the site. Prefer targeted edits; refactor only
+when her request needs it.
 
 - **Static Next.js site** (`output: export`), French `/fr/…` and English `/en/…`, deployed as plain
   files. No server code, no database.
@@ -16,21 +20,17 @@ move or delete files, never "clean up" code you were not asked about.
   `app/[locale]/[...slug]` with their URLs in `src/lib/static-routes.json` and their text in
   `src/lib/copy.ts`.
 - **Shared components** in `src/components/` (Header, Footer, Logo, MobileMenu, ServicesMenu, Plate,
-  RequestBuilder, CookieBanner…) appear on every page: a change there changes the whole site.
-  Check desktop and mobile layouts in your head before editing them.
-- **Colours and theme**: only through the tokens in `app/globals.css` (light block, plus the two
-  dark blocks). Components use token classes (`bg-bg`, `text-ink`, `text-brand`…): never hard-code
-  colours in components.
-- **Visual changes apply to the whole site, not one spot.** Before and after a colour/background
-  change, list every place that colour appears and decide for each one; then tell her what changed
-  and what deliberately stays different. The light-mode surfaces are: `--bg` (page),
-  `--surface` (floating panels: services dropdown, cookie banner, request/contact form card,
-  `Panel`), `--subtle` (the home "how it works" band, table headers, hover rows, photo
-  placeholders), `--blush` and the bordeaux `.band` (request band and footer). Find their uses with
-  `grep -rn "bg-surface\|bg-subtle\|--surface\|--subtle" src app`. Also think of the mobile menu,
-  dropdowns, forms, cookie banner and both themes, not just the page you were looking at.
-- **Colour requests: offer choices, then apply.** The palette has named roles (tokens in
-  `app/globals.css`, light and dark):
+  RequestBuilder, CookieBanner, WhatsAppButton…) appear on every page: a change there changes the
+  whole site. Check desktop and mobile layouts before editing them.
+- **Contact and business details** (WhatsApp, phone, email, company name, UID, address, social
+  profiles, Formspark form id, Google Analytics id) are in `content/settings.json`. She can change
+  them: edit that file. An empty value hides the item on the site. Never hard-code them in
+  components.
+- **Colours and theme**: through the tokens in `app/globals.css`; components use token classes
+  (`bg-bg`, `text-ink`, `text-brand`…). A visual change applies to the whole site: check every place
+  the token is used (`grep -rn "bg-surface\|bg-subtle\|--surface\|--subtle" src app`), including the
+  mobile menu, dropdowns, forms and cookie banner, and tell her what changed. When a colour request is
+  ambiguous, offer 2–4 numbered options naming the roles below, recommend one, apply her choice.
   | Role (say it to her in French) | Token | Where it shows |
   |---|---|---|
   | Fond des pages | `--bg` | page background |
@@ -40,57 +40,37 @@ move or delete files, never "clean up" code you were not asked about.
   | Couleur secondaire (rose poudré) | `--blush` | text on the bordeaux band, quiet panels |
   | Bandeau bordeaux | `--band-*` | request band and footer |
   | Texte / texte discret | `--ink` / `--muted` | all text |
-  First rule out a misunderstanding: the site follows her phone's light/dark setting and has a
-  switch (sun / moon / screen icons in the header, in the menu on mobile). If she finds the site
-  "too dark" or asks for "white", ask whether she is seeing dark mode and tell her about the switch;
-  this already happened once (2026-10-27, a white background was applied then reverted).
-  When she asks for a colour change, do not apply it straight away: reply in simple French with
-  2–4 numbered options naming these roles (e.g. « 1. seulement le fond des pages, 2. le fond des
-  pages et des menus/cartes, 3. tout en blanc y compris les encadrés »), say what each one looks
-  like, and ask whether dark mode should change too (default: keep it). Apply only the option she
-  picks, in every place that role is used, then ask before publishing as usual.
-- **Logo**: `src/components/Logo.tsx` is an inline SVG drawn with `currentColor` and the brand token,
-  so it adapts to light and dark mode. A replacement logo must also work on the dark background:
-  use an SVG, or a PNG with a transparent background, never a photo/JPG with a box around it. If
-  she sends an image that has a background, tell her simply and ask for a transparent version
-  (or Sam's help) instead of putting it on the site.
-- **SEO** (the site must bring her clients): never change or delete a page URL (file names and
-  `slug` in `content/**.md`, paths in `static-routes.json`), titles stay ≤ 60 characters and unique,
-  keep every front-matter field of the Markdown files (`title description translationKey updated
-  order summary serviceType delivery answer faq`). The content validator enforces minimum lengths
-  and link rules: fix the content, never the validator.
-- **Do not touch** unless Sam asks: `.github/`, `deploy/`, `scripts/`, `package.json` and
-  dependencies, `next.config.*`, `tailwind.config.ts` structure, and in `src/lib/` the files
-  `site.ts seo.ts jsonld.ts routes.ts paths.ts consent.ts analytics.ts attribution.ts formspark.ts`.
-- **Beyond text, colours and photos** (new pages, menu structure, forms, legal texts, tracking,
-  prices): explain to her in one simple sentence that this needs Sam, and do nothing risky.
+  Keep text readable (WCAG AA contrast) and record design changes in `docs/DESIGN.md`.
+- **Logo**: `src/components/Logo.tsx`. A logo with a visible box/background around it looks bad on
+  the site: if her image has one, tell her simply, and if she still wants it, use it anyway.
+- **SEO** (the site must bring her clients): changing a page URL loses its Google ranking, so warn
+  her before doing it; titles ≤ 60 characters and unique; keep the front-matter fields of the
+  Markdown files (`title description translationKey updated order summary serviceType delivery
+  answer faq`). The content validator enforces minimum lengths and link rules: adjust the content
+  to pass it.
+- **Infrastructure files** (`.github/`, `deploy/`, `scripts/`, `package.json` and dependencies,
+  `next.config.*`): leave them alone; no request of hers should need them. Only things outside
+  this repository need Sam: domain/DNS, email accounts, creating a Formspark or Google account,
+  payments. For those, tell her in one sentence and do the rest yourself.
 
 ## Where things are
+- Contact and business details: `content/settings.json`.
 - Service pages: `content/fr/services/*.md` and `content/en/services/*.md` (Markdown + front matter).
 - Home, about, FAQ, contact and other fixed pages: `src/lib/copy.ts`.
 - Interface text (menu, buttons, labels, image alt text and captions): `src/i18n/fr.json` and `src/i18n/en.json`.
 - Resort facts (access, events): `content/facts/resorts.md`, the only source for those facts.
 - Photos: `public/images/*.webp`, declared in `src/lib/images.ts`, credited in `public/images/CREDITS.md`.
   New photos go through `python3 scripts/brand/grade_photos.py <src> <name> portrait`.
-- Design rules: `docs/DESIGN.md` (binding). Content plan and SEO: `docs/PLAN.md`.
+- Design notes: `docs/DESIGN.md`. Content plan and SEO: `docs/PLAN.md`.
 
 ## Rules
-- Every text change is made in French **and** English, with the same meaning.
+- Every text change is made in French **and** English, with the same meaning, unless she asks
+  otherwise.
 - French typography: non-breaking space before `; : ! ?`.
-- Never invent facts: no prices, figures, client reviews, guarantees, partner names, dates or places
-  that the owner has not given. Partner services (security, medical, legal, chauffeurs) are provided
+- Never invent facts yourself: no prices, figures, client reviews, guarantees, partner names, dates
+  or places she has not given. Partner services (security, medical, legal, chauffeurs) are provided
   by independent partners; keep that wording.
-- Follow `docs/DESIGN.md`: no new colours, fonts, shadows, rounded cards, icons or animations on
-  your own initiative. When the owner (Kadiata) explicitly asks for a design change (e.g. colours),
-  do it, in light and dark mode, keep text readable (WCAG AA contrast), and record the change in
-  `docs/DESIGN.md`.
-- **Never remove or flatten dark mode.** The site has light, dark and system themes and the switch
-  must keep working. "Change the colour / background" means the light mode unless she says
-  otherwise; then give dark mode a matching readable value in both dark blocks of
-  `app/globals.css` (`@media (prefers-color-scheme: dark)` and `:root[data-theme="dark"]`), never
-  copy light values into them. If unsure what she wants in dark mode, ask her.
-- Contact details, company name and form IDs come from environment variables, never hard-coded.
-- Keep each change small and focused on what was asked.
+- Do not add design elements on your own initiative; when she asks for one, do it.
 
 ## Before finishing
 Run and fix until all pass (on the VPS, skip `npm run build`: GitHub runs it on the pull request):
