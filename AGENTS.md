@@ -23,7 +23,7 @@ Next.js static export, French first (`/fr/`), English second (`/en/`).
 - Keep each change small and focused on what was asked.
 
 ## Before finishing
-Run and fix until all pass:
+Run and fix until all pass (on the VPS, skip `npm run build`: GitHub runs it on the pull request):
 ```
 npm ci
 npm run lint
@@ -36,3 +36,9 @@ broken: fix the content rather than the validator.
 
 ## Delivery
 Work on a branch and open a pull request into `main`. Merging into `main` deploys the site.
+
+On the VPS (user `kadiata`, folder `~/thevalet`): start from an up-to-date `main`
+(`git checkout main && git pull`), create a branch named after the change (e.g. `texte-glam-team`),
+commit, then `git push -u origin <branch>`. Pushing to `main` directly is refused. Give the user the
+pull-request link that `git push` prints, so she can open and merge it from the GitHub app.
+The VPS has little memory: `npm run lint` and `npm test` are fine; the full build runs on GitHub.
