@@ -114,3 +114,6 @@ the header logo, beside the brand name, rather than a platform-dependent emoji.
 
 2026-10-27: Kadiata requested a closer Swiss flag beside the home brand name;
 reduce the gap from 12px to 4px in both languages.
+
+2026-10-27: raise the home Swiss flag by 8px at Kadiata’s request, keeping
+the closer horizontal spacing.
