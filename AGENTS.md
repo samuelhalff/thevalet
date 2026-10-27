@@ -3,6 +3,40 @@
 Website of The Valet, a concierge service in French-speaking Switzerland and the Alps (thevalet.ch).
 Next.js static export, French first (`/fr/`), English second (`/en/`).
 
+## How the site is built (read this before any change)
+The owner (Kadiata) is not a developer. Her requests are short and visual ("mets le fond en blanc",
+"change ce texte", "mets mon logo"). Your job is to do what she means **without breaking anything
+else**, in both languages and both themes. Small, targeted edits only: never refactor, rename,
+move or delete files, never "clean up" code you were not asked about.
+
+- **Static Next.js site** (`output: export`), French `/fr/…` and English `/en/…`, deployed as plain
+  files. No server code, no database.
+- **Pages**: home `app/[locale]/page.tsx`; service pages built from `content/<locale>/services/*.md`
+  by `src/components/ServicePage.tsx`; fixed pages (about, FAQ, contact, request, legal) via
+  `app/[locale]/[...slug]` with their URLs in `src/lib/static-routes.json` and their text in
+  `src/lib/copy.ts`.
+- **Shared components** in `src/components/` (Header, Footer, Logo, MobileMenu, ServicesMenu, Plate,
+  RequestBuilder, CookieBanner…) appear on every page: a change there changes the whole site.
+  Check desktop and mobile layouts in your head before editing them.
+- **Colours and theme**: only through the tokens in `app/globals.css` (light block, plus the two
+  dark blocks). Components use token classes (`bg-bg`, `text-ink`, `text-brand`…): never hard-code
+  colours in components.
+- **Logo**: `src/components/Logo.tsx` is an inline SVG drawn with `currentColor` and the brand token,
+  so it adapts to light and dark mode. A replacement logo must also work on the dark background:
+  use an SVG, or a PNG with a transparent background, never a photo/JPG with a box around it. If
+  she sends an image that has a background, tell her simply and ask for a transparent version
+  (or Sam's help) instead of putting it on the site.
+- **SEO** (the site must bring her clients): never change or delete a page URL (file names and
+  `slug` in `content/**.md`, paths in `static-routes.json`), titles stay ≤ 60 characters and unique,
+  keep every front-matter field of the Markdown files (`title description translationKey updated
+  order summary serviceType delivery answer faq`). The content validator enforces minimum lengths
+  and link rules: fix the content, never the validator.
+- **Do not touch** unless Sam asks: `.github/`, `deploy/`, `scripts/`, `package.json` and
+  dependencies, `next.config.*`, `tailwind.config.ts` structure, and in `src/lib/` the files
+  `site.ts seo.ts jsonld.ts routes.ts paths.ts consent.ts analytics.ts attribution.ts formspark.ts`.
+- **Beyond text, colours and photos** (new pages, menu structure, forms, legal texts, tracking,
+  prices): explain to her in one simple sentence that this needs Sam, and do nothing risky.
+
 ## Where things are
 - Service pages: `content/fr/services/*.md` and `content/en/services/*.md` (Markdown + front matter).
 - Home, about, FAQ, contact and other fixed pages: `src/lib/copy.ts`.
@@ -47,7 +81,8 @@ Every push to `main` is built, checked and deployed by GitHub Actions; a failed 
 
 On the VPS (user `kadiata`, folder `~/thevalet`) the user only chats; you handle git yourself, but never publish without asking her:
 1. Before starting: `git checkout main && git pull --rebase`.
-2. Make the change, run `npm run lint` and `npm test`, fix until both pass.
+2. Make the change, then run `npm run lint`, `npm run typecheck`, `npm test` and `npm run validate`;
+   fix until all pass. Re-read your diff (`git diff`) and undo anything she did not ask for.
 3. `git add -A && git commit -m "<short description in French>"` (do not push yet).
 4. Tell her in one or two simple French sentences what you changed, then always ask:
    « Veux-tu que je publie ? Le résultat sera visible sur thevalet.ch dans 2 à 3 minutes. »
