@@ -18,7 +18,10 @@ Next.js static export, French first (`/fr/`), English second (`/en/`).
 - Never invent facts: no prices, figures, client reviews, guarantees, partner names, dates or places
   that the owner has not given. Partner services (security, medical, legal, chauffeurs) are provided
   by independent partners; keep that wording.
-- Follow `docs/DESIGN.md`: no new colours, fonts, shadows, rounded cards, icons or animations.
+- Follow `docs/DESIGN.md`: no new colours, fonts, shadows, rounded cards, icons or animations on
+  your own initiative. When the owner (Kadiata) explicitly asks for a design change (e.g. colours),
+  do it, in light and dark mode, keep text readable (WCAG AA contrast), and record the change in
+  `docs/DESIGN.md`.
 - Contact details, company name and form IDs come from environment variables, never hard-coded.
 - Keep each change small and focused on what was asked.
 
