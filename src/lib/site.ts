@@ -20,7 +20,6 @@ export function isAllowedSiteUrl(url: string): boolean {
     host === "www.thevalet.ch" ||
     host === "localhost" ||
     host === "127.0.0.1" ||
-    /^thevalet\.(ark-fid\.ch|houle\.ai)$/.test(host) ||
     /^[a-z0-9-]+\.thevalet\.ch$/.test(host)
   );
 }
@@ -29,7 +28,7 @@ function resolveSiteUrl(): string {
   const raw = (process.env.NEXT_PUBLIC_SITE_URL || PRODUCTION_URL).replace(/\/+$/, "");
   if (!isAllowedSiteUrl(raw)) {
     throw new Error(
-      `NEXT_PUBLIC_SITE_URL="${raw}" is not thevalet.ch or a preview host (thevalet.ark-fid.ch, thevalet.houle.ai, *.thevalet.ch, localhost).`,
+      `NEXT_PUBLIC_SITE_URL="${raw}" is not thevalet.ch, a *.thevalet.ch preview host or localhost.`,
     );
   }
   return raw;

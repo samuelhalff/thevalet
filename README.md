@@ -18,13 +18,8 @@ npm run build        # prebuild: scripts/validate-content.mjs · postbuild: scri
 npm run report       # words and internal links per page
 ```
 
-Preview build (noindex) served at https://thevalet.ark-fid.ch from `.preview/`:
-
-```bash
-NEXT_PUBLIC_NOINDEX=true NEXT_PUBLIC_SITE_URL=https://thevalet.ark-fid.ch npm run build
-rm -rf .preview/* && cp -a out/. .preview/
-# scripts/preview/serve.py .preview <port> adds X-Robots-Tag: noindex and a Disallow robots.txt
-```
+Production: every push to `main` is built, checked and deployed to the VPS by
+`.github/workflows/deploy.yml` (server setup: `deploy/`). Keep `NEXT_PUBLIC_NOINDEX=true` until launch.
 
 ## Environment
 

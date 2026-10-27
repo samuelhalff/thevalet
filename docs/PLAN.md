@@ -75,8 +75,8 @@ once it has enough first-hand content to stand alone.
 - Per-service CTAs with the service pre-selected.
 
 ## Testing environment
-- `thevalet.houle.ai` via Cloudflare tunnel, built with NOINDEX: robots Disallow, meta noindex,
-  `X-Robots-Tag: noindex, nofollow` header.
+- Until launch, production (thevalet.ch) is built with NOINDEX: robots Disallow, meta noindex.
+  The earlier thevalet.ark-fid.ch tunnel preview was removed on 2026-10-27.
 
 ## Open questions for the client
 Base city/address, legal entity, phone/email/WhatsApp, 24/7 meaning, female chauffeurs/protection

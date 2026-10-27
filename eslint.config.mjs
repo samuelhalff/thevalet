@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const compat = new FlatCompat({ baseDirectory: dirname(fileURLToPath(import.meta.url)) });
 
 const eslintConfig = [
-  { ignores: [".next/**", "out/**", ".preview/**", "brief/**", "node_modules/**", "next-env.d.ts"] },
+  { ignores: [".next/**", "out/**", "brief/**", "node_modules/**", "next-env.d.ts"] },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     // Pages Router rule; this App Router site intentionally uses plain <a> for full reloads
