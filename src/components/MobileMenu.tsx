@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Button from "./ui/Button";
-import ThemeToggle from "./ui/ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 type Props = {
@@ -15,13 +14,12 @@ type Props = {
   openLabel: string;
   closeLabel: string;
   navLabel: string;
-  themeLabels: { label: string; light: string; dark: string; system: string };
   languageLabel: string;
   languages: { code: string; name: string }[];
   current: string;
 };
 
-export default function MobileMenu({ services, servicesLabel, allServices, links, cta, openLabel, closeLabel, navLabel, themeLabels, languageLabel, languages, current }: Props) {
+export default function MobileMenu({ services, servicesLabel, allServices, links, cta, openLabel, closeLabel, navLabel, languageLabel, languages, current }: Props) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -163,7 +161,6 @@ export default function MobileMenu({ services, servicesLabel, allServices, links
         </nav>
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
           <LanguageSwitcher current={current} label={languageLabel} languages={languages} />
-          <ThemeToggle labels={themeLabels} variant="full" name="theme-mobile" className="sm:w-auto" />
         </div>
       </div>
     </div>

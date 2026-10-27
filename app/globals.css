@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 /* ------------------------------------------------------------------------------------------------
-   The Valet — tokens (docs/DESIGN.md is binding). Rose-tinted porcelain paper, aubergine ink,
+   The Valet — tokens (docs/DESIGN.md is binding). White pages and panels, aubergine ink,
    bordeaux used as a SURFACE (request band, footer), blush for quiet panels and text on bordeaux.
-   No gradients, no shadows beyond a 1px tinted edge, no pure black or white.
+   No gradients, no shadows beyond a 1px tinted edge. White backgrounds approved by the owner.
    Colours are RGB channels so Tailwind opacity modifiers work. Contrast: src/lib/contrast.test.ts.
    ------------------------------------------------------------------------------------------------ */
 :root {
-  --bg: 246 241 241;            /* paper #F6F1F1 */
-  --surface: 250 246 246;       /* note paper #FAF6F6 */
-  --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
+  --bg: 255 255 255;            /* white, owner-approved single light mode */
+  --surface: 255 255 255;       /* menus, cards and forms */
+  --subtle: 255 255 255;        /* white sections and table surfaces */
   --ink: 34 26 28;              /* ink #221A1C */
   --muted: 107 94 97;           /* muted #6B5E61 */
   --line: 214 199 201;          /* 1px tinted edge #D6C7C9 */
@@ -27,46 +27,6 @@
   --focus: #6a1f2b;
   --em: var(--brand);
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: 26 18 21;             /* night #1A1215 */
-    --surface: 33 23 27;
-    --subtle: 44 30 35;
-    --ink: 243 233 232;         /* #F3E9E8 */
-    --muted: 191 175 178;       /* #BFAFB2 */
-    --line: 66 48 54;
-    --brand: 217 154 163;       /* rose #D99AA3 */
-    --accent-strong: 233 184 191;
-    --blush: 58 24 32;
-    --band-bg: 58 24 32;        /* deep bordeaux #3A1820 */
-    --band-fg: 243 233 232;
-    --band-muted: 214 190 194;
-    --band-line: 98 50 60;
-    --danger: 244 150 150;
-    --focus: #d99aa3;
-    color-scheme: dark;
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: 26 18 21;
-  --surface: 33 23 27;
-  --subtle: 44 30 35;
-  --ink: 243 233 232;
-  --muted: 191 175 178;
-  --line: 66 48 54;
-  --brand: 217 154 163;
-  --accent-strong: 233 184 191;
-  --blush: 58 24 32;
-  --band-bg: 58 24 32;
-  --band-fg: 243 233 232;
-  --band-muted: 214 190 194;
-  --band-line: 98 50 60;
-  --danger: 244 150 150;
-  --focus: #d99aa3;
-  color-scheme: dark;
 }
 
 /* The check: the logo's V, used as the only ornament (list ticks, active nav). */
@@ -620,10 +580,6 @@ body[data-menu-open] .cookie-banner {
 
 /* Owner-approved black/white wordmark and fixed Swiss flag colours. */
 :root { --logo-ink: #000000; --logo-red: #e20a0a; --logo-white: #ffffff; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --logo-ink: #ffffff; }
-}
-:root[data-theme="dark"] { --logo-ink: #ffffff; }
 .logo-wordmark { color: var(--logo-ink); }
 .band .logo-wordmark { color: var(--logo-white); }
 .logo-swiss-red { fill: var(--logo-red); }

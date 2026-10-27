@@ -9,25 +9,14 @@ import ServicesMenu from "./ServicesMenu";
 import NavLink from "./NavLink";
 import Button from "./ui/Button";
 import Container from "./ui/Container";
-import ThemeToggle from "./ui/ThemeToggle";
 
-export function themeLabels(locale: Locale) {
-  return {
-    label: t(locale, "theme.label"),
-    light: t(locale, "theme.light"),
-    dark: t(locale, "theme.dark"),
-    system: t(locale, "theme.system"),
-  };
-}
-
-/** Sticky header: logo, services dropdown, main links, language, theme, one primary action. */
+/** Sticky header: logo, services dropdown, main links, language, one primary action. */
 export default function Header({ locale }: { locale: Locale }) {
   const services = menuServices(locale);
   const links = mainLinks(locale);
   const servicesHub = pagePath(locale, "services");
   const request = { href: pagePath(locale, "request"), label: t(locale, "common.ctaRequest") };
   const languages = locales.map((code) => ({ code, name: getMessages(locale).languages[code] }));
-  const theme = themeLabels(locale);
 
   return (
     <header className="site-header sticky top-0 z-40 text-ink">
@@ -51,7 +40,6 @@ export default function Header({ locale }: { locale: Locale }) {
           <div className="hidden sm:block">
             <LanguageSwitcher current={locale} label={t(locale, "common.language")} languages={languages} />
           </div>
-          <ThemeToggle labels={theme} name="theme-header" className="hidden xl:inline-flex" />
           <Button href={request.href} size="sm" className="hidden lg:inline-flex">
             {request.label}
           </Button>
@@ -64,7 +52,6 @@ export default function Header({ locale }: { locale: Locale }) {
             openLabel={t(locale, "common.menuOpen")}
             closeLabel={t(locale, "common.menuClose")}
             navLabel={t(locale, "common.mainNav")}
-            themeLabels={theme}
             languageLabel={t(locale, "common.language")}
             languages={languages}
             current={locale}

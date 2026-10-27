@@ -81,3 +81,10 @@ solutions sur mesure, votre partenaire de confiance, découvrez l'excellence, ex
   on light pages and white on dark pages/the bordeaux footer, keeping the flag red
   and white. Pure black/white and Swiss red are approved exceptions for this logo.
   Retain the existing decorative V elsewhere.
+
+## Current owner decision — 2026-10-27
+Kadiata explicitly chose to remove dark mode and its desktop/mobile controls. This
+supersedes the earlier permanent-dark-mode direction. Every page, dropdown, mobile
+menu, form card, cookie banner and quiet section uses white surfaces, independently
+of OS settings or legacy saved preferences. Bordeaux request bands/footer and their
+readable light lettering remain. The header logo stays black; footer logo stays white.

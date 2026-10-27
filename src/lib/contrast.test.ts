@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 
-/** WCAG AA check of the design tokens in app/globals.css (light, dark, bordeaux band). */
+/** WCAG AA check of the design tokens in app/globals.css (white surfaces and bordeaux band). */
 const css = fs.readFileSync(path.join(__dirname, "../../app/globals.css"), "utf8");
 
 function block(selector: string): Record<string, number[]> {
@@ -26,11 +26,9 @@ const ratio = (a: number[], b: number[]) => {
 };
 
 const light = block(":root {");
-const dark = { ...light, ...block(':root[data-theme="dark"]') };
 
 describe.each([
   ["light", light],
-  ["dark", dark],
 ])("%s theme", (_name, t) => {
   it("body, muted and link text pass AA (4.5:1) on paper and on the note surface", () => {
     for (const bg of [t.bg, t.surface, t.subtle]) {
@@ -50,18 +48,13 @@ describe.each([
   });
 });
 
-/** Dark mode is permanent (docs/DESIGN.md): both dark blocks must stay a real dark palette. */
-describe("dark mode stays dark", () => {
-  const media = block(':root:not([data-theme="light"]) {');
-  it.each([
-    ["prefers-color-scheme block", media],
-    ['[data-theme="dark"] block', block(':root[data-theme="dark"]')],
-  ])("%s keeps a dark page with light text", (_name, b) => {
-    expect(b.bg, "dark --bg missing").toBeDefined();
-    expect(lum(b.bg)).toBeLessThan(0.05);
-    expect(lum(b.ink)).toBeGreaterThan(0.6);
-  });
-  it("the two dark blocks use the same palette", () => {
-    expect(media).toEqual(block(':root[data-theme="dark"]'));
+describe("single light appearance", () => {
+  it("uses white page, menu and section backgrounds without dark overrides", () => {
+    for (const surface of [light.bg, light.surface, light.subtle]) {
+      expect(surface).toEqual([255, 255, 255]);
+    }
+    expect(css).not.toContain("prefers-color-scheme");
+    expect(css).not.toContain(':root[data-theme="dark"]');
+    expect(css).toContain("color-scheme: light");
   });
 });

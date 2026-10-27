@@ -31,8 +31,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  // Single, unscoped meta: the inline no-flash script and ThemeToggle keep its content in
-  // sync with the effective theme, so a manual light/dark choice overrides the OS preference.
+  // The owner chose one white, light appearance on every device.
   themeColor: THEME_COLORS.light,
 };
 
@@ -47,9 +46,9 @@ export default async function LocaleLayout({
   if (!isLocale(locale)) notFound();
 
   return (
-    <html lang={htmlLang[locale]} className={`${display.variable} ${text.variable}`} suppressHydrationWarning>
+    <html data-theme="light" lang={htmlLang[locale]} className={`${display.variable} ${text.variable}`} suppressHydrationWarning>
       <head>
-        {/* Applies the saved light/dark choice before first paint. */}
+        {/* Clears legacy theme choices before first paint. */}
         <script id="theme-init" dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <AnalyticsBootstrap />
         <JsonLd data={[organizationLd(locale), websiteLd(locale)]} />
