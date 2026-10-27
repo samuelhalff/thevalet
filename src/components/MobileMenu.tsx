@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import Button from "./ui/Button";
 import ThemeToggle from "./ui/ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -24,6 +25,11 @@ export default function MobileMenu({ services, servicesLabel, allServices, links
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const norm = (p: string) => p.replace(/\/+$/, "");
+  const pathname = norm(usePathname() || "");
+  const isCurrent = (href: string) => norm(href) === pathname;
+  // On a service page (or the hub) the services list starts open, so the visitor sees where they are.
+  const inServices = isCurrent(allServices.href) || services.some((l) => isCurrent(l.href));
 
   useEffect(() => {
     document.querySelector(".site-header")?.toggleAttribute("data-menu-open", open);
@@ -112,7 +118,7 @@ export default function MobileMenu({ services, servicesLabel, allServices, links
           <ul className="flex flex-col border-t border-line">
             <li>
               {/* Native disclosure: keyboard and screen-reader accessible without extra script. */}
-              <details className="group border-b border-line">
+              <details className="group border-b border-line" open={inServices}>
                 <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-display text-[1.45rem] text-ink [&::-webkit-details-marker]:hidden">
                   {servicesLabel}
                   <span aria-hidden="true" className="text-accent transition-transform group-open:rotate-45">+</span>
@@ -120,7 +126,12 @@ export default function MobileMenu({ services, servicesLabel, allServices, links
                 <ul className="pb-3 pl-1">
                   {services.map((l) => (
                     <li key={l.href}>
-                      <a href={l.href} className="block py-1.5 text-[0.98rem] text-ink active:text-accent" onClick={() => setOpen(false)}>
+                      <a
+                        href={l.href}
+                        aria-current={isCurrent(l.href) ? "page" : undefined}
+                        className="block py-1.5 text-[0.98rem] text-ink active:text-accent aria-[current=page]:text-accent"
+                        onClick={() => setOpen(false)}
+                      >
                         {l.label}
                       </a>
                     </li>
@@ -137,7 +148,8 @@ export default function MobileMenu({ services, servicesLabel, allServices, links
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="flex items-center justify-between border-b border-line py-3 font-display text-[1.45rem] text-ink transition-colors active:text-accent focus-visible:text-accent focus-visible:outline-none"
+                  aria-current={isCurrent(l.href) ? "page" : undefined}
+                  className="flex items-center justify-between border-b border-line py-3 font-display text-[1.45rem] text-ink transition-colors active:text-accent focus-visible:text-accent focus-visible:outline-none aria-[current=page]:text-accent"
                   onClick={() => setOpen(false)}
                 >
                   {l.label}
