@@ -111,3 +111,6 @@ brand name is bold within this heading. Other home headings remain unchanged.
 
 The home heading uses the same small square Swiss flag artwork and colours as
 the header logo, beside the brand name, rather than a platform-dependent emoji.
+
+2026-10-27: Kadiata requested a closer Swiss flag beside the home brand name;
+reduce the gap from 12px to 4px in both languages.

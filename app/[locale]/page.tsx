@@ -66,7 +66,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
         <Container className="grid gap-10 pb-16 pt-14 sm:pb-24 sm:pt-20 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] lg:items-end">
           <div>
             <h1 className="t-hero">
-              <span className="flex items-center gap-3">
+              <span className="flex items-center gap-1">
                 <strong className="font-bold">{c.hero.h1.split("\n")[0].replace(" 🇨🇭", "")}</strong>
                 <svg className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" viewBox="1173.40625 491.984375 75 75" aria-hidden="true" focusable="false">
                   <path className="logo-swiss-red" d="M 1173.40625 491.984375 L 1248.40625 491.984375 L 1248.40625 566.984375 L 1173.40625 566.984375 Z M 1173.40625 491.984375 " />
