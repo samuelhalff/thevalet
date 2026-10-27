@@ -69,6 +69,8 @@ export default async function LocaleLayout({
         <StickyCta
           href={pagePath(locale, "request")}
           label={t(locale, "stickyCta.label")}
+          whatsappHref={whatsappUrl}
+          whatsappLabel={t(locale, "channels.whatsappCta")}
           hideOn={[pagePath(locale, "request"), pagePath(locale, "contact")]}
         />
         <WhatsAppButton href={whatsappUrl} label={t(locale, "channels.whatsappCta")} />
