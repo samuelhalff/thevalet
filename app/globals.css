@@ -11,7 +11,7 @@
    ------------------------------------------------------------------------------------------------ */
 :root {
   --bg: 255 255 255;            /* white #FFFFFF (Kadiata, 2026-10-27) */
-  --surface: 250 246 246;       /* note paper #FAF6F6 */
+  --surface: 255 255 255;       /* white panels (menu, cookie banner, form card), like the page */
   --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
   --ink: 34 26 28;              /* ink #221A1C */
   --muted: 107 94 97;           /* muted #6B5E61 */

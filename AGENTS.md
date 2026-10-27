@@ -21,6 +21,14 @@ move or delete files, never "clean up" code you were not asked about.
 - **Colours and theme**: only through the tokens in `app/globals.css` (light block, plus the two
   dark blocks). Components use token classes (`bg-bg`, `text-ink`, `text-brand`…): never hard-code
   colours in components.
+- **Visual changes apply to the whole site, not one spot.** Before and after a colour/background
+  change, list every place that colour appears and decide for each one; then tell her what changed
+  and what deliberately stays different. The light-mode surfaces are: `--bg` (page),
+  `--surface` (floating panels: services dropdown, cookie banner, request/contact form card,
+  `Panel`), `--subtle` (the home "how it works" band, table headers, hover rows, photo
+  placeholders), `--blush` and the bordeaux `.band` (request band and footer). Find their uses with
+  `grep -rn "bg-surface\|bg-subtle\|--surface\|--subtle" src app`. Also think of the mobile menu,
+  dropdowns, forms, cookie banner and both themes, not just the page you were looking at.
 - **Logo**: `src/components/Logo.tsx` is an inline SVG drawn with `currentColor` and the brand token,
   so it adapts to light and dark mode. A replacement logo must also work on the dark background:
   use an SVG, or a PNG with a transparent background, never a photo/JPG with a box around it. If

@@ -10,7 +10,8 @@ The logo already holds that idea: a bordeaux V drawn as a check mark. Everything
 - **Colour** (from the logo, used as surfaces, not just accents):
   - Light: paper `#FFFFFF` (white, requested by Kadiata on 2026-10-27), ink `#221A1C`
     (aubergine-tinted black), bordeaux `#6A1F2B` (full-bleed surfaces: request band, footer),
-    blush `#EBD6D6` (quiet panels, text on bordeaux), muted `#6B5E61` (AA on paper).
+    blush `#EBD6D6` (text on bordeaux), muted `#6B5E61` (AA on paper); floating panels
+    (menu, cookie banner, form card) are white too, outlined by a 1px tinted line.
   - Dark: night `#1A1215` (bordeaux-black), ink `#F3E9E8`, rose `#D99AA3` (V, links),
     deep bordeaux surface `#3A1820`, muted `#BFAFB2`.
   - **Dark mode is permanent.** The theme switch (light / dark / system) must always work: any
