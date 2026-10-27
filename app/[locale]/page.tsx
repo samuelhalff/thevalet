@@ -66,7 +66,13 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
         <Container className="grid gap-10 pb-16 pt-14 sm:pb-24 sm:pt-20 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] lg:items-end">
           <div>
             <h1 className="t-hero">
-              <span className="block"><strong className="font-bold">{c.hero.h1.split("\n")[0].replace(" 🇨🇭", "")}</strong>{" 🇨🇭"}</span>
+              <span className="flex items-center gap-3">
+                <strong className="font-bold">{c.hero.h1.split("\n")[0].replace(" 🇨🇭", "")}</strong>
+                <svg className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" viewBox="1173.40625 491.984375 75 75" aria-hidden="true" focusable="false">
+                  <path className="logo-swiss-red" d="M 1173.40625 491.984375 L 1248.40625 491.984375 L 1248.40625 566.984375 L 1173.40625 566.984375 Z M 1173.40625 491.984375 " />
+<path className="logo-swiss-white" d="M 1233.527344 522.578125 L 1217.8125 522.578125 L 1217.8125 506.863281 L 1204.003906 506.863281 L 1204.003906 522.578125 L 1188.289062 522.578125 L 1188.289062 536.390625 L 1204.003906 536.390625 L 1204.003906 552.101562 L 1217.8125 552.101562 L 1217.8125 536.390625 L 1233.527344 536.390625 Z M 1233.527344 522.578125 " />
+                </svg>
+              </span>
               <span className="t-2 mt-6 block max-w-[24ch] font-normal">{c.hero.h1.split("\n")[1]}</span>
             </h1>
             <p className="phrase t-2 mt-6 text-brand">{plainTitle(c.hero.headline)}</p>

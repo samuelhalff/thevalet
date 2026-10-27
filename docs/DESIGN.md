@@ -108,3 +108,6 @@ the bordeaux shortcut colour only; other buttons retain their existing palette.
 Kadiata chose “The Valet. 🇨🇭” followed by a spaced, regular-weight line:
 “Votre conciergerie haut de gamme” / “Your high-end concierge”. Only the
 brand name is bold within this heading. Other home headings remain unchanged.
+
+The home heading uses the same small square Swiss flag artwork and colours as
+the header logo, beside the brand name, rather than a platform-dependent emoji.
