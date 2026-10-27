@@ -61,6 +61,9 @@ when her request needs it.
 - Resort facts (access, events): `content/facts/resorts.md`, the only source for those facts.
 - Photos: `public/images/*.webp`, declared in `src/lib/images.ts`, credited in `public/images/CREDITS.md`.
   New photos go through `python3 scripts/brand/grade_photos.py <src> <name> portrait`.
+- Fonts: self-hosted files in `src/fonts/`, wired in `src/lib/fonts.ts` (`next/font/local`). To change a
+  font, download its woff2 (latin) into `src/fonts/` and point `fonts.ts` at it. Never switch back to
+  `next/font/google`: it makes the online build depend on Google and has failed it before.
 - Design notes: `docs/DESIGN.md`. Content plan and SEO: `docs/PLAN.md`.
 
 ## Rules
