@@ -35,6 +35,20 @@ JSON-LD, llms.txt, IndexNow). Two locales: **fr** (default, Geneva market) and *
   replacing SR's eligibility check: service → date → place → guests → contact).
 - Legal: privacy (FADP/nLPD + GDPR), legal notice, CGV/terms.
 
+## Build order (Codex SEO input, 2026-10-26)
+1. Conciergerie privée Genève / Luxury concierge Geneva (home + concierge page)
+2. Chauffeur privé & transferts GVA / Private chauffeur
+3. Transferts Genève–Alpes (Verbier, Megève, Courchevel, Chamonix) — one strong page, not one per resort
+4. Transport privé d'enfants / Private child transport
+5. Intendance de résidence Genève–Vaud / Residence management (housekeeping)
+6. Chalet concierge Swiss/French Alps (destinations hub, resort sections inside)
+7. Mariages & événements privés Genève / Weddings and private events
+8. Glam Team à domicile / at home or hotel
+9. Conciergerie médicale and Sécurité — separate pages, explicitly partner-delivered
+Each page states: response time, languages, geography, direct vs partner-delivered.
+Destination pages start as sections of the chalet/transfer pages; split out a resort only
+once it has enough first-hand content to stand alone.
+
 ## SEO
 - Primary FR targets: conciergerie de luxe Genève, conciergerie privée Suisse, chauffeur privé
   Genève, transfert aéroport Genève, chauffeur Gstaad/Verbier/Courchevel, conciergerie Verbier,
