@@ -29,6 +29,22 @@ move or delete files, never "clean up" code you were not asked about.
   placeholders), `--blush` and the bordeaux `.band` (request band and footer). Find their uses with
   `grep -rn "bg-surface\|bg-subtle\|--surface\|--subtle" src app`. Also think of the mobile menu,
   dropdowns, forms, cookie banner and both themes, not just the page you were looking at.
+- **Colour requests: offer choices, then apply.** The palette has named roles (tokens in
+  `app/globals.css`, light and dark):
+  | Role (say it to her in French) | Token | Where it shows |
+  |---|---|---|
+  | Fond des pages | `--bg` | page background |
+  | Fond des menus et cartes | `--surface` | services dropdown, cookie banner, form card |
+  | Fond des encadrés | `--subtle` | home "comment ça marche" band, table headers, hover rows |
+  | Couleur principale (bordeaux) | `--brand` | buttons, links, the V, active menu item |
+  | Couleur secondaire (rose poudré) | `--blush` | text on the bordeaux band, quiet panels |
+  | Bandeau bordeaux | `--band-*` | request band and footer |
+  | Texte / texte discret | `--ink` / `--muted` | all text |
+  When she asks for a colour change, do not apply it straight away: reply in simple French with
+  2–4 numbered options naming these roles (e.g. « 1. seulement le fond des pages, 2. le fond des
+  pages et des menus/cartes, 3. tout en blanc y compris les encadrés »), say what each one looks
+  like, and ask whether dark mode should change too (default: keep it). Apply only the option she
+  picks, in every place that role is used, then ask before publishing as usual.
 - **Logo**: `src/components/Logo.tsx` is an inline SVG drawn with `currentColor` and the brand token,
   so it adapts to light and dark mode. A replacement logo must also work on the dark background:
   use an SVG, or a PNG with a transparent background, never a photo/JPG with a box around it. If
