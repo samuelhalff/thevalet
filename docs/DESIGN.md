@@ -88,3 +88,13 @@ supersedes the earlier permanent-dark-mode direction. Every page, dropdown, mobi
 menu, form card, cookie banner and quiet section uses white surfaces, independently
 of OS settings or legacy saved preferences. Bordeaux request bands/footer and their
 readable light lettering remain. The header logo stays black; footer logo stays white.
+
+## WhatsApp shortcut — 2026-10-27
+Kadiata chose a fixed WhatsApp icon at the bottom right on every French and English
+page, on mobile and desktop. Use the existing bordeaux button palette and a circular
+control; keep it above the mobile request bar and consent banner, and hide it while
+the mobile menu is open. This replaces the WhatsApp icon inside the mobile request
+bar. The destination remains environment-configured (`NEXT_PUBLIC_WHATSAPP`), with
+no prefilled visitor message. Requested number: +41 76 428 23 24 (41764282324).
+Production activation of this setting is still pending with Sam. The bilingual
+welcome reply is configured separately in WhatsApp Business by the owner.

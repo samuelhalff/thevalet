@@ -13,6 +13,7 @@ import JsonLd from "@/components/JsonLd";
 import AnalyticsBootstrap from "@/components/Analytics";
 import CookieBanner from "@/components/CookieBanner";
 import StickyCta from "@/components/StickyCta";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import AttributionCapture from "@/components/AttributionCapture";
 import { THEME_COLORS, themeInitScript } from "@/lib/theme";
 
@@ -68,10 +69,9 @@ export default async function LocaleLayout({
         <StickyCta
           href={pagePath(locale, "request")}
           label={t(locale, "stickyCta.label")}
-          whatsappHref={whatsappUrl}
-          whatsappLabel={t(locale, "stickyCta.whatsapp")}
           hideOn={[pagePath(locale, "request"), pagePath(locale, "contact")]}
         />
+        <WhatsAppButton href={whatsappUrl} label={t(locale, "channels.whatsappCta")} />
         <AttributionCapture />
         {GA_ID ? (
           <CookieBanner

@@ -584,3 +584,17 @@ body[data-menu-open] .cookie-banner {
 .band .logo-wordmark { color: var(--logo-white); }
 .logo-swiss-red { fill: var(--logo-red); }
 .logo-swiss-white { fill: var(--logo-white); }
+
+/* Keep the WhatsApp shortcut above consent and mobile request controls. */
+.whatsapp-float {
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: calc(var(--cookie-banner-h, 0px) + 1.5rem + env(safe-area-inset-bottom));
+}
+body[data-menu-open] .whatsapp-float {
+  display: none;
+}
+@media (max-width: 1023px) {
+  body[data-sticky-cta] .whatsapp-float {
+    bottom: calc(var(--cookie-banner-h, 0px) + 6rem + env(safe-area-inset-bottom));
+  }
+}
