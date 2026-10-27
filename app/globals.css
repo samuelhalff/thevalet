@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 /* ------------------------------------------------------------------------------------------------
-   The Valet — tokens (docs/DESIGN.md is binding). White paper (light mode), aubergine ink,
+   The Valet — tokens (docs/DESIGN.md is binding). Rose-tinted porcelain paper, aubergine ink,
    bordeaux used as a SURFACE (request band, footer), blush for quiet panels and text on bordeaux.
-   No gradients, no shadows beyond a 1px tinted edge, no pure black; white page background
-   in light mode at Kadiata's request (2026-10-27). Dark mode keeps its own palette below.
+   No gradients, no shadows beyond a 1px tinted edge, no pure black or white.
    Colours are RGB channels so Tailwind opacity modifiers work. Contrast: src/lib/contrast.test.ts.
    ------------------------------------------------------------------------------------------------ */
 :root {
-  --bg: 255 255 255;            /* white #FFFFFF (Kadiata, 2026-10-27) */
-  --surface: 255 255 255;       /* white panels (menu, cookie banner, form card), like the page */
+  --bg: 246 241 241;            /* paper #F6F1F1 */
+  --surface: 250 246 246;       /* note paper #FAF6F6 */
   --subtle: 238 228 228;        /* quiet panel #EEE4E4 */
   --ink: 34 26 28;              /* ink #221A1C */
   --muted: 107 94 97;           /* muted #6B5E61 */

@@ -40,6 +40,10 @@ move or delete files, never "clean up" code you were not asked about.
   | Couleur secondaire (rose poudré) | `--blush` | text on the bordeaux band, quiet panels |
   | Bandeau bordeaux | `--band-*` | request band and footer |
   | Texte / texte discret | `--ink` / `--muted` | all text |
+  First rule out a misunderstanding: the site follows her phone's light/dark setting and has a
+  switch (sun / moon / screen icons in the header, in the menu on mobile). If she finds the site
+  "too dark" or asks for "white", ask whether she is seeing dark mode and tell her about the switch;
+  this already happened once (2026-10-27, a white background was applied then reverted).
   When she asks for a colour change, do not apply it straight away: reply in simple French with
   2–4 numbered options naming these roles (e.g. « 1. seulement le fond des pages, 2. le fond des
   pages et des menus/cartes, 3. tout en blanc y compris les encadrés »), say what each one looks

@@ -8,18 +8,17 @@ The logo already holds that idea: a bordeaux V drawn as a check mark. Everything
 
 ## Direction
 - **Colour** (from the logo, used as surfaces, not just accents):
-  - Light: paper `#FFFFFF` (white, requested by Kadiata on 2026-10-27), ink `#221A1C`
+  - Light: paper `#F6F1F1` (rose-tinted porcelain, deliberately *not* cream), ink `#221A1C`
     (aubergine-tinted black), bordeaux `#6A1F2B` (full-bleed surfaces: request band, footer),
-    blush `#EBD6D6` (text on bordeaux), muted `#6B5E61` (AA on paper); floating panels
-    (menu, cookie banner, form card) are white too, outlined by a 1px tinted line.
+    blush `#EBD6D6` (quiet panels, text on bordeaux), muted `#6B5E61` (AA on paper).
+    A white background was tried on 2026-10-27 and reverted: the owner had wanted it only because
+    she had not noticed the dark mode switch.
   - Dark: night `#1A1215` (bordeaux-black), ink `#F3E9E8`, rose `#D99AA3` (V, links),
     deep bordeaux surface `#3A1820`, muted `#BFAFB2`.
   - **Dark mode is permanent.** The theme switch (light / dark / system) must always work: any
     colour change is made in the light palette *and* given a matching, readable value in both dark
     blocks of `app/globals.css` (the `prefers-color-scheme` block and `[data-theme="dark"]`).
-    A white background requested for the site means the light mode only.
-  - No gradients, no shadows beyond a 1px tinted edge, no pure black. White is allowed for the
-    light-mode page background at Kadiata's request.
+  - No gradients, no shadows beyond a 1px tinted edge, no pure black or white.
 - **Type:** Playfair Display for display only (it is the logo's lettering), set large, tight
   leading (1.02–1.1), optical tracking −0.01em, real italics used for whole phrases, never one
   accented word. Text and UI in **Hanken Grotesk** (400/500), 17–18px body, 65ch measure.
