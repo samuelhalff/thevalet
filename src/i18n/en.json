@@ -215,24 +215,17 @@
     "home": "Go to the homepage"
   },
   "imageAlt": {
-    "hero": "Chauffeured arrival in front of a lakeside residence",
-    "chalet": "Mountain chalet in winter",
-    "geneva": "Geneva harbour",
-    "event": "Table set for a private dinner",
-    "beauty": "Beauty preparation before an event",
-    "residence": "Bright interior of a private residence",
-    "car": "Chauffeured saloon",
-    "alps": "Snow-covered Alpine peaks"
+    "alps": "Zermatt at blue hour, the Matterhorn above the lit village",
+    "chalet": "Snow-covered chalet under a starry sky, two lit windows",
+    "road": "Dark car on a snowy mountain-pass road near Pontresina",
+    "chauffeur": "View from the back seat, rain on the window and city lights at night",
+    "table": "Candlelit table with linen and glassware",
+    "glam": "Hair being styled with a curling iron, seen from behind"
   },
   "imageCaption": {
-    "hero": "Geneva",
-    "chalet": "The Alps",
-    "geneva": "Geneva",
-    "event": "Private events",
-    "beauty": "Glam Team",
-    "residence": "Residences",
-    "car": "Transport",
-    "alps": "Swiss and French Alps"
+    "alps": "Zermatt, Valais",
+    "chalet": "Hasliberg, Bernese Oberland",
+    "road": "Pontresina, Graubünden"
   },
   "routeIndex": {
     "access": "Access from Geneva",

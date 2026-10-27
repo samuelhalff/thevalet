@@ -17,6 +17,8 @@ import Container from "./ui/Container";
 import Section from "./ui/Section";
 import SectionHeading from "./ui/SectionHeading";
 import Itinerary from "./Itinerary";
+import Plate from "./Plate";
+import { serviceImage } from "@/lib/images";
 import { serviceItinerary } from "@/lib/itinerary";
 
 /** Related services: the ones this page links to in its body first, then neighbours by order. */
@@ -33,6 +35,7 @@ export default function ServicePage({ locale, entry }: { locale: Locale; entry: 
   const url = absoluteUrl(localePath(locale, entryPath("services", entry.slug)));
   const related = relatedServices(locale, entry);
   const request = requestPath(locale, entry.translationKey);
+  const photo = serviceImage(entry.translationKey);
   const facts = [
     { label: t(locale, "service.availabilityLabel"), value: t(locale, "common.availability") },
     { label: t(locale, "service.areaLabel"), value: AREAS_SERVED.map((a) => a[locale]).join(", ") },
@@ -52,6 +55,7 @@ export default function ServicePage({ locale, entry }: { locale: Locale; entry: 
           { label: t(locale, "nav.services"), path: pageSlug(locale, "services") },
           { label: shortServiceLabel(locale, entry.translationKey, entry.title), path: entryPath("services", entry.slug) },
         ]}
+        aside={photo ? <Plate name={photo} locale={locale} variant="portrait" priority /> : undefined}
       >
         {entry.answer ? <p className="t-lead mt-6 max-w-3xl">{entry.answer}</p> : null}
         <div className="mt-8 flex flex-wrap items-center gap-6">

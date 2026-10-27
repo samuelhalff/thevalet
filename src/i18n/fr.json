@@ -215,24 +215,17 @@
     "home": "Retour à l'accueil"
   },
   "imageAlt": {
-    "hero": "Arrivée en voiture avec chauffeur devant une résidence au bord du lac",
-    "chalet": "Chalet de montagne en hiver",
-    "geneva": "La rade de Genève",
-    "event": "Table dressée pour un dîner privé",
-    "beauty": "Préparation beauté avant un événement",
-    "residence": "Intérieur lumineux d'une résidence privée",
-    "car": "Berline avec chauffeur",
-    "alps": "Sommets des Alpes enneigés"
+    "alps": "Zermatt à l'heure bleue, le Cervin au-dessus du village éclairé",
+    "chalet": "Chalet enneigé sous un ciel étoilé, deux fenêtres éclairées",
+    "road": "Voiture sombre sur une route de col enneigée près de Pontresina",
+    "chauffeur": "Vue depuis la banquette arrière, vitre perlée de pluie et lumières de la ville la nuit",
+    "table": "Table dressée aux chandelles, lin et verrerie",
+    "glam": "Coiffure en cours au fer à boucler, vue de dos"
   },
   "imageCaption": {
-    "hero": "Genève",
-    "chalet": "Alpes",
-    "geneva": "Genève",
-    "event": "Événements privés",
-    "beauty": "Glam Team",
-    "residence": "Résidences",
-    "car": "Transport",
-    "alps": "Alpes suisses et françaises"
+    "alps": "Zermatt, Valais",
+    "chalet": "Hasliberg, Oberland bernois",
+    "road": "Pontresina, Grisons"
   },
   "routeIndex": {
     "access": "Accès depuis Genève",

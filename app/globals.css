@@ -367,19 +367,70 @@ h4,
     mask: var(--check) center / contain no-repeat;
   }
 
-  /* ---------- Photo slot (only rendered when a real photo exists) ---------- */
-  .img-slot {
+  /* ---------- Photographic plates (docs/DESIGN.md, Photography) ---------- */
+  .plate-frame {
     position: relative;
     overflow: hidden;
     background-color: rgb(var(--subtle));
   }
-  .img-slot > img {
+  .plate-frame > img {
     position: absolute;
     inset: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: var(--img-pos, center);
+  }
+  /* Photos are graded at build time; in dark mode they step back a little. */
+  :root[data-theme="dark"] .plate-frame > img { filter: brightness(0.86); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .plate-frame > img { filter: brightness(0.86); }
+  }
+  .plate-caption {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.85rem;
+    font-size: 1.05rem;
+    color: rgb(var(--muted));
+  }
+  .plate-caption::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background-color: rgb(var(--brand));
+  }
+
+  /* Bleed: full width on phones, then from the text edge off the right of the viewport. */
+  .plate-bleed { margin-inline: -1rem; }
+  .plate-bleed .plate-frame { aspect-ratio: 4 / 3; }
+  .plate-bleed .plate-caption { padding-inline: 1rem; }
+  @media (min-width: 640px) {
+    .plate-bleed { margin-inline: -1.5rem; }
+    .plate-bleed .plate-caption { padding-inline: 1.5rem; }
+  }
+  @media (min-width: 1024px) {
+    .plate-bleed { margin-left: 0; margin-right: calc(50% - 50vw); }
+    .plate-bleed .plate-frame { aspect-ratio: 2 / 1; }
+    .plate-bleed .plate-caption { padding-inline: 0; }
+  }
+
+  /* Portrait: a 4:5 print with the bordeaux plate set behind it, offset down and left. */
+  .plate-print { position: relative; }
+  .plate-portrait .plate-frame { aspect-ratio: 4 / 5; z-index: 1; }
+  @media (min-width: 640px) {
+    .plate-portrait { padding-left: 1.25rem; }
+    .plate-portrait .plate-print::before {
+      content: "";
+      position: absolute;
+      inset: 3rem 1.25rem -1.25rem -1.25rem;
+      background-color: rgb(var(--band-bg));
+    }
+    .plate-portrait .plate-caption { margin-top: 2rem; }
+  }
+  @media (max-width: 639px) {
+    .plate-portrait { margin-inline: -1rem; }
+    .plate-portrait .plate-frame { aspect-ratio: 4 / 3; }
+    .plate-portrait .plate-caption { padding-inline: 1rem; }
   }
 }
 

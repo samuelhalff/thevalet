@@ -18,6 +18,8 @@ import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Timeline from "@/components/ui/Timeline";
 import Link from "next/link";
+import Plate from "@/components/Plate";
+import type { ImageName } from "@/lib/images";
 
 /** The three chapters of the home itinerary (translationKeys, in display order). */
 const CHAPTERS: Record<string, string[]> = {
@@ -25,6 +27,9 @@ const CHAPTERS: Record<string, string[]> = {
   stay: ["chalets", "residence-management", "events", "glam-team"],
   accompany: ["concierge", "medical", "security", "legal-real-estate"],
 };
+
+/** Desktop-only photo plates under two of the three chapter intros (the third stays text). */
+const CHAPTER_PLATES: Record<string, ImageName> = { move: "chauffeur", stay: "chalet" };
 
 /** Resorts of the route index; ids match the H3 anchors on both pillar pages. */
 const RESORTS = [
@@ -87,6 +92,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
             ))}
           </div>
         </div>
+        <Plate name="alps" locale={locale} variant="bleed" className="mt-16 sm:mt-20" />
       </Section>
 
       {/* The services as three typographic chapters, each an itinerary */}
@@ -103,6 +109,9 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
                 <div>
                   <h3 className="t-2">{ch.title}</h3>
                   <RichText text={ch.text} className="mt-4 max-w-sm text-muted" />
+                  {CHAPTER_PLATES[ch.key] ? (
+                    <Plate name={CHAPTER_PLATES[ch.key]} locale={locale} variant="portrait" className="mt-10 hidden max-w-[17rem] lg:block" />
+                  ) : null}
                 </div>
                 <Itinerary size="md" items={serviceItinerary(locale, items)} />
               </div>

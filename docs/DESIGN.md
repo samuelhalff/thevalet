@@ -28,8 +28,18 @@ The logo already holds that idea: a bordeaux V drawn as a check mark. Everything
 - **Request form as a correspondence card:** the request builder looks like a written note
   ("Votre demande"), with underlined fields on paper, not boxed inputs in a card.
 - **Motion:** only the hero check drawing in and quiet hover states. No fade-up on scroll.
-- **Imagery:** no stock photos at launch. Typography-led pages. Image slots only where the owner
-  will supply real photography; until then they are not rendered.
+- **Photography (revised 2026-10-27, Sam: "a lot of text right now"):** six Unsplash photos, used
+  sparingly, until the owner supplies her own. All are graded with `scripts/brand/grade_photos.py`
+  (desaturated, shadows towards ink, highlights towards paper) so they read as one series, and
+  credited in `public/images/CREDITS.md`. They appear only as *plates* (`src/components/Plate.tsx`):
+  - **bleed**: one wide 2:1 photo on the home page, running from the text edge off the right of the
+    viewport, with a place caption after a short bordeaux rule;
+  - **portrait**: a 4:5 print with a bordeaux plate offset behind it (the band colour), in the header
+    of five service pages (chalets, transfers, chauffeur, events, Glam Team) and under two home
+    chapters on desktop.
+  No photos on medical, security, legal, concierge or child transport pages (nothing truthful to show
+  from stock). Never people's faces, never a photo presented as the owner's own work. Captions name
+  the real place only when the photo's source confirms it.
 
 ## Banned on this site (from the skill)
 Tracked all-caps eyebrow labels above headings; `AccentText`-style single accented words;
