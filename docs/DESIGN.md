@@ -117,3 +117,6 @@ reduce the gap from 12px to 4px in both languages.
 
 2026-10-27: raise the home Swiss flag by 8px at Kadiata’s request, keeping
 the closer horizontal spacing.
+
+## Instagram — 2026-10-28
+Add an Instagram outline icon to the left of the header logo on every French and English page, on mobile and desktop. The 44px link opens the profile configured in content/settings.json in a new tab, with a localized accessible label. It inherits the header text colour in both themes.

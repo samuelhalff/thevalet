@@ -10,7 +10,9 @@
   "country": "CH",
   "responsible": "",
   "hosting": "",
-  "socialProfiles": [],
+  "socialProfiles": [
+    "https://www.instagram.com/thevalet.ch/"
+  ],
   "formsparkId": "",
   "googleAnalyticsId": ""
 }

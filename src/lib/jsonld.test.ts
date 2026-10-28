@@ -23,11 +23,11 @@ const entry: Entry = {
 };
 
 describe("organizationLd", () => {
-  it("is an Organization + LocalBusiness with the logo and no unverified profiles", () => {
+  it("is an Organization + LocalBusiness with the logo and the owner-confirmed Instagram profile", () => {
     const ld = organizationLd("fr");
     expect(ld["@type"]).toEqual(["Organization", "LocalBusiness"]);
     expect(ld.logo).toMatch(/\/logo\.svg$/);
-    expect(ld.sameAs).toEqual([]);
+    expect(ld.sameAs).toEqual(["https://www.instagram.com/thevalet.ch/"]);
     // Unconfigured contact details are omitted, never faked.
     expect(ld).not.toHaveProperty("telephone");
     expect(ld).not.toHaveProperty("email");
