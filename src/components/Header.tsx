@@ -23,20 +23,9 @@ export default function Header({ locale }: { locale: Locale }) {
   return (
     <header className="site-header sticky top-0 z-40 text-ink">
       <Container className="flex h-[72px] items-center justify-between gap-4">
-        <div className="flex shrink-0 items-center gap-2 lg:gap-3">
-          {instagram && (
-            <a href={instagram} target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-soft hover:bg-subtle" aria-label={locale === "fr" ? "Instagram The Valet (nouvel onglet)" : "The Valet Instagram (new tab)"}>
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5">
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-              </svg>
-            </a>
-          )}
-          <Link href={localePath(locale)} className="flex h-10 shrink-0 items-center rounded-soft" aria-label={`The Valet — ${t(locale, "common.home")}`}>
-            <Logo decorative className="h-[30px] w-[116px] lg:h-9 lg:w-[139px]" />
-          </Link>
-        </div>
+        <Link href={localePath(locale)} className="flex h-10 shrink-0 items-center rounded-soft" aria-label={`The Valet — ${t(locale, "common.home")}`}>
+          <Logo decorative className="h-[30px] w-[116px] lg:h-9 lg:w-[139px]" />
+        </Link>
         <nav aria-label={t(locale, "common.mainNav")} className="hidden lg:block">
           <ul className="flex items-center gap-8 whitespace-nowrap text-[0.98rem]">
             <li>
@@ -69,6 +58,15 @@ export default function Header({ locale }: { locale: Locale }) {
             languages={languages}
             current={locale}
           />
+          {instagram && (
+            <a href={instagram} target="_blank" rel="noopener noreferrer" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-soft hover:bg-subtle" aria-label={locale === "fr" ? "Instagram The Valet (nouvel onglet)" : "The Valet Instagram (new tab)"}>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+          )}
         </div>
       </Container>
     </header>
