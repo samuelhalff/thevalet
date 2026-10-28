@@ -3,7 +3,7 @@ title: "Intendance de résidence et housekeeping à Genève"
 description: "Intendance de résidence à Genève et Vaud : housekeeping, linge, clés et accès, suivi de la maintenance, jardin et préparation de la maison avant arrivée."
 translationKey: "residence-management"
 updated: "2026-10-26"
-order: 5
+order: 3
 summary: "Housekeeping, linge, clés et accès, suivi de la maintenance et préparation de la maison avant votre arrivée."
 serviceType: "Intendance de résidence"
 delivery: "coordinated"

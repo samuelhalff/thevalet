@@ -16,7 +16,7 @@
     },
     "services": {
       "title": "Ce que nous organisons",
-      "lead": "Un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/), des [transferts vers les stations des Alpes](/fr/services/transferts-geneve-alpes/), le [transport privé de vos enfants](/fr/services/transport-prive-enfants/), une [conciergerie privée](/fr/services/conciergerie-privee-geneve/) pour le quotidien, l'[intendance de votre résidence](/fr/services/intendance-residence/), des [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/), l'[organisation de mariages et d'événements privés](/fr/services/mariages-evenements/) et une [Glam Team à domicile](/fr/services/glam-team-domicile/). S'y ajoutent des services spécialisés coordonnés avec des partenaires indépendants : [conciergerie médicale](/fr/services/conciergerie-medicale/), [sécurité et protection](/fr/services/securite-protection/), [mises en relation juridiques et immobilières](/fr/services/juridique-immobilier/). Chaque service peut être demandé seul ou combiné aux autres dans une même organisation."
+      "lead": "Un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/), des [transferts vers les stations des Alpes](/fr/services/transferts-geneve-alpes/), le [transport privé de vos enfants](/fr/services/transport-prive-enfants/), une [conciergerie privée](/fr/services/conciergerie-privee-geneve/) pour le quotidien, l'[intendance de votre résidence](/fr/services/intendance-residence/), des [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/), l'[organisation de mariages et d'événements privés](/fr/services/mariages-evenements/) et une [Glam Team à domicile](/fr/services/glam-team-domicile/). S'y ajoutent des services spécialisés coordonnés avec des partenaires indépendants : [conciergerie médicale](/fr/services/conciergerie-medicale/), [sécurité](/fr/services/securite-protection/), [juridique](/fr/services/juridique-immobilier/) et l’[immobilier](/fr/services/immobilier/). Chaque service peut être demandé seul ou combiné aux autres dans une même organisation."
     },
     "chapters": [
       {
@@ -32,7 +32,7 @@
       {
         "key": "accompany",
         "title": "Être accompagné",
-        "text": "La [conciergerie au quotidien](/fr/services/conciergerie-privee-geneve/) prend en charge ce qui demande du temps sans demander votre présence : réservations, recherches, cadeaux, agenda. Pour la logistique de rendez-vous médicaux, la sécurité ou une question juridique ou immobilière, nous vous mettons en relation avec des partenaires indépendants et coordonnons l'organisation ; nous ne fournissons nous-mêmes ni avis médical, ni conseil juridique, ni protection rapprochée. Chaque demande de [sécurité et protection](/fr/services/securite-protection/) commence par une évaluation."
+        "text": "La [conciergerie au quotidien](/fr/services/conciergerie-privee-geneve/) prend en charge ce qui demande du temps sans demander votre présence : réservations, recherches, cadeaux, agenda. Pour la logistique de rendez-vous médicaux, la sécurité ou une question juridique ou immobilière, nous vous mettons en relation avec des partenaires indépendants et coordonnons l'organisation ; nous ne fournissons nous-mêmes ni avis médical, ni conseil juridique, ni protection rapprochée. Chaque demande de [sécurité](/fr/services/securite-protection/) commence par une évaluation."
       }
     ],
     "values": {
@@ -265,7 +265,7 @@
         "items": [
           {
             "q": "Comment se passe une demande de sécurité ?",
-            "a": "Toute mission commence par une évaluation de la situation. Les prestations sont assurées par des partenaires indépendants, choisis pour leur activité autorisée, sous réserve de disponibilité, du droit local et des autorisations requises. Les moyens précis sont confirmés avant tout engagement. Voir [sécurité et protection](/fr/services/securite-protection/)."
+            "a": "Toute mission commence par une évaluation de la situation. Les prestations sont assurées par des partenaires indépendants, choisis pour leur activité autorisée, sous réserve de disponibilité, du droit local et des autorisations requises. Les moyens précis sont confirmés avant tout engagement. Voir [sécurité](/fr/services/securite-protection/)."
           },
           {
             "q": "Donnez-vous des avis médicaux ?",
@@ -273,7 +273,7 @@
           },
           {
             "q": "Pouvez-vous me conseiller sur une question juridique ou immobilière ?",
-            "a": "The Valet ne fournit pas de conseil juridique. Nous vous mettons en relation avec des avocats ou des professionnels de l'immobilier indépendants, qui confirment directement avec vous l'étendue de leur mission et leurs honoraires. Voir [juridique et immobilier](/fr/services/juridique-immobilier/)."
+            "a": "The Valet ne fournit pas de conseil juridique. Nous vous mettons en relation avec des avocats ou des professionnels de l'immobilier indépendants, qui confirment directement avec vous l'étendue de leur mission et leurs honoraires. Voir [juridique](/fr/services/juridique-immobilier/) et l’[immobilier](/fr/services/immobilier/)."
           },
           {
             "q": "Pourquoi ne nommez-vous pas vos partenaires ?",
@@ -313,7 +313,7 @@
       "Le transport est souvent la première demande. Un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) pour un rendez-vous, une soirée ou une arrivée à l'aéroport, des [transferts entre Genève et les Alpes](/fr/services/transferts-geneve-alpes/) avec skis et bagages, ou le [transport privé d'enfants](/fr/services/transport-prive-enfants/) pour les trajets scolaires et les activités. Ces trajets sont assurés par des partenaires indépendants, choisis pour leur activité autorisée de transport professionnel de personnes ; nous les organisons et en assurons le suivi.",
       "La [conciergerie privée](/fr/services/conciergerie-privee-geneve/) couvre tout ce qui prend du temps sans demander votre présence : réservations, recherches, cadeaux, agenda, demandes imprévues. L'[intendance de résidence](/fr/services/intendance-residence/) s'occupe de la maison, de façon régulière ou avant une arrivée. Pour la montagne, nous recherchons [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/) et coordonnons ce qui fait un bon séjour : chef, intendance, matériel de ski, transferts.",
       "Pour les grandes occasions, nous organisons [mariages et événements privés](/fr/services/mariages-evenements/), de la conception à la coordination le jour même, et la [Glam Team](/fr/services/glam-team-domicile/) se déplace à domicile, à l'hôtel ou sur le lieu de la fête pour la coiffure, le maquillage et le style.",
-      "Enfin, certains besoins relèvent de professionnels spécialisés. La [conciergerie médicale](/fr/services/conciergerie-medicale/) prend en charge la logistique de vos rendez-vous, sans remplacer l'avis d'un médecin. La [sécurité et la protection](/fr/services/securite-protection/) commencent par une évaluation. Pour le [juridique et l'immobilier](/fr/services/juridique-immobilier/), nous vous présentons des avocats et des professionnels indépendants, qui confirment avec vous l'étendue de leur mission."
+      "Enfin, certains besoins relèvent de professionnels spécialisés. La [conciergerie médicale](/fr/services/conciergerie-medicale/) prend en charge la logistique de vos rendez-vous, sans remplacer l'avis d'un médecin. La [sécurité](/fr/services/securite-protection/) commence par une évaluation. Pour le [juridique](/fr/services/juridique-immobilier/) et l’[immobilier](/fr/services/immobilier/), nous vous présentons des avocats et des professionnels indépendants, qui confirment avec vous l'étendue de leur mission."
     ]
   },
   "journal": {

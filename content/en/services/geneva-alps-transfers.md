@@ -3,7 +3,7 @@ title: "Geneva to the Alps: private chauffeur transfers"
 description: "Private transfers from Geneva and GVA airport to Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève or Chamonix, with luggage and skis."
 translationKey: "alpine-transfers"
 updated: "2026-10-26"
-order: 3
+order: 6
 summary: "Private transfers from Geneva and GVA airport to Swiss and French ski resorts, luggage and skis included."
 serviceType: "Private ski resort transfer"
 delivery: "partner"

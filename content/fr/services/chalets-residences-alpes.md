@@ -3,7 +3,7 @@ title: "Chalets de luxe et conciergerie dans les Alpes"
 description: "Location de chalets de luxe à Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève et Chamonix, avec conciergerie de chalet, chef privé et transferts."
 translationKey: "chalets"
 updated: "2026-10-26"
-order: 6
+order: 4
 summary: "Chalets, résidences privées et hôtels dans les stations suisses et françaises, avec conciergerie pendant le séjour."
 serviceType: "Location de chalets et conciergerie de chalet"
 delivery: "coordinated"

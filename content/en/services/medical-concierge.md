@@ -3,7 +3,7 @@ title: "Medical concierge in Geneva"
 description: "Medical concierge in Geneva: appointment booking, transport, accommodation and organisation around consultations. Logistics only, no medical advice."
 translationKey: "medical"
 updated: "2026-10-26"
-order: 9
+order: 2
 summary: "The logistics around your healthcare appointments in Geneva: booking, transport, accommodation and practical support."
 serviceType: "Medical concierge"
 delivery: "partner"

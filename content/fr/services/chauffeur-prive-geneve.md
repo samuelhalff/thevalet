@@ -3,7 +3,7 @@ title: "Chauffeur privé à Genève et transferts aéroport"
 description: "Chauffeur privé à Genève : transferts aéroport GVA, mise à disposition à l'heure, soirées et longs trajets, avec des partenaires indépendants."
 translationKey: "chauffeur"
 updated: "2026-10-26"
-order: 2
+order: 5
 summary: "Transferts aéroport GVA, mise à disposition à l'heure, soirées et longs trajets, en berline, van premium ou limousine."
 serviceType: "Chauffeur privé"
 delivery: "partner"

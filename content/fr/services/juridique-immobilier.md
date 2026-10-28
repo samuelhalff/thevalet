@@ -1,29 +1,52 @@
 ---
-title: "Avocats partenaires et immobilier en Suisse"
-description: "Mise en relation avec des avocats et professionnels de l'immobilier indépendants en Suisse : contrats, litiges, famille, immigration, achat et location."
-translationKey: "legal-real-estate"
-updated: "2026-10-26"
+title: Avocats partenaires en Suisse
+description: >-
+  Mise en relation avec des avocats indépendants en Suisse : contrats, litiges,
+  famille, droit des affaires et immigration.
+translationKey: legal-real-estate
+updated: '2026-10-28'
 order: 11
-summary: "Mise en relation avec des avocats et professionnels de l'immobilier indépendants, et organisation pratique autour de vos dossiers."
-serviceType: "Mise en relation juridique et immobilière"
-delivery: "partner"
-answer: "The Valet vous met en relation avec des avocats et des professionnels de l'immobilier indépendants en Suisse, selon la nature de votre question : contrats, litiges, droit des affaires, de la famille, pénal ou de l'immigration, achat, vente ou location d'un bien. The Valet ne fournit pas de conseil juridique : chaque professionnel confirme directement avec vous son périmètre d'intervention, ses honoraires et les conditions de son mandat."
+summary: >-
+  Mise en relation avec des avocats indépendants et organisation pratique autour
+  de vos questions juridiques.
+serviceType: Mise en relation juridique
+delivery: partner
+answer: >-
+  The Valet vous met en relation avec des avocats indépendants en Suisse pour
+  vos questions de contrats, litiges, droit des affaires, de la famille, pénal
+  ou de l'immigration. Nous organisons le premier contact et les aspects
+  pratiques. Chaque avocat confirme directement avec vous son mandat, ses
+  honoraires et les conditions de son intervention.
 faq:
-  - q: "The Valet donne-t-il des conseils juridiques ?"
-    a: "Non. The Valet ne fournit pas de conseil juridique et ne représente personne. Nous vous mettons en relation avec des avocats indépendants, qui vous conseillent sous leur propre responsabilité."
-  - q: "Dans quels domaines vos avocats partenaires interviennent-ils ?"
-    a: "Notamment en droit des affaires, droit de la famille, droit pénal, droit de l'immigration et droit immobilier, pour des consultations, de la rédaction ou de l'examen de contrats, des négociations, des litiges et de la représentation."
-  - q: "Comment les honoraires sont-ils fixés ?"
-    a: "Directement par l'avocat ou le professionnel de l'immobilier, qui vous les communique avant le début du mandat. Notre propre prestation de coordination, s'il y en a une, est indiquée séparément."
-  - q: "Que dois-je vous transmettre pour être orienté ?"
-    a: "Le domaine concerné, le canton ou la ville, la langue souhaitée et le degré d'urgence, en quelques lignes. Les documents et le détail du dossier se transmettent directement au professionnel."
-  - q: "Pouvez-vous m'aider à acheter un bien en Suisse ?"
-    a: "Nous pouvons vous mettre en relation avec des professionnels de l'immobilier et des avocats indépendants, et organiser les visites et les déplacements. Les questions juridiques, notamment celles qui concernent les acheteurs domiciliés à l'étranger, sont examinées par les avocats."
-  - q: "Mes informations restent-elles confidentielles ?"
-    a: "Nous ne transmettons au professionnel que ce que vous nous autorisez à transmettre. Le secret professionnel de l'avocat s'applique à la relation que vous nouez directement avec lui."
+  - q: The Valet donne-t-il des conseils juridiques ?
+    a: >-
+      Non. The Valet ne fournit pas de conseil juridique et ne représente
+      personne. Nous vous mettons en relation avec des avocats indépendants, qui
+      vous conseillent sous leur propre responsabilité.
+  - q: Dans quels domaines vos avocats partenaires interviennent-ils ?
+    a: >-
+      Notamment en droit des affaires, droit de la famille, droit pénal, droit
+      de l'immigration et droit immobilier, pour des consultations, de la
+      rédaction ou de l'examen de contrats, des négociations, des litiges et de
+      la représentation.
+  - q: Comment les honoraires sont-ils fixés ?
+    a: >-
+      Directement par l'avocat, qui vous les communique avant le début du
+      mandat. Notre propre prestation de coordination, s'il y en a une, est
+      indiquée séparément.
+  - q: Que dois-je vous transmettre pour être orienté ?
+    a: >-
+      Le domaine concerné, le canton ou la ville, la langue souhaitée et le
+      degré d'urgence, en quelques lignes. Les documents et le détail du dossier
+      se transmettent directement au professionnel.
+  - q: Mes informations restent-elles confidentielles ?
+    a: >-
+      Nous ne transmettons au professionnel que ce que vous nous autorisez à
+      transmettre. Le secret professionnel de l'avocat s'applique à la relation
+      que vous nouez directement avec lui.
 ---
 
-Une question juridique ou immobilière arrive rarement au bon moment : un contrat à relire avant une signature, un litige avec un prestataire, une installation en Suisse à préparer, un bien à acheter ou à louer dans un canton dont on ne connaît pas les usages. La première difficulté est souvent de savoir à qui s'adresser. C'est là que nous intervenons : vous orienter vers le bon professionnel indépendant, puis organiser ce qui entoure le dossier.
+Une question juridique arrive rarement au bon moment : un contrat à relire avant une signature, un litige avec un prestataire, une installation en Suisse à préparer. La première difficulté est souvent de savoir à qui s'adresser. C'est là que nous intervenons : vous orienter vers le bon professionnel indépendant, puis organiser ce qui entoure le dossier.
 
 ## Une mise en relation, pas un conseil
 
@@ -43,19 +66,6 @@ Nos avocats partenaires peuvent proposer :
 
 Ils interviennent notamment en droit des affaires, droit de la famille, droit pénal et droit de l'immigration. Pour une question très spécialisée, nous cherchons le professionnel adapté plutôt que de vous orienter vers un interlocuteur généraliste.
 
-## Immobilier en Suisse : acheter, vendre, louer
-
-L'immobilier en Suisse combine des enjeux financiers importants, des règles qui varient selon les cantons et des usages propres à chaque marché. Une transaction peut soulever des questions de contrat, de financement, de fiscalité, de copropriété ou, pour les acheteurs domiciliés à l'étranger, de restrictions légales à l'acquisition. Ces questions relèvent des avocats et des professionnels compétents ; nous ne les tranchons pas.
-
-Ce que nous pouvons faire, en revanche :
-
-- vous mettre en relation avec des avocats en droit immobilier et des professionnels de l'immobilier indépendants, pour une acquisition, une vente ou une location dans toute la Suisse ;
-- organiser vos visites : calendrier, déplacements avec un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/), hébergement pendant votre séjour de recherche ;
-- coordonner les rendez-vous entre les différents intervenants ;
-- une fois le bien choisi, préparer l'installation : déménagement, ouverture de la maison, puis suivi régulier par notre service d'[intendance de résidence](/fr/services/intendance-residence/).
-
-Pour une location saisonnière ou un séjour en montagne plutôt qu'un achat, notre page [chalets et résidences dans les Alpes](/fr/services/chalets-residences-alpes/) décrit ce que nous organisons.
-
 ## Préparer le premier contact
 
 Pour vous orienter, quelques éléments suffisent :
@@ -66,7 +76,7 @@ Pour vous orienter, quelques éléments suffisent :
 - le calendrier : une échéance, une audience, une date de signature ;
 - votre préférence entre un premier entretien par téléphone, en visioconférence ou en personne.
 
-Merci de ne pas joindre de documents ni de décrire le fond du dossier dans le formulaire du site. Vous pouvez [demander une mise en relation avec un avocat ou un professionnel de l'immobilier](/fr/demande/?service=legal-real-estate) en quelques lignes ; les pièces se transmettent ensuite directement au professionnel retenu.
+Merci de ne pas joindre de documents ni de décrire le fond du dossier dans le formulaire du site. Vous pouvez [demander une mise en relation avec un avocat](/fr/demande/?service=legal-real-estate) en quelques lignes ; les pièces se transmettent ensuite directement au professionnel retenu.
 
 ## Délais, honoraires et mandat
 
@@ -77,3 +87,13 @@ Les honoraires sont fixés et facturés par le professionnel lui-même, qui vous
 ## Lorsque le dossier touche d'autres besoins
 
 Une installation à Genève associe souvent plusieurs démarches : trouver un logement, scolariser les enfants, organiser les déplacements, gérer la maison. Notre [conciergerie privée à Genève](/fr/services/conciergerie-privee-geneve/) peut prendre en charge ces aspects pratiques en parallèle, pendant que les questions juridiques restent entre vous et votre avocat.
+
+## Organiser les aspects pratiques
+
+Un premier échange avec un avocat peut nécessiter un déplacement, un créneau dans un agenda chargé ou une coordination avec plusieurs interlocuteurs. Notre rôle consiste à faciliter cette organisation, selon vos instructions. Nous pouvons prévoir les déplacements avec un [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) et réunir les informations pratiques nécessaires au rendez-vous : lieu, horaire, langue souhaitée et coordonnées de contact.
+
+Vous restez libre de choisir votre avocat et de poursuivre ou non les échanges après cette première rencontre. La mise en relation ne vaut pas acceptation du dossier par le professionnel et ne constitue pas une consultation. Si vous avez une échéance précise, indiquez-la pour que nous puissions la communiquer au professionnel sollicité. Seul celui-ci peut confirmer sa disponibilité et les démarches possibles.
+
+Pour une recherche de logement, des visites ou une installation, consultez notre rubrique [immobilier](/fr/services/immobilier/). Elle présente séparément les mises en relation avec les professionnels du secteur et la coordination des visites. Les questions de droit immobilier restent du ressort des avocats indépendants.
+
+Pour l'organisation de votre maison pendant vos rendez-vous ou après une installation, notre service d'[intendance de résidence](/fr/services/intendance-residence/) peut accompagner les aspects du quotidien. Ces prestations pratiques sont distinctes du mandat juridique et sont définies avec vous selon les besoins exprimés.

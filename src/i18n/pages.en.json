@@ -16,7 +16,7 @@
     },
     "services": {
       "title": "What we arrange",
-      "lead": "A [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/), [transfers to the Alpine resorts](/en/services/geneva-alps-transfers/), [private transport for your children](/en/services/private-child-transport/), a [private concierge](/en/services/private-concierge-geneva/) for everyday life, [management of your residence](/en/services/residence-management/), [chalets and residences in the Alps](/en/services/alpine-chalets-residences/), [weddings and private events](/en/services/weddings-private-events/) and a [Glam Team at home](/en/services/glam-team-at-home/). Alongside these, specialist services are coordinated with independent partners: [medical concierge](/en/services/medical-concierge/), [security and protection](/en/services/security-protection/), [legal and real estate introductions](/en/services/legal-real-estate/). Each service can be requested on its own or combined with others in a single arrangement."
+      "lead": "A [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/), [transfers to the Alpine resorts](/en/services/geneva-alps-transfers/), [private transport for your children](/en/services/private-child-transport/), a [private concierge](/en/services/private-concierge-geneva/) for everyday life, [management of your residence](/en/services/residence-management/), [chalets and residences in the Alps](/en/services/alpine-chalets-residences/), [weddings and private events](/en/services/weddings-private-events/) and a [Glam Team at home](/en/services/glam-team-at-home/). Alongside these, specialist services are coordinated with independent partners: [medical concierge](/en/services/medical-concierge/), [security](/en/services/security-protection/), [legal](/en/services/legal-real-estate/) and [real estate](/en/services/real-estate/). Each service can be requested on its own or combined with others in a single arrangement."
     },
     "chapters": [
       {
@@ -32,7 +32,7 @@
       {
         "key": "accompany",
         "title": "Being looked after",
-        "text": "[Everyday concierge support](/en/services/private-concierge-geneva/) takes care of what takes time without needing you there: reservations, research, gifts, diary. For the logistics of medical appointments, security, or a legal or property matter, we introduce independent partners and coordinate the arrangements; we do not ourselves provide medical advice, legal advice or close protection. Every [security and protection](/en/services/security-protection/) request begins with an assessment."
+        "text": "[Everyday concierge support](/en/services/private-concierge-geneva/) takes care of what takes time without needing you there: reservations, research, gifts, diary. For the logistics of medical appointments, security, or a legal or property matter, we introduce independent partners and coordinate the arrangements; we do not ourselves provide medical advice, legal advice or close protection. Every [security](/en/services/security-protection/) request begins with an assessment."
       }
     ],
     "values": {
@@ -265,7 +265,7 @@
         "items": [
           {
             "q": "How does a security request work?",
-            "a": "Every assignment begins with an assessment of the situation. Services are provided by independent partners, chosen for their authorised activity, subject to availability, local law and the required licences. Specific capabilities are confirmed before engagement. See [security and protection](/en/services/security-protection/)."
+            "a": "Every assignment begins with an assessment of the situation. Services are provided by independent partners, chosen for their authorised activity, subject to availability, local law and the required licences. Specific capabilities are confirmed before engagement. See [security](/en/services/security-protection/)."
           },
           {
             "q": "Do you give medical advice?",
@@ -273,7 +273,7 @@
           },
           {
             "q": "Can you advise me on a legal or property matter?",
-            "a": "The Valet does not provide legal advice. We introduce you to independent lawyers or property professionals, who confirm the scope of their work and their fees directly with you. See [legal and real estate](/en/services/legal-real-estate/)."
+            "a": "The Valet does not provide legal advice. We introduce you to independent lawyers or property professionals, who confirm the scope of their work and their fees directly with you. See [legal](/en/services/legal-real-estate/) and [real estate](/en/services/real-estate/)."
           },
           {
             "q": "Why do you not name your partners?",
@@ -313,7 +313,7 @@
       "Transport is often the first request. A [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/) for a meeting, an evening or an airport arrival, [transfers between Geneva and the Alps](/en/services/geneva-alps-transfers/) with skis and luggage, or [private child transport](/en/services/private-child-transport/) for school runs and activities. These journeys are provided by independent partners, chosen for their authorised activity in professional passenger transport; we arrange them, brief the driver on your preferences and follow each journey until you have arrived.",
       "The [private concierge](/en/services/private-concierge-geneva/) covers everything that takes time without needing you there: reservations, research, gifts, diary, unexpected requests. [Residence management](/en/services/residence-management/) looks after the house, regularly or before an arrival. For the mountains, we find [chalets and residences in the Alps](/en/services/alpine-chalets-residences/) and coordinate what makes a good stay: chef, housekeeping, ski equipment, transfers.",
       "For special occasions, we organise [weddings and private events](/en/services/weddings-private-events/), from concept to coordination on the day, and the [Glam Team](/en/services/glam-team-at-home/) comes to your home, hotel or venue for hair, makeup and styling.",
-      "Finally, some needs call for specialist professionals. The [medical concierge](/en/services/medical-concierge/) handles the logistics of your appointments, without replacing a doctor's advice. [Security and protection](/en/services/security-protection/) begin with an assessment. For [legal and real estate matters](/en/services/legal-real-estate/), we introduce independent lawyers and professionals, who confirm the scope of their work with you."
+      "Finally, some needs call for specialist professionals. The [medical concierge](/en/services/medical-concierge/) handles the logistics of your appointments, without replacing a doctor's advice. [Security](/en/services/security-protection/) begins with an assessment. For [legal matters](/en/services/legal-real-estate/) and [real estate](/en/services/real-estate/), we introduce independent lawyers and professionals, who confirm the scope of their work with you."
     ]
   },
   "journal": {

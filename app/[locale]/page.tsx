@@ -25,7 +25,7 @@ import type { ImageName } from "@/lib/images";
 const CHAPTERS: Record<string, string[]> = {
   move: ["chauffeur", "alpine-transfers", "child-transport"],
   stay: ["chalets", "residence-management", "events", "glam-team"],
-  accompany: ["concierge", "medical", "security", "legal-real-estate"],
+  accompany: ["concierge", "medical", "security", "legal-real-estate", "real-estate"],
 };
 
 /** Desktop-only photo under one chapter intro; the other chapters stay text. */

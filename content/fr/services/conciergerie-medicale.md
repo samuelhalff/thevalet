@@ -3,7 +3,7 @@ title: "Conciergerie médicale à Genève"
 description: "Conciergerie médicale à Genève : prise de rendez-vous, transports, hébergement et organisation des consultations. Logistique seule, sans conseil médical."
 translationKey: "medical"
 updated: "2026-10-26"
-order: 9
+order: 2
 summary: "La logistique autour de vos rendez-vous de santé à Genève : prise de rendez-vous, transports, hébergement et accompagnement."
 serviceType: "Conciergerie médicale"
 delivery: "partner"

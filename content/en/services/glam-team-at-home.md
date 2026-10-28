@@ -3,7 +3,7 @@ title: "Makeup artist and hairstylist at home in Geneva"
 description: "Makeup, hair and styling at home in Geneva, at your hotel or at the event venue: weddings, private parties, photo shoots and public appearances."
 translationKey: "glam-team"
 updated: "2026-10-26"
-order: 8
+order: 9
 summary: "Makeup, hair and styling at home, at your hotel or on location, for weddings, evenings and photo shoots."
 serviceType: "Mobile hair and makeup service"
 delivery: "coordinated"

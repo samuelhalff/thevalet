@@ -3,7 +3,7 @@ title: "Wedding planner and private events in Geneva"
 description: "Wedding and private event planning in Geneva and Switzerland: concept, venue, styling, food, entertainment, guests and coordination on the day."
 translationKey: "events"
 updated: "2026-10-26"
-order: 7
+order: 8
 summary: "Weddings, dinners, private parties and launches: concept, venue, suppliers and coordination on the day."
 serviceType: "Wedding and private event planning"
 delivery: "coordinated"

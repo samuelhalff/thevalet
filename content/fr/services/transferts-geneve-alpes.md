@@ -3,7 +3,7 @@ title: "Transferts Genève–Alpes avec chauffeur privé"
 description: "Transfert privé de Genève et de l'aéroport GVA vers Verbier, Zermatt, Gstaad, St-Moritz, Courchevel, Megève ou Chamonix, bagages et skis compris."
 translationKey: "alpine-transfers"
 updated: "2026-10-26"
-order: 3
+order: 6
 summary: "Transferts privés de Genève et de l'aéroport GVA vers les stations suisses et françaises, bagages et skis compris."
 serviceType: "Transfert privé vers les stations de ski"
 delivery: "partner"

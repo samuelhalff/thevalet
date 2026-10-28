@@ -3,7 +3,7 @@ title: "Maquilleuse et coiffeuse à domicile à Genève"
 description: "Maquillage, coiffure et stylisme à domicile à Genève, à l'hôtel ou sur le lieu de l'événement : mariage, soirée privée, séance photo, apparition publique."
 translationKey: "glam-team"
 updated: "2026-10-26"
-order: 8
+order: 9
 summary: "Maquillage, coiffure et stylisme à domicile, à l'hôtel ou sur place, pour un mariage, une soirée ou une séance photo."
 serviceType: "Maquillage et coiffure à domicile"
 delivery: "coordinated"

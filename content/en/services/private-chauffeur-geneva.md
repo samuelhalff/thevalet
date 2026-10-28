@@ -3,7 +3,7 @@ title: "Private chauffeur Geneva and airport transfers"
 description: "Private chauffeur in Geneva: GVA airport transfers, hourly and full-day hire, evenings and long-distance journeys, with independent partners."
 translationKey: "chauffeur"
 updated: "2026-10-26"
-order: 2
+order: 5
 summary: "Geneva airport transfers, hourly hire, evenings and long-distance journeys, by luxury saloon, premium van or limousine."
 serviceType: "Private chauffeur service"
 delivery: "partner"

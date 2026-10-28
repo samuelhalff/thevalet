@@ -3,7 +3,7 @@ title: "Private child transport in Geneva"
 description: "Private child transport in Geneva: school, activities and appointments, with seats and handover agreed with the operator before booking."
 translationKey: "child-transport"
 updated: "2026-10-26"
-order: 4
+order: 7
 summary: "School runs, activities and regular appointments, arranged according to the parents' written instructions."
 serviceType: "Private child transport"
 delivery: "partner"

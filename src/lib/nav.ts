@@ -26,8 +26,9 @@ export function shortServiceLabel(locale: Locale, key: string, fallback: string)
     events: "Mariages et événements",
     "glam-team": "Glam Team",
     medical: "Conciergerie médicale",
-    security: "Sécurité et protection",
-    "legal-real-estate": "Juridique et immobilier",
+    security: "Sécurité",
+    "legal-real-estate": "Juridique",
+    "real-estate": "Immobilier",
   };
   const en: Record<string, string> = {
     concierge: "Private concierge",
@@ -39,8 +40,9 @@ export function shortServiceLabel(locale: Locale, key: string, fallback: string)
     events: "Weddings and events",
     "glam-team": "Glam Team",
     medical: "Medical concierge",
-    security: "Security and protection",
-    "legal-real-estate": "Legal and real estate",
+    security: "Security",
+    "legal-real-estate": "Legal",
+    "real-estate": "Real estate",
   };
   const label = (locale === "fr" ? fr : en)[key] ?? fallback;
   return locale === "fr" ? label.replace(/'/g, "’") : label;

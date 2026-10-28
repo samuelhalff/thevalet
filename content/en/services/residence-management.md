@@ -3,7 +3,7 @@ title: "Residence management and housekeeping, Geneva"
 description: "Residence management in Geneva and Vaud: housekeeping, laundry, keys and access, maintenance follow-up, gardening and preparing the house before arrival."
 translationKey: "residence-management"
 updated: "2026-10-26"
-order: 5
+order: 3
 summary: "Housekeeping, laundry, keys and access, maintenance follow-up and preparing the house before you arrive."
 serviceType: "Residence management"
 delivery: "coordinated"

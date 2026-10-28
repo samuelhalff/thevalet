@@ -3,7 +3,7 @@ title: "Transport privé d'enfants à Genève"
 description: "Transport privé d'enfants à Genève : école, activités et rendez-vous, avec sièges et remise de l'enfant convenus avec l'opérateur avant la réservation."
 translationKey: "child-transport"
 updated: "2026-10-26"
-order: 4
+order: 7
 summary: "Trajets scolaires, activités et rendez-vous réguliers, organisés selon les consignes écrites des parents."
 serviceType: "Transport privé d'enfants"
 delivery: "partner"

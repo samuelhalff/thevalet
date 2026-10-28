@@ -3,7 +3,7 @@ title: "Organisation de mariage et événements privés"
 description: "Organisation de mariage et d'événements privés à Genève et en Suisse : concept, lieu, décoration, table, artistes, invités et coordination le jour même."
 translationKey: "events"
 updated: "2026-10-26"
-order: 7
+order: 8
 summary: "Mariages, dîners, soirées privées et lancements : concept, lieu, prestataires et coordination le jour de l'événement."
 serviceType: "Organisation de mariages et d'événements privés"
 delivery: "coordinated"
