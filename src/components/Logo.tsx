@@ -16,9 +16,9 @@ export default function Logo({ className = "h-8 w-auto", decorative = false }: {
     <svg className={`logo-wordmark ${className}`} viewBox="0 0 180 46"
       {...(decorative ? { "aria-hidden": true } : { role: "img", "aria-label": "The Valet" })}
       focusable="false">
-      <text x="0" y="36" className="font-display" fontSize="32" fontWeight="700" fill="currentColor">The Valet.</text>
-      <path className="logo-swiss-red" d="M162 7h16v16h-16z" />
-      <path className="logo-swiss-white" d="M168.53 10.17h2.94v3.36h3.36v2.94h-3.36v3.36h-2.94v-3.36h-3.36v-2.94h3.36z" />
+      <text x="0" y="36" className="font-display" fontSize="32" style={{ fontWeight: 700 }} fill="currentColor">The Valet.</text>
+      <path className="logo-swiss-red" d="M154 7h16v16h-16z" />
+      <path className="logo-swiss-white" d="M160.53 10.17h2.94v3.36h3.36v2.94h-3.36v3.36h-2.94v-3.36h-3.36v-2.94h3.36z" />
     </svg>
   );
 }

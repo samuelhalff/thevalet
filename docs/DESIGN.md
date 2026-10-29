@@ -125,3 +125,6 @@ Add an Instagram outline icon at the far right of the header on every French and
 Use bold Playfair Display for the shared wordmark, matching “The Valet.” in the
 home heading, with the red Swiss flag beside it. Applies to the header and footer
 on French and English pages, mobile and desktop; existing theme colours remain.
+
+2026-10-29: enforce bold lettering on the wordmark above the shared display-type
+regular-weight rule, and move the Swiss flag 8 SVG units closer to the name.
