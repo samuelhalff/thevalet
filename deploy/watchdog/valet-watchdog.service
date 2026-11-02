@@ -1,0 +1,6 @@
+[Unit]
+Description=Stop runaway processes of the Codex user (The Valet)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/valet-watchdog

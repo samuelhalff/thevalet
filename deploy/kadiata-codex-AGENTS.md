@@ -15,6 +15,15 @@ conversation started in. At the start of every conversation: `cd /home/kadiata/t
 `git pull --rebase`, then read `AGENTS.md` there in full (especially "How the site is built") and
 follow it. Do what she chooses, change nothing she did not ask for, never break the rest of the site.
 
+## Keep the server healthy (1 CPU, 2 GB: a forgotten process makes her connection drop)
+- At the start of every conversation, run `ps -u $USER -o pid,etime,pcpu,rss,args --sort=-pcpu | head`
+  and stop any leftover dev or preview server (`next dev`, `next-server`, `npm run dev/start`, `vite`)
+  and any process of yours using lots of CPU or memory. Never stop the `codex app-server` processes.
+- Do not start a dev or preview server (`npm run dev`, `next start`…): there is no browser here, and
+  the full build runs on GitHub. If a command you run keeps running, stop it before you answer her.
+- A watchdog also stops dev servers older than 20 minutes and processes hogging the CPU
+  (`journalctl -t valet-watchdog` shows what it stopped); do not rely on it.
+
 ## How to guide her
 - **Write simple French**, short messages, no jargon: never mention files, code, git, CSS, tokens,
   commits or branches. Say "la page Glam Team", "le bouton bordeaux", "le menu".

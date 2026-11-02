@@ -103,3 +103,6 @@ On the VPS (user `kadiata`, folder `~/thevalet`) the user only chats; you handle
    changes online, so say so if you are unsure and offer to fix it.
 Never force-push, never rewrite history, never touch `.github/` or `deploy/`.
 The VPS has little memory: `npm run lint` and `npm test` are fine; the full build runs on GitHub.
+Never start a dev or preview server there (`npm run dev`, `next start`); stop anything you start before
+answering, and at the start of a conversation stop leftover dev servers or processes hogging CPU or
+memory (`ps -u $USER -o pid,etime,pcpu,rss,args --sort=-pcpu | head`), never the `codex app-server`.

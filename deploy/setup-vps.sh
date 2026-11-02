@@ -32,4 +32,5 @@ rm -f /etc/nginx/sites-enabled/default
 nginx -t && systemctl reload nginx
 
 ufw allow OpenSSH >/dev/null && ufw allow 'Nginx Full' >/dev/null && ufw --force enable >/dev/null
+bash "$HERE/watchdog/install.sh"   # stops runaway processes of the Codex user, limits its CPU/memory
 echo "done: $(nginx -v 2>&1), ufw $(ufw status | head -1)"
