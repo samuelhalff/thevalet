@@ -128,3 +128,11 @@ on French and English pages, mobile and desktop; existing theme colours remain.
 
 2026-10-29: enforce bold lettering on the wordmark above the shared display-type
 regular-weight rule, and move the Swiss flag 8 SVG units closer to the name.
+
+## Paragraph alignment — 2026-11-04
+Use justified paragraphs in long-form content (.prose and .max-w-prose) within
+main on desktop (1024px and wider), in French and English. On smaller screens,
+retain left alignment to avoid large gaps between words. Automatic language-aware
+hyphenation reduces gaps on desktop and the final line stays aligned to the start.
+Headings, display phrases, short introductions, menus, buttons, footer and forms
+retain their existing presentation. This follows the owner's approved recommendation.

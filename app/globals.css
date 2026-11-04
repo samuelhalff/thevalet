@@ -604,3 +604,13 @@ body[data-menu-open] .sticky-cta {
     display: none;
   }
 }
+
+/* Justify long-form reading on desktop; retain natural spacing on small screens. */
+@media (min-width: 1024px) {
+  main :is(.prose, .max-w-prose) p:not(.phrase) {
+    text-align: justify;
+    text-align-last: start;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
