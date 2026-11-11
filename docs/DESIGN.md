@@ -136,3 +136,9 @@ retain left alignment to avoid large gaps between words. Automatic language-awar
 hyphenation reduces gaps on desktop and the final line stays aligned to the start.
 Headings, display phrases, short introductions, menus, buttons, footer and forms
 retain their existing presentation. This follows the owner's approved recommendation.
+
+## Membership menu — 2026-11-11
+Add Membership (singular) immediately after Services in the shared French and English
+header, with private and corporate membership choices. Use a compact one-column
+disclosure with separators, matching the existing theme, and a native disclosure
+on mobile. Both choices initially lead to the existing contact page.

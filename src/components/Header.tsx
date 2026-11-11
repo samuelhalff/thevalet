@@ -16,6 +16,10 @@ export default function Header({ locale }: { locale: Locale }) {
   const instagram = settings.socialProfiles.find((url) => /^https:\/\/(www\.)?instagram\.com\//i.test(url));
   const services = menuServices(locale);
   const links = mainLinks(locale);
+  const memberships = [
+    { href: pagePath(locale, "contact"), label: t(locale, "nav.privateMember") },
+    { href: pagePath(locale, "contact"), label: t(locale, "nav.corporateMember") },
+  ];
   const servicesHub = pagePath(locale, "services");
   const request = { href: pagePath(locale, "request"), label: t(locale, "common.ctaRequest") };
   const languages = locales.map((code) => ({ code, name: getMessages(locale).languages[code] }));
@@ -27,9 +31,12 @@ export default function Header({ locale }: { locale: Locale }) {
           <Logo decorative className="h-[30px] w-[116px] lg:h-9 lg:w-[139px]" />
         </Link>
         <nav aria-label={t(locale, "common.mainNav")} className="hidden lg:block">
-          <ul className="flex items-center gap-8 whitespace-nowrap text-[0.98rem]">
+          <ul className="flex items-center gap-4 xl:gap-8 whitespace-nowrap text-[0.98rem]">
             <li>
               <ServicesMenu label={t(locale, "nav.services")} allLabel={t(locale, "common.allServices")} allHref={servicesHub} links={services} />
+            </li>
+            <li>
+              <ServicesMenu label={t(locale, "nav.membership")} links={memberships} compact />
             </li>
             {links.map((l) => (
               <li key={l.href}>
@@ -46,6 +53,8 @@ export default function Header({ locale }: { locale: Locale }) {
             {request.label}
           </Button>
           <MobileMenu
+            memberships={memberships}
+            membershipLabel={t(locale, "nav.membership")}
             services={services}
             servicesLabel={t(locale, "nav.services")}
             allServices={{ href: servicesHub, label: t(locale, "common.allServices") }}

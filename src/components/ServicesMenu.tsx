@@ -2,10 +2,10 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 
-type Props = { label: string; allLabel: string; allHref: string; links: { href: string; label: string }[] };
+type Props = { label: string; allLabel?: string; allHref?: string; compact?: boolean; links: { href: string; label: string }[] };
 
 /** Desktop "Services" disclosure: button + list, closes on Escape, outside click and focus leaving. */
-export default function ServicesMenu({ label, allLabel, allHref, links }: Props) {
+export default function ServicesMenu({ label, allLabel, allHref, links, compact = false }: Props) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -51,19 +51,19 @@ export default function ServicesMenu({ label, allLabel, allHref, links }: Props)
           <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
         </svg>
       </button>
-      <div id={id} hidden={!open} className="absolute left-1/2 top-full z-50 mt-4 w-[34rem] -translate-x-1/2 rounded-panel bg-surface p-7 shadow-[inset_0_0_0_1px_rgb(var(--line))]">
-        <ul className="grid grid-cols-2 gap-x-6 gap-y-1">
+      <div id={id} hidden={!open} className={`absolute left-1/2 top-full z-50 mt-4 -translate-x-1/2 rounded-panel bg-surface p-7 shadow-[inset_0_0_0_1px_rgb(var(--line))] ${compact ? "w-[21rem]" : "w-[34rem]"}`}>
+        <ul className={compact ? "divide-y divide-line" : "grid grid-cols-2 gap-x-6 gap-y-1"}>
           {links.map((l) => (
-            <li key={l.href}>
+            <li key={l.label}>
               <a href={l.href} className="block py-1.5 text-[0.98rem] hover:text-brand" onClick={() => setOpen(false)}>
                 {l.label}
               </a>
             </li>
           ))}
         </ul>
-        <a href={allHref} className="link mt-4 inline-block text-sm" onClick={() => setOpen(false)}>
+        {allHref && allLabel && <a href={allHref} className="link mt-4 inline-block text-sm" onClick={() => setOpen(false)}>
           {allLabel}
-        </a>
+        </a>}
       </div>
     </div>
   );
