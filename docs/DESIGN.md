@@ -174,3 +174,6 @@ colors for readable contrast; the surrounding page stays white.
 2026-11-11: Make all text in the Premium Private and Corporate cards pure white
 in both languages and themes. Use the existing outlined button variant so its
 label stays white and readable on bordeaux. Scope the palette to membership offers.
+
+## Conciergerie — 2026-11-11
+Un seul service Conciergerie / Concierge dans les menus et listes, sur mobile et ordinateur. La page existante réunit les textes et FAQ privés et médicaux en deux parties. Les anciennes adresses médicales affichent la page réunie en conservant leurs métadonnées et adresses.

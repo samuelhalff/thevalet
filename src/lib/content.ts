@@ -118,7 +118,8 @@ export function getAllEntries(locale: Locale, collection: Collection): Entry[] {
 
 /** Entries shown in listings, sitemap and llms.txt. */
 export function getPublishedEntries(locale: Locale, collection: Collection): Entry[] {
-  return readCollection(locale, collection).filter((e) => !e.draft);
+  // Medical content is now included in concierge; keep its old route available.
+  return readCollection(locale, collection).filter((e) => !e.draft && !(collection === "services" && e.translationKey === "medical"));
 }
 
 export function getEntry(locale: Locale, collection: Collection, slug: string): Entry | undefined {
