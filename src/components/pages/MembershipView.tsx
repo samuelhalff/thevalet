@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { pagesCopy } from "@/lib/copy";
 import { t, type Locale } from "@/lib/i18n";
 import { pagePath, pageSlug } from "@/lib/paths";
@@ -27,6 +28,9 @@ export default function MembershipView({ locale }: { locale: Locale }) {
               <div className="mt-auto border-t border-line pt-6 text-center">
                 <p className="phrase text-center text-xl font-semibold">{offer.price}</p>
                 <Button href={pagePath(locale, "contact")} className="mt-6">{offer.cta}</Button>
+                <Link href={pagePath(locale, "contact")} className="mx-auto mt-3 flex min-h-11 w-fit items-center text-brand underline underline-offset-4 hover:decoration-2">
+                  {c.learnMore} →
+                </Link>
               </div>
             </article>
           ))}

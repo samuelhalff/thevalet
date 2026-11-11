@@ -151,3 +151,7 @@ surface, border and brand tokens. Private: CHF 10,000/year, unlimited requests,
 24/7, operations manager and dedicated concierge, personalised solution, price on
 request. Copy and prices supplied/approved by the owner from her reference photo.
 Membership buttons lead to the existing contact page.
+
+2026-11-11: Add an underlined “En savoir plus →” / “Learn more →” contact
+link at the bottom of each membership offer, below its existing membership button.
+The underline includes the arrow; the link has a comfortable touch target.
