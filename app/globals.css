@@ -412,6 +412,12 @@ h4,
   --focus: rgb(var(--band-fg));
 }
 
+/* White text throughout the two bordeaux membership offers. */
+.membership-offer {
+  --band-fg: 255 255 255;
+  --band-muted: 255 255 255;
+}
+
 /* ---------- Hero: the check draws itself once ---------- */
 .hero-check path {
   fill: rgb(var(--brand));

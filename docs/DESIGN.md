@@ -170,3 +170,7 @@ above the offers. Applies to both languages and all screen sizes.
 2026-11-11: Use the existing bordeaux band palette inside the two membership
 cards only. Light text, separators and buttons inherit the established band
 colors for readable contrast; the surrounding page stays white.
+
+2026-11-11: Make all text in the Premium Private and Corporate cards pure white
+in both languages and themes. Use the existing outlined button variant so its
+label stays white and readable on bordeaux. Scope the palette to membership offers.

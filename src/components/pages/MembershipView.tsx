@@ -17,7 +17,7 @@ export default function MembershipView({ locale }: { locale: Locale }) {
         <p className="mx-auto mb-8 max-w-5xl text-center text-lg font-bold leading-relaxed text-black">{c.cardValidity}</p>
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
           {c.offers.map((offer) => (
-            <article key={offer.title} className="band flex min-w-0 flex-col rounded-panel border border-line px-6 py-10 sm:px-10">
+            <article key={offer.title} className="band membership-offer flex min-w-0 flex-col rounded-panel border border-line px-6 py-10 sm:px-10">
               <h2 className="text-center text-[2rem] text-brand">{offer.title}</h2>
               <p className="mt-6 border-y border-line py-6 text-lg leading-relaxed">{offer.description}</p>
               <ul className="space-y-5 py-8">
@@ -30,7 +30,7 @@ export default function MembershipView({ locale }: { locale: Locale }) {
               </ul>
               <div className="mt-auto border-t border-line pt-6 text-center">
                 <p className="phrase text-center text-xl font-semibold">{offer.price}</p>
-                <Button href={pagePath(locale, "contact")} className="mt-6">{offer.cta}</Button>
+                <Button href={pagePath(locale, "contact")} variant="secondary" className="mt-6">{offer.cta}</Button>
                 <Link href={pagePath(locale, "contact")} className="mx-auto mt-3 flex min-h-11 w-fit items-center text-brand underline underline-offset-4 hover:decoration-2">
                   {c.learnMore} →
                 </Link>
