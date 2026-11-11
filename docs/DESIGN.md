@@ -166,3 +166,7 @@ left aligned, bold and italic in bordeaux. Keep the card-validity line centered
 above the offers. Applies to both languages and all screen sizes.
 
 2026-11-11: Make the centered Premium membership card-validity sentence bold in both languages.
+
+2026-11-11: Use the existing bordeaux band palette inside the two membership
+cards only. Light text, separators and buttons inherit the established band
+colors for readable contrast; the surrounding page stays white.

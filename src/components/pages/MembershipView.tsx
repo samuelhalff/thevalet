@@ -17,7 +17,7 @@ export default function MembershipView({ locale }: { locale: Locale }) {
         <p className="mx-auto mb-8 max-w-5xl text-center text-lg font-bold leading-relaxed text-black">{c.cardValidity}</p>
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
           {c.offers.map((offer) => (
-            <article key={offer.title} className="flex min-w-0 flex-col rounded-panel border border-line bg-surface px-6 py-10 sm:px-10">
+            <article key={offer.title} className="band flex min-w-0 flex-col rounded-panel border border-line px-6 py-10 sm:px-10">
               <h2 className="text-center text-[2rem] text-brand">{offer.title}</h2>
               <p className="mt-6 border-y border-line py-6 text-lg leading-relaxed">{offer.description}</p>
               <ul className="space-y-5 py-8">
