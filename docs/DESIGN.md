@@ -164,3 +164,5 @@ Apply the layout to both languages and all screen sizes.
 2026-11-11: Adjust the membership introduction to sit directly below the title,
 left aligned, bold and italic in bordeaux. Keep the card-validity line centered
 above the offers. Applies to both languages and all screen sizes.
+
+2026-11-11: Make the centered Premium membership card-validity sentence bold in both languages.

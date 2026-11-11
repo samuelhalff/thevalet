@@ -14,7 +14,7 @@ export default function MembershipView({ locale }: { locale: Locale }) {
         <p className="mt-6 max-w-5xl text-left text-xl font-bold italic leading-relaxed text-brand">{c.intro}</p>
       </PageHeader>
       <Section spacing="sm" className="pb-24">
-        <p className="mx-auto mb-8 max-w-5xl text-center text-lg leading-relaxed text-black">{c.cardValidity}</p>
+        <p className="mx-auto mb-8 max-w-5xl text-center text-lg font-bold leading-relaxed text-black">{c.cardValidity}</p>
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
           {c.offers.map((offer) => (
             <article key={offer.title} className="flex min-w-0 flex-col rounded-panel border border-line bg-surface px-6 py-10 sm:px-10">
