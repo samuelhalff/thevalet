@@ -22,7 +22,7 @@ export function shortServiceLabel(locale: Locale, key: string, fallback: string)
     "alpine-transfers": "Transferts",
     "child-transport": "Transport d'enfants",
     "residence-management": "Intendance de résidence",
-    chalets: "Location résidence",
+    chalets: "Location de résidence",
     events: "Événement",
     "glam-team": "Glam Team",
     medical: "Conciergerie médicale",
