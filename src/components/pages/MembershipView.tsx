@@ -10,7 +10,9 @@ export default function MembershipView({ locale }: { locale: Locale }) {
   const c = pagesCopy(locale).membership;
   return (
     <>
-      <PageHeader locale={locale} title={c.title} intro={c.intro} crumbs={[{ label: t(locale, "nav.membership"), path: pageSlug(locale, "membership") }]} />
+      <PageHeader locale={locale} title={c.title} intro={c.intro} crumbs={[{ label: t(locale, "nav.membership"), path: pageSlug(locale, "membership") }]}>
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">{c.cardValidity}</p>
+      </PageHeader>
       <Section spacing="sm" className="pb-24">
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
           {c.offers.map((offer) => (
