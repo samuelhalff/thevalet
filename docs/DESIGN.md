@@ -160,3 +160,7 @@ The underline includes the arrow; the link has a comfortable touch target.
 intro lower, centered, italic and brand-colored. Move card validity into a centered
 line immediately above the two offers, black on the existing white palette.
 Apply the layout to both languages and all screen sizes.
+
+2026-11-11: Adjust the membership introduction to sit directly below the title,
+left aligned, bold and italic in bordeaux. Keep the card-validity line centered
+above the offers. Applies to both languages and all screen sizes.

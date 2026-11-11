@@ -11,7 +11,7 @@ export default function MembershipView({ locale }: { locale: Locale }) {
   return (
     <>
       <PageHeader locale={locale} title={c.title} crumbs={[{ label: t(locale, "nav.membership"), path: pageSlug(locale, "membership") }]}>
-        <p className="mx-auto mt-10 max-w-5xl text-center text-xl italic leading-relaxed text-brand sm:mt-14">{c.intro}</p>
+        <p className="mt-6 max-w-5xl text-left text-xl font-bold italic leading-relaxed text-brand">{c.intro}</p>
       </PageHeader>
       <Section spacing="sm" className="pb-24">
         <p className="mx-auto mb-8 max-w-5xl text-center text-lg leading-relaxed text-black">{c.cardValidity}</p>
