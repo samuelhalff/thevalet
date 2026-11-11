@@ -1,4 +1,35 @@
 {
+  "membership": {
+    "metaTitle": "Private and corporate membership",
+    "metaDescription": "Discover The Valet’s Premium Private and Premium Corporate memberships: unlimited requests and dedicated support.",
+    "title": "Membership",
+    "intro": "Two memberships to support your private life or your business.",
+    "offers": [
+      {
+        "title": "Premium Private",
+        "description": "Making life and your wishes easier. Welcome to the world of premium concierge services.",
+        "features": [
+          "Unlimited requests",
+          "24 hours a day, 7 days a week",
+          "Dedicated concierges"
+        ],
+        "price": "CHF 10,000 / year",
+        "cta": "Become a private member"
+      },
+      {
+        "title": "Premium Corporate",
+        "description": "Just like your best clients, our members are precious. Our mission is to offer them impeccable service.",
+        "features": [
+          "Unlimited requests",
+          "24 hours a day, 7 days a week",
+          "Operations manager and dedicated concierge",
+          "Personalised solution"
+        ],
+        "price": "Price on request",
+        "cta": "Become a corporate member"
+      }
+    ]
+  },
   "home": {
     "metaTitle": "The Valet — concierge in western Switzerland and the Alps",
     "metaDescription": "The Valet, a concierge based in Geneva: chauffeurs, transfers to the Alps, residence management, chalets, events, Glam Team and specialist services.",

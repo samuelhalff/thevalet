@@ -1,4 +1,35 @@
 {
+  "membership": {
+    "metaTitle": "Membership privé et corporate",
+    "metaDescription": "Découvrez les formules Premium Privé et Premium Corporate de The Valet : demandes illimitées et accompagnement dédié.",
+    "title": "Membership",
+    "intro": "Deux formules pour vous accompagner, dans votre vie privée ou pour votre entreprise.",
+    "offers": [
+      {
+        "title": "Premium Privé",
+        "description": "Facilitateur de vie et d’envies. Bienvenue dans l’ère de la haute conciergerie.",
+        "features": [
+          "Demandes illimitées",
+          "7 jours sur 7 et 24 heures sur 24",
+          "Concierges dédiés"
+        ],
+        "price": "10 000 CHF / an",
+        "cta": "Devenir membre privé"
+      },
+      {
+        "title": "Premium Corporate",
+        "description": "Tout comme vos meilleurs clients, nos membres sont précieux. Notre mission est de leur offrir un service irréprochable.",
+        "features": [
+          "Demandes illimitées",
+          "7 jours sur 7 et 24 heures sur 24",
+          "Operations manager et concierge dédiée",
+          "Solution personnalisée"
+        ],
+        "price": "Tarif sur demande",
+        "cta": "Devenir membre corporate"
+      }
+    ]
+  },
   "home": {
     "metaTitle": "The Valet — conciergerie en Suisse romande et dans les Alpes",
     "metaDescription": "The Valet, conciergerie basée à Genève : chauffeurs, transferts vers les Alpes, intendance, chalets, événements, Glam Team et services spécialisés.",

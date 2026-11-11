@@ -16,10 +16,6 @@ export default function Header({ locale }: { locale: Locale }) {
   const instagram = settings.socialProfiles.find((url) => /^https:\/\/(www\.)?instagram\.com\//i.test(url));
   const services = menuServices(locale);
   const links = mainLinks(locale);
-  const memberships = [
-    { href: pagePath(locale, "contact"), label: t(locale, "nav.privateMember") },
-    { href: pagePath(locale, "contact"), label: t(locale, "nav.corporateMember") },
-  ];
   const servicesHub = pagePath(locale, "services");
   const request = { href: pagePath(locale, "request"), label: t(locale, "common.ctaRequest") };
   const languages = locales.map((code) => ({ code, name: getMessages(locale).languages[code] }));
@@ -36,7 +32,7 @@ export default function Header({ locale }: { locale: Locale }) {
               <ServicesMenu label={t(locale, "nav.services")} allLabel={t(locale, "common.allServices")} allHref={servicesHub} links={services} />
             </li>
             <li>
-              <ServicesMenu label={t(locale, "nav.membership")} links={memberships} compact />
+              <NavLink href={pagePath(locale, "membership")}>{t(locale, "nav.membership")}</NavLink>
             </li>
             {links.map((l) => (
               <li key={l.href}>
@@ -53,12 +49,10 @@ export default function Header({ locale }: { locale: Locale }) {
             {request.label}
           </Button>
           <MobileMenu
-            memberships={memberships}
-            membershipLabel={t(locale, "nav.membership")}
             services={services}
             servicesLabel={t(locale, "nav.services")}
             allServices={{ href: servicesHub, label: t(locale, "common.allServices") }}
-            links={[...links, { href: pagePath(locale, "journal"), label: t(locale, "nav.journal") }]}
+            links={[{ href: pagePath(locale, "membership"), label: t(locale, "nav.membership") }, ...links, { href: pagePath(locale, "journal"), label: t(locale, "nav.journal") }]}
             cta={request}
             openLabel={t(locale, "common.menuOpen")}
             closeLabel={t(locale, "common.menuClose")}

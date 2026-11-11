@@ -4,6 +4,7 @@ import { isLocale, t, type Locale } from "@/lib/i18n";
 import { legalCopy, pagesCopy } from "@/lib/copy";
 import { pageKeys, pageRoutes, pageSlug, type PageKey } from "@/lib/paths";
 import { fixedPageMetadata } from "@/lib/page";
+import MembershipView from "@/components/pages/MembershipView";
 import AboutView from "@/components/pages/AboutView";
 import FaqView from "@/components/pages/FaqView";
 import ContactView from "@/components/pages/ContactView";
@@ -15,7 +16,7 @@ import LegalView from "@/components/pages/LegalView";
  * /fr/a-propos/ ↔ /en/about/, /fr/demande/ ↔ /en/request/, …
  */
 type Params = Promise<{ locale: string; slug: string[] }>;
-type CatchAllKey = "about" | "faq" | "contact" | "request" | "privacy" | "legal" | "terms";
+type CatchAllKey = "membership" | "about" | "faq" | "contact" | "request" | "privacy" | "legal" | "terms";
 
 const catchAllKeys = pageKeys.filter((k) => pageRoutes[k].catchAll) as CatchAllKey[];
 
@@ -55,6 +56,8 @@ export default async function FixedPage({ params }: { params: Params }) {
   if (!r) notFound();
   const { locale, key } = r;
   switch (key) {
+    case "membership":
+      return <MembershipView locale={locale} />;
     case "about":
       return <AboutView locale={locale} />;
     case "faq":

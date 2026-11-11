@@ -6,8 +6,6 @@ import Button from "./ui/Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 type Props = {
-  memberships: { href: string; label: string }[];
-  membershipLabel: string;
   services: { href: string; label: string }[];
   servicesLabel: string;
   allServices: { href: string; label: string };
@@ -21,7 +19,7 @@ type Props = {
   current: string;
 };
 
-export default function MobileMenu({ memberships, membershipLabel, services, servicesLabel, allServices, links, cta, openLabel, closeLabel, navLabel, languageLabel, languages, current }: Props) {
+export default function MobileMenu({ services, servicesLabel, allServices, links, cta, openLabel, closeLabel, navLabel, languageLabel, languages, current }: Props) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -141,23 +139,6 @@ export default function MobileMenu({ memberships, membershipLabel, services, ser
                       {allServices.label}
                     </a>
                   </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details className="group border-b border-line">
-                <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-display text-[1.45rem] text-ink [&::-webkit-details-marker]:hidden">
-                  {membershipLabel}
-                  <span aria-hidden="true" className="text-accent transition-transform group-open:rotate-45">+</span>
-                </summary>
-                <ul className="divide-y divide-line pb-3 pl-1">
-                  {memberships.map((l) => (
-                    <li key={l.label}>
-                      <a href={l.href} className="block py-3 text-[0.98rem] text-ink active:text-accent" onClick={() => setOpen(false)}>
-                        {l.label}
-                      </a>
-                    </li>
-                  ))}
                 </ul>
               </details>
             </li>

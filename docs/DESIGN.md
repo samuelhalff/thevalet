@@ -142,3 +142,12 @@ Add Membership (singular) immediately after Services in the shared French and En
 header, with private and corporate membership choices. Use a compact one-column
 disclosure with separators, matching the existing theme, and a native disclosure
 on mobile. Both choices initially lead to the existing contact page.
+
+## Membership page — 2026-11-11
+Replace the Membership dropdown with a direct link to a bilingual membership page.
+Two equal cards sit side by side on desktop and stack on phones, using existing
+surface, border and brand tokens. Private: CHF 10,000/year, unlimited requests,
+24/7, dedicated concierge; no exclusive invitations. Corporate: unlimited requests,
+24/7, operations manager and dedicated concierge, personalised solution, price on
+request. Copy and prices supplied/approved by the owner from her reference photo.
+Membership buttons lead to the existing contact page.
