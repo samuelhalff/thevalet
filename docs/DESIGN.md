@@ -155,3 +155,8 @@ Membership buttons lead to the existing contact page.
 2026-11-11: Add an underlined “En savoir plus →” / “Learn more →” contact
 link at the bottom of each membership offer, below its existing membership button.
 The underline includes the arrow; the link has a comfortable touch target.
+
+2026-11-11: French membership heading and metadata now say Adhésion. Place the
+intro lower, centered, italic and brand-colored. Move card validity into a centered
+line immediately above the two offers, black on the existing white palette.
+Apply the layout to both languages and all screen sizes.
