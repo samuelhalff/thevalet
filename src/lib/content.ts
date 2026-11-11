@@ -118,8 +118,8 @@ export function getAllEntries(locale: Locale, collection: Collection): Entry[] {
 
 /** Entries shown in listings, sitemap and llms.txt. */
 export function getPublishedEntries(locale: Locale, collection: Collection): Entry[] {
-  // Medical content is now included in concierge; keep its old route available.
-  return readCollection(locale, collection).filter((e) => !e.draft && !(collection === "services" && e.translationKey === "medical"));
+  // Merged services keep their old routes, but only the combined service is listed.
+  return readCollection(locale, collection).filter((e) => !e.draft && !(collection === "services" && ["medical", "child-transport"].includes(e.translationKey)));
 }
 
 export function getEntry(locale: Locale, collection: Collection, slug: string): Entry | undefined {

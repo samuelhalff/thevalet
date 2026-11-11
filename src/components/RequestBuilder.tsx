@@ -44,7 +44,7 @@ export default function RequestBuilder({ labels, r, services, channels, locale, 
 
   useEffect(() => {
     const requested = new URLSearchParams(window.location.search).get("service");
-    const key = requested === "medical" ? "concierge" : requested;
+    const key = requested === "medical" ? "concierge" : requested === "child-transport" ? "chauffeur" : requested;
     if (key && services.some((s) => s.value === key)) {
       setService(key);
       setStep(1);

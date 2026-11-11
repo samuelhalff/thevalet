@@ -177,3 +177,6 @@ label stays white and readable on bordeaux. Scope the palette to membership offe
 
 ## Conciergerie — 2026-11-11
 Un seul service Conciergerie / Concierge dans les menus et listes, sur mobile et ordinateur. La page existante réunit les textes et FAQ privés et médicaux en deux parties. Les anciennes adresses médicales affichent la page réunie en conservant leurs métadonnées et adresses.
+
+## Transports et logistique — 2026-11-11
+À la demande de Kadiata, le menu affiche Transferts / Transfers pour le service Genève–Alpes. Chauffeur privé et transport d’enfants sont réunis sous Transports et logistique / Transport and logistics, dans les menus mobiles et de bureau, les listes et le formulaire. La page chauffeur conserve son adresse et réunit les deux contenus et leurs questions. Les anciennes adresses du transport d’enfants restent accessibles avec le contenu réuni.

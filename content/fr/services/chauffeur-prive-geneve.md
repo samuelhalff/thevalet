@@ -1,10 +1,10 @@
 ---
-title: "Chauffeur privé à Genève et transferts aéroport"
-description: "Chauffeur privé à Genève : transferts aéroport GVA, mise à disposition à l'heure, soirées et longs trajets, avec des partenaires indépendants."
+title: "Transports et logistique"
+description: "Transports et logistique à Genève : chauffeur privé, transferts aéroport et transport d’enfants, organisés avec des partenaires indépendants."
 translationKey: "chauffeur"
-updated: "2026-10-26"
+updated: "2026-11-11"
 order: 5
-summary: "Transferts aéroport GVA, mise à disposition à l'heure, soirées et longs trajets, en berline, van premium ou limousine."
+summary: "Chauffeur privé, transferts aéroport, trajets sur mesure et transport d’enfants, avec des partenaires indépendants."
 serviceType: "Chauffeur privé"
 delivery: "partner"
 answer: "The Valet organise votre chauffeur privé à Genève : transferts depuis et vers l'aéroport de Genève (GVA) et la gare, mise à disposition à l'heure ou à la journée, soirées, rendez-vous et longs trajets. Les courses sont effectuées par des partenaires indépendants, choisis pour leur activité autorisée ; nous réservons, coordonnons et vous confirmons par écrit qui conduit et à quelles conditions."
@@ -25,7 +25,9 @@ faq:
     a: "Le prix dépend du trajet, de la durée, du véhicule, de l'horaire et des éventuels temps d'attente. Vous recevez une proposition avant tout engagement."
 ---
 
-## Les trajets que nous organisons
+## Chauffeur privé
+
+### Les trajets que nous organisons
 
 Un chauffeur privé à Genève sert d'abord à ne plus penser au trajet. Les demandes que nous recevons le plus souvent :
 
@@ -37,7 +39,7 @@ Un chauffeur privé à Genève sert d'abord à ne plus penser au trajet. Les dem
 
 Pour les trajets réguliers d'enfants, l'organisation est différente : voir notre [transport privé d'enfants](/fr/services/transport-prive-enfants/).
 
-## Ce que nous demandons pour réserver
+### Ce que nous demandons pour réserver
 
 Une réservation tient en quelques informations, mais chacune compte :
 
@@ -49,15 +51,15 @@ Une réservation tient en quelques informations, mais chacune compte :
 
 Nous transmettons au chauffeur ces informations, et seulement celles qui sont utiles à la course.
 
-## Délais, horaires et ce qui influe sur la disponibilité
+### Délais, horaires et ce qui influe sur la disponibilité
 
 Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. Plusieurs éléments rendent une réservation plus ou moins facile : un départ très matinal ou tard dans la nuit, une date où de grands événements se tiennent à Genève, un week-end de vacances scolaires, un véhicule spécifique (van pour un groupe, limousine). Plus la demande arrive tôt, plus le choix de véhicules et d'horaires est large. Pour une mise à disposition, indiquez si la fin est fixe ou ouverte : le tarif et la disponibilité en dépendent.
 
-## Véhicules à disposition
+### Véhicules à disposition
 
 Selon la disponibilité des opérateurs et la nature du trajet, nous proposons des berlines haut de gamme pour un ou deux passagers, des vans premium de type Mercedes-Benz Classe V pour les familles, les groupes et les bagages volumineux, et des limousines sur demande pour une occasion particulière. Des sièges enfants peuvent être demandés au moment de la réservation ; leur type est confirmé par l'opérateur. Si vous avez une préférence de couleur, de modèle ou d'équipement, dites-le : nous vous indiquons ce qui est possible.
 
-## Sur demande : limousines, voitures de prestige, jets et yachts
+### Sur demande : limousines, voitures de prestige, jets et yachts
 
 Au-delà du chauffeur, voici des prestations que nos partenaires peuvent proposer, sur demande, selon disponibilité des opérateurs :
 
@@ -68,10 +70,89 @@ Au-delà du chauffeur, voici des prestations que nos partenaires peuvent propose
 
 The Valet présente les options et coordonne ; les conditions, les autorisations et les tarifs sont ceux de l'opérateur et vous sont communiqués avant toute réservation.
 
-## Le rôle de The Valet et celui de l'opérateur
+### Le rôle de The Valet et celui de l'opérateur
 
 Nous recevons votre demande, choisissons l'opérateur et le véhicule, vérifions la disponibilité, vous transmettons la proposition et, après votre accord, réservons et suivons la course. En cas de changement d'horaire, vous nous prévenez et nous ajustons avec l'opérateur.
 
 La course elle-même est effectuée par un chauffeur d'un partenaire indépendant, choisi pour son activité autorisée de transport de personnes. Ce que vous nous confiez sur vos déplacements est partagé uniquement avec cet opérateur, dans la mesure utile au trajet. Pour l'organisation de votre quotidien au-delà des trajets, voir [notre conciergerie à Genève](/fr/services/conciergerie-privee-geneve/).
 
 Pour votre prochain trajet, vous pouvez [demander un chauffeur privé à Genève](/fr/demande/?service=chauffeur) en indiquant la date, l'heure et l'adresse de prise en charge.
+
+## Transport d’enfants
+
+The Valet organise le transport privé de vos enfants à Genève et dans la région : trajets vers l'école, les activités, les rendez-vous et les sorties, ponctuels ou réguliers. Les trajets sont effectués par des partenaires indépendants, choisis pour leur activité autorisée, sous réserve de la réglementation locale et de confirmation préalable ; les sièges, la remise de l'enfant et les messages aux parents sont convenus avec l'opérateur avant la réservation, sur la base de vos consignes écrites.
+
+### Pour quels trajets
+
+Le transport privé d'enfants répond à un besoin précis : un parent qui ne peut pas être à deux endroits à la fois, un horaire de bureau qui ne correspond pas à la sortie de l'école, une activité à l'autre bout du canton. Nous organisons, à Genève et dans la région :
+
+- les trajets entre la maison et l'école, le matin, à midi ou en fin de journée ;
+- les allers-retours vers les activités : sport, musique, cours de langue ;
+- les rendez-vous médicaux ou paramédicaux, en coordination avec notre [conciergerie médicale](/fr/services/conciergerie-medicale/) si vous le souhaitez ;
+- les sorties ponctuelles, les anniversaires, les trajets vers la gare ou l'aéroport pour rejoindre un parent ;
+- les trajets réguliers sur toute l'année scolaire.
+
+Pour les déplacements des adultes de la famille, voir notre [chauffeur privé à Genève](/fr/services/chauffeur-prive-geneve/) ; pour une arrivée en station avec enfants, nos [transferts de Genève vers les Alpes](/fr/services/transferts-geneve-alpes/).
+
+### Les consignes que nous vous demandons par écrit
+
+Tout repose sur vos instructions. Avant le premier trajet, nous vous demandons de nous indiquer par écrit :
+
+1. **Les enfants concernés**, leur âge et leur taille, pour déterminer les sièges.
+2. **Les adresses** de prise en charge et de dépose, avec l'entrée précise (portail de l'école, accueil du club).
+3. **Les personnes autorisées** à confier l'enfant et à le recevoir, avec un numéro pour chacune.
+4. **Ce qui doit se passer en cas d'imprévu** : retard, personne absente à l'arrivée, enfant malade au moment du départ.
+5. **Les informations utiles au trajet** que vous choisissez de partager, par exemple une allergie à signaler en cas d'urgence. Les détails de santé ne doivent pas être envoyés par le formulaire du site.
+
+Ces consignes sont transmises à l'opérateur, et seulement les éléments utiles au trajet.
+
+### Ce que l'opérateur confirmé met en place
+
+Les mesures concrètes relèvent de l'opérateur qui effectue le trajet. Elles sont convenues avec lui avant la réservation, puis confirmées par écrit :
+
+- **les sièges** adaptés à l'âge et à la taille de chaque enfant, fournis par l'opérateur ou par vous ;
+- **la remise de l'enfant** à la personne nommée dans vos consignes, et la conduite à tenir si elle n'est pas là ;
+- **les messages aux parents** au départ, à l'arrivée ou à la remise, selon ce que l'opérateur peut proposer ;
+- **le chauffeur** prévu pour les trajets réguliers, lorsque l'opérateur peut affecter la même personne.
+
+The Valet ne conduit pas et n'accompagne pas les enfants elle-même ; nous coordonnons et vérifions que ce qui a été convenu figure dans la confirmation.
+
+### Réglementation, âge et sièges : ce qui encadre le service
+
+Le transport d'enfants est encadré : l'utilisation de dispositifs de retenue adaptés, la présence ou non d'un accompagnant, l'âge à partir duquel un enfant peut voyager sans adulte de la famille relèvent de la réglementation locale et des conditions de l'opérateur. Selon l'âge des enfants et le trajet, un accompagnant en plus du chauffeur peut être demandé ; nous vous indiquons ce qui est possible avant la réservation. Les établissements scolaires et les clubs ont parfois leurs propres règles de dépose et de reprise : nous vous demandons de les vérifier de votre côté, puis nous les intégrons au planning.
+
+### Trajets réguliers : mise en place et ajustements
+
+Pour un planning régulier, nous établissons d'abord un calendrier type avec vous, puis nous le proposons à l'opérateur. Demandes reçues 24 h/24, 7 j/7 ; délais et disponibilité confirmés pour chaque demande. La disponibilité dépend surtout des heures de pointe : les entrées et sorties d'école se font au même moment pour toutes les familles, et les créneaux du matin sont les plus demandés. Les vacances, les jours fériés, les journées pédagogiques et les changements d'horaire en cours d'année sont repris avec vous, de préférence avant chaque période.
+
+### Qui fait quoi
+
+Nous recueillons vos consignes, choisissons l'opérateur, vous transmettons la proposition, réservons après votre accord et restons votre contact pour les changements. Les trajets sont effectués par des partenaires indépendants, choisis pour leur activité autorisée de transport de personnes, sous réserve de la réglementation locale et de confirmation préalable. Si votre famille a aussi besoin d'aide à la maison, notre [intendance de résidence](/fr/services/intendance-residence/) peut prendre le relais pour l'accueil et l'organisation du quotidien.
+
+Pour commencer, vous pouvez [demander un transport pour vos enfants](/fr/demande/?service=chauffeur) en précisant les trajets, les horaires et l'âge de chaque enfant.
+
+### Questions sur le transport d’enfants
+
+#### À partir de quel âge un enfant peut-il voyager avec ce service ?
+
+Cela dépend de la réglementation applicable et des conditions de l'opérateur. Indiquez-nous l'âge de chaque enfant : nous vous confirmons avant la réservation ce qui est possible et dans quelles conditions.
+
+#### Les sièges enfants sont-ils fournis ?
+
+Ils peuvent être prévus par l'opérateur confirmé, selon l'âge et la taille de chaque enfant. Le type de siège est convenu avant la réservation ; vous pouvez aussi fournir le vôtre.
+
+#### À qui l'enfant est-il remis à l'arrivée ?
+
+À la personne que vous avez désignée par écrit. Les modalités de remise sont convenues avec l'opérateur avant la réservation, y compris ce qui est prévu si cette personne n'est pas présente.
+
+#### Serai-je prévenu pendant le trajet ?
+
+Les messages aux parents (départ, arrivée, remise) sont convenus avec l'opérateur avant la réservation, selon ce qu'il peut proposer. Vous choisissez qui les reçoit.
+
+#### Peut-on organiser des trajets réguliers toute l'année scolaire ?
+
+Oui, sous réserve de la disponibilité de l'opérateur. Le planning est établi avec vous, puis ajusté pour les vacances, les jours fériés et les changements d'horaire.
+
+#### Comment modifier ou annuler un trajet ?
+
+En nous écrivant le plus tôt possible. Les délais de modification et d'annulation sont ceux de l'opérateur et figurent dans la proposition.

@@ -1,10 +1,10 @@
 ---
-title: "Private chauffeur Geneva and airport transfers"
-description: "Private chauffeur in Geneva: GVA airport transfers, hourly and full-day hire, evenings and long-distance journeys, with independent partners."
+title: "Transport and logistics"
+description: "Transport and logistics in Geneva: private chauffeur, airport transfers and child transport, arranged with independent partners."
 translationKey: "chauffeur"
-updated: "2026-10-26"
+updated: "2026-11-11"
 order: 5
-summary: "Geneva airport transfers, hourly hire, evenings and long-distance journeys, by luxury saloon, premium van or limousine."
+summary: "Private chauffeur, airport transfers, bespoke journeys and child transport, with independent partners."
 serviceType: "Private chauffeur service"
 delivery: "partner"
 answer: "The Valet arranges your private chauffeur in Geneva: transfers to and from Geneva Airport (GVA) and the railway station, hourly or full-day hire, evenings, appointments and long-distance journeys. Journeys are driven by independent partners, chosen for their authorised activity; we book, coordinate and confirm in writing who will drive and on what terms."
@@ -25,7 +25,9 @@ faq:
     a: "The price depends on the route, duration, vehicle, time of day and any waiting time. You receive a proposal before any commitment."
 ---
 
-## The journeys we arrange
+## Private chauffeur
+
+### The journeys we arrange
 
 A private chauffeur in Geneva is first of all a way to stop thinking about the journey. The requests we receive most often:
 
@@ -37,7 +39,7 @@ A private chauffeur in Geneva is first of all a way to stop thinking about the j
 
 Regular journeys for children are organised differently: see our [private child transport](/en/services/private-child-transport/).
 
-## What we need to book
+### What we need to book
 
 A booking takes only a few details, but each one matters:
 
@@ -49,15 +51,15 @@ A booking takes only a few details, but each one matters:
 
 We pass these details to the chauffeur, and only those needed for the journey.
 
-## Lead times, hours and what affects availability
+### Lead times, hours and what affects availability
 
 Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. Several things make a booking easier or harder: a very early or very late departure, a date when major events are held in Geneva, a school-holiday weekend, a specific vehicle (a van for a group, a limousine). The earlier the request, the wider the choice of vehicles and times. For hourly hire, tell us whether the end time is fixed or open: price and availability depend on it.
 
-## Vehicles available
+### Vehicles available
 
 Subject to operator availability and the type of journey, we offer luxury saloons for one or two passengers, premium vans such as the Mercedes-Benz V-Class for families, groups and bulky luggage, and limousines on request for a special occasion. Child seats can be requested when booking; the type is confirmed by the operator. If you have a preference for colour, model or equipment, say so: we will tell you what is possible.
 
-## On request: limousines, prestige cars, jets and yachts
+### On request: limousines, prestige cars, jets and yachts
 
 Beyond the chauffeur, these are services our partners can provide, on request, subject to operator availability:
 
@@ -68,10 +70,89 @@ Beyond the chauffeur, these are services our partners can provide, on request, s
 
 The Valet presents the options and coordinates; terms, authorisations and prices are the operator's and are given to you before any booking.
 
-## The role of The Valet and the role of the operator
+### The role of The Valet and the role of the operator
 
 We receive your request, choose the operator and vehicle, check availability, send you the proposal and, once you agree, book and follow the journey. If your timing changes, you let us know and we adjust with the operator.
 
 The journey itself is driven by a chauffeur from an independent partner, chosen for its authorised passenger transport activity. What you tell us about your travel is shared only with that operator, as far as the journey requires. For help with daily life beyond journeys, see [our concierge in Geneva](/en/services/private-concierge-geneva/).
 
 For your next journey, you can [book a private chauffeur in Geneva](/en/request/?service=chauffeur) with the date, time and pick-up address.
+
+## Child transport
+
+The Valet arranges private transport for your children in Geneva and the surrounding region: journeys to school, activities, appointments and outings, one-off or regular. Journeys are driven by independent partners, chosen for their authorised activity, subject to local regulations and prior confirmation; seats, handover and messages to parents are agreed with the operator before booking, based on your written instructions.
+
+### Which journeys
+
+Private child transport meets a specific need: a parent who cannot be in two places at once, office hours that do not match the end of the school day, an activity on the other side of the canton. In Geneva and the surrounding region, we arrange:
+
+- journeys between home and school, in the morning, at lunchtime or at the end of the day;
+- return trips to activities: sport, music, language lessons;
+- medical or therapy appointments, coordinated with our [medical concierge](/en/services/medical-concierge/) if you wish;
+- one-off outings, birthday parties, trips to the station or airport to meet a parent;
+- regular journeys throughout the school year.
+
+For the adults in the family, see our [private chauffeur in Geneva](/en/services/private-chauffeur-geneva/); for arriving at a resort with children, our [transfers from Geneva to the Alps](/en/services/geneva-alps-transfers/).
+
+### The instructions we ask for in writing
+
+Everything rests on your instructions. Before the first journey, we ask you to tell us in writing:
+
+1. **The children concerned**, their age and height, to determine the seats.
+2. **The addresses** for pick-up and drop-off, with the precise entrance (school gate, club reception).
+3. **The people authorised** to hand the child over and to receive them, with a number for each.
+4. **What should happen if something changes**: a delay, nobody at the drop-off, a child unwell at departure time.
+5. **Information useful for the journey** that you choose to share, for example an allergy to mention in an emergency. Health details should not be sent through the website form.
+
+These instructions are passed to the operator, and only what the journey requires.
+
+### What the confirmed operator puts in place
+
+The practical measures are the responsibility of the operator driving the journey. They are agreed with it before booking, then confirmed in writing:
+
+- **seats** suited to each child's age and size, supplied by the operator or by you;
+- **handover** of the child to the person named in your instructions, and what to do if they are not there;
+- **messages to parents** at departure, arrival or handover, according to what the operator can offer;
+- **the chauffeur** for regular journeys, where the operator can assign the same person.
+
+The Valet does not drive or accompany children itself; we coordinate and check that what was agreed appears in the confirmation.
+
+### Regulations, age and seats: the framework
+
+Transporting children is regulated: the use of suitable restraints, whether an escort is needed, and the age from which a child may travel without a family adult depend on local regulations and the operator's terms. Depending on the children's ages and the journey, an escort in addition to the chauffeur may be requested; we tell you what is possible before booking. Schools and clubs sometimes have their own drop-off and collection rules: we ask you to check them on your side, then build them into the schedule.
+
+### Regular journeys: setting up and adjusting
+
+For a regular schedule, we first draw up a standard timetable with you, then propose it to the operator. Requests received 24 hours a day, 7 days a week; lead times and availability confirmed for each request. Availability depends mostly on peak times: school starts and finishes happen at the same moment for every family, and morning slots are the most requested. Holidays, public holidays, teacher training days and timetable changes during the year are reviewed with you, ideally before each term.
+
+### Who does what
+
+We gather your instructions, choose the operator, send you the proposal, book once you agree and remain your contact for changes. Journeys are driven by independent partners, chosen for their authorised passenger transport activity, subject to local regulations and prior confirmation. If your family also needs help at home, our [residence management](/en/services/residence-management/) can take over welcoming and day-to-day organisation.
+
+To start, you can [request transport for your children](/en/request/?service=chauffeur) with the journeys, times and each child's age.
+
+### Child transport questions
+
+#### From what age can a child travel with this service?
+
+That depends on the applicable regulations and the operator's terms. Tell us each child's age: we confirm before booking what is possible and on what conditions.
+
+#### Are child seats provided?
+
+They can be provided by the confirmed operator, according to each child's age and size. The type of seat is agreed before booking; you can also supply your own.
+
+#### Who is the child handed over to on arrival?
+
+To the person you have named in writing. The handover arrangements are agreed with the operator before booking, including what happens if that person is not there.
+
+#### Will I be kept informed during the journey?
+
+Messages to parents (departure, arrival, handover) are agreed with the operator before booking, according to what it can offer. You choose who receives them.
+
+#### Can regular journeys be arranged for the whole school year?
+
+Yes, subject to the operator's availability. The schedule is set with you, then adjusted for holidays, public holidays and timetable changes.
+
+#### How do I change or cancel a journey?
+
+Write to us as early as possible. Change and cancellation deadlines are the operator's and are set out in the proposal.

@@ -18,8 +18,8 @@ export function serviceLinks(locale: Locale): (NavLink & { key: string; summary:
 export function shortServiceLabel(locale: Locale, key: string, fallback: string): string {
   const fr: Record<string, string> = {
     concierge: "Conciergerie",
-    chauffeur: "Chauffeur privé",
-    "alpine-transfers": "Transferts Genève–Alpes",
+    chauffeur: "Transports et logistique",
+    "alpine-transfers": "Transferts",
     "child-transport": "Transport d'enfants",
     "residence-management": "Intendance de résidence",
     chalets: "Chalets et résidences",
@@ -32,8 +32,8 @@ export function shortServiceLabel(locale: Locale, key: string, fallback: string)
   };
   const en: Record<string, string> = {
     concierge: "Concierge",
-    chauffeur: "Private chauffeur",
-    "alpine-transfers": "Geneva–Alps transfers",
+    chauffeur: "Transport and logistics",
+    "alpine-transfers": "Transfers",
     "child-transport": "Child transport",
     "residence-management": "Residence management",
     chalets: "Chalets and residences",
