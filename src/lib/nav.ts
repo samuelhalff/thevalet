@@ -49,7 +49,17 @@ export function shortServiceLabel(locale: Locale, key: string, fallback: string)
 }
 
 export function menuServices(locale: Locale): NavLink[] {
-  return serviceLinks(locale).map((s) => ({ href: s.href, label: shortServiceLabel(locale, s.key, s.label) }));
+  const order = [
+    "concierge", "chauffeur", "alpine-transfers", "chalets", "residence-management",
+    "security", "real-estate", "legal-real-estate", "events", "glam-team",
+  ];
+  const rank = (key: string) => {
+    const index = order.indexOf(key);
+    return index < 0 ? order.length : index;
+  };
+  return serviceLinks(locale)
+    .sort((a, b) => rank(a.key) - rank(b.key))
+    .map((s) => ({ href: s.href, label: shortServiceLabel(locale, s.key, s.label) }));
 }
 
 export function mainLinks(locale: Locale): NavLink[] {

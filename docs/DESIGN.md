@@ -182,3 +182,5 @@ Un seul service Conciergerie / Concierge dans les menus et listes, sur mobile et
 À la demande de Kadiata, le menu affiche Transferts / Transfers pour le service Genève–Alpes. Chauffeur privé et transport d’enfants sont réunis sous Transports et logistique / Transport and logistics, dans les menus mobiles et de bureau, les listes et le formulaire. La page chauffeur conserve son adresse et réunit les deux contenus et leurs questions. Les anciennes adresses du transport d’enfants restent accessibles avec le contenu réuni.
 
 2026-11-11 : renomme le lien du service chalets dans les menus en « Location de résidence » / « Residence rental », sur mobile et ordinateur.
+
+2026-11-11 : ordre des menus Services FR/EN demandé par Kadiata : Conciergerie, Transports et logistique, Transferts, Location de résidence, Intendance de résidence, Sécurité, Immobilier, Juridique, Événement, Glam Team. Le menu de bureau passe sur une seule colonne, avec défilement si la hauteur disponible est insuffisante. Le menu mobile et les liens Services du pied de page reprennent cet ordre.
